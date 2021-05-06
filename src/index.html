@@ -52,6 +52,42 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="cardContent">
+                            <div class="cardInfo">
+                                <div class="frontCard">
+                                    <h2>네이버 광고주센터</h2>
+                                </div>
+                                <div class="backCard">
+                                    <div class="cardDetail">
+                                        <div class="infoData">
+                                            <dl>
+                                                <dt>서비스명</dt>
+                                                <dd>네이버 광고주센터</dd>
+                                                <dt>진행기간</dt>
+                                                <dd>2019. 11.21 ~ 2020.01.17</dd>
+                                                <dt>주요내용</dt>
+                                                <dd>광고주센터 모바일 마크업</dd>
+                                                <dt>본인이 기여한 점</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>컴포넌트 UI 재사용에 대한 기준 정리</li>
+                                                        <li>공통 스타일링에 필요한 Mixin 정리 및 활용</li>
+                                                    </ul>
+                                                </dd>
+                                                <dt>사용한 기술스택 및 지식</dt>
+                                                <dd>HTML5, CSS, CSS3, React, Gulp, SASS(Mixin)</dd>
+                                                <dt>결과 및 성과</dt>
+                                                <dd>
+                                                    <p>웹표준팀내에서 React Framework를 활용한 FE 개발자들과의 협업에 대한 기준을 정할 수 있었던 프로젝트입니다.<br>
+                                                    협업을 통해 마크업과 개발 병렬로 진행되었으며, 최대한 공통 UI를 지향하는 방법으로 진행되어, 마크업 구조화에 노력을 기울인 페이지입니다.</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="cardClose">팝업 닫기</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,49 +95,23 @@
     </div>
     <script>
         const cardIndex = document.querySelectorAll('.cardInfo');
-        const cardClose = document.querySelectorAll('.cardClose');
-        console.log(cardIndex);
-        console.log(cardClose);
+        const closePop = document.querySelectorAll('.cardClose');
         
         cardIndex.forEach(button => {
-            button.addEventListener('click', (e) => {
-                if(cardIndex == true) {
-                    button.classList.add('backRotateCard');
-                    button.classList.remove('rotateCard');
-                } else {
-                    button.classList.add('rotateCard');
-                    button.classList.remove('backRotateCard');
-                    document.body.style.overflowY = 'hidden';
-                }
+            button.addEventListener('click', () => {
+                if(cardIndex == null) return
+                button.classList.add('rotateCard');
+                document.body.style.overflowY = 'hidden';
             })
-        });
+        })
 
-        // buttonTarget.forEach(button => {
-        //     button.addEventListener('click', (e) => {
-        //         buttonTarget.forEach(button => {
-        //             button.classList.remove('active');
-        //         })
-        //         e.target.classList.add('active');
-
-        //         if(buttonBiz.classList.contains('active')){
-        //             displayGuideText.style.display = 'block';
-        //         } else {
-        //             displayGuideText.style.display = 'none';
-        //         }
-        //     })
-        // })
-        
-
-        // 팝업 닫기
-        // function closePop(){
-        //     cardIndex.forEach(buttonClose => {
-        //         buttonClose.addEventListener('click', (e) => {
-        //             buttonClose.classList.remove('rotateCard');
-        //             document.body.style.overflowY = '';
-        //         })
-        //     })
-        // }
-
+        closePop.forEach(button => {
+            button.addEventListener('click', () => {
+                if(closePop == null) return
+                button.classList.remove('rotateCard');
+                document.body.style.overflowY = '';
+            })
+        })
     </script>
 </body>
 </html>

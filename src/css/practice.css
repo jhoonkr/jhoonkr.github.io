@@ -206,8 +206,8 @@ i {
 }
 .cardClose {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 30px;
 }
 
 @keyframes aniRotateCard {
