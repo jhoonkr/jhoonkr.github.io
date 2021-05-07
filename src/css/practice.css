@@ -28,7 +28,7 @@ i{font-style:normal}
 .cardArea .cardContent .cardInfo .backCard .cardDetail .infoData dl{display:table-cell;vertical-align:middle}
 .cardArea .cardContent .cardInfo .backCard .cardDetail .infoData dl dt{overflow:hidden;margin-top:10px;font-size:22px;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
 .cardArea .cardContent .cardInfo .backCard .cardDetail .infoData dl dt:first-child{margin-top:0}
-.cardArea .cardContent .cardInfo .backCard .cardDetail .infoData dl dd{overflow:hidden;font-size:18px;margin-top:5px;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.cardArea .cardContent .cardInfo .backCard .cardDetail .infoData dl dd{overflow:hidden;margin-top:5px;font-size:18px;color:#5e5e5e;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
 .cardArea .cardContent .cardInfo .backCard .cardDetail .infoData dl dd ul li{overflow:hidden;position:relative;padding-left:15px;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
 .cardArea .cardContent .cardInfo .backCard .cardDetail .infoData dl dd ul li:before{content:'-';position:absolute;top:0;left:0}
 .cardArea .cardContent .cardInfo .backCard .cardDetail .infoData p{line-height:26px;word-break:keep-all;word-wrap:break-word;white-space:normal;display:-webkit-box;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:6}
