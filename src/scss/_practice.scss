@@ -5,18 +5,18 @@
     background: #11998e;
     background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
     background: linear-gradient(to right, #38ef7d, #11998e);
-    .cardBox {
+    .card-box {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         height: 100%;
-        .realContent {
+        .real-content {
             position: relative;
         }
     }
 }
-.cardClose {
+.card-close {
     position: absolute;
     top: 30px;
     right: 30px;

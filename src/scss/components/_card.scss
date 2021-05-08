@@ -1,7 +1,7 @@
-.cardArea {
+.card-area {
     display: flex;
     flex-direction: row;
-    .cardContent {
+    .card-content {
         width: auto;
         height: auto;
         margin: 5px;
@@ -9,7 +9,7 @@
         border-radius: 6px;
         background-color: transparent;
         text-align: center;
-        .cardInfo {
+        .card-info {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,15 +22,7 @@
                 font-size: 30px;
                 color: #fff;
             }
-            .fronCard,
-            .backCard {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-            .backCard {
+            .back-card {
                 position: fixed;
                 top: 50%;
                 left: 50%;
@@ -44,18 +36,25 @@
                 -webkit-transform: rotateY(90deg);
                 z-index: 100;
                 cursor: default;
-                .cardDetail {
+                .card-detail {
                     display: flex;
                     align-items: center;
                     width: 100%;
                     height: 100%;
                     padding: 0 60px;
                     text-align: left;
-                    .infoData {
+                    .info-data {
                         display: table;
                         table-layout: fixed;
                         width: 100%;
                         height: 100%;
+                        p {
+                            line-height: 26px;
+                            word-break: keep-all;
+                            word-wrap: break-word;
+                            white-space: normal;
+                            @include ellipsis(6);
+                        }
                         dl {
                             display: table-cell;
                             vertical-align: middle;
@@ -94,26 +93,17 @@
                             }
                         }
                     }
-                    .infoData {
-                        p {
-                            line-height: 26px;
-                            word-break: keep-all;
-                            word-wrap: break-word;
-                            white-space: normal;
-                            @include ellipsis(6);
-                        }
-                    }
                 }
             }
-            &.rotateCard {
-                .frontCard {
+            &.rotate-card {
+                .front-card {
                     opacity: 1;
                     -webkit-animation: aniRotateCard 0.5s 1;
                     animation: aniRotateCard 0.5s 1;
                     -webkit-transform: rotateY(90deg);
                     transform: rotateY(90deg);
                 }
-                .backCard {
+                .back-card {
                     opacity: 1;
                     -webkit-animation: aniRotateCard2 0.5s 0.5s 1 backwards;
                     animation: aniRotateCard2 0.5s 0.5s 1 backwards;
