@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        ul, li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .flex_box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .thumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 450px;
+        }
+        .thumb img {
+            width: 100%;
+        }
+        .content_box {
+            display: flex;
+            flex: 1 1 450px;
+            flex-direction: column;
+        }
+        .link_box {
+            display: flex;
+            width: 100%;
+        }
+        .link_box ul {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .link_box ul li {
+            flex: 1 1 75px;
+            margin: 10px;
+            text-align: center;
+            background-color: yellow;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <div class="flex_box">
+                <div class="thumb">
+                    <img src="https://via.placeholder.com/400x400" alt="임시 이미지">
+                </div>
+                <div class="content_box">
+                    <div class="link_box">
+                        <ul>
+                            <li><a href="#">job</a></li>
+                            <li><a href="#">career</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">business</a></li>
+                            <li><a href="#">know how</a></li>
+                        </ul> 
+                    </div>
+                    <div class="text_box">
+                        <h2>How to get a job?</h2>
+                        <p>Learn from the best CEO's how to show yourself in the best possible way</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
