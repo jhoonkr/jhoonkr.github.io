@@ -1,116 +1,118 @@
 .card-area {
-    display: flex;
-    flex-direction: row;
-    .card-content {
-        width: auto;
-        height: auto;
-        margin: 5px;
-        border: 1px solid #ececec;
-        border-radius: 6px;
-        background-color: transparent;
-        text-align: center;
-        .card-info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  .card-content {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border: 1px solid #ececec;
+    border-radius: 6px;
+    background-color: transparent;
+    text-align: center;
+    .card-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      cursor: pointer;
+      h2 {
+        font-size: 30px;
+        color: #fff;
+      }
+      .back-card {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 750px;
+        height: 650px;
+        margin-top: -325px;
+        margin-left: -375px;
+        background-color: #fff;
+        border-radius: 10px;
+        transform: rotateY(90deg);
+        -webkit-transform: rotateY(90deg);
+        z-index: 100;
+        cursor: default;
+        .card-detail {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          padding: 0 60px;
+          text-align: left;
+          .info-data {
+            display: table;
+            table-layout: fixed;
             width: 100%;
             height: 100%;
-            padding: 10px;
-            cursor: pointer;
-            h2 {
-                font-size: 30px;
-                color: #fff;
+            p {
+              line-height: 26px;
+              word-break: keep-all;
+              word-wrap: break-word;
+              white-space: normal;
+              @include ellipsis(6);
             }
-            .back-card {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                width: 750px;
-                height: 650px;
-                margin-top: -325px;
-                margin-left: -375px;
-                background-color: #fff;
-                border-radius: 10px;
-                transform: rotateY(90deg);
-                -webkit-transform: rotateY(90deg);
-                z-index: 100;
-                cursor: default;
-                .card-detail {
-                    display: flex;
-                    align-items: center;
-                    width: 100%;
-                    height: 100%;
-                    padding: 0 60px;
-                    text-align: left;
-                    .info-data {
-                        display: table;
-                        table-layout: fixed;
-                        width: 100%;
-                        height: 100%;
-                        p {
-                            line-height: 26px;
-                            word-break: keep-all;
-                            word-wrap: break-word;
-                            white-space: normal;
-                            @include ellipsis(6);
-                        }
-                        dl {
-                            display: table-cell;
-                            vertical-align: middle;
-                            dt {
-                                overflow: hidden;
-                                margin-top: 10px;
-                                font-size: 22px;
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                                &:first-child {
-                                    margin-top: 0;
-                                }
-                            }
-                            dd {
-                                overflow: hidden;
-                                margin-top: 5px;
-                                font-size: 18px;
-                                color: #5e5e5e;
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                                ul {
-                                    li {
-                                        overflow: hidden;
-                                        position: relative;
-                                        padding-left: 15px;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        &:before {
-                                            content: '-';
-                                            position: absolute;
-                                            top: 0;
-                                            left: 0;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+            dl {
+              display: table-cell;
+              vertical-align: middle;
+              dt {
+                overflow: hidden;
+                margin-top: 10px;
+                font-size: 22px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                &:first-child {
+                  margin-top: 0;
+                }
+              }
+              dd {
+                overflow: hidden;
+                margin-top: 5px;
+                font-size: 18px;
+                color: #5e5e5e;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                ul {
+                  li {
+                    overflow: hidden;
+                    position: relative;
+                    padding-left: 15px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    &:before {
+                      content: "-";
+                      position: absolute;
+                      top: 0;
+                      left: 0;
                     }
+                  }
                 }
+              }
             }
-            &.rotate-card {
-                .front-card {
-                    opacity: 1;
-                    -webkit-animation: aniRotateCard 0.5s 1;
-                    animation: aniRotateCard 0.5s 1;
-                    -webkit-transform: rotateY(90deg);
-                    transform: rotateY(90deg);
-                }
-                .back-card {
-                    opacity: 1;
-                    -webkit-animation: aniRotateCard2 0.5s 0.5s 1 backwards;
-                    animation: aniRotateCard2 0.5s 0.5s 1 backwards;
-                    -webkit-transform: rotateY(0);
-                    transform: rotateY(0);
-                }
-            }
+          }
         }
+      }
+      &.rotate-card {
+        .front-card {
+          opacity: 1;
+          -webkit-animation: aniRotateCard 0.5s 1;
+          animation: aniRotateCard 0.5s 1;
+          -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+        }
+        .back-card {
+          opacity: 1;
+          -webkit-animation: aniRotateCard2 0.5s 0.5s 1 backwards;
+          animation: aniRotateCard2 0.5s 0.5s 1 backwards;
+          -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+        }
+      }
     }
+  }
 }
