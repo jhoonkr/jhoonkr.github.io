@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<!-- <meta name="description" content="웹퍼블리셔 허성은 포트폴리오 Web publisher Seongeun Heo Portfolio"> -->
+<!-- <meta name="keywords" content="웹퍼블리셔, 퍼블리셔, 포트폴리오, Web publisher, Web publisher Portfolio"> -->
+<!-- <meta name="author" content="허성은(Heo Seong-eun)"> -->
+<!-- <meta property="og:title" content="웹퍼블리셔 허성은 포트폴리오"> -->
+<!-- <meta property="og:description" content="웹퍼블리셔 허성은 포트폴리오 Web publisher Seongeun Heo Portfolio"> -->
+<!-- <meta property="og:type" content="website"> -->
+<!-- <meta property="og:image" content="/images/og_image.jpg"> -->
+<!-- <meta property="og:url" content="https://hseisme.github.io/index.html"> -->
+<!-- <link rel="canonical" href="https://hseisme.github.io/index.html"> -->
+<title>hi, bobo</title>
+<!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body>
+    <div class="portfolio">
+        <header class="header" role="banner">
+            <h1><a href="#"><i class="ico"></i>BOBOISME</a></h1>
+        </header>
+        <nav class="navi" role="navigation">
+            <div class="my_profile">
+                <div class="thumb" style="width: 56px;height: 58px;background-color: saddlebrown;border-radius: 10px;">
+                    <!-- 이미지 -->
+                    <!-- //이미지 -->
+                </div>
+                <div class="my_job">
+                    <span class="my_name">BOBOISME</span>
+                    <span>Markup developer</span>
+                </div>
+            </div>
+            <ul>
+                <li class="home is_active">
+                    <a href="#"><i class="ico"></i><span class="blind">Home</span></a>
+                </li>
+                <li class="profile">
+                    <a href="#"><i class="ico"></i><span class="blind">Profile</span></a>
+                </li>
+                <li class="skills">
+                    <a href="#"><i class="ico"></i><span class="blind">Skills</span></a>
+                </li>
+                <li class="works">
+                    <a href="#"><i class="ico"></i><span class="blind">Works</span></a>
+                </li>
+                <li class="career">
+                    <a href="#"><i class="ico"></i><span class="blind">Career</span></a>
+                </li>
+                <li class="lab">
+                    <a href="#"><i class="ico"></i><span class="blind">Lab</span></a>
+                </li>
+            </ul>
+            <div class="my_box"></div>
+        </nav>
+        <main class="content" role="main">
+            <section>
+                <p>내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.</p>
+                <p>abcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefg</p>
+            </section>
+        </main>
+        <!-- <aside role="complementary"></aside> -->
+        <!-- <footer role="contentinfo"></footer> -->
+    </div>
+<script>
+    let resizeFunc = () => {
+        let header = document.querySelector('.header');
+        let nav = document.querySelector('.navi');
+        let container = document.querySelector('.content');
+        let listItem = document.querySelectorAll('.navi ul li span');
+        let headerHeight = header.clientHeight;
+        let navHeight = nav.clientHeight + 40;
+        let windowWidth = window.innerWidth;
+
+        if(windowWidth < 769) {
+            listItem.forEach(element => {
+                element.classList.add('blind');
+            })
+        } else {
+            listItem.forEach(element => {
+                element.classList.remove('blind');
+            })
+        }
+    }
+    
+    window.onload = resizeFunc;
+    window.addEventListener('resize', resizeFunc);
+</script>
+</body>
+</html>

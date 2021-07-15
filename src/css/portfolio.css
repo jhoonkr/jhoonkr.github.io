@@ -1,0 +1,72 @@
+@charset "UTF-8";
+*{box-sizing:border-box;-webkit-box-sizing:border-box}
+.blind{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,table,textarea{font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:inherit;line-height:inherit}
+textarea{-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:transparent;border:0;word-break:keep-all;word-wrap:break-word}
+button,input{border-radius:0;border:0}
+button{background-color:transparent}
+fieldset,img{border:0}
+img{vertical-align:top}
+ol,ul{list-style:none}
+address,em{font-style:normal}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline}
+iframe{overflow:hidden;margin:0;border:0;padding:0;vertical-align:top}
+mark{background-color:transparent}
+i{font-style:normal}
+html{height:100%}
+body{min-width:320px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:62.5%;line-height:1.5}
+.portfolio{height:100%;font-family:"Noto Sans KR",sans-serif}
+.my_profile{display:none;margin:20px 0 35px 20px}
+.my_profile .thumb{margin:0 0 8px}
+.my_profile .my_job span{display:block;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.my_profile .my_job span+span{font-size:1.2em;color:#bbb}
+.my_profile .my_job .my_name{font-size:1.3em;font-weight:700;color:#668aff}
+.my_box{display:none;width:auto;height:276px;margin:25px 20px 0 20px;background-color:green;border-radius:10px}
+.header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;left:0;right:0;width:auto;height:40px;margin:0 20px}
+.header h1{font-family:"Black Han Sans",sans-serif;font-size:1.6em;color:#668aff}
+.header h1 a{display:block;text-decoration:none}
+.header h1 .ico{display:inline-block;width:23px;height:23px;margin-right:5px;background-image:url(../img/sp_ico.png);background-repeat:no-repeat;background-position:0 0;background-size:150px 150px;vertical-align:top}
+.content{height:100%;padding-top:40px;padding-bottom:85px}
+.content section{height:100%;margin:0 20px;padding:15px;background-color:#fff;border-radius:10px;word-break:break-all;word-wrap:break-word}
+.navi{position:absolute;bottom:20px;left:0;width:100%;min-width:320px}
+.navi ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:45px;margin:0 20px;background-color:#fff;border-radius:10px;-webkit-box-shadow:0 7px 10px rgba(0,0,0,.1);box-shadow:0 7px 10px rgba(0,0,0,.1)}
+.navi ul li a{display:block;padding:7px}
+.navi ul li a .ico{position:relative;display:inline-block;width:20px;height:20px;vertical-align:top}
+.navi ul li a .ico:before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-image:url(../img/sp_ico.png);background-repeat:no-repeat;background-size:150px 150px}
+.navi ul li a span{display:inline-block;vertical-align:top}
+.navi ul li a:hover span{color:#9aaaff}
+.navi ul li.home a .ico:before{width:20px;height:20px;background-position:0 -27px}
+.navi ul li.home a:hover .ico:before{background-position:0 -52px}
+.navi ul li.profile a .ico:before{width:17.5px;height:20px;background-position:-25px -27px}
+.navi ul li.profile a:hover .ico:before{background-position:-25px -52px}
+.navi ul li.skills a .ico:before{width:20px;height:20px;background-position:-47.5px -27px}
+.navi ul li.skills a:hover .ico:before{background-position:-47.5px -52px}
+.navi ul li.works a .ico:before{width:13px;height:20px;background-position:-72.5px -27px}
+.navi ul li.works a:hover .ico:before{background-position:-72.5px -52px}
+.navi ul li.career a .ico:before{width:20px;height:15px;background-position:-90.5px -27px}
+.navi ul li.career a:hover .ico:before{background-position:-90.5px -52px}
+.navi ul li.lab a .ico:before{width:18.5px;height:20px;background-position:-115.5px -27px}
+.navi ul li.lab a:hover .ico:before{background-position:-115.5px -52px}
+.navi ul li.is_active.home .ico:before{background-position:0 -52px}
+.navi ul li.is_active.profile .ico:before{background-position:-25px -52px}
+.navi ul li.is_active.skills .ico:before{background-position:-47.5px -52px}
+.navi ul li.is_active.works .ico:before{background-position:-72.5px -52px}
+.navi ul li.is_active.career .ico:before{background-position:-90.5px -52px}
+.navi ul li.is_active.lab .ico:before{background-position:-115.5px -52px}
+.navi ul li.is_active span{color:#9aaaff}
+@media screen and (min-width:769px){
+body{background-color:#fff}
+.portfolio{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
+.portfolio .header{display:none}
+.portfolio .navi{position:inherit;max-width:200px;min-width:auto}
+.portfolio .navi ul{display:block;height:auto;-webkit-box-shadow:none;box-shadow:none}
+.portfolio .navi ul li{line-height:1.8em}
+.portfolio .navi ul li a{padding:10px 0;font-size:1.8em;font-weight:700;color:#d6d6d6}
+.portfolio .navi ul li a .ico{margin-right:18px}
+.portfolio .content{-webkit-box-flex:1;-ms-flex:1;flex:1;padding-top:0;padding-bottom:0}
+.portfolio .my_box,.portfolio .my_profile{display:block}
+}
+/*# sourceMappingURL=maps/portfolio.css.map */
