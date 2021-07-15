@@ -30,7 +30,7 @@ body{min-width:320px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .header h1 a{display:block;text-decoration:none}
 .header h1 .ico{display:inline-block;width:23px;height:23px;margin-right:5px;background-image:url(../img/sp_ico.png);background-repeat:no-repeat;background-position:0 0;background-size:150px 150px;vertical-align:top}
 .content{height:100%;padding-top:40px;padding-bottom:85px}
-.content section{height:100%;margin:0 20px;padding:15px;background-color:#fff;border-radius:10px;word-break:break-all;word-wrap:break-word}
+.content section{height:100%;margin:0 20px;padding:20px;background-color:#fff;border-radius:10px;word-break:break-all;word-wrap:break-word}
 .navi{position:absolute;bottom:20px;left:0;width:100%;min-width:320px}
 .navi ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:45px;margin:0 20px;background-color:#fff;border-radius:10px;-webkit-box-shadow:0 7px 10px rgba(0,0,0,.1);box-shadow:0 7px 10px rgba(0,0,0,.1)}
 .navi ul li a{display:block;padding:7px}
@@ -57,6 +57,17 @@ body{min-width:320px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .navi ul li.is_active.career .ico:before{background-position:-90.5px -52px}
 .navi ul li.is_active.lab .ico:before{background-position:-115.5px -52px}
 .navi ul li.is_active span{color:#9aaaff}
+.aside{display:none;max-width:260px;margin:20px}
+.aside .my_info .thumb{width:180px;height:200px;background-color:#d2d9ff;border-radius:10px}
+.aside .my_info .personal_info{margin:10px 0 0 0}
+.aside .my_info .personal_info span{display:block}
+.aside .my_info .personal_info span+span{overflow:hidden;margin-top:7px;font-size:1.4em;color:#bbb;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.aside .my_info .personal_info .my_name{font-size:2.1em;font-weight:700;color:#668aff}
+.aside .my_info .detail_info{margin:22px 0 0 0;line-height:22px}
+.aside .my_info .detail_info dd,.aside .my_info .detail_info dt{font-size:1.2em;color:#5d5d5d}
+.aside .my_info .detail_info dt{clear:both;position:relative;float:left;min-width:65px;padding-left:10px}
+.aside .my_info .detail_info dt:before{content:"";position:absolute;top:9px;left:0;width:5px;height:5px;background-color:#d2d9ff;border-radius:100%}
+.aside .my_info .detail_info dd{overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
 @media screen and (min-width:769px){
 body{background-color:#fff}
 .portfolio{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
@@ -67,6 +78,6 @@ body{background-color:#fff}
 .portfolio .navi ul li a{padding:10px 0;font-size:1.8em;font-weight:700;color:#d6d6d6}
 .portfolio .navi ul li a .ico{margin-right:18px}
 .portfolio .content{-webkit-box-flex:1;-ms-flex:1;flex:1;padding-top:0;padding-bottom:0}
-.portfolio .my_box,.portfolio .my_profile{display:block}
+.portfolio .aside,.portfolio .my_box,.portfolio .my_profile{display:block}
 }
 /*# sourceMappingURL=maps/portfolio.css.map */
