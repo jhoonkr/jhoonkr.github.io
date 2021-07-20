@@ -24,7 +24,7 @@ body{min-width:320px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .my_profile .my_job span{display:block;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
 .my_profile .my_job span+span{font-size:1.2em;color:#bbb}
 .my_profile .my_job .my_name{font-size:1.3em;font-weight:700;color:#668aff}
-.my_box{display:none;width:auto;height:276px;margin:25px 20px 0 20px;background-color:green;border-radius:10px}
+.my_box{display:none;width:auto;height:276px;margin:25px 20px 0 20px;background-color:#d2d9ff;border-radius:10px}
 .header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;left:0;right:0;width:auto;height:40px;margin:0 20px}
 .header h1{font-family:"Black Han Sans",sans-serif;font-size:1.6em;color:#668aff}
 .header h1 a{display:block;text-decoration:none}
@@ -57,7 +57,7 @@ body{min-width:320px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .navi ul li.is_active.career .ico:before{background-position:-90.5px -52px}
 .navi ul li.is_active.lab .ico:before{background-position:-115.5px -52px}
 .navi ul li.is_active span{color:#9aaaff}
-.aside{display:none;max-width:260px;margin:20px}
+.aside{display:none;position:relative;max-width:260px;margin:20px}
 .aside .my_info .thumb{width:180px;height:200px;background-color:#d2d9ff;border-radius:10px}
 .aside .my_info .personal_info{margin:10px 0 0 0}
 .aside .my_info .personal_info span{display:block}
@@ -68,9 +68,12 @@ body{min-width:320px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .aside .my_info .detail_info dt{clear:both;position:relative;float:left;min-width:65px;padding-left:10px}
 .aside .my_info .detail_info dt:before{content:"";position:absolute;top:9px;left:0;width:5px;height:5px;background-color:#d2d9ff;border-radius:100%}
 .aside .my_info .detail_info dd{overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.aside .button_close{position:absolute;top:0;right:0;width:21px;height:21px;background-color:red;border-radius:10px;cursor:pointer}
+.footer{display:none;position:fixed;bottom:0;left:0;width:100%;padding:4px 30px;background-color:#d0d7ff}
+.footer address,.footer p{font-size:1.4em;color:#fff}
 @media screen and (min-width:769px){
 body{background-color:#fff}
-.portfolio{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
+.portfolio{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding-bottom:50px}
 .portfolio .header{display:none}
 .portfolio .navi{position:inherit;max-width:200px;min-width:auto}
 .portfolio .navi ul{display:block;height:auto;-webkit-box-shadow:none;box-shadow:none}
@@ -78,6 +81,8 @@ body{background-color:#fff}
 .portfolio .navi ul li a{padding:10px 0;font-size:1.8em;font-weight:700;color:#d6d6d6}
 .portfolio .navi ul li a .ico{margin-right:18px}
 .portfolio .content{-webkit-box-flex:1;-ms-flex:1;flex:1;padding-top:0;padding-bottom:0}
+.portfolio .content section .content_box{height:100%;padding:20px;background-color:#f2f4ff;border-radius:10px}
 .portfolio .aside,.portfolio .my_box,.portfolio .my_profile{display:block}
+.footer{display:block}
 }
 /*# sourceMappingURL=maps/portfolio.css.map */

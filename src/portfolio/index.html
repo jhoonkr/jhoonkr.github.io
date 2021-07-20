@@ -31,7 +31,7 @@
         </header>
         <nav class="navi" role="navigation">
             <div class="my_profile">
-                <div class="thumb" style="width: 56px;height: 58px;background-color: saddlebrown;border-radius: 10px;">
+                <div class="thumb" style="width: 56px;height: 58px;background-color: #d2d9ff;border-radius: 10px;">
                     <!-- 이미지 -->
                     <!-- //이미지 -->
                 </div>
@@ -64,8 +64,10 @@
         </nav>
         <main class="content" role="main">
             <section>
-                <p>내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.</p>
-                <p>abcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefg</p>
+                <div class="content_box">
+                    <p>내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.내용을 넣어주세요.</p>
+                    <p>abcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefg</p>
+                </div>
             </section>
         </main>
         <aside role="complementary" class="aside">
@@ -93,9 +95,13 @@
                     <dd>abcdefgabcdefgabcdef</dd>
                 </dl>
             </div>
+            <button type="button" class="button_close"><span class="blind">접기</span></button>
         </aside>
-        <!-- <footer role="contentinfo"></footer> -->
     </div>
+    <footer role="contentinfo" class="footer">
+        <p>Copyright & Bobo</p>
+        <address>Address</address>
+    </footer>
 <script>
     let resizeFunc = () => {
         let header = document.querySelector('.header');

@@ -36,7 +36,7 @@
   width: auto;
   height: 276px;
   margin: 25px 20px 0 20px;
-  background-color: green;
+  background-color: #d2d9ff;
   border-radius: 10px;
 }
 
@@ -298,6 +298,7 @@
 // Aside
 .aside {
   display: none;
+  position: relative;
   max-width: 260px;
   margin: 20px;
   .my_info {
@@ -359,6 +360,33 @@
       }
     }
   }
+  .button_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21px;
+    height: 21px;
+    // TODO : 삭제 필요함.
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+// footer
+.footer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px 30px;
+  background-color: #d0d7ff;
+  p,
+  address {
+    font-size: 1.4em;
+    color: #fff;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -368,6 +396,7 @@
   .portfolio {
     display: flex;
     flex-direction: row;
+    padding-bottom: 50px;
     .header {
       display: none;
     }
@@ -397,11 +426,22 @@
       flex: 1;
       padding-top: 0;
       padding-bottom: 0;
+      section {
+        .content_box {
+          height: 100%;
+          padding: 20px;
+          background-color: #f2f4ff;
+          border-radius: 10px;
+        }
+      }
     }
     .my_profile,
     .my_box,
     .aside {
       display: block;
     }
+  }
+  .footer {
+    display: block;
   }
 }
