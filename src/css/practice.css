@@ -26,10 +26,10 @@ i{font-style:normal}
 .card-area .card-content .card-info .back-card .card-detail .info-data{display:table;table-layout:fixed;width:100%;height:100%}
 .card-area .card-content .card-info .back-card .card-detail .info-data p{line-height:26px;word-break:keep-all;word-wrap:break-word;white-space:normal;display:-webkit-box;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:6}
 .card-area .card-content .card-info .back-card .card-detail .info-data dl{display:table-cell;vertical-align:middle}
-.card-area .card-content .card-info .back-card .card-detail .info-data dl dt{overflow:hidden;margin-top:10px;font-size:22px;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.card-area .card-content .card-info .back-card .card-detail .info-data dl dt{margin-top:10px;font-size:22px}
 .card-area .card-content .card-info .back-card .card-detail .info-data dl dt:first-child{margin-top:0}
-.card-area .card-content .card-info .back-card .card-detail .info-data dl dd{overflow:hidden;margin-top:5px;font-size:18px;color:#5e5e5e;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
-.card-area .card-content .card-info .back-card .card-detail .info-data dl dd ul li{overflow:hidden;position:relative;padding-left:15px;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.card-area .card-content .card-info .back-card .card-detail .info-data dl dd{margin-top:5px;font-size:18px;color:#5e5e5e}
+.card-area .card-content .card-info .back-card .card-detail .info-data dl dd ul li{position:relative;padding-left:15px}
 .card-area .card-content .card-info .back-card .card-detail .info-data dl dd ul li:before{content:"-";position:absolute;top:0;left:0}
 .card-area .card-content .card-info.rotate-card .front-card{opacity:1;-webkit-animation:aniRotateCard .5s 1;animation:aniRotateCard .5s 1;-webkit-transform:rotateY(90deg);transform:rotateY(90deg)}
 .card-area .card-content .card-info.rotate-card .back-card{opacity:1;-webkit-animation:aniRotateCard2 .5s .5s 1 backwards;animation:aniRotateCard2 .5s .5s 1 backwards;-webkit-transform:rotateY(0);transform:rotateY(0)}
@@ -61,7 +61,7 @@ i{font-style:normal}
 0%{-webkit-transform:rotateY(90deg);transform:rotateY(90deg)}
 100%{-webkit-transform:rotateY(0);transform:rotateY(0)}
 }
-.list_tab ul{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;height:40px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.list_tab ul{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;height:30px;-webkit-box-sizing:border-box;box-sizing:border-box}
 .list_tab ul li{-webkit-box-flex:1;-ms-flex:1;flex:1;line-height:40px;text-align:center;background-color:pink}
 .list_tab ul li a{display:block;height:100%;text-decoration:none}
 .list_tab ul li .sub_tab{display:none}

@@ -61,29 +61,20 @@
               display: table-cell;
               vertical-align: middle;
               dt {
-                overflow: hidden;
                 margin-top: 10px;
                 font-size: 22px;
-                white-space: nowrap;
-                text-overflow: ellipsis;
                 &:first-child {
                   margin-top: 0;
                 }
               }
               dd {
-                overflow: hidden;
                 margin-top: 5px;
                 font-size: 18px;
                 color: #5e5e5e;
-                white-space: nowrap;
-                text-overflow: ellipsis;
                 ul {
                   li {
-                    overflow: hidden;
                     position: relative;
                     padding-left: 15px;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
                     &:before {
                       content: "-";
                       position: absolute;
