@@ -81,19 +81,18 @@
   section {
     height: 100%;
     margin: 0 20px;
-    padding: 20px;
+    padding: 20px 10px 20px 20px;
     background-color: #fff;
     border-radius: 10px;
     word-break: break-all;
     word-wrap: break-word;
     .content_box {
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
-      padding: 20px;
-      background-color: #f2f4ff;
-      border-radius: 10px;
+      padding: 0;
       .career_year {
         display: none;
         overflow-y: auto;
@@ -172,8 +171,6 @@
       }
       .career_description {
         overflow-y: auto;
-        min-height: 600px;
-        padding: 15px;
         background-color: #fff;
         border-radius: 10px;
         &::-webkit-scrollbar {
@@ -198,15 +195,18 @@
             color: #668aff;
           }
           dl {
+            overflow: hidden;
             dt,
             dd {
               overflow: hidden;
               font-size: 13px;
-              color: #668aff
+              color: #668aff;
+              word-break: break-word;
             }
             dt {
-              float: left;
               position: relative;
+              float: left;
+              min-width: 75px;
               padding-left: 10px;
               padding-right: 5px;
               &:before {
@@ -215,11 +215,20 @@
                 top: 0;
                 left: 0;
               }
+              &:after {
+                content: ':';
+                position: absolute;
+                top: 0;
+                right: 5px;
+              }
               &.depth {
                 float: none;
                 padding-right: 0;
                 & + dd {
                   padding-left: 10px;
+                }
+                &:after {
+                  content: none;
                 }
               }
             }
@@ -569,8 +578,17 @@
       padding-bottom: 0;
       section {
         margin: 0;
+        .content_box {
+          padding: 20px;
+          background-color: #f2f4ff;
+          border-radius: 10px;
+        }
         .career_year {
           display: block;
+        }
+        .career_description {
+          min-height: 600px;
+          padding: 15px;
         }
       }
     }
