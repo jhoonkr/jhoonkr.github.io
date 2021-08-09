@@ -30,16 +30,6 @@
   }
 }
 
-// Navi myBox
-.my_box {
-  display: none;
-  width: auto;
-  height: 276px;
-  margin: 25px 20px 0 20px;
-  background-color: #d2d9ff;
-  border-radius: 10px;
-}
-
 // Header
 .header {
   display: flex;
@@ -244,6 +234,11 @@
           }
         }
       }
+    }
+    .profile_box {
+      display: none;
+      max-width: 630px;
+      height: 350px;
     }
   }
 }
@@ -462,10 +457,9 @@
   margin: 20px;
   .my_info {
     .thumb {
+      overflow: hidden;
       width: 180px;
       height: 200px;
-      //TODO: 임시 BG 적용으로 이후 사진으로 대체.
-      background-color: #d2d9ff;
       border-radius: 10px;
     }
     .personal_info {
@@ -525,9 +519,8 @@
     right: 0;
     width: 21px;
     height: 21px;
-    // TODO : 삭제 필요함.
-    background-color: red;
-    border-radius: 10px;
+    background: url(../img/ico_close.svg) 0 0 no-repeat;
+    background-size: 21px 21px;
     cursor: pointer;
   }
 }
@@ -602,7 +595,6 @@
       }
     }
     .my_profile,
-    .my_box,
     .aside {
       display: block;
     }

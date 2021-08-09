@@ -43,30 +43,29 @@
                 </div>
                 <ul>
                     <li class="home is_active">
-                        <a href="#"><i class="ico"></i><span class="blind">Home</span></a>
+                        <a href="#" onclick="listSelect('0')"><i class="ico"></i><span class="blind">Home</span></a>
                     </li>
                     <li class="profile">
-                        <a href="#"><i class="ico"></i><span class="blind">Profile</span></a>
+                        <a href="#" onclick="listSelect('1')"><i class="ico"></i><span class="blind">Profile</span></a>
                     </li>
-                    <li class="skills">
+                    <li class="skills" onclick="listSelect('2')">
                         <a href="#"><i class="ico"></i><span class="blind">Skills</span></a>
                     </li>
-                    <li class="works">
+                    <!-- <li class="works">
                         <a href="#"><i class="ico"></i><span class="blind">Works</span></a>
-                    </li>
-                    <li class="career">
+                    </li> -->
+                    <li class="career" onclick="listSelect('3')">
                         <a href="#"><i class="ico"></i><span class="blind">Career</span></a>
                     </li>
                     <li class="lab">
-                        <a href="#"><i class="ico"></i><span class="blind">Lab</span></a>
+                        <a href="#"><i class="ico"></i><span class="blind">Lab (준비중)</span></a>
                     </li>
                 </ul>
-                <div class="my_box"></div>
             </nav>
             <main class="content">
                 <section class="content_area">
                     <div class="content_box">
-                        <div class="career_year">
+                        <div id="divList1" class="career_year">
                             <ul>
                                 <li>
                                     <span class="year">2021</span>
@@ -74,7 +73,10 @@
                                         <strong>더존비즈온</strong>
                                         <ul>
                                             <li>
-                                                <p>Wehago 랜딩 페이지 제작</p>
+                                                <p>Wehago 랜딩 페이지</p>
+                                            </li>
+                                            <li>
+                                                <p>Wehago 선물하기 모바일</p>
                                             </li>
                                             <li>
                                                 <p>Wehago IOnYou(가칭) 퍼블리싱 참여</p>
@@ -128,6 +130,20 @@
                                     </div>
                                 </li>
                                 <li>
+                                    <span class="year">2017</span>
+                                    <div>
+                                        <strong>인컴즈</strong>
+                                        <ul>
+                                            <li>
+                                                <p>네이버 LINE Pay</p>
+                                            </li>
+                                            <li>
+                                                <p>네이버 NOSP</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
                                     <span class="year">2016</span>
                                     <div>
                                         <strong>인컴즈</strong>
@@ -160,7 +176,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="career_description">
+                        <div id="divList2" class="career_description">
                             <h2>경력기술서</h2>
                             <div class="career_content">
                                 <h3>1. NAVER 고객센터</h3>
@@ -185,7 +201,7 @@
                                                 <p>모바일 페이지 사용성을 고려한 UI 스타일 속성 구현 (버튼 클릭 영역 등)</p>
                                             </li>
                                             <li>
-                                                <p><a href="https://m.help.naver.com/">https://m.help.naver.com/</a></p>
+                                                <p><a href="https://m.help.naver.com/" target="_blank">https://m.help.naver.com/</a></p>
                                             </li>
                                         </ul>
                                     </dd>
@@ -350,7 +366,7 @@
                                                 <p>iText7 툴을 이용한 명세서 PDF 변환 작업</p>
                                             </li>
                                             <li>
-                                                <p><a href="https://pay.line.me/portal/global/main">https://pay.line.me/portal/global/main</a></p>
+                                                <p><a href="https://pay.line.me/portal/global/main" target="_blank">https://pay.line.me/portal/global/main</a></p>
                                             </li>
                                         </ul>
                                     </dd>
@@ -379,7 +395,7 @@
                                                 <p>Bootstrap 기반 Grid 시스템 이용하여 제작</p>
                                             </li>
                                             <li>
-                                                <p><a href="https://prismlive.com/ko_kr/pcapp/">https://prismlive.com/ko_kr/pcapp/</a></p>
+                                                <p><a href="https://prismlive.com/ko_kr/pcapp/" target="_blank">https://prismlive.com/ko_kr/pcapp/</a></p>
                                             </li>
                                         </ul>
                                     </dd>
@@ -481,6 +497,10 @@
                                 </dl>
                             </div>
                         </div>
+                        <div id="divList3" class="profile_box">
+                            <img src="../img/thumb_profile.jpg" style="width: 100%;height: 100%" alt="프로필 이미지">
+                            <p style="font-size: 20px;">뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 </p>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -488,6 +508,7 @@
                 <div class="my_info">
                     <div class="thumb">
                         <!-- 이미지 -->
+                        <img src="../img/thumb_profile.jpg" style="width: 100%;height: 100%" alt="프로필 이미지">
                         <!-- //이미지 -->
                     </div>
                     <div class="personal_info">
@@ -500,11 +521,11 @@
                         <dt>생년월일</dt>
                         <dd>1990-01-03</dd>
                         <dt>취미/특기</dt>
-                        <dd>게임, 코딩</dd>
+                        <dd>게임, 여행, 코딩</dd>
                         <dt>성향</dt>
                         <dd>외향적</dd>
                         <dt>특이사항</dt>
-                        <dd>코딩을 잘합니다.</dd>
+                        <dd>코딩을 잘하고 싶어 합니다.</dd>
                     </dl>
                 </div>
                 <button type="button" class="button_close"><span class="blind">접기</span></button>
@@ -521,15 +542,18 @@
         let nav = document.querySelector('.navi');
         let container = document.querySelector('.content');
         let listItem = document.querySelectorAll('.navi ul li span');
+        let divList1 = document.getElementById('divList1');
         let headerHeight = header.clientHeight;
         let navHeight = nav.clientHeight + 40;
         let windowWidth = window.innerWidth;
 
         if(windowWidth < 769) {
+            divList1.style.display = "none";
             listItem.forEach(element => {
                 element.classList.add('blind');
             })
         } else {
+            divList1.style.display = "block";
             listItem.forEach(element => {
                 element.classList.remove('blind');
             })
@@ -538,6 +562,50 @@
     
     window.onload = resizeFunc;
     window.addEventListener('resize', resizeFunc);
+
+    // list
+
+    const tabList = document.querySelectorAll('.navi ul li');
+    
+    for(var i = 0; i < tabList.length; i++){
+        tabList[i].querySelector('a').addEventListener('click', function(e){
+        e.preventDefault();
+        for(var j = 0; j < tabList.length; j++){
+            tabList[j].classList.remove('is_active');
+        }
+        this.parentNode.classList.add('is_active');
+        });
+    }
+
+    function listSelect(selectList){
+        let divList1 = document.getElementById('divList1');
+        let divList2 = document.getElementById('divList2');
+        let divList3 = document.getElementById('divList3');
+        let divList4 = document.getElementById('divList4');
+        let widthCheck = window.innerWidth;
+
+        if(selectList == "0") {
+            divList1.style.display = "block"
+            divList2.style.display = "block";
+            divList3.style.display = "none";
+            if(widthCheck < 769) {
+                divList1.style.display = "none";
+            }
+        } else if(selectList == "1") {
+            divList1.style.display = "none";
+            divList2.style.display = "none";
+            divList3.style.display = "block";
+        } else if(selectList == "2") {
+            divList1.style.display = "none";
+            divList2.style.display = "none";
+            divList3.style.display = "none";
+        } else if(selectList == "3") {
+            divList1.style.display = "none";
+            divList2.style.display = "block";
+            divList3.style.display = "none";
+        }
+    }
+
 </script>
 </body>
 </html>

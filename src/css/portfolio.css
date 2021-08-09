@@ -25,7 +25,6 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .my_profile .my_job span{display:block;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
 .my_profile .my_job span+span{font-size:1.2em;color:#bbb}
 .my_profile .my_job .my_name{font-size:1.3em;font-weight:700;color:#668aff}
-.my_box{display:none;width:auto;height:276px;margin:25px 20px 0 20px;background-color:#d2d9ff;border-radius:10px}
 .header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;left:0;right:0;width:auto;height:40px;margin:0 20px}
 .header h1{font-family:"Black Han Sans",sans-serif;font-size:1.6em;color:#668aff}
 .header h1 a{display:block;text-decoration:none}
@@ -64,6 +63,7 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .content section .content_box .career_description .career_content dl dt.depth+dd{padding-left:10px}
 .content section .content_box .career_description .career_content dl dt.depth+dd ul li p{word-break:keep-all;word-wrap:break-word}
 .content section .content_box .career_description .career_content dl dt.depth:after{content:none}
+.content section .profile_box{display:none;max-width:630px;height:350px}
 .navi{position:absolute;bottom:20px;left:0;width:100%;min-width:375px}
 .navi ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:45px;margin:0 20px;background-color:#fff;border-radius:10px;-webkit-box-shadow:0 7px 10px rgba(0,0,0,.1);box-shadow:0 7px 10px rgba(0,0,0,.1)}
 .navi ul li a{display:block;padding:7px}
@@ -91,7 +91,7 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .navi ul li.is_active.lab .ico:before{background-position:-115.5px -52px}
 .navi ul li.is_active span{color:#9aaaff}
 .aside{display:none;position:relative;width:215px;margin:20px}
-.aside .my_info .thumb{width:180px;height:200px;background-color:#d2d9ff;border-radius:10px}
+.aside .my_info .thumb{overflow:hidden;width:180px;height:200px;border-radius:10px}
 .aside .my_info .personal_info{margin:10px 0 0 0}
 .aside .my_info .personal_info span{display:block}
 .aside .my_info .personal_info span+span{overflow:hidden;margin-top:7px;font-size:1.4em;color:#bbb;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
@@ -101,7 +101,7 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .aside .my_info .detail_info dt{clear:both;position:relative;float:left;min-width:65px;padding-left:10px}
 .aside .my_info .detail_info dt:before{content:"";position:absolute;top:9px;left:0;width:5px;height:5px;background-color:#d2d9ff;border-radius:100%}
 .aside .my_info .detail_info dd{overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
-.aside .button_close{position:absolute;top:0;right:0;width:21px;height:21px;background-color:red;border-radius:10px;cursor:pointer}
+.aside .button_close{position:absolute;top:0;right:0;width:21px;height:21px;background:url(../img/ico_close.svg) 0 0 no-repeat;background-size:21px 21px;cursor:pointer}
 .footer{display:none;position:fixed;bottom:0;left:0;width:100%;padding:4px 30px;background-color:#d0d7ff}
 .footer address,.footer p{font-size:1.4em;color:#fff}
 @media screen and (min-width:769px){
@@ -118,7 +118,7 @@ body{background-color:#fff}
 .portfolio .content section .content_box{padding:20px;background-color:#f2f4ff;border-radius:10px}
 .portfolio .content section .career_year{display:block;min-height:275px}
 .portfolio .content section .career_description{padding:15px}
-.portfolio .aside,.portfolio .my_box,.portfolio .my_profile{display:block}
+.portfolio .aside,.portfolio .my_profile{display:block}
 .footer{display:block}
 }
 @media screen and (max-width:1280px){
