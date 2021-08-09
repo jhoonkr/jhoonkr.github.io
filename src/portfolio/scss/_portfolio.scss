@@ -96,12 +96,23 @@
       border-radius: 10px;
       .career_year {
         display: none;
+        overflow-y: auto;
+        max-height: 488px;
+        &::-webkit-scrollbar {
+          width: 7px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #9aaaff;
+        }
+        &::-webkit-scrollbar-track {
+          background-color:#f2f4ff;
+        }
         ul {
           position: relative;
           li {
             position: relative;
             padding-left: 100px;
-            margin-top: 15px;
+            padding-bottom: 15px;
             strong {
               font-size: 16px;
               color: #668aff;  
@@ -111,9 +122,6 @@
               font-weight: bold;
               color: #c7c7c7;
             }
-            &:first-child {
-              margin-top: 0;
-            }
             .year {
               position: absolute;
               top: 0;
@@ -122,10 +130,19 @@
               font-weight: bold;
               color: #668aff;
             }
+            &:before {
+              content: '';
+              position: absolute;
+              top: 5px;
+              left: 68px;
+              width: 3px;
+              height: 100%;
+              background-color: #bcc6ff;
+            }
             &:after {
               content: '';
               position: absolute;
-              top: 4px;
+              top: 5px;
               left: 60px;
               width: 19px;
               height: 19px;
@@ -133,15 +150,22 @@
               background-color:#bcc6ff;
               z-index: 1;
             }
-          }
-          &:before {
-            content: '';
-            position: absolute;
-            top: 4px;
-            left: 68px;
-            width: 3px;
-            height: 100%;
-            background-color: #bcc6ff;
+            &:last-child {
+              padding-bottom: 0;
+              &:before {
+                content: none;
+              }
+            }
+            ul {
+              li {
+                padding-left: 0;
+                padding-bottom: 0;
+                &:before,
+                &:after {
+                  content: none;
+                }
+              }
+            }
           }
         }
       }
