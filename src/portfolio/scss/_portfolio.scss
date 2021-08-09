@@ -171,6 +171,7 @@
       }
       .career_description {
         overflow-y: auto;
+        padding-right: 10px;
         background-color: #fff;
         border-radius: 10px;
         &::-webkit-scrollbar {
@@ -212,7 +213,7 @@
               &:before {
                 content: '-';
                 position: absolute;
-                top: 0;
+                top: -1px;
                 left: 0;
               }
               &:after {
@@ -226,6 +227,14 @@
                 padding-right: 0;
                 & + dd {
                   padding-left: 10px;
+                  ul {
+                    li {
+                      p {
+                        word-break: keep-all;
+                        word-wrap: break-word;
+                      }
+                    }
+                  }
                 }
                 &:after {
                   content: none;
@@ -585,9 +594,9 @@
         }
         .career_year {
           display: block;
+          min-height: 280px;
         }
         .career_description {
-          min-height: 600px;
           padding: 15px;
         }
       }

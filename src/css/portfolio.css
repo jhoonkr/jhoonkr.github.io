@@ -47,7 +47,7 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .content section .content_box .career_year ul li:last-child:before{content:none}
 .content section .content_box .career_year ul li ul li{padding-left:0;padding-bottom:0}
 .content section .content_box .career_year ul li ul li:after,.content section .content_box .career_year ul li ul li:before{content:none}
-.content section .content_box .career_description{overflow-y:auto;background-color:#fff;border-radius:10px}
+.content section .content_box .career_description{overflow-y:auto;padding-right:10px;background-color:#fff;border-radius:10px}
 .content section .content_box .career_description::-webkit-scrollbar{width:7px}
 .content section .content_box .career_description::-webkit-scrollbar-thumb{background-color:#9aaaff;border-radius:10px}
 .content section .content_box .career_description::-webkit-scrollbar-track{background-color:#f2f4ff}
@@ -57,10 +57,11 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .content section .content_box .career_description .career_content dl{overflow:hidden}
 .content section .content_box .career_description .career_content dl dd,.content section .content_box .career_description .career_content dl dt{overflow:hidden;font-size:13px;color:#668aff;word-break:break-word}
 .content section .content_box .career_description .career_content dl dt{position:relative;float:left;min-width:75px;padding-left:10px;padding-right:5px}
-.content section .content_box .career_description .career_content dl dt:before{content:'-';position:absolute;top:0;left:0}
+.content section .content_box .career_description .career_content dl dt:before{content:'-';position:absolute;top:-1px;left:0}
 .content section .content_box .career_description .career_content dl dt:after{content:':';position:absolute;top:0;right:5px}
 .content section .content_box .career_description .career_content dl dt.depth{float:none;padding-right:0}
 .content section .content_box .career_description .career_content dl dt.depth+dd{padding-left:10px}
+.content section .content_box .career_description .career_content dl dt.depth+dd ul li p{word-break:keep-all;word-wrap:break-word}
 .content section .content_box .career_description .career_content dl dt.depth:after{content:none}
 .navi{position:absolute;bottom:20px;left:0;width:100%;min-width:375px}
 .navi ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:45px;margin:0 20px;background-color:#fff;border-radius:10px;-webkit-box-shadow:0 7px 10px rgba(0,0,0,.1);box-shadow:0 7px 10px rgba(0,0,0,.1)}
@@ -114,8 +115,8 @@ body{background-color:#fff}
 .portfolio .content{-webkit-box-flex:1;-ms-flex:1;flex:1;padding-top:0;padding-bottom:0}
 .portfolio .content section{margin:0}
 .portfolio .content section .content_box{padding:20px;background-color:#f2f4ff;border-radius:10px}
-.portfolio .content section .career_year{display:block}
-.portfolio .content section .career_description{min-height:600px;padding:15px}
+.portfolio .content section .career_year{display:block;min-height:280px}
+.portfolio .content section .career_description{padding:15px}
 .portfolio .aside,.portfolio .my_box,.portfolio .my_profile{display:block}
 .footer{display:block}
 }
