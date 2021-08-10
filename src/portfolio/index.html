@@ -57,9 +57,9 @@
                     <li class="career" onclick="listSelect('3')">
                         <a href="#"><i class="ico"></i><span class="blind">Career</span></a>
                     </li>
-                    <li class="lab">
+                    <!-- <li class="lab">
                         <a href="#"><i class="ico"></i><span class="blind">Lab (준비중)</span></a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
             <main class="content">
@@ -271,7 +271,7 @@
                                     <dt>기술 스택</dt>
                                     <dd>HTML5, CSS, CSS3, Gulp, Sass, Jquery</dd>
                                     <dt>업무기간</dt>
-                                    <dd>2018.03 ~ 2018.06</dd>
+                                    <dd>2018.03 ~ 2019.05</dd>
                                     <dt class="depth">상세내용</dt>
                                     <dd>
                                         <ul>
@@ -286,36 +286,7 @@
                                 </dl>
                             </div>
                             <div class="career_content">
-                                <h3>5. NAVER 알파</h3>
-                                <dl>
-                                    <dt>소속회사</dt>
-                                    <dd>인컴즈</dd>
-                                    <dt>주요 업무</dt>
-                                    <dd>네이버 알파 UI 마크업</dd>
-                                    <dt>담당 역할</dt>
-                                    <dd>마크업 100%</dd>
-                                    <dt>기술 스택</dt>
-                                    <dd>HTML5, CSS, CSS3, Gulp, Sass, Jquery</dd>
-                                    <dt>업무기간</dt>
-                                    <dd>2018.03 ~ 2018.06</dd>
-                                    <dt class="depth">상세내용</dt>
-                                    <dd>
-                                        <ul>
-                                            <li>
-                                                <p>3 Device 반응형 페이지 (PC/Tablet/Mobile)</p>
-                                            </li>
-                                            <li>
-                                                <p>GIF 이미지 용량 경량화 커뮤니케이션 진행</p>
-                                            </li>
-                                            <li>
-                                                <p>WebFont 에 관한 정확한 내용 전달</p>
-                                            </li>
-                                        </ul>
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="career_content">
-                                <h3>6. NAVER Prism Live</h3>
+                                <h3>5. NAVER Prism Live</h3>
                                 <dl>
                                     <dt>소속회사</dt>
                                     <dd>인컴즈</dd>
@@ -326,7 +297,7 @@
                                     <dt>기술 스택</dt>
                                     <dd>HTML5, CSS, CSS3</dd>
                                     <dt>업무기간</dt>
-                                    <dd>2018.07 ~ 2018.07</dd>
+                                    <dd>2018.06 ~ 2018.07</dd>
                                     <dt class="depth">상세내용</dt>
                                     <dd>
                                         <ul>
@@ -338,6 +309,35 @@
                                             </li>
                                             <li>
                                                 <p><a href="https://prismlive.com/ko_kr/pcapp/">https://prismlive.com/ko_kr/pcapp/</a></p>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="career_content">
+                                <h3>6. NAVER 알파</h3>
+                                <dl>
+                                    <dt>소속회사</dt>
+                                    <dd>인컴즈</dd>
+                                    <dt>주요 업무</dt>
+                                    <dd>네이버 알파 UI 마크업</dd>
+                                    <dt>담당 역할</dt>
+                                    <dd>마크업 100%</dd>
+                                    <dt>기술 스택</dt>
+                                    <dd>HTML5, CSS, CSS3, Gulp, Sass, Jquery</dd>
+                                    <dt>업무기간</dt>
+                                    <dd>2018.03 ~ 2018.04</dd>
+                                    <dt class="depth">상세내용</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <p>3 Device 반응형 페이지 (PC/Tablet/Mobile)</p>
+                                            </li>
+                                            <li>
+                                                <p>GIF 이미지 용량 경량화 커뮤니케이션 진행</p>
+                                            </li>
+                                            <li>
+                                                <p>WebFont 에 관한 정확한 내용 전달</p>
                                             </li>
                                         </ul>
                                     </dd>
@@ -498,8 +498,9 @@
                             </div>
                         </div>
                         <div id="divList3" class="profile_box">
-                            <img src="../img/thumb_profile.jpg" style="width: 100%;height: 100%" alt="프로필 이미지">
-                            <p style="font-size: 20px;">뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 뽕아 사랑해 </p>
+                            <div class="thumb">
+                                <img src="../img/thumb_profile.jpg" style="width: 100%;height: 100%" alt="프로필 이미지">
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -542,18 +543,15 @@
         let nav = document.querySelector('.navi');
         let container = document.querySelector('.content');
         let listItem = document.querySelectorAll('.navi ul li span');
-        let divList1 = document.getElementById('divList1');
         let headerHeight = header.clientHeight;
         let navHeight = nav.clientHeight + 40;
         let windowWidth = window.innerWidth;
 
         if(windowWidth < 769) {
-            divList1.style.display = "none";
             listItem.forEach(element => {
                 element.classList.add('blind');
             })
         } else {
-            divList1.style.display = "block";
             listItem.forEach(element => {
                 element.classList.remove('blind');
             })
@@ -588,9 +586,6 @@
             divList1.style.display = "block"
             divList2.style.display = "block";
             divList3.style.display = "none";
-            if(widthCheck < 769) {
-                divList1.style.display = "none";
-            }
         } else if(selectList == "1") {
             divList1.style.display = "none";
             divList2.style.display = "none";

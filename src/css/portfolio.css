@@ -30,9 +30,9 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .header h1 a{display:block;text-decoration:none}
 .header h1 .ico{display:inline-block;width:23px;height:23px;margin-right:5px;background-image:url(../img/sp_ico.png);background-repeat:no-repeat;background-position:0 0;background-size:150px 150px;vertical-align:top}
 .content{height:100%;padding-top:40px;padding-bottom:85px}
-.content section{height:100%;margin:0 20px;padding:20px 10px 20px 20px;background-color:#fff;border-radius:10px;word-break:break-all;word-wrap:break-word}
+.content section{height:100%;margin:0 20px;padding:20px;background-color:#fff;border-radius:10px;word-break:break-all;word-wrap:break-word}
 .content section .content_box{overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:100%;padding:0}
-.content section .content_box .career_year{display:none;overflow-y:auto;margin-bottom:10px}
+.content section .content_box .career_year{overflow-y:auto;margin-bottom:10px;min-height:150px}
 .content section .content_box .career_year::-webkit-scrollbar{width:7px}
 .content section .content_box .career_year::-webkit-scrollbar-thumb{background-color:#9aaaff;border-radius:10px}
 .content section .content_box .career_year::-webkit-scrollbar-track{background-color:#f2f4ff}
@@ -63,7 +63,8 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .content section .content_box .career_description .career_content dl dt.depth+dd{padding-left:10px}
 .content section .content_box .career_description .career_content dl dt.depth+dd ul li p{word-break:keep-all;word-wrap:break-word}
 .content section .content_box .career_description .career_content dl dt.depth:after{content:none}
-.content section .profile_box{display:none;max-width:630px;height:350px}
+.content section .profile_box{display:none}
+.content section .profile_box .thumb{overflow:hidden;max-width:630px;margin:0 auto;border-radius:10px}
 .navi{position:absolute;bottom:20px;left:0;width:100%;min-width:375px}
 .navi ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:45px;margin:0 20px;background-color:#fff;border-radius:10px;-webkit-box-shadow:0 7px 10px rgba(0,0,0,.1);box-shadow:0 7px 10px rgba(0,0,0,.1)}
 .navi ul li a{display:block;padding:7px}
@@ -101,7 +102,7 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .aside .my_info .detail_info dt{clear:both;position:relative;float:left;min-width:65px;padding-left:10px}
 .aside .my_info .detail_info dt:before{content:"";position:absolute;top:9px;left:0;width:5px;height:5px;background-color:#d2d9ff;border-radius:100%}
 .aside .my_info .detail_info dd{overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
-.aside .button_close{position:absolute;top:0;right:0;width:21px;height:21px;background:url(../img/ico_close.svg) 0 0 no-repeat;background-size:21px 21px;cursor:pointer}
+.aside .button_close{position:absolute;top:0;right:0;width:21px;height:21px;background:url(../img/close.svg) 0 0 no-repeat;background-size:cover;cursor:pointer}
 .footer{display:none;position:fixed;bottom:0;left:0;width:100%;padding:4px 30px;background-color:#d0d7ff}
 .footer address,.footer p{font-size:1.4em;color:#fff}
 @media screen and (min-width:769px){
