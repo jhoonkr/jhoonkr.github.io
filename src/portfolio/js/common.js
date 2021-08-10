@@ -46,6 +46,9 @@ function listSelect(selectList){
         divList1.style.display = "block"
         divList2.style.display = "block";
         divList3.style.display = "none";
+        if(window.matchMedia('(orientation: landscape)').matches && widthCheck < 769) {
+            divList1.style.display = "none";
+        }
     } else if(selectList == "1") {
         divList1.style.display = "none";
         divList2.style.display = "none";
