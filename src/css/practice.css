@@ -37,6 +37,7 @@ i{font-style:normal}
 .container .card-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:1280px;height:100%;margin:0 auto}
 .container .card-box .real-content{position:relative}
 .card-close{position:absolute;top:30px;right:30px;width:30px;height:30px;background:url(../img/close.svg) 0 0 no-repeat;background-size:cover;cursor:pointer}
+.newlink{position:absolute;top:20px;right:20px;padding:10px;border-radius:7px;font-size:16px;color:#fff;background-color:#1fc47c;text-decoration:none;-webkit-animation:fadeOutIn 5s forwards;animation:fadeOutIn 5s forwards}
 @-webkit-keyframes aniRotateCard{
 0%{-webkit-transform:rotateY(0);transform:rotateY(0)}
 100%{-webkit-transform:rotateY(90deg);transform:rotateY(90deg)}
@@ -60,6 +61,14 @@ i{font-style:normal}
 @keyframes aniRotateBack{
 0%{-webkit-transform:rotateY(90deg);transform:rotateY(90deg)}
 100%{-webkit-transform:rotateY(0);transform:rotateY(0)}
+}
+@-webkit-keyframes fadeOutIn{
+0%{opacity:0;top:-61px}
+100%{opacity:1;top:20px}
+}
+@keyframes fadeOutIn{
+0%{opacity:0;top:-61px}
+100%{opacity:1;top:20px}
 }
 .list_tab ul{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;height:30px;-webkit-box-sizing:border-box;box-sizing:border-box}
 .list_tab ul li{-webkit-box-flex:1;-ms-flex:1;flex:1;line-height:40px;text-align:center;background-color:pink}
