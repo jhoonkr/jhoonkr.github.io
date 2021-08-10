@@ -142,4 +142,7 @@ body{background-color:#fff}
 @media screen and (max-width:1280px){
 .portfolio .aside{display:none}
 }
+@media screen and (orientation:landscape){
+.content section .content_box .career_year{display:none}
+}
 /*# sourceMappingURL=maps/portfolio.css.map */
