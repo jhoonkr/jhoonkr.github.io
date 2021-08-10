@@ -1,0 +1,76 @@
+// Aside
+
+.aside {
+  display: none;
+  position: relative;
+  width: 215px;
+  margin: 20px;
+  .my_info {
+    .thumb {
+      overflow: hidden;
+      width: 180px;
+      height: 200px;
+      border-radius: 10px;
+    }
+    .personal_info {
+      margin: 10px 0 0 0;
+      span {
+        display: block;
+        & + span {
+          overflow: hidden;
+          margin-top: 7px;
+          font-size: 1.4em;
+          color: #bbb;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      .my_name {
+        font-size: 2.1em;
+        font-weight: bold;
+        color: #668aff;
+      }
+    }
+    .detail_info {
+      margin: 22px 0 0 0;
+      line-height: 22px;
+      dt,
+      dd {
+        font-size: 1.2em;
+        color: #5d5d5d;
+      }
+      dt {
+        clear: both;
+        position: relative;
+        float: left;
+        min-width: 65px;
+        padding-left: 10px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 9px;
+          left: 0;
+          width: 5px;
+          height: 5px;
+          background-color: #d2d9ff;
+          border-radius: 100%;
+        }
+      }
+      dd {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .button_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21px;
+    height: 21px;
+    background: url(../img/close.svg) 0 0 no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+}

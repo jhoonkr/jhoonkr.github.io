@@ -19,16 +19,57 @@ i{font-style:normal}
 html{-webkit-text-size-adjust:100%}
 #wrap,html{height:100%}
 body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:62.5%;line-height:1.5}
-.portfolio{height:100%;font-family:"Noto Sans KR",sans-serif}
-.my_profile{display:none;margin:20px 0 35px 20px}
-.my_profile .thumb{margin:0 0 8px}
-.my_profile .my_job span{display:block;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
-.my_profile .my_job span+span{font-size:1.2em;color:#bbb}
-.my_profile .my_job .my_name{font-size:1.3em;font-weight:700;color:#668aff}
 .header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;left:0;right:0;width:auto;height:40px;margin:0 20px}
 .header h1{font-family:"Black Han Sans",sans-serif;font-size:1.6em;color:#668aff}
 .header h1 a{display:block;text-decoration:none}
 .header h1 .ico{display:inline-block;width:23px;height:23px;margin-right:5px;background-image:url(../img/sp_ico.png);background-repeat:no-repeat;background-position:0 0;background-size:150px 150px;vertical-align:top}
+.navi{position:absolute;bottom:20px;left:0;width:100%;min-width:375px}
+.navi ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:45px;margin:0 20px;background-color:#fff;border-radius:10px;-webkit-box-shadow:0 7px 10px rgba(0,0,0,.1);box-shadow:0 7px 10px rgba(0,0,0,.1)}
+.navi ul li a{display:block;padding:7px}
+.navi ul li a .ico{position:relative;display:inline-block;width:20px;height:20px;vertical-align:top}
+.navi ul li a .ico:before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-image:url(../img/sp_ico.png);background-repeat:no-repeat;background-size:150px 150px}
+.navi ul li a span{display:inline-block;vertical-align:top}
+.navi ul li a:hover span{color:#9aaaff}
+.navi ul li.home a .ico:before{width:20px;height:20px;background-position:0 -27px}
+.navi ul li.home a:hover .ico:before{background-position:0 -52px}
+.navi ul li.profile a .ico:before{width:17.5px;height:20px;background-position:-25px -27px}
+.navi ul li.profile a:hover .ico:before{background-position:-25px -52px}
+.navi ul li.skills a .ico:before{width:20px;height:20px;background-position:-47.5px -27px}
+.navi ul li.skills a:hover .ico:before{background-position:-47.5px -52px}
+.navi ul li.works a .ico:before{width:13px;height:20px;background-position:-72.5px -27px}
+.navi ul li.works a:hover .ico:before{background-position:-72.5px -52px}
+.navi ul li.career a .ico:before{width:20px;height:15px;background-position:-90.5px -27px}
+.navi ul li.career a:hover .ico:before{background-position:-90.5px -52px}
+.navi ul li.lab a .ico:before{width:18.5px;height:20px;background-position:-115.5px -27px}
+.navi ul li.lab a:hover .ico:before{background-position:-115.5px -52px}
+.navi ul li.is_active.home .ico:before{background-position:0 -52px}
+.navi ul li.is_active.profile .ico:before{background-position:-25px -52px}
+.navi ul li.is_active.skills .ico:before{background-position:-47.5px -52px}
+.navi ul li.is_active.works .ico:before{background-position:-72.5px -52px}
+.navi ul li.is_active.career .ico:before{background-position:-90.5px -52px}
+.navi ul li.is_active.lab .ico:before{background-position:-115.5px -52px}
+.navi ul li.is_active span{color:#9aaaff}
+.navi .button_link{display:none;margin:10px 20px 0;padding:5px 0;border-radius:10px;background-color:#f2f4ff;font-size:16px;font-weight:700;color:#9aaaff;text-align:center;text-decoration:none}
+.aside{display:none;position:relative;width:215px;margin:20px}
+.aside .my_info .thumb{overflow:hidden;width:180px;height:200px;border-radius:10px}
+.aside .my_info .personal_info{margin:10px 0 0 0}
+.aside .my_info .personal_info span{display:block}
+.aside .my_info .personal_info span+span{overflow:hidden;margin-top:7px;font-size:1.4em;color:#bbb;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.aside .my_info .personal_info .my_name{font-size:2.1em;font-weight:700;color:#668aff}
+.aside .my_info .detail_info{margin:22px 0 0 0;line-height:22px}
+.aside .my_info .detail_info dd,.aside .my_info .detail_info dt{font-size:1.2em;color:#5d5d5d}
+.aside .my_info .detail_info dt{clear:both;position:relative;float:left;min-width:65px;padding-left:10px}
+.aside .my_info .detail_info dt:before{content:"";position:absolute;top:9px;left:0;width:5px;height:5px;background-color:#d2d9ff;border-radius:100%}
+.aside .my_info .detail_info dd{overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.aside .button_close{position:absolute;top:0;right:0;width:21px;height:21px;background:url(../img/close.svg) 0 0 no-repeat;background-size:cover;cursor:pointer}
+.footer{display:none;position:fixed;bottom:0;left:0;width:100%;padding:4px 30px;background-color:#d0d7ff}
+.footer address,.footer p{font-size:1.4em;color:#fff}
+.portfolio{height:100%;font-family:"Noto Sans KR",sans-serif}
+.my_profile{display:none;margin:20px 0 35px 20px}
+.my_profile .thumb{overflow:hidden;width:56px;height:58px;margin:0 0 8px;border-radius:10px}
+.my_profile .my_job span{display:block;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.my_profile .my_job span+span{font-size:1.2em;color:#bbb}
+.my_profile .my_job .my_name{font-size:1.3em;font-weight:700;color:#668aff}
 .content{height:100%;padding-top:40px;padding-bottom:85px}
 .content section{height:100%;margin:0 20px;padding:20px;background-color:#fff;border-radius:10px;word-break:break-all;word-wrap:break-word}
 .content section .content_box{overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:100%;padding:0}
@@ -65,46 +106,18 @@ body{min-width:375px;height:100%;background-color:#f2f4ff;-webkit-box-sizing:bor
 .content section .content_box .career_description .career_content dl dt.depth:after{content:none}
 .content section .profile_box{display:none}
 .content section .profile_box .thumb{overflow:hidden;max-width:630px;margin:0 auto;border-radius:10px}
-.navi{position:absolute;bottom:20px;left:0;width:100%;min-width:375px}
-.navi ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:45px;margin:0 20px;background-color:#fff;border-radius:10px;-webkit-box-shadow:0 7px 10px rgba(0,0,0,.1);box-shadow:0 7px 10px rgba(0,0,0,.1)}
-.navi ul li a{display:block;padding:7px}
-.navi ul li a .ico{position:relative;display:inline-block;width:20px;height:20px;vertical-align:top}
-.navi ul li a .ico:before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-image:url(../img/sp_ico.png);background-repeat:no-repeat;background-size:150px 150px}
-.navi ul li a span{display:inline-block;vertical-align:top}
-.navi ul li a:hover span{color:#9aaaff}
-.navi ul li.home a .ico:before{width:20px;height:20px;background-position:0 -27px}
-.navi ul li.home a:hover .ico:before{background-position:0 -52px}
-.navi ul li.profile a .ico:before{width:17.5px;height:20px;background-position:-25px -27px}
-.navi ul li.profile a:hover .ico:before{background-position:-25px -52px}
-.navi ul li.skills a .ico:before{width:20px;height:20px;background-position:-47.5px -27px}
-.navi ul li.skills a:hover .ico:before{background-position:-47.5px -52px}
-.navi ul li.works a .ico:before{width:13px;height:20px;background-position:-72.5px -27px}
-.navi ul li.works a:hover .ico:before{background-position:-72.5px -52px}
-.navi ul li.career a .ico:before{width:20px;height:15px;background-position:-90.5px -27px}
-.navi ul li.career a:hover .ico:before{background-position:-90.5px -52px}
-.navi ul li.lab a .ico:before{width:18.5px;height:20px;background-position:-115.5px -27px}
-.navi ul li.lab a:hover .ico:before{background-position:-115.5px -52px}
-.navi ul li.is_active.home .ico:before{background-position:0 -52px}
-.navi ul li.is_active.profile .ico:before{background-position:-25px -52px}
-.navi ul li.is_active.skills .ico:before{background-position:-47.5px -52px}
-.navi ul li.is_active.works .ico:before{background-position:-72.5px -52px}
-.navi ul li.is_active.career .ico:before{background-position:-90.5px -52px}
-.navi ul li.is_active.lab .ico:before{background-position:-115.5px -52px}
-.navi ul li.is_active span{color:#9aaaff}
-.aside{display:none;position:relative;width:215px;margin:20px}
-.aside .my_info .thumb{overflow:hidden;width:180px;height:200px;border-radius:10px}
-.aside .my_info .personal_info{margin:10px 0 0 0}
-.aside .my_info .personal_info span{display:block}
-.aside .my_info .personal_info span+span{overflow:hidden;margin-top:7px;font-size:1.4em;color:#bbb;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
-.aside .my_info .personal_info .my_name{font-size:2.1em;font-weight:700;color:#668aff}
-.aside .my_info .detail_info{margin:22px 0 0 0;line-height:22px}
-.aside .my_info .detail_info dd,.aside .my_info .detail_info dt{font-size:1.2em;color:#5d5d5d}
-.aside .my_info .detail_info dt{clear:both;position:relative;float:left;min-width:65px;padding-left:10px}
-.aside .my_info .detail_info dt:before{content:"";position:absolute;top:9px;left:0;width:5px;height:5px;background-color:#d2d9ff;border-radius:100%}
-.aside .my_info .detail_info dd{overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
-.aside .button_close{position:absolute;top:0;right:0;width:21px;height:21px;background:url(../img/close.svg) 0 0 no-repeat;background-size:cover;cursor:pointer}
-.footer{display:none;position:fixed;bottom:0;left:0;width:100%;padding:4px 30px;background-color:#d0d7ff}
-.footer address,.footer p{font-size:1.4em;color:#fff}
+.content section .profile_box .detail_profile{margin-top:20px;text-align:center}
+.content section .profile_box .detail_profile dl dt{color:#668aff}
+.content section .profile_box .detail_profile dl dd,.content section .profile_box .detail_profile dl dt{font-size:16px;word-break:keep-all;word-wrap:break-word}
+.content section .profile_box .detail_profile .row{margin-top:10px}
+.content section .profile_box .detail_profile .row:first-child{margin-top:0}
+.content section .profile_box .detail_profile .skill{display:inline-block;padding:1px 5px;border-radius:3px;font-size:12px;color:#fff}
+.content section .profile_box .detail_profile .skill.web{background-color:#3e67ff}
+.content section .profile_box .detail_profile .skill.mobile{background-color:#1fc47c}
+.content section .profile_box .detail_profile .skill.html{background-color:#bca2ff}
+.content section .profile_box .detail_profile .skill.css{background-color:#45c5d9}
+.content section .profile_box .detail_profile .skill.script{background-color:#febc2c}
+.content section .profile_box .detail_profile .skill.responsive{background-color:#fc5356}
 @media screen and (min-width:769px){
 body{background-color:#fff}
 .portfolio{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding-bottom:50px}
@@ -114,6 +127,7 @@ body{background-color:#fff}
 .portfolio .navi ul li{line-height:1.8em}
 .portfolio .navi ul li a{padding:10px 0;font-size:1.8em;font-weight:700;color:#d6d6d6}
 .portfolio .navi ul li a .ico{margin-right:18px}
+.portfolio .navi .button_link{display:block}
 .portfolio .content{-webkit-box-flex:1;-ms-flex:1;flex:1;padding-top:0;padding-bottom:0}
 .portfolio .content section{margin:0}
 .portfolio .content section .content_box{padding:20px;background-color:#f2f4ff;border-radius:10px}

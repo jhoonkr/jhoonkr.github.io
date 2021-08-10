@@ -1,0 +1,33 @@
+// Header
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 40px;
+  margin: 0 20px;
+  h1 {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 1.6em;
+    color: #668aff;
+    a {
+      display: block;
+      text-decoration: none;
+    }
+    .ico {
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      margin-right: 5px;
+      background-image: url(../img/sp_ico.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 150px 150px;
+      vertical-align: top;
+    }
+  }
+}

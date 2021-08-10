@@ -4,5 +4,12 @@
 // Mixin
 @import "./common/mixin";
 
+// Modules
+@import "./components/header";
+@import "./components/navi";
+@import "./components/aside";
+@import "./components/footer";
+
 // All
 @import "_portfolio";
+

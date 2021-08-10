@@ -9,7 +9,11 @@
   display: none;
   margin: 20px 0 35px 20px;
   .thumb {
+    overflow: hidden;
+    width: 56px;
+    height: 58px;
     margin: 0 0 8px;
+    border-radius: 10px;
   }
   .my_job {
     span {
@@ -26,39 +30,6 @@
       font-size: 1.3em;
       font-weight: bold;
       color: #668aff;
-    }
-  }
-}
-
-// Header
-.header {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: auto;
-  height: 40px;
-  margin: 0 20px;
-  h1 {
-    font-family: "Black Han Sans", sans-serif;
-    font-size: 1.6em;
-    color: #668aff;
-    a {
-      display: block;
-      text-decoration: none;
-    }
-    .ico {
-      display: inline-block;
-      width: 23px;
-      height: 23px;
-      margin-right: 5px;
-      background-image: url(../img/sp_ico.png);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: 150px 150px;
-      vertical-align: top;
     }
   }
 }
@@ -243,305 +214,53 @@
         margin: 0 auto;
         border-radius: 10px;
       }
-    }
-  }
-}
-
-// Nav
-.navi {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 100%;
-  min-width: 375px;
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 45px;
-    margin: 0 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
-    li {
-      a {
-        display: block;
-        padding: 7px;
-        .ico {
-          position: relative;
+      .detail_profile {
+        margin-top: 20px;
+        text-align: center;
+        dl {
+          dt {
+            color: #668aff;
+          }
+          dt,
+          dd {
+            font-size: 16px;
+            word-break: keep-all;
+            word-wrap: break-word;
+          }
+        }
+        .row {
+          margin-top: 10px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        .skill {
           display: inline-block;
-          width: 20px;
-          height: 20px;
-          vertical-align: top;
-          &:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-image: url(../img/sp_ico.png);
-            background-repeat: no-repeat;
-            background-size: 150px 150px;
+          padding: 1px 5px;
+          border-radius: 3px;
+          font-size: 12px;
+          color: #fff;
+          &.web {
+            background-color: #3e67ff;
           }
-        }
-        span {
-          display: inline-block;
-          vertical-align: top;
-        }
-        &:hover {
-          span {
-            color: #9aaaff;
+          &.mobile {
+            background-color: #1fc47c;
           }
-        }
-      }
-      &.home {
-        a {
-          .ico {
-            &:before {
-              width: 20px;
-              height: 20px;
-              background-position: 0 -27px;
-            }
+          &.html {
+            background-color: #bca2ff;
           }
-          &:hover {
-            .ico {
-              &:before {
-                background-position: 0 -52px;
-              }
-            }
+          &.css {
+            background-color: #45c5d9;
           }
-        }
-      }
-      &.profile {
-        a {
-          .ico {
-            &:before {
-              width: 17.5px;
-              height: 20px;
-              background-position: -25px -27px;
-            }
+          &.script {
+            background-color: #febc2c;
           }
-          &:hover {
-            .ico {
-              &:before {
-                background-position: -25px -52px;
-              }
-            }
+          &.responsive {
+            background-color: #fc5356;
           }
-        }
-      }
-      &.skills {
-        a {
-          .ico {
-            &:before {
-              width: 20px;
-              height: 20px;
-              background-position: -47.5px -27px;
-            }
-          }
-          &:hover {
-            .ico {
-              &:before {
-                background-position: -47.5px -52px;
-              }
-            }
-          }
-        }
-      }
-      &.works {
-        a {
-          .ico {
-            &:before {
-              width: 13px;
-              height: 20px;
-              background-position: -72.5px -27px;
-            }
-          }
-          &:hover {
-            .ico {
-              &:before {
-                background-position: -72.5px -52px;
-              }
-            }
-          }
-        }
-      }
-      &.career {
-        a {
-          .ico {
-            &:before {
-              width: 20px;
-              height: 15px;
-              background-position: -90.5px -27px;
-            }
-          }
-          &:hover {
-            .ico {
-              &:before {
-                background-position: -90.5px -52px;
-              }
-            }
-          }
-        }
-      }
-      &.lab {
-        a {
-          .ico {
-            &:before {
-              width: 18.5px;
-              height: 20px;
-              background-position: -115.5px -27px;
-            }
-          }
-          &:hover {
-            .ico {
-              &:before {
-                background-position: -115.5px -52px;
-              }
-            }
-          }
-        }
-      }
-      &.is_active {
-        &.home {
-          .ico {
-            &:before {
-              background-position: 0 -52px;
-            }
-          }
-        }
-        &.profile {
-          .ico {
-            &:before {
-              background-position: -25px -52px;
-            }
-          }
-        }
-        &.skills {
-          .ico {
-            &:before {
-              background-position: -47.5px -52px;
-            }
-          }
-        }
-        &.works {
-          .ico {
-            &:before {
-              background-position: -72.5px -52px;
-            }
-          }
-        }
-        &.career {
-          .ico {
-            &:before {
-              background-position: -90.5px -52px;
-            }
-          }
-        }
-        &.lab {
-          .ico {
-            &:before {
-              background-position: -115.5px -52px;
-            }
-          }
-        }
-        span {
-          color: #9aaaff;
         }
       }
     }
-  }
-}
-
-// Aside
-.aside {
-  display: none;
-  position: relative;
-  width: 215px;
-  margin: 20px;
-  .my_info {
-    .thumb {
-      overflow: hidden;
-      width: 180px;
-      height: 200px;
-      border-radius: 10px;
-    }
-    .personal_info {
-      margin: 10px 0 0 0;
-      span {
-        display: block;
-        & + span {
-          overflow: hidden;
-          margin-top: 7px;
-          font-size: 1.4em;
-          color: #bbb;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-        }
-      }
-      .my_name {
-        font-size: 2.1em;
-        font-weight: bold;
-        color: #668aff;
-      }
-    }
-    .detail_info {
-      margin: 22px 0 0 0;
-      line-height: 22px;
-      dt,
-      dd {
-        font-size: 1.2em;
-        color: #5d5d5d;
-      }
-      dt {
-        clear: both;
-        position: relative;
-        float: left;
-        min-width: 65px;
-        padding-left: 10px;
-        &:before {
-          content: "";
-          position: absolute;
-          top: 9px;
-          left: 0;
-          width: 5px;
-          height: 5px;
-          background-color: #d2d9ff;
-          border-radius: 100%;
-        }
-      }
-      dd {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-      }
-    }
-  }
-  .button_close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 21px;
-    height: 21px;
-    background: url(../img/close.svg) 0 0 no-repeat;
-    background-size: cover;
-    cursor: pointer;
-  }
-}
-
-// footer
-.footer {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 4px 30px;
-  background-color: #d0d7ff;
-  p,
-  address {
-    font-size: 1.4em;
-    color: #fff;
   }
 }
 
@@ -576,6 +295,9 @@
             }
           }
         }
+      }
+      .button_link {
+        display: block;
       }
     }
     .content {
