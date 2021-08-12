@@ -39,7 +39,7 @@
   height: 100%;
   padding-top: 40px;
   padding-bottom: 85px;
-  section {
+  .content_area {
     height: 100%;
     margin: 0 20px;
     padding: 20px;
@@ -316,7 +316,7 @@
       flex: 1;
       padding-top: 0;
       padding-bottom: 0;
-      section {
+      .content_area {
         margin: 0;
         .content_box {
           padding: 20px;
