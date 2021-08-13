@@ -36,27 +36,26 @@ for(var i = 0; i < tabList.length; i++){
 }
 
 function listSelect(selectList){
-    let divList1 = document.getElementById('divList1');
-    let divList2 = document.getElementById('divList2');
-    let divList3 = document.getElementById('divList3');
-    let divList4 = document.getElementById('divList4');
+    let careerContent = document.getElementById('careerContent');
+    let desContent = document.getElementById('desContent');
+    let profileContent = document.getElementById('profileContent');
     let widthCheck = window.innerWidth;
 
     if(selectList == "0") {
-        divList1.style.display = "block"
-        divList2.style.display = "block";
-        divList3.style.display = "none";
+        careerContent.style.display = "block"
+        desContent.style.display = "block";
+        profileContent.style.display = "none";
         if(window.matchMedia('(orientation: landscape)').matches && widthCheck < 769) {
-            divList1.style.display = "none";
+            careerContent.style.display = "none";
         }
     } else if(selectList == "1") {
-        divList1.style.display = "none";
-        divList2.style.display = "none";
-        divList3.style.display = "block";
+        careerContent.style.display = "none";
+        desContent.style.display = "none";
+        profileContent.style.display = "block";
     } else if(selectList == "2") {
-        divList1.style.display = "none";
-        divList2.style.display = "block";
-        divList3.style.display = "none";
+        careerContent.style.display = "none";
+        desContent.style.display = "block";
+        profileContent.style.display = "none";
     }
 }
 
