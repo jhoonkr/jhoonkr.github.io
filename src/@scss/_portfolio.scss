@@ -1,0 +1,113 @@
+// Nav
+
+.navi {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+    li {
+      a {
+        display: block;
+        padding: 5px;
+        .ico {
+          position: relative;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          vertical-align: top;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(../img/sp_ico.png);
+            background-repeat: no-repeat;
+            background-size: 150px 150px;
+          }
+        }
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      &.home {
+        .ico {
+          &:before {
+            width: 20px;
+            height: 20px;
+            background-position: 0 -27px;
+          }
+        }
+      }
+      &.profile {
+        .ico {
+          &:before {
+            width: 17.5px;
+            height: 20px;
+            background-position: -25px -27px;
+          }
+        }
+      }
+      &.skills {
+        .ico {
+          &:before {
+            width: 20px;
+            height: 20px;
+            background-position: -47.5px -27px;
+          }
+        }
+      }
+      &.works {
+        .ico {
+          &:before {
+            width: 13px;
+            height: 20px;
+            background-position: -72.5px -27px;
+          }
+        }
+      }
+      &.career {
+        .ico {
+          &:before {
+            width: 20px;
+            height: 15px;
+            background-position: -90.5px -27px;
+          }
+        }
+      }
+      &.lab {
+        .ico {
+          &:before {
+            width: 18.5px;
+            height: 20px;
+            background-position: -115.5px -27px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .navi {
+    ul {
+      li {
+        a {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

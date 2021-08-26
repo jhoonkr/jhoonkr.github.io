@@ -5,7 +5,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var cleancss = require("gulp-clean-css");
 var autoprefixer = require("gulp-autoprefixer");
 
-gulp.task("practice", function (done) {
+gulp.task("pf", function (done) {
   gulp
     .src("scss/*.scss")
     .pipe(sourcemaps.init())
@@ -27,10 +27,10 @@ gulp.task("practice", function (done) {
   done();
 });
 
-gulp.task("practice:watch", function (done) {
-  gulp.watch("scss/*.scss", gulp.series("practice"));
-  gulp.watch("scss/common/*.scss", gulp.series("practice"));
-  gulp.watch("scss/components/*.scss", gulp.series("practice"));
+gulp.task("pf:watch", function (done) {
+  gulp.watch("scss/*.scss", gulp.series("pf"));
+  gulp.watch("scss/common/*.scss", gulp.series("pf"));
+  gulp.watch("scss/components/*.scss", gulp.series("pf"));
   done();
 });
 

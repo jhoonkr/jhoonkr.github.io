@@ -1,113 +1,62 @@
-// Nav
-
-.navi {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 100%;
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 45px;
-    margin: 0 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
-    li {
-      a {
-        display: block;
-        padding: 5px;
-        .ico {
-          position: relative;
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          vertical-align: top;
-          &:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-image: url(../img/sp_ico.png);
-            background-repeat: no-repeat;
-            background-size: 150px 150px;
-          }
-        }
-        span {
-          display: inline-block;
-          vertical-align: middle;
-        }
-      }
-      &.home {
-        .ico {
-          &:before {
-            width: 20px;
-            height: 20px;
-            background-position: 0 -27px;
-          }
-        }
-      }
-      &.profile {
-        .ico {
-          &:before {
-            width: 17.5px;
-            height: 20px;
-            background-position: -25px -27px;
-          }
-        }
-      }
-      &.skills {
-        .ico {
-          &:before {
-            width: 20px;
-            height: 20px;
-            background-position: -47.5px -27px;
-          }
-        }
-      }
-      &.works {
-        .ico {
-          &:before {
-            width: 13px;
-            height: 20px;
-            background-position: -72.5px -27px;
-          }
-        }
-      }
-      &.career {
-        .ico {
-          &:before {
-            width: 20px;
-            height: 15px;
-            background-position: -90.5px -27px;
-          }
-        }
-      }
-      &.lab {
-        .ico {
-          &:before {
-            width: 18.5px;
-            height: 20px;
-            background-position: -115.5px -27px;
-          }
-        }
-      }
-    }
-  }
+.header__gnb {
+    display: grid;
+    grid: 48px / 48px auto 48px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid #fff;
 }
 
-@media screen and (max-width: 769px) {
-  .navi {
-    ul {
-      li {
-        a {
-          span {
-            display: none;
-          }
+.gnb__logo {
+    width: 48px;
+    height: 48px;
+    background-color: yellow;
+}
+.gnb {
+    margin-left: 20px;
+}
+.gnb__list {
+    display: flex;
+}
+.gnb__item {
+    margin-right: 8px;
+}
+.gnb__link {
+    display: inline-block;
+    position: relative;
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    line-height: 48px;
+    text-align: center;
+}
+
+.drawer {
+    margin-left: auto;
+    .nav__button {
+        overflow: hidden;
+        position: relative;
+        width: 48px;
+        height: 48px;
+        padding: 0 16px;
+        border: 0;
+        background: transparent;
+        color: transparent;
+        white-space: nowrap;
+        text-align: left;
+        line-height: 48px;
+        -webkit-tap-highlight-color: initial;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            top: 18px;
+            left: 16px;
+            right: 16px;
+            vertical-align: top;
+            background: #000;
+            box-shadow: 0 5px #000, 0 10px #000;
         }
-      }
     }
-  }
 }
