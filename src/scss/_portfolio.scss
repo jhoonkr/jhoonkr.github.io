@@ -35,17 +35,23 @@
                     .swiper-slide {
                         overflow: hidden;
                         border-radius: 15px;
-                        background-color: #036635;
+                        background: #11998e;
+                        background: linear-gradient(to bottom, #38ef7d, #11998e);
+                    }
+                    &--box {
+                        padding: 20px;
                     }
                     &--content {
-                        padding: 20px;
                         h3 {
                             margin: 0;
-                            color: #000;
+                            color: #fff;
                             font-size: 16px;
                         }
                         dl {
                             margin: 0;
+                            dt, dd {
+                                color: #fff;
+                            }
                             dt {
                                 min-width: 90px;
                                 float: left;
@@ -56,6 +62,18 @@
                                 text-align: right;
                                 text-overflow: ellipsis;
                             }
+                        }
+                    }
+                    &--button {
+                        padding: 20px 0 0;
+                        text-align: center;
+                        .more__button {
+                            display: block;
+                            padding: 10px;
+                            background: #fff;
+                            border: 0;
+                            border-radius: 12px;
+                            appearance: none;
                         }
                     }
                 }

@@ -13,12 +13,15 @@ a{color:inherit;text-decoration:none}
 .portfolio__home .content__title p{font-size:16px;color:#000}
 .portfolio__home .content__slide{padding-top:15px}
 .portfolio__home .content__slide .swiper{width:100%;height:100%}
-.portfolio__home .content__slide .swiper .swiper-slide{overflow:hidden;border-radius:15px;background-color:#036635}
-.portfolio__home .content__slide .swiper--content{padding:20px}
-.portfolio__home .content__slide .swiper--content h3{margin:0;color:#000;font-size:16px}
+.portfolio__home .content__slide .swiper .swiper-slide{overflow:hidden;border-radius:15px;background:#11998e;background:-webkit-gradient(linear,left top,left bottom,from(#38ef7d),to(#11998e));background:-o-linear-gradient(top,#38ef7d,#11998e);background:linear-gradient(to bottom,#38ef7d,#11998e)}
+.portfolio__home .content__slide .swiper--box{padding:20px}
+.portfolio__home .content__slide .swiper--content h3{margin:0;color:#fff;font-size:16px}
 .portfolio__home .content__slide .swiper--content dl{margin:0}
+.portfolio__home .content__slide .swiper--content dl dd,.portfolio__home .content__slide .swiper--content dl dt{color:#fff}
 .portfolio__home .content__slide .swiper--content dl dt{min-width:90px;float:left}
 .portfolio__home .content__slide .swiper--content dl dd{overflow:hidden;white-space:nowrap;text-align:right;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.portfolio__home .content__slide .swiper--button{padding:20px 0 0;text-align:center}
+.portfolio__home .content__slide .swiper--button .more__button{display:block;padding:10px;background:#fff;border:0;border-radius:12px;-webkit-appearance:none;-moz-appearance:none;appearance:none}
 .gnb{margin-left:20px}
 .gnb__logo{overflow:hidden;width:48px;height:48px;border-radius:100%;background-color:#ff0}
 .gnb__logo img{width:100%;height:100%}
