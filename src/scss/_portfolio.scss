@@ -23,7 +23,41 @@
                     color: #036635;
                 }
                 p {
+                    font-size: 16px;
                     color: #000;
+                }
+            }
+            &__slide {
+                padding-top: 15px;
+                .swiper {
+                    width: 100%;
+                    height: 100%;
+                    .swiper-slide {
+                        overflow: hidden;
+                        border-radius: 15px;
+                        background-color: #036635;
+                    }
+                    &--content {
+                        padding: 20px;
+                        h3 {
+                            margin: 0;
+                            color: #000;
+                            font-size: 16px;
+                        }
+                        dl {
+                            margin: 0;
+                            dt {
+                                min-width: 90px;
+                                float: left;
+                            }
+                            dd {
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-align: right;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -33,9 +67,15 @@
 .gnb {
     margin-left: 20px;
     &__logo {
+        overflow: hidden;
         width: 48px;
         height: 48px;
+        border-radius: 100%;
         background-color: yellow;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
     &__list {
         display: flex;

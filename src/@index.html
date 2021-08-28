@@ -29,6 +29,7 @@
     <header class="portfolio__gnb">
         <a class="gnb__logo">
             <h1 class="blind">유재훈 포트폴리오</h1>
+            <img src="img/thumb_profile_small.jpg" alt>
         </a>
         <nav id="gnb" class="gnb">
             <h2 class="blind">사이트 네비게이션</h2>
@@ -50,13 +51,84 @@
     </header>
     <main id="main" class="portfolio__home">
         <section class="content__title">
-            <h2>The happieset Hour<br>of the year</h2>
+            <h2>It's only crazy until<br>you do it.</h2>
             <p>어서오세요. 유재훈의 포트폴리오 입니다.</p>
         </section>
         <section class="content__slide">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide">
+                        <div class="swiper--box">
+                            <div class="thumb">
+
+                            </div>
+                            <div class="swiper--content">
+                                <h3>네이버 고객센터</h3>
+                                <dl>
+                                    <dt>진행기간</dt>
+                                    <dd>2020.05 (1달 간)</dd>
+                                    <dt>주요내용</dt>
+                                    <dd>모바일 페이지 마크업</dd>
+                                    <dt>서비스 주소</dt>
+                                    <dd><a href="https://m.help.naver.com/" target="_blank" rel="noopener noreferrer">https://m.help.naver.com/</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper--box">
+                            <div class="thumb">
+
+                            </div>
+                            <div class="swiper--content">
+                                <h3>네이버 고객센터</h3>
+                                <dl>
+                                    <dt>진행기간</dt>
+                                    <dd>2020.05 (1달 간)</dd>
+                                    <dt>주요내용</dt>
+                                    <dd>모바일 페이지 마크업</dd>
+                                    <dt>서비스 주소</dt>
+                                    <dd><a href="https://m.help.naver.com/" target="_blank" rel="noopener noreferrer">https://m.help.naver.com/</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper--box">
+                            <div class="thumb">
+
+                            </div>
+                            <div class="swiper--content">
+                                <h3>네이버 고객센터</h3>
+                                <dl>
+                                    <dt>진행기간</dt>
+                                    <dd>2020.05 (1달 간)</dd>
+                                    <dt>주요내용</dt>
+                                    <dd>모바일 페이지 마크업</dd>
+                                    <dt>서비스 주소</dt>
+                                    <dd><a href="https://m.help.naver.com/" target="_blank" rel="noopener noreferrer">https://m.help.naver.com/</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper--box">
+                            <div class="thumb">
+
+                            </div>
+                            <div class="swiper--content">
+                                <h3>네이버 고객센터</h3>
+                                <dl>
+                                    <dt>진행기간</dt>
+                                    <dd>2020.05 (1달 간)</dd>
+                                    <dt>주요내용</dt>
+                                    <dd>모바일 페이지 마크업</dd>
+                                    <dt>서비스 주소</dt>
+                                    <dd><a href="https://m.help.naver.com/" target="_blank" rel="noopener noreferrer">https://m.help.naver.com/</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -64,25 +136,16 @@
     <!-- <script src="js/common.js"></script> -->
     <script>
         const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        // direction: 'vertical',
-        // loop: true,
-
-        // // If we need pagination
-        // pagination: {
-        //     el: '.swiper-pagination',
-        // },
-
-        // // Navigation arrows
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev',
-        // },
-
-        // // And if we need scrollbar
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        // },
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                768 : {
+                    slidesPerView: 2,
+                },
+                1280 : {
+                    slidesPerView: 4,
+                }
+            }
         });
     </script>
 </body>
