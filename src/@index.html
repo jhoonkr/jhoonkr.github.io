@@ -21,10 +21,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <link rel="stylesheet" href="css/portfolio.css">
 </head>
-<body>
-    <header class="header__gnb">
+<body class="ko-KR">
+    <header class="portfolio__gnb">
         <a class="gnb__logo">
             <h1 class="blind">유재훈 포트폴리오</h1>
         </a>
@@ -46,6 +48,42 @@
             <button type="button" class="nav__button">펼쳐보기</button>
         </div>
     </header>
-    <script src="js/common.js"></script>
+    <main id="main" class="portfolio__home">
+        <section class="content__title">
+            <h2>The happieset Hour<br>of the year</h2>
+            <p>어서오세요. 유재훈의 포트폴리오 입니다.</p>
+        </section>
+        <section class="content__slide">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <script src="js/common.js"></script> -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        // loop: true,
+
+        // // If we need pagination
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
+
+        // // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+
+        // // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+        });
+    </script>
 </body>
 </html>

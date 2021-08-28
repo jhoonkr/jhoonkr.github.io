@@ -1,14 +1,18 @@
-body{position:relative;margin:0;background:#fff;font-size:14px;line-height:1.5;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none;overflow-wrap:break-word;word-wrap:break-word}
-:lang(ko){word-break:keep-all}
+body{position:relative;min-width:375px;margin:0;background:#fff;font-size:14px;line-height:1.5;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none;overflow-wrap:break-word;word-wrap:break-word}
 *,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box}
 .blind{position:absolute;width:1px;height:1px;font-size:1px;overflow:hidden;opacity:0}
+.ko-KR{font-family:'Noto Sans KR','Apple SD Gothic Neo',NanumBarunGothic,NanumGothic,'Malgun Gothic',dotum,sans-serif;word-break:keep-all}
 img{max-width:100%;height:auto}
 ol,ul{margin:0;padding:0;list-style:none}
 p{margin:0}
 a{color:inherit;text-decoration:none}
-.header__gnb{display:grid;grid:48px/48px auto 48px;margin-left:auto;margin-right:auto;border-top:15px solid #fff;border-bottom:15px solid #fff}
-.gnb__logo{width:48px;height:48px;background-color:#ff0}
+.portfolio__gnb{display:-webkit-box;display:-ms-flexbox;display:flex;margin-left:auto;margin-right:auto;padding-left:8px;padding-right:8px;border-top:15px solid #fff;border-bottom:15px solid #fff}
+.portfolio__home{padding-left:8px;padding-right:8px}
+.portfolio__home .content__title{text-align:right}
+.portfolio__home .content__title h2{margin:0;font-family:"Black Han Sans",sans-serif;font-size:30px;color:#036635}
+.portfolio__home .content__title p{color:#000}
 .gnb{margin-left:20px}
+.gnb__logo{width:48px;height:48px;background-color:#ff0}
 .gnb__list{display:-webkit-box;display:-ms-flexbox;display:flex}
 .gnb__item{margin-right:8px}
 .gnb__link{display:inline-block;position:relative;padding:0 8px;font-size:14px;font-weight:500;color:#000;line-height:48px;text-align:center}

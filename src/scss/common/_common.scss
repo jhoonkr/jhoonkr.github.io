@@ -1,5 +1,6 @@
 body {
     position: relative;
+    min-width: 375px;
     margin: 0;
     background: #fff;
     font-size: 14px;
@@ -7,9 +8,6 @@ body {
     text-size-adjust: none;
     overflow-wrap: break-word;
     word-wrap: break-word;
-}
-:lang(ko) {
-    word-break: keep-all;
 }
 *,
 ::before,
@@ -23,6 +21,10 @@ body {
     font-size: 1px;
     overflow: hidden;
     opacity: 0
+}
+.ko-KR {
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', NanumBarunGothic, NanumGothic, 'Malgun Gothic', dotum, sans-serif;
+    word-break: keep-all;
 }
 img {
     max-width: 100%;
