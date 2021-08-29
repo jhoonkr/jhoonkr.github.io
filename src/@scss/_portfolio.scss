@@ -1,113 +1,166 @@
-// Nav
-
-.navi {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 100%;
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 45px;
-    margin: 0 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
-    li {
-      a {
-        display: block;
-        padding: 5px;
-        .ico {
-          position: relative;
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          vertical-align: top;
-          &:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-image: url(../img/sp_ico.png);
-            background-repeat: no-repeat;
-            background-size: 150px 150px;
+.portfolio {
+  &__gnb {
+      display: flex;
+      // display: grid;
+      // grid: 48px / 48px auto 48px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-top: 15px solid #fff;
+      border-bottom: 15px solid #fff;
+  }
+  &__home {
+      padding-left: 8px;
+      padding-right: 8px;
+      .content {
+          &__title {
+              text-align: right;
+              h2 {
+                  margin: 0;
+                  font-family: "Black Han Sans", sans-serif;
+                  font-size: 30px;
+                  color: #036635;
+              }
+              p {
+                  font-size: 16px;
+                  color: #000;
+              }
           }
-        }
-        span {
-          display: inline-block;
-          vertical-align: middle;
-        }
-      }
-      &.home {
-        .ico {
-          &:before {
-            width: 20px;
-            height: 20px;
-            background-position: 0 -27px;
+          &__slide {
+              padding-top: 15px;
+              .swiper {
+                  width: 100%;
+                  height: 100%;
+                  .swiper-slide {
+                      overflow: hidden;
+                      border-radius: 15px;
+                      background: #11998e;
+                      background: linear-gradient(to bottom, #38ef7d, #11998e);
+                  }
+                  &.innerSlide {
+                      overflow: hidden;
+                      width: calc(100% - 50px);
+                      padding-top: 20px;
+                      border-radius: 12px;
+                      .thumb {
+                          img {
+                              width: 100%;
+                              height: 100%;
+                              vertical-align: top;
+                          }
+                      }
+                      .swiper-button-next,
+                      .swiper-button-prev {
+                          color: #fff;
+                          &.hide {
+                              animation: fadeOut 1s forwards;
+                          }
+                          &.show {
+                              animation: fadeIn 1s forwards;
+                          }
+                      }
+                  }
+                  &--box {
+                      padding: 20px;
+                  }
+                  &--content {
+                      h3 {
+                          margin: 0;
+                          color: #fff;
+                          font-size: 16px;
+                      }
+                      dl {
+                          margin: 0;
+                          dt, dd {
+                              color: #fff;
+                          }
+                          dt {
+                              min-width: 90px;
+                              float: left;
+                          }
+                          dd {
+                              overflow: hidden;
+                              white-space: nowrap;
+                              text-align: right;
+                              text-overflow: ellipsis;
+                          }
+                      }
+                  }
+                  &--button {
+                      padding: 20px 0 0;
+                      text-align: center;
+                      .more__button {
+                          display: block;
+                          padding: 10px;
+                          background: #fff;
+                          border: 0;
+                          border-radius: 12px;
+                          appearance: none;
+                      }
+                  }
+              }
           }
-        }
       }
-      &.profile {
-        .ico {
-          &:before {
-            width: 17.5px;
-            height: 20px;
-            background-position: -25px -27px;
-          }
-        }
-      }
-      &.skills {
-        .ico {
-          &:before {
-            width: 20px;
-            height: 20px;
-            background-position: -47.5px -27px;
-          }
-        }
-      }
-      &.works {
-        .ico {
-          &:before {
-            width: 13px;
-            height: 20px;
-            background-position: -72.5px -27px;
-          }
-        }
-      }
-      &.career {
-        .ico {
-          &:before {
-            width: 20px;
-            height: 15px;
-            background-position: -90.5px -27px;
-          }
-        }
-      }
-      &.lab {
-        .ico {
-          &:before {
-            width: 18.5px;
-            height: 20px;
-            background-position: -115.5px -27px;
-          }
-        }
-      }
-    }
   }
 }
 
-@media screen and (max-width: 769px) {
-  .navi {
-    ul {
-      li {
-        a {
-          span {
-            display: none;
-          }
-        }
+.gnb {
+  margin-left: 20px;
+  &__logo {
+      overflow: hidden;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      background-color: yellow;
+      img {
+          width: 100%;
+          height: 100%;
       }
-    }
+  }
+  &__list {
+      display: flex;
+  }
+  &__item {
+      margin-right: 8px;
+  }
+  &__link {
+      display: inline-block;
+      position: relative;
+      padding: 0 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      line-height: 48px;
+      text-align: center;
+  }
+}
+
+.drawer {
+  margin-left: auto;
+  .nav__button {
+      overflow: hidden;
+      position: relative;
+      width: 48px;
+      height: 48px;
+      padding: 0 16px;
+      border: 0;
+      background: transparent;
+      color: transparent;
+      white-space: nowrap;
+      text-align: left;
+      line-height: 48px;
+      -webkit-tap-highlight-color: initial;
+      &::after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          top: 18px;
+          left: 16px;
+          right: 16px;
+          vertical-align: top;
+          background: #000;
+          box-shadow: 0 5px #000, 0 10px #000;
+      }
   }
 }

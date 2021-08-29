@@ -23,7 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<link rel="stylesheet" href="css/portfolio.css">
+<link rel="stylesheet" href="css/pf.css">
 </head>
 <body class="ko-KR">
     <header class="portfolio__gnb">
@@ -242,6 +242,14 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768 : {
+                    slidesPerView: 1,
+                },
+                1280 : {
+                    slidesPerView: 1,
+                }
             },
         });
     </script>
