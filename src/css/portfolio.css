@@ -14,6 +14,9 @@ a{color:inherit;text-decoration:none}
 .portfolio__home .content__slide{padding-top:15px}
 .portfolio__home .content__slide .swiper{width:100%;height:100%}
 .portfolio__home .content__slide .swiper .swiper-slide{overflow:hidden;border-radius:15px;background:#11998e;background:-webkit-gradient(linear,left top,left bottom,from(#38ef7d),to(#11998e));background:-o-linear-gradient(top,#38ef7d,#11998e);background:linear-gradient(to bottom,#38ef7d,#11998e)}
+.portfolio__home .content__slide .swiper.innerSlide{overflow:hidden;width:calc(100% - 40px);padding-top:20px;border-radius:12px}
+.portfolio__home .content__slide .swiper.innerSlide .thumb img{width:100%;height:100%;vertical-align:top}
+.portfolio__home .content__slide .swiper.innerSlide .swiper-button-next,.portfolio__home .content__slide .swiper.innerSlide .swiper-button-prev{color:#fff}
 .portfolio__home .content__slide .swiper--box{padding:20px}
 .portfolio__home .content__slide .swiper--content h3{margin:0;color:#fff;font-size:16px}
 .portfolio__home .content__slide .swiper--content dl{margin:0}

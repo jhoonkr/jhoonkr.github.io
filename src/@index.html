@@ -58,10 +58,29 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="swiper--box">
-                            <div class="thumb">
-
+                        <!-- 추가 Swiper -->
+                        <div class="swiper innerSlide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper--box">
                             <div class="swiper--content">
                                 <h3>네이버 고객센터</h3>
                                 <dl>
@@ -79,10 +98,28 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper--box">
-                            <div class="thumb">
-
+                        <div class="swiper innerSlide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper--box">
                             <div class="swiper--content">
                                 <h3>네이버 고객센터</h3>
                                 <dl>
@@ -100,10 +137,28 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper--box">
-                            <div class="thumb">
-
+                        <div class="swiper innerSlide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper--box">
                             <div class="swiper--content">
                                 <h3>네이버 고객센터</h3>
                                 <dl>
@@ -121,10 +176,28 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper--box">
-                            <div class="thumb">
-
+                        <div class="swiper innerSlide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb">
+                                        <img src="img/thumb_profile.jpg" alt>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper--box">
                             <div class="swiper--content">
                                 <h3>네이버 고객센터</h3>
                                 <dl>
@@ -149,7 +222,7 @@
     <script>
         const swiper = new Swiper('.swiper', {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 15,
             breakpoints: {
                 768 : {
                     slidesPerView: 2,
@@ -157,8 +230,36 @@
                 1280 : {
                     slidesPerView: 4,
                 }
-            }
+            },
         });
+    </script>
+    <script>
+        const swiperInner = new Swiper('.innerSlide', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        // const pageOverNext = document.querySelector('.swiper-button-next');
+        // const pageOverPrev = document.querySelector('.swiper-button-prev');
+        // const thumbArea = document.querySelector('.thumb');   
+
+        // thumbArea.addEventListener("mouseover", function(){
+        //     if(pageOverPrev.classList.contains('swiper-button-disabled')){
+        //         pageOverPrev.style.opacity = "0.35";
+        //     } else if(pageOverNext.classList.contains('swiper-button-disabled')){
+        //         pageOverNext.style.opacity = "0.35";
+        //     }
+        //     setTimeout(function(){
+        //         pageOverNext.classList.add('show');
+        //         pageOverPrev.classList.add('show');
+        //     }, 1000)
+        // })
+
     </script>
 </body>
 </html>
