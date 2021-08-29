@@ -29,18 +29,21 @@
             }
             &__slide {
                 padding-top: 15px;
-                .swiper {
+                .swiper-container {
+                    overflow: hidden;
                     width: 100%;
                     height: 100%;
                     .swiper-slide {
                         overflow: hidden;
+                        padding: 0 20px;
                         border-radius: 15px;
                         background: #11998e;
                         background: linear-gradient(to bottom, #38ef7d, #11998e);
                     }
-                    &.innerSlide {
+                    .innerSlide {
                         overflow: hidden;
-                        width: calc(100% - 50px);
+                        position: relative;
+                        width: 100%;
                         padding-top: 20px;
                         border-radius: 12px;
                         .thumb {
@@ -50,53 +53,54 @@
                                 vertical-align: top;
                             }
                         }
+                        .swiper-slide {
+                            padding: 0;
+                        }
                         .swiper-button-next,
                         .swiper-button-prev {
                             color: #fff;
-                            &.hide {
-                                animation: fadeOut 1s forwards;
-                            }
-                            &.show {
-                                animation: fadeIn 1s forwards;
-                            }
+                            // Navigation Bug fix.
+                            backface-visibility: hidden; 
+                            transform: translateZ(0); 
+                            transform: translate3d(0, 0, 0);
                         }
-                    }
-                    &--box {
-                        padding: 20px;
-                    }
-                    &--content {
-                        h3 {
-                            margin: 0;
-                            color: #fff;
-                            font-size: 16px;
+                        &--box {
+                            padding: 20px 0;
                         }
-                        dl {
-                            margin: 0;
-                            dt, dd {
+                        &--content {
+                            h3 {
+                                margin: 0;
                                 color: #fff;
+                                font-size: 16px;
                             }
-                            dt {
-                                min-width: 90px;
-                                float: left;
-                            }
-                            dd {
-                                overflow: hidden;
-                                white-space: nowrap;
-                                text-align: right;
-                                text-overflow: ellipsis;
+                            dl {
+                                margin: 0;
+                                dt, dd {
+                                    color: #fff;
+                                }
+                                dt {
+                                    min-width: 90px;
+                                    float: left;
+                                }
+                                dd {
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-align: right;
+                                    text-overflow: ellipsis;
+                                }
                             }
                         }
-                    }
-                    &--button {
-                        padding: 20px 0 0;
-                        text-align: center;
-                        .more__button {
-                            display: block;
-                            padding: 10px;
-                            background: #fff;
-                            border: 0;
-                            border-radius: 12px;
-                            appearance: none;
+                        &--button {
+                            padding: 20px 0 0;
+                            text-align: center;
+                            .more__button {
+                                display: block;
+                                padding: 10px;
+                                background: #fff;
+                                border: 0;
+                                border-radius: 12px;
+                                appearance: none;
+                            }
                         }
                     }
                 }

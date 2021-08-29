@@ -55,11 +55,11 @@
             <p>어서오세요. 유재훈의 포트폴리오 입니다.</p>
         </section>
         <section class="content__slide">
-            <div class="swiper outerSlide">
+            <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <!-- 추가 Swiper -->
-                        <div class="swiper innerSlide">
+                        <div class="innerSlide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="thumb">
@@ -77,11 +77,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper--box">
-                            <div class="swiper--content">
+                        <div class="innerSlide--box">
+                            <div class="innerSlide--content">
                                 <h3>네이버 고객센터</h3>
                                 <dl>
                                     <dt>진행기간</dt>
@@ -92,13 +92,13 @@
                                     <dd><a href="https://m.help.naver.com/" target="_blank" rel="noopener noreferrer">https://m.help.naver.com/</a></dd>
                                 </dl>
                             </div>
-                            <div class="swiper--button">
+                            <div class="innerSlide--button">
                                 <a href="#" class="more__button">More</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper innerSlide">
+                        <div class="innerSlide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="thumb">
@@ -116,11 +116,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper--box">
-                            <div class="swiper--content">
+                        <div class="innerSlide--box">
+                            <div class="innerSlide--content">
                                 <h3>네이버 고객센터</h3>
                                 <dl>
                                     <dt>진행기간</dt>
@@ -131,13 +131,13 @@
                                     <dd><a href="https://m.help.naver.com/" target="_blank" rel="noopener noreferrer">https://m.help.naver.com/</a></dd>
                                 </dl>
                             </div>
-                            <div class="swiper--button">
+                            <div class="innerSlide--button">
                                 <a href="#" class="more__button">More</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper innerSlide">
+                        <div class="innerSlide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="thumb">
@@ -155,11 +155,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper--box">
-                            <div class="swiper--content">
+                        <div class="innerSlide--box">
+                            <div class="innerSlide--content">
                                 <h3>네이버 고객센터</h3>
                                 <dl>
                                     <dt>진행기간</dt>
@@ -170,13 +170,13 @@
                                     <dd><a href="https://m.help.naver.com/" target="_blank" rel="noopener noreferrer">https://m.help.naver.com/</a></dd>
                                 </dl>
                             </div>
-                            <div class="swiper--button">
+                            <div class="innerSlide--button">
                                 <a href="#" class="more__button">More</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper innerSlide">
+                        <div class="innerSlide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="thumb">
@@ -194,11 +194,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper--box">
-                            <div class="swiper--content">
+                        <div class="innerSlide--box">
+                            <div class="innerSlide--content">
                                 <h3>네이버 고객센터</h3>
                                 <dl>
                                     <dt>진행기간</dt>
@@ -209,7 +209,7 @@
                                     <dd><a href="https://m.help.naver.com/" target="_blank" rel="noopener noreferrer">https://m.help.naver.com/</a></dd>
                                 </dl>
                             </div>
-                            <div class="swiper--button">
+                            <div class="innerSlide--button">
                                 <a href="#" class="more__button">More</a>
                             </div>
                         </div>
@@ -220,7 +220,7 @@
     </main>
     <!-- <script src="js/common.js"></script> -->
     <script>
-        const swiper = new Swiper('.outerSlide', {
+        const swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             spaceBetween: 15,
             breakpoints: {
@@ -231,29 +231,18 @@
                     slidesPerView: 4,
                 }
             },
-            observer: true,
-            observeParents: true,
         });
     </script>
     <script>
-        const swiperInner = new Swiper('.innerSlide', {
+        const innerSwiper = new Swiper('.innerSlide', {
             slidesPerView: 1,
-            spaceBetween: 0,
+            touchRatio: 0,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                768 : {
-                    slidesPerView: 1,
-                },
-                1280 : {
-                    slidesPerView: 1,
-                }
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next'
             },
             observer: true,
             observeParents: true,
-            allowTouchMove: false,
         });
     </script>
 </body>
