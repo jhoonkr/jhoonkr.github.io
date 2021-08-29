@@ -55,7 +55,7 @@
             <p>어서오세요. 유재훈의 포트폴리오 입니다.</p>
         </section>
         <section class="content__slide">
-            <div class="swiper">
+            <div class="swiper outerSlide">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <!-- 추가 Swiper -->
@@ -220,7 +220,7 @@
     </main>
     <!-- <script src="js/common.js"></script> -->
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.outerSlide', {
             slidesPerView: 1,
             spaceBetween: 15,
             breakpoints: {
@@ -253,6 +253,7 @@
             },
             observer: true,
             observeParents: true,
+            allowTouchMove: false,
         });
     </script>
 </body>
