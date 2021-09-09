@@ -6,12 +6,12 @@ img{max-width:100%;height:auto}
 ol,ul{margin:0;padding:0;list-style:none}
 p{margin:0}
 a{color:inherit;text-decoration:none}
-.portfolio__gnb{display:-webkit-box;display:-ms-flexbox;display:flex;margin-left:auto;margin-right:auto;padding-left:8px;padding-right:8px;border-top:15px solid #fff;border-bottom:15px solid #fff}
+.portfolio__gnb{display:-webkit-box;display:-ms-flexbox;display:flex;margin-left:auto;margin-right:auto;padding-left:8px;padding-right:8px;border-top:10px solid #fff;border-bottom:10px solid #fff}
 .portfolio__home{padding-left:8px;padding-right:8px}
 .portfolio__home .content__title{text-align:right}
 .portfolio__home .content__title h2{margin:0;font-family:"Black Han Sans",sans-serif;font-size:30px;color:#036635}
 .portfolio__home .content__title p{font-size:16px;color:#000}
-.portfolio__home .content__slide{padding-top:15px}
+.portfolio__home .content__slide{padding-top:15px;padding-bottom:15px}
 .portfolio__home .content__slide .swiper-container{overflow:hidden;width:100%;height:100%}
 .portfolio__home .content__slide .swiper-container .swiper-slide{overflow:hidden;padding:0 20px;border-radius:15px;background:#11998e;background:-webkit-gradient(linear,left top,left bottom,from(#38ef7d),to(#11998e));background:-o-linear-gradient(top,#38ef7d,#11998e);background:linear-gradient(to bottom,#38ef7d,#11998e)}
 .portfolio__home .content__slide .swiper-container .innerSlide{overflow:hidden;position:relative;width:100%;padding-top:20px;border-radius:12px}
@@ -19,13 +19,14 @@ a{color:inherit;text-decoration:none}
 .portfolio__home .content__slide .swiper-container .innerSlide .swiper-slide{padding:0}
 .portfolio__home .content__slide .swiper-container .innerSlide .swiper-button-next,.portfolio__home .content__slide .swiper-container .innerSlide .swiper-button-prev{color:#fff;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 .portfolio__home .content__slide .swiper-container .innerSlide--box{padding:20px 0}
-.portfolio__home .content__slide .swiper-container .innerSlide--content h3{margin:0;color:#fff;font-size:16px}
+.portfolio__home .content__slide .swiper-container .innerSlide--box a{text-decoration:underline}
+.portfolio__home .content__slide .swiper-container .innerSlide--content h3{margin:0 0 10px 0;color:#fff;font-size:16px}
 .portfolio__home .content__slide .swiper-container .innerSlide--content dl{margin:0}
 .portfolio__home .content__slide .swiper-container .innerSlide--content dl dd,.portfolio__home .content__slide .swiper-container .innerSlide--content dl dt{color:#fff}
-.portfolio__home .content__slide .swiper-container .innerSlide--content dl dt{min-width:90px;float:left}
+.portfolio__home .content__slide .swiper-container .innerSlide--content dl dt{min-width:70px;float:left}
 .portfolio__home .content__slide .swiper-container .innerSlide--content dl dd{overflow:hidden;white-space:nowrap;text-align:right;-o-text-overflow:ellipsis;text-overflow:ellipsis}
-.portfolio__home .content__slide .swiper-container .innerSlide--button{padding:20px 0 0;text-align:center}
-.portfolio__home .content__slide .swiper-container .innerSlide--button .more__button{display:block;padding:10px;background:#fff;border:0;border-radius:12px;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.portfolio__home .content__slide .swiper-container .innerSlide--button{padding-top:10px;text-align:center}
+.portfolio__home .content__slide .swiper-container .innerSlide--button .more__button{display:block;padding:10px;background:#fff;border:0;border-radius:12px;-webkit-appearance:none;-moz-appearance:none;appearance:none;text-decoration:none}
 .gnb{margin-left:20px}
 .gnb__logo{overflow:hidden;width:48px;height:48px;border-radius:100%;background-color:#ff0}
 .gnb__logo img{width:100%;height:100%}
