@@ -48,6 +48,13 @@
         <div class="drawer">
             <button type="button" class="nav__button">펼쳐보기</button>
         </div>
+        <nav class="drawer__profile">
+            <h2 class="blind">연락하기</h2>
+            <button type="button" class="drawer__closeBtn">연락하기 닫기</button>
+            <div class="drawer__log">
+                <section></section>
+            </div>
+        </nav>
     </header>
     <main id="main" class="portfolio__home">
         <section class="content__title">
@@ -579,6 +586,18 @@
             observer: true,
             observeParents: true,
         });
+    </script>
+    <script>
+        let toggleButton = document.querySelector('.drawer');
+        let closeButton = document.querySelector('.drawer__closeBtn');
+
+        toggleButton.addEventListener('click', function () {
+            toggleButton.classList.add('active');
+        })
+
+        closeButton.addEventListener('click', function() {
+            toggleButton.classList.remove('active');
+        })
     </script>
 </body>
 </html>

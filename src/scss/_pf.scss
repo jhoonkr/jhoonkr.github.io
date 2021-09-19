@@ -161,41 +161,88 @@
 
 .drawer {
     margin-left: auto;
-    .nav__button {
+    .nav {
+        &__button {
+            overflow: hidden;
+            position: relative;
+            width: 48px;
+            height: 48px;
+            padding: 0 16px;
+            border: 0;
+            background: transparent;
+            color: transparent;
+            white-space: nowrap;
+            text-align: left;
+            line-height: 48px;
+            -webkit-tap-highlight-color: initial;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                top: 18px;
+                left: 16px;
+                right: 16px;
+                vertical-align: top;
+                background: #000;
+                box-shadow: 0 5px #000, 0 10px #000;
+            }
+        }
+    }
+    &__profile {
+        display: none;
+        position: absolute;
+        top: 64px;
+        right: 16px;
+        width: 280px;
+        transform-origin: 100% 0;
+        border: 1px solid #dbdee3;
+        background-color: #fff;;
+    }
+    &__closeBtn {
         overflow: hidden;
         position: relative;
+        float: right;
         width: 48px;
         height: 48px;
-        padding: 0 16px;
-        border: 0;
-        background: transparent;
+        padding-top: 48px;
         color: transparent;
-        white-space: nowrap;
-        text-align: left;
-        line-height: 48px;
-        -webkit-tap-highlight-color: initial;
-        &::after {
+        border: 0;
+        background-color: transparent;
+        &:before,
+        &:after {
             content: '';
             position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 18px;
             height: 2px;
-            top: 18px;
-            left: 16px;
-            right: 16px;
-            vertical-align: top;
             background: #000;
-            box-shadow: 0 5px #000, 0 10px #000;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+    &.active {
+        ~ .drawer__profile {
+            display: block;
         }
     }
 }
 
-@media all and (max-width: 769px) {
-    .portfolio {
-        &__home {
-            .content {
-                &__slide {
-                    height: calc(100vh - 182px);
-                }
-            }
-        }
-    }
-}
+// @media all and (max-width: 769px) {
+//     .portfolio {
+//         &__home {
+//             .content {
+//                 &__slide {
+//                     height: calc(100vh - 182px);
+//                 }
+//             }
+//         }
+//     }
+// }
