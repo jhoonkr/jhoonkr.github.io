@@ -68,6 +68,7 @@
                         }
                         &--box {
                             padding: 10px 0;
+                            min-height: 175px;
                             a {
                                 text-decoration: underline;
                             }
@@ -120,6 +121,66 @@
                                 appearance: none;
                                 text-decoration: none;
                             }
+                        }
+                    }
+                }
+            }
+        }
+        .pFaccordion {
+            &__faq {
+                position: relative;
+                margin-bottom: 20px;
+            }
+            &__contentWrap {
+                padding: 20px;
+            }
+            &__title {
+                position: relative;
+                padding: 10px 10px 10px 45px;
+                background: #f0f2f5;
+                font-size: 15px;
+                font-weight: bold;
+                color: #333;
+                h3 {
+                    margin: 0;
+                }
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    left: 12px;
+                    margin-top: -10px;
+                    background-image: url(../img/plus-circle.svg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 20px;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    content: '';
+                }
+            }
+            &__content {
+                border-left: 1px solid #f0f2f5;
+                border-right: 1px solid #f0f2f5;
+            }
+            &__section {
+                &:first-of-type {
+                    .pFaccordion__title {
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                    }
+                }
+                &:last-of-type {
+                    .pFaccordion__content {
+                        border-bottom: 1px solid #f0f2f5;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+                &--active {
+                    .pFaccordion__title {
+                        &:before {
+                            background-image: url(../img/minus-circle.svg);
                         }
                     }
                 }

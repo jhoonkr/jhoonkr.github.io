@@ -18,7 +18,7 @@ a{color:inherit;text-decoration:none}
 .portfolio__home .content__slide .swiper-container .innerSlide .thumb img{width:100%;height:100%;vertical-align:top}
 .portfolio__home .content__slide .swiper-container .innerSlide .swiper-slide{padding:0}
 .portfolio__home .content__slide .swiper-container .innerSlide .swiper-button-next,.portfolio__home .content__slide .swiper-container .innerSlide .swiper-button-prev{color:#fff;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-.portfolio__home .content__slide .swiper-container .innerSlide--box{padding:10px 0}
+.portfolio__home .content__slide .swiper-container .innerSlide--box{padding:10px 0;min-height:175px}
 .portfolio__home .content__slide .swiper-container .innerSlide--box a{text-decoration:underline}
 .portfolio__home .content__slide .swiper-container .innerSlide--content{min-height:120px}
 .portfolio__home .content__slide .swiper-container .innerSlide--content h3{margin:0 0 5px 0;color:#fff;font-size:16px}
@@ -29,6 +29,15 @@ a{color:inherit;text-decoration:none}
 .portfolio__home .content__slide .swiper-container .innerSlide--content dl dd ul li{overflow:hidden;white-space:nowrap;text-align:right;-o-text-overflow:ellipsis;text-overflow:ellipsis}
 .portfolio__home .content__slide .swiper-container .innerSlide--button{padding-top:10px;text-align:center}
 .portfolio__home .content__slide .swiper-container .innerSlide--button .more__button{display:block;padding:10px;background:#fff;border:0;border-radius:12px;-webkit-appearance:none;-moz-appearance:none;appearance:none;text-decoration:none}
+.portfolio__home .pFaccordion__faq{position:relative;margin-bottom:20px}
+.portfolio__home .pFaccordion__contentWrap{padding:20px}
+.portfolio__home .pFaccordion__title{position:relative;padding:10px 10px 10px 45px;background:#f0f2f5;font-size:15px;font-weight:700;color:#333}
+.portfolio__home .pFaccordion__title h3{margin:0}
+.portfolio__home .pFaccordion__title:before{position:absolute;top:50%;left:12px;margin-top:-10px;background-image:url(../img/plus-circle.svg);background-repeat:no-repeat;background-position:center center;background-size:20px;display:block;width:20px;height:20px;content:''}
+.portfolio__home .pFaccordion__content{border-left:1px solid #f0f2f5;border-right:1px solid #f0f2f5}
+.portfolio__home .pFaccordion__section:first-of-type .pFaccordion__title{border-top-left-radius:5px;border-top-right-radius:5px}
+.portfolio__home .pFaccordion__section:last-of-type .pFaccordion__content{border-bottom:1px solid #f0f2f5;border-bottom-left-radius:5px;border-bottom-right-radius:5px}
+.portfolio__home .pFaccordion__section--active .pFaccordion__title:before{background-image:url(../img/minus-circle.svg)}
 .gnb{margin-left:20px}
 .gnb__logo{overflow:hidden;width:48px;height:48px;border-radius:100%;background-color:#ff0}
 .gnb__logo img{width:100%;height:100%}

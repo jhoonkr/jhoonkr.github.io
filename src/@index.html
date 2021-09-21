@@ -556,6 +556,58 @@
                 </div>
             </div>
         </section>
+        <section class="pFaccordion__faq">
+            <div class="pFaccordion__section">
+                <div class="pFaccordion__title">
+                    <h3>질문1</h3>
+                </div>
+                <div class="pFaccordion__content">
+                    <div class="pFaccordion__contentWrap">
+                        질문에 대한 답.
+                    </div>
+                </div>
+            </div>
+            <div class="pFaccordion__section">
+                <div class="pFaccordion__title">
+                    <h3>질문2</h3>
+                </div>
+                <div class="pFaccordion__content">
+                    <div class="pFaccordion__contentWrap">
+                        질문에 대한 답.
+                    </div>
+                </div>
+            </div>
+            <div class="pFaccordion__section pFaccordion__section--active">
+                <div class="pFaccordion__title">
+                    <h3>질문3</h3>
+                </div>
+                <div class="pFaccordion__content">
+                    <div class="pFaccordion__contentWrap">
+                        질문에 대한 답.
+                    </div>
+                </div>
+            </div>
+            <div class="pFaccordion__section">
+                <div class="pFaccordion__title">
+                    <h3>질문4</h3>
+                </div>
+                <div class="pFaccordion__content">
+                    <div class="pFaccordion__contentWrap">
+                        질문에 대한 답.
+                    </div>
+                </div>
+            </div>
+            <div class="pFaccordion__section">
+                <div class="pFaccordion__title">
+                    <h3>질문5</h3>
+                </div>
+                <div class="pFaccordion__content">
+                    <div class="pFaccordion__contentWrap">
+                        질문에 대한 답.
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- <footer class="footer__info">
         <p>Copyright ⓒ 2021. Jaehoon Yu All rights reserved.</p>
@@ -568,12 +620,15 @@
             breakpoints: {
                 768 : {
                     slidesPerView: 2,
+                    autoHeight : false,
                 },
                 1280 : {
                     slidesPerView: 3,
+                    autoHeight : false,
                 }
             },
         });
+        
     </script>
     <script>
         const innerSwiper = new Swiper('.innerSlide', {
@@ -592,7 +647,7 @@
         let closeButton = document.querySelector('.drawer__closeBtn');
 
         toggleButton.addEventListener('click', function () {
-            toggleButton.classList.add('active');
+            toggleButton.classList.toggle('active');
         })
 
         closeButton.addEventListener('click', function() {
