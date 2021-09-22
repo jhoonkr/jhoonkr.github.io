@@ -45,13 +45,11 @@
                 </li>
             </ul>
         </nav>
-        <div class="drawer">
-            <button type="button" class="nav__button">펼쳐보기</button>
-        </div>
-        <nav class="drawer__profile">
-            <h2 class="blind">연락하기</h2>
-            <button type="button" class="drawer__closeBtn">연락하기 닫기</button>
-            <div class="drawer__log">
+        <button type="button" class="nav__button" aria-haspopup="true" aria-expanded="false" aria-controls="log-nav">펼쳐보기</button>
+        <nav id="log-nav" class="nav__profile" aria-live="polite" aria-labelledby="log-nav-heading">
+            <h2 id="log-nav-heading" class="blind">연락하기</h2>
+            <button type="button" class="nav__closeBtn" aria-controls="log-nav">연락하기 닫기</button>
+            <div class="nav__log" role="dialog" aria-labelledby="login-heading">
                 <section></section>
             </div>
         </nav>
@@ -643,15 +641,24 @@
         });
     </script>
     <script>
-        let toggleButton = document.querySelector('.drawer');
-        let closeButton = document.querySelector('.drawer__closeBtn');
+        let toggleButton = document.querySelector('.nav__button');
+        let closeButton = document.querySelector('.nav__closeBtn');
+        let navBox = document.querySelector('.nav__profile');
 
         toggleButton.addEventListener('click', function () {
-            toggleButton.classList.toggle('active');
+            navBox.classList.toggle('nav__profile--active');
+            let attr = document.querySelector('.nav__button').getAttribute('aria-expanded');
+            if(attr == "true") {
+                attr = "false"
+            } else {
+                attr = "true"
+            }
+            document.querySelector('.nav__button').setAttribute('aria-expanded', attr);
         })
 
         closeButton.addEventListener('click', function() {
-            toggleButton.classList.remove('active');
+            navBox.classList.remove('nav__profile--active');
+            toggleButton.setAttribute('aria-expanded', 'false');
         })
     </script>
 </body>
