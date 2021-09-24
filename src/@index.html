@@ -97,9 +97,6 @@
                                     <dd>SPA Framework에 대한 이해도 향상</dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -145,9 +142,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -189,9 +183,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -235,9 +226,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -279,9 +267,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -324,9 +309,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -368,9 +350,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -413,9 +392,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -456,9 +432,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -501,9 +474,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -546,9 +516,6 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <!-- <div class="innerSlide--button">
-                                <a href="#" class="more__button">More</a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -557,52 +524,18 @@
         <section class="pFaccordion__faq">
             <div class="pFaccordion__section">
                 <div class="pFaccordion__title">
-                    <h3>질문1</h3>
+                    <h3>좋아하는 언어가 무엇인가요?</h3>
                 </div>
                 <div class="pFaccordion__content">
-                    <div class="pFaccordion__contentWrap">
-                        질문에 대한 답.
-                    </div>
+                    <p class="pFaccordion__contentWrap">HTML5와 한국어입니다.</p>
                 </div>
             </div>
             <div class="pFaccordion__section">
                 <div class="pFaccordion__title">
-                    <h3>질문2</h3>
+                    <h3>자신있는 언어가 무엇인가요?</h3>
                 </div>
                 <div class="pFaccordion__content">
-                    <div class="pFaccordion__contentWrap">
-                        질문에 대한 답.
-                    </div>
-                </div>
-            </div>
-            <div class="pFaccordion__section pFaccordion__section--active">
-                <div class="pFaccordion__title">
-                    <h3>질문3</h3>
-                </div>
-                <div class="pFaccordion__content">
-                    <div class="pFaccordion__contentWrap">
-                        질문에 대한 답.
-                    </div>
-                </div>
-            </div>
-            <div class="pFaccordion__section">
-                <div class="pFaccordion__title">
-                    <h3>질문4</h3>
-                </div>
-                <div class="pFaccordion__content">
-                    <div class="pFaccordion__contentWrap">
-                        질문에 대한 답.
-                    </div>
-                </div>
-            </div>
-            <div class="pFaccordion__section">
-                <div class="pFaccordion__title">
-                    <h3>질문5</h3>
-                </div>
-                <div class="pFaccordion__content">
-                    <div class="pFaccordion__contentWrap">
-                        질문에 대한 답.
-                    </div>
+                    <p class="pFaccordion__contentWrap">HTML5, CSS, CSS3 입니다.</p>
                 </div>
             </div>
         </section>
@@ -660,6 +593,20 @@
             navBox.classList.remove('nav__profile--active');
             toggleButton.setAttribute('aria-expanded', 'false');
         })
+
+
+        // TODO: 개선
+        let faqs = document.querySelectorAll('.pFaccordion__section');
+
+        faqs.forEach(element => {
+            element.addEventListener('click', function() {
+                if(element.classList.contains('pFaccordion__section--active')){
+                    element.classList.remove('pFaccordion__section--active');
+                } else {
+                    element.classList.add('pFaccordion__section--active');
+                }
+            })
+        });
     </script>
 </body>
 </html>

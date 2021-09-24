@@ -177,11 +177,20 @@
                         border-bottom-right-radius: 5px;
                     }
                 }
+                .pFaccordion__content {
+                    max-height: 0;
+                    opacity: 0;
+                    transition: all .3s ease;
+                }
                 &--active {
                     .pFaccordion__title {
                         &:before {
                             background-image: url(../img/minus-circle.svg);
                         }
+                    }
+                    .pFaccordion__content {
+                        max-height: 999px;
+                        opacity: 1;
                     }
                 }
             }
