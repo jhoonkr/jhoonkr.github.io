@@ -53,7 +53,9 @@
             <h2 id="log-nav-heading" class="blind">연락하기</h2>
             <button type="button" class="nav__closeBtn" aria-controls="log-nav">연락하기 닫기</button>
             <div class="nav__log" role="dialog">
-                <section></section>
+                <section>
+                    <h2 class="blind">NAV</h2>
+                </section>
             </div>
         </nav>
     </header>
@@ -551,11 +553,8 @@
     <!-- <script src="js/common.js"></script> -->
     <script>
         (function () {
-
             'use strict';
-            
             const breakpoint = window.matchMedia('(min-width: 1297px)');
-
             let mySwiper;
 
             const breakpointChecker = function () {
@@ -579,6 +578,7 @@
                     },
                 });
             };
+
             breakpoint.addListener(breakpointChecker);
             breakpointChecker();
 
