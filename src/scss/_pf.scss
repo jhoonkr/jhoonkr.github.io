@@ -317,3 +317,20 @@
 //         }
 //     }
 // }
+
+@media (min-width: 1279px) {
+    .swiper-wrapper {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        .swiper-slide {
+            width: calc(50% - 10px);
+            margin: 10px auto 0;
+            .innerSlide {
+                .swiper-wrapper {
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+    }
+}
