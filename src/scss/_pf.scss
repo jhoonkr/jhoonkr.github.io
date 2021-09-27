@@ -300,6 +300,9 @@
             .innerSlide {
                 .swiper-wrapper {
                     flex-wrap: nowrap;
+                    .swiper-slide {
+                        margin: 0;
+                    }
                 }
             }
         }
