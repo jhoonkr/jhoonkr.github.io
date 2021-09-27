@@ -55,7 +55,7 @@ a{color:inherit;text-decoration:none}
 .nav__closeBtn:after{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}
 @media (min-width:1279px){
 .swiper-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-ms-flex-wrap:wrap;flex-wrap:wrap}
-.swiper-wrapper .swiper-slide{width:calc(50% - 10px);margin:10px auto 0}
+.swiper-wrapper .swiper-slide{width:calc(33.33333% - 10px);margin:10px 0 0 10px}
 .swiper-wrapper .swiper-slide .innerSlide .swiper-wrapper{-ms-flex-wrap:nowrap;flex-wrap:nowrap}
 }
 /*# sourceMappingURL=maps/pf.css.map */

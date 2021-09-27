@@ -295,8 +295,8 @@
         width: 100%;
         flex-wrap: wrap;
         .swiper-slide {
-            width: calc(50% - 10px);
-            margin: 10px auto 0;
+            width: calc(33.33333% - 10px);
+            margin: 10px 0 0 10px;
             .innerSlide {
                 .swiper-wrapper {
                     flex-wrap: nowrap;
