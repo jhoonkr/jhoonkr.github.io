@@ -29,7 +29,7 @@
                 }
             }
             &__slide {
-                padding-top: 15px;
+                padding-top: 5px;
                 padding-bottom: 15px;
                 .swiper-container {
                     overflow: hidden;
@@ -115,19 +115,20 @@
                 margin-bottom: 15px;
             }
             &__contentWrap {
-                padding: 0;
-                max-height: 0;
+                padding: 10px;
             }
             &__title {
                 position: relative;
+                width: 100%;
                 padding: 10px 10px 10px 45px;
                 background: #f0f2f5;
+                border: 0;
+                font-family: 'Noto Sans KR','Apple SD Gothic Neo',NanumBarunGothic,NanumGothic,'Malgun Gothic',dotum,sans-serif;
                 font-size: 15px;
                 font-weight: bold;
                 color: #333;
-                h3 {
-                    margin: 0;
-                }
+                text-align: left;
+                appearance: none;
                 &:before {
                     position: absolute;
                     top: 50%;
@@ -162,23 +163,15 @@
                     }
                 }
                 .pFaccordion__content {
-                    max-height: 0;
-                    opacity: 0;
+                    display: none;
                     transition: all .3s ease;
                 }
-                &--active {
-                    .pFaccordion__title {
-                        &:before {
-                            background-image: url(../img/minus-circle.svg);
-                        }
+                button[aria-expanded='true'] {
+                    &:before {
+                        background-image: url(../img/minus-circle.svg);
                     }
-                    .pFaccordion__content {
-                        max-height: 999px;
-                        opacity: 1;
-                    }
-                    .pFaccordion__contentWrap {
-                        padding: 20px;
-                        max-height: 999px;
+                    & + .pFaccordion__content {
+                        display: block;
                     }
                 }
             }
@@ -290,13 +283,18 @@
 }
 
 @media (min-width: 1279px) {
+    .content {
+        &__slide {
+            margin: 0 -8px;
+        }
+    }
     .swiper-wrapper {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
         .swiper-slide {
-            width: calc(33.33333% - 10px);
-            margin: 10px 0 0 10px;
+            width: calc(33.33333% - 16px);
+            margin: 10px 8px 0;
             .innerSlide {
                 .swiper-wrapper {
                     flex-wrap: nowrap;
