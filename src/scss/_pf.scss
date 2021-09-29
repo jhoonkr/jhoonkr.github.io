@@ -242,10 +242,11 @@
         position: absolute;
         top: 64px;
         right: 16px;
-        width: 280px;
+        width: 300px;
         transform-origin: 100% 0;
         border: 1px solid #dbdee3;
         background-color: #fff;
+        z-index: 10;
         &.nav__profile--active {
             display: block;
         }
@@ -279,6 +280,54 @@
         &:after {
             transform: rotate(-45deg);
         }
+    }
+    &__log {
+        padding-top: 50px;
+    }
+}
+
+.my-profile {
+    &__card {
+        text-align: center;
+    }
+    &__name {
+        margin: 10px 0;
+    }
+    &__city {
+        margin: 5px 0;
+        font-size: 11px;
+    }
+    &__description {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #313131;
+    }
+    &__pic {
+        padding: 7px;
+        border: 1px solid #d3d3d3;
+        border-radius: 50%;
+        vertical-align: top;
+    }
+    &__skills {
+        padding: 12px 6px;
+        margin-top: 30px;
+        background: #1c1c1c;
+        color: #a0a0a0;
+        text-align: left;
+    }
+    &__title {
+        padding: 0 7px;
+        margin: 0 0 10px;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    &__item {
+        display: inline-block;
+        margin: 0 5px 5px;
+        padding: 7px;
+        border: 1px solid #343434;
+        border-radius: 3px;
+        font-size: 12px;
     }
 }
 
