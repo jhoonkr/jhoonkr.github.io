@@ -244,8 +244,8 @@
         right: 16px;
         width: 300px;
         transform-origin: 100% 0;
-        border: 1px solid #dbdee3;
         background-color: #fff;
+        box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
         z-index: 10;
         &.nav__profile--active {
             display: block;
