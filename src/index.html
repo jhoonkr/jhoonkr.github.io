@@ -574,11 +574,30 @@
                         <p class="pFaccordion__contentWrap">HTML5, CSS, CSS3 입니다.</p>
                     </div>
                 </li>
+                <li class="pFaccordion__section">
+                    <button type="button" class="pFaccordion__title" aria-expanded="false">관심 있는 다른 분야는 있나요?</button>
+                    <div class="pFaccordion__content">
+                        <p class="pFaccordion__contentWrap">동적 구현에 관심이 많습니다. 아직 개인 프로젝트에 동적 역할을 부여할 뿐이지만 점점 더 성장할 수 있도록 최선을 다하고 있습니다.</p>
+                    </div>
+                </li>
+                <li class="pFaccordion__section">
+                    <button type="button" class="pFaccordion__title" aria-expanded="false">자신 있는 분야는 무엇인가요?</button>
+                    <div class="pFaccordion__content">
+                        <p class="pFaccordion__contentWrap">마크업에 강점이 있습니다. 동적, 정적 모든 페이지 작업 가능합니다. 100% 반응형 페이지를 작업하는 것을 즐겨 합니다. (간단한 수학을 즐깁니다.)</p>
+                    </div>
+                </li>
+                <li class="pFaccordion__section">
+                    <button type="button" class="pFaccordion__title" aria-expanded="false">업무 외에 자신의 강점은 무엇이라 생각하나요?</button>
+                    <div class="pFaccordion__content">
+                        <p class="pFaccordion__contentWrap">커뮤니케이션, 동료와의 협업, 그리고 멘토, 멘티 역할입니다. 코드 리뷰 받는 것을 두려워하지 않습니다. 모든 구성원과 함께 발전하고 싶어 합니다.</p>
+                    </div>
+                </li>
             </ul>
         </section>
     </main>
     <!-- <script src="js/common.js"></script> -->
     <script>
+        // IIEF
         (function () {
             'use strict';
             const breakpoint = window.matchMedia('(min-width: 1297px)');
@@ -610,20 +629,7 @@
             breakpointChecker();
 
         })();
-    </script>
-    <script>
-        const innerSwiper = new Swiper('.innerSlide', {
-            slidesPerView: 1,
-            touchRatio: 0,
-            navigation: {
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next'
-            },
-            observer: true,
-            observeParents: true,
-        });
-    </script>
-    <script>
+
         let toggleButton = document.querySelector('.nav__button');
         let closeButton = document.querySelector('.nav__closeBtn');
         let navBox = document.querySelector('.nav__profile');
@@ -659,6 +665,18 @@
         }
 
         items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+    <script>
+        const innerSwiper = new Swiper('.innerSlide', {
+            slidesPerView: 1,
+            touchRatio: 0,
+            navigation: {
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next'
+            },
+            observer: true,
+            observeParents: true,
+        });
     </script>
 </body>
 
