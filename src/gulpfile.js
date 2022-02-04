@@ -64,3 +64,21 @@ gulp.task("pr:watch", function (done) {
   gulp.watch("portfolio/scss/components/*.scss", gulp.series("pr"));
   done();
 });
+
+// SN
+
+gulp.task('sona', function (done) {
+  gulp.src('./sona/scss/*.scss')
+      .pipe(sourcemaps.init())
+      .pipe(gulpsass({sourcemap: true, outputStyle: 'expanded'}).on('error', gulpsass.logError))
+      // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
+      .pipe(cleancss({format: 'keep-breaks' }))
+      .pipe(sourcemaps.write('../maps'))
+      .pipe(gulp.dest('./sona/css'));
+
+  done();
+});
+gulp.task('sona:watch', function (done) {
+  gulp.watch('sona/scss/*.scss', gulp.series('sona'));
+  done();
+});

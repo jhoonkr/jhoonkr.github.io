@@ -5,15 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta id="viewport" name="viewport" content="width=1280">
     <meta property="og:title" content="sona"/>
-    <meta property="og:url" content="http://172.16.114.131/html/common/LD_component.html" />
     <meta property="og:description" content="Sona UI 컴포넌트"/>
-    <link rel="shortcut icon" href="img/selene_fv.png">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/github.min.css">
-    <link rel="stylesheet" href="http://172.16.114.131/css/dialog.css">
     <title>Sona component</title>
-    <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="index_style.css">
-    <link rel="stylesheet" type="text/css" href="css/sona.css">
+    <link rel="stylesheet" type="text/css" href="/src/sona/css/sona.css">
 </head>
 <body>
 <div class="header">
@@ -253,7 +249,7 @@
         $('.component_contents[data-ls]').each(function(index) {
             var compname = $(this).attr('data-ls');
             $(this).append('<div data-component="' + compname + '"></div>');
-            $(this).children('div[data-component]').include('../../sona/' + compname + '.html');
+            $(this).children('div[data-component]').include('/src/sona/' + compname + '.html');
         });
         hljs.initHighlightingOnLoad(); // 코드 하이라이트
 
