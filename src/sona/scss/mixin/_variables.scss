@@ -1,10 +1,6 @@
 //----- [guide] -----
 //----- Sona Component에 사용된 변수 및 extend style
 
-// font
-$dfont: douzone,"Microsoft YaHei","PingFang SC","MS PGothic","Hiragino Kaku Gothic ProN","굴림",gulim,"Apple SD Gothic Neo",sans-serif !important;
-$dzt_font : douzonetitle,"Microsoft YaHei","PingFang SC","MS PGothic","Hiragino Kaku Gothic ProN","굴림",gulim,"Apple SD Gothic Neo",sans-serif !important;
-
 // color
 $blue: #1c90fb;
 $cyan: #13bad2;
@@ -16,7 +12,7 @@ $purple: #7349fd;
 $gray: #777;
 
 // sprite image url
-$spimg_url: "../../imgs/sp_sona.png";
+$spimg_url: "/src/sona/imgs/sp_sona.png";
 $spimg_size: 500px 1000px;
 
 // blind

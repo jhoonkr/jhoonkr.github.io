@@ -10,7 +10,7 @@ label,button{cursor:pointer}
 
 
 *[class *= "SN_"], *[class *= "SN_"] * {
-  font-family: $dfont;
+  // font-family: $dfont;
 }
 
 // sprite image
@@ -34,4 +34,13 @@ label,button{cursor:pointer}
 // rotate object
 .rotate180 {
   @include rotate(180deg);
+}
+
+.blind {
+  position:absolute !important;
+  clip:rect(0 0 0 0) !important;
+  width:1px !important;
+  height:1px !important;
+  margin:-1px !important;
+  overflow:hidden !important
 }
