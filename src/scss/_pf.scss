@@ -76,8 +76,8 @@
                         .swiper-button-prev {
                             color: #000;
                             // Navigation Bug fix.
-                            backface-visibility: hidden; 
-                            transform: translateZ(0); 
+                            backface-visibility: hidden;
+                            transform: translateZ(0);
                             transform: translate3d(0, 0, 0);
                         }
                         &--box {

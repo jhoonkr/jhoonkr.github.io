@@ -67,18 +67,31 @@ gulp.task("pr:watch", function (done) {
 
 // SN
 
-gulp.task('sona', function (done) {
-  gulp.src('./sona/scss/*.scss')
-      .pipe(sourcemaps.init())
-      .pipe(gulpsass({sourcemap: true, outputStyle: 'expanded'}).on('error', gulpsass.logError))
-      // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
-      .pipe(cleancss({format: 'keep-breaks' }))
-      .pipe(sourcemaps.write('../maps'))
-      .pipe(gulp.dest('./sona/css'));
-
+gulp.task("sona", function (done) {
+  gulp
+    .src("sona/scss/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(
+      sass({ sourcemap: true, outputStyle: "expanded" }).on(
+        "error",
+        sass.logError
+      )
+    )
+    // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
+    .pipe(cleancss({ format: "keep-breaks" }))
+    .pipe(sourcemaps.write("./maps"))
+    .pipe(gulp.dest("./sona/css"));
   done();
 });
-gulp.task('sona:watch', function (done) {
-  gulp.watch('sona/scss/*.scss', gulp.series('sona'));
+
+gulp.task("sona:watch", function (done) {
+  gulp.watch("sona/scss/*.scss", gulp.series("sona"));
+  gulp.watch("sona/scss/common/*.scss", gulp.series("sona"));
+  gulp.watch("sona/scss/mixin/*.scss", gulp.series("sona"));
   done();
 });
