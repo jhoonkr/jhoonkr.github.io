@@ -65,6 +65,35 @@ gulp.task("pr:watch", function (done) {
   done();
 });
 
+gulp.task("newpf", function (done) {
+  gulp
+    .src("scss/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(
+      sass({ sourcemap: true, outputStyle: "expanded" }).on(
+        "error",
+        sass.logError
+      )
+    )
+    // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
+    .pipe(cleancss({ format: "keep-breaks" }))
+    .pipe(sourcemaps.write("./maps"))
+    .pipe(gulp.dest("./css"));
+  done();
+});
+
+gulp.task("newpf:watch", function (done) {
+  gulp.watch("scss/*.scss", gulp.series("newpf"));
+  gulp.watch("scss/common/*.scss", gulp.series("newpf"));
+  gulp.watch("scss/components/*.scss", gulp.series("newpf"));
+  done();
+});
+
 // SN
 
 gulp.task("sona", function (done) {
