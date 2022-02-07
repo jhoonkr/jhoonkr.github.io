@@ -19,8 +19,8 @@ a{color:inherit;text-decoration:none}
 .section__down{position:absolute;bottom:35px;left:50%;width:42px;height:23px;margin-left:-21px;padding:0;background:url(/src/img/sp_newpf.png) no-repeat -18px 0/150px 150px;-webkit-animation:bounce 2s ease infinite;animation:bounce 2s ease infinite;z-index:1}
 .section__title{position:absolute;top:50%;left:50%;margin:0;padding:0;font-size:80px;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-animation:opacity 7s;animation:opacity 7s}
 .section__myinfo{height:auto;padding:136px 100px 50px;background-color:#fff;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box}
-.section__myinfo--text{font-size:24px;color:#1e232d;line-height:46px}
-.section__myinfo--subtext{display:block;margin-top:10px;font-size:20px;color:#888;line-height:20px}
+.section__myinfo--text{font-size:24px;color:#1e232d}
+.section__myinfo--subtext{display:block;margin-top:10px;font-size:20px;color:#888}
 .section__category{margin-top:100px;font-size:0;text-align:center}
 .section__category ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .section__category ul li::before{content:'';display:inline-block;width:9px;height:14px;margin:5px 20px 0;background:url(/src/img/sp_newpf.png) no-repeat -65px 0/150px 150px;vertical-align:top}
@@ -37,6 +37,13 @@ a{color:inherit;text-decoration:none}
 .section__list li.item5{background-color:#6542ec}
 .section__list li.item6{background-color:#f8d357}
 .section__list li a{display:block;height:100%}
+.section__say{padding:100px 100px;height:370px;background-color:#1e232d;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box}
+.section__say--title{font-size:24px;color:#fff}
+.section__say--subtitle{margin-top:10px;font-size:20px;color:#fff;opacity:.6}
+.section__say .button__link{display:block;position:relative;width:302px;height:50px;margin:36px auto 0;background:url(/src/img/img_footer_button.png) no-repeat 0 0/302px 50px}
+.section__say .button__link--text{position:absolute;top:50%;left:20px;font-size:14px;color:#fff;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+.footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:132px;background-color:#1e232d;border-top:1px solid rgba(255,255,255,.08);text-align:center}
+.footer__text{font-size:16px;color:#fff;opacity:.7}
 @-webkit-keyframes opacity{
 0%{opacity:.25}
 100%{opacity:1}

@@ -48,24 +48,24 @@
         <section class="section" id="sectionInfo">
             <div class="section__myinfo">
                 <p class="section__myinfo--text">어떠한 문장을 넣어야 할지 고민중입니다. 2줄이 될 수도 1줄이 될 수도 있습니다.</p>
-                <span class="section__myinfo--subtext">가나다라마바사 가나다라마바사 가나다라마바사</span>
+                <p class="section__myinfo--subtext">가나다라마바사 가나다라마바사 가나다라마바사</p>
                 <div class="section__category">
                     <ul role="tablist">
                         <li role="none">
-                            <a href="#" role="tab" aria-selected="true">all</a>
+                            <a href="#" id="all" role="tab" aria-selected="true" aria-controls="alltab">all</a>
                         </li>
                         <li role="none">
-                            <a href="#" role="tab" aria-selected="false">experiments</a>
+                            <a href="#" id="exp" role="tab" aria-selected="false" aria-controls="exptab">experiments</a>
                         </li>
                         <li role="none">
-                            <a href="#" role="tab" aria-selected="false">stories</a>
+                            <a href="#" id="stroires" role="tab" aria-selected="false" aria-controls="strtab">stories</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
         <section class="section">
-            <div class="section__card">
+            <div class="section__card" id="alltab" role="tabpanel" aria-labelledby="all" style="display: block">
                 <ul class="section__list">
                     <li class="item1">
                         <a href="#">123123</a>
@@ -87,13 +87,51 @@
                     </li>
                 </ul>
             </div>
+            <div class="section__card" id="exptab" role="tabpanel" aria-labelledby="exp" style="display: none">
+                <ul class="section__list">
+                    <li class="item1">
+                        <a href="#">123123</a>
+                    </li>
+                    <li class="item2">
+                        <a href="#">123123</a>
+                    </li>
+                    <li class="item3">
+                        <a href="#">123123</a>
+                    </li>
+                    <li class="item4">
+                        <a href="#">123123</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section__card" id="strtab" role="tabpanel" aria-labelledby="stroires"  style="display: none">
+                <ul class="section__list">
+                    <li class="item1">
+                        <a href="#">123123</a>
+                    </li>
+                    <li class="item2">
+                        <a href="#">123123</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__say">
+                <p class="section__say--title">문구 넣을 예정입니다. 무슨 문구를 넣으면 좋을까요.</p>
+                <p class="section__say--subtitle">문구 넣을 예정입니다. 무슨 문구를 넣으면 좋을까요.</p>
+                <a href="#" class="button__link">
+                    <span class="button__link--text">저에게 이메일 보내기</spanc>
+                </a>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <span class="footer__text">Copyright © JaeHoon Yu, All rights reserved.</span>
+    </footer>
     <!-- <script src="js/common.js"></script> -->
 </body>
 <script>
     docReady(function () {
-        // timeRespone();
+        toggleTab();
     });
 
     function docReady(fn) {
@@ -104,11 +142,30 @@
         }
     }
 
-    // var timeRespone = function () {
-    //     const timeCheck = document.querySelector('.section__title');
-    //     setTimeout(() => {
-    //         timeCheck.classList.add('section__title--active');
-    //     }, 7000);
-    // }
+    var toggleTab = function () {
+        const tabs = document.querySelectorAll('[role="tab"]');
+        const tabLists = document.querySelectorAll('[role="tablist"]');
+
+        tabs.forEach(tab => {
+            if (tab.getAttribute("aria-selected") == "true") {
+                tab.tabIndex = 0;
+            } else {
+                tab.tabIndex = -1;
+            }
+            tab.addEventListener("click", e => {
+                const parent = tab.parentNode.tagName === "LI" ? tab.parentNode.parentNode : tab.parentNode;
+                const panelWrap = document.querySelector(`#${tab.getAttribute("aria-controls")}`).parentNode;
+                parent.querySelectorAll('[aria-selected="true"]').forEach(t => {
+                    t.setAttribute("aria-selected", false)
+                    t.tabIndex = -1;
+                });
+                tab.setAttribute("aria-selected", true);
+                tab.tabIndex = 0;
+                panelWrap.querySelectorAll(':scope > [role="tabpanel"]').forEach(p => p.style.display = "none");
+                panelWrap.querySelector(`#${tab.getAttribute("aria-controls")}`).style.display = "block"
+                e.preventDefault();
+            });
+        });
+    };
 </script>
 </html>
