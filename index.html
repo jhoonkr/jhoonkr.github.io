@@ -43,11 +43,49 @@
     <main id="main">
         <section class="section section--fz">
             <h2 class="section__title">It's only crazy<br>until you do it.</h2>
-            <button type="button" class="section__down"><span class="blind">다음</span></button>
+            <a href="#sectionInfo" class="section__down"><span class="blind">다음 섹션으로 이동</span></a>
+        </section>
+        <section class="section" id="sectionInfo">
+            <div class="section__myinfo">
+                <p class="section__myinfo--text">어떠한 문장을 넣어야 할지 고민중입니다. 2줄이 될 수도 1줄이 될 수도 있습니다.</p>
+                <span class="section__myinfo--subtext">가나다라마바사 가나다라마바사 가나다라마바사</span>
+                <div class="section__category">
+                    <ul role="tablist">
+                        <li role="none">
+                            <a href="#" role="tab" aria-selected="true">all</a>
+                        </li>
+                        <li role="none">
+                            <a href="#" role="tab" aria-selected="false">experiments</a>
+                        </li>
+                        <li role="none">
+                            <a href="#" role="tab" aria-selected="false">stories</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section class="section">
-            <div class="section__myinfo">
-                <p class="section__myinfo--text">alpha's experiments can be developed into the real service or faded away. all of this entirely depends on your feedback about alpha.</p>
+            <div class="section__card">
+                <ul class="section__list">
+                    <li class="item1">
+                        <a href="#">123123</a>
+                    </li>
+                    <li class="item2">
+                        <a href="#">123123</a>
+                    </li>
+                    <li class="item3">
+                        <a href="#">123123</a>
+                    </li>
+                    <li class="item4">
+                        <a href="#">123123</a>
+                    </li>
+                    <li class="item5">
+                        <a href="#">123123</a>
+                    </li>
+                    <li class="item6">
+                        <a href="#">123123</a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -55,7 +93,7 @@
 </body>
 <script>
     docReady(function () {
-        timeRespone();
+        // timeRespone();
     });
 
     function docReady(fn) {
@@ -66,11 +104,11 @@
         }
     }
 
-    var timeRespone = function () {
-        const timeCheck = document.querySelector('.section__title');
-        setTimeout(() => {
-            timeCheck.classList.add('section__title--active');
-        }, 5000);
-    }
+    // var timeRespone = function () {
+    //     const timeCheck = document.querySelector('.section__title');
+    //     setTimeout(() => {
+    //         timeCheck.classList.add('section__title--active');
+    //     }, 7000);
+    // }
 </script>
 </html>

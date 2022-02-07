@@ -1,7 +1,8 @@
+html{scroll-behavior:smooth}
 body{position:relative;min-width:375px;margin:0;background:#fff;font-size:14px;line-height:1.5;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none;overflow-wrap:break-word;word-wrap:break-word}
 *,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box}
 .blind{position:absolute;width:1px;height:1px;font-size:1px;overflow:hidden;opacity:0}
-.ko-KR{font-family:'Noto Sans KR','Apple SD Gothic Neo',NanumBarunGothic,NanumGothic,'Malgun Gothic',dotum,sans-serif;word-break:keep-all}
+.ko-KR{font-family:SF Pro KR,SF Pro Display,SF Pro Icons,Apple Gothic,HY Gulim,MalgunGothic,HY Dotum,Lexi Gulim,Helvetica Neue,Helvetica,Arial,sans-serif;word-break:keep-all}
 img{max-width:100%;height:auto}
 ol,ul{margin:0;padding:0;list-style:none}
 p{margin:0}
