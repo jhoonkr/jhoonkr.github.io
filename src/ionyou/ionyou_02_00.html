@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<title>강원도청 플랫폼 : IOnYou</title>
+<link rel="stylesheet" type="text/css" href="/css/nanumsquare.css">
+<!-- <link rel="stylesheet" type="text/css" href="/css/common.css"> -->
+<link rel="stylesheet" type="text/css" href="./css/ionyou.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="container">
+        <!-- [D] 스토리 메인 페이지의 경우 테블릿 분기 처리를 위해 class="feed" 추가시켜주세요. -->
+        <div class="content feed">
+            <div class="various">
+                <div class="various_service">
+                    <div class="service_list">
+                        <ul role="tablist">
+                            <li role="tab" class="active"><a href="#">스토리</a></li>
+                            <li role="tab"><a href="#">지역</a></li>
+                        </ul>
+                    </div>
+                    <div class="tool_box">
+                        <!-- [D] 사용자 이미지 img 태그로 넣어주세요. 스타일 값은 지워주세요. -->
+                        <span class="my_profile">
+                            <!-- 사용자 이미지 받는 곳 -->
+                            <img src="https://static.wehago.com/imgs/ionyou/profile_dummy.png" style="width:100%;height:100%" alt="프로필 이미지">
+                            <!-- //사용자 이미지 받는 곳 -->
+                        </span>
+                        <button type="button" class="button_search"><span class="blind">검색</span></button>
+                        <button type="button" class="button_alarm">
+                            <!-- [D] 새로운 알림이 와있을 경우 ico_new -->
+                            <i class="new"></i>
+                            <span class="blind">알림</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="live_story">
+                <ul>
+                    <li class="live">
+                        <button type="button">
+                            <span class="story_thumbnail">
+                                <span class="thumbnail_border"></span>
+                                <span class="badge_live">Live</span>
+                                <span class="thumbnail">
+                                    <img src="https://static.wehago.com/imgs/ionyou/dummy_live3.png" style="width:100%;height:100%;" alt="">
+                                </span>
+                                <span class="story_text">gangwon_official</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="story_thumbnail">
+                                <span class="thumbnail_border"></span>
+                                <span class="badge_live">Live</span>
+                                <span class="thumbnail">
+                                    <img src="https://static.wehago.com/imgs/ionyou/dummy_live1.png" style="width:100%;height:100%;" alt="">
+                                </span>
+                                <span class="story_text">강원도립화목원</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="story_thumbnail">
+                                <span class="thumbnail_border"></span>
+                                <span class="badge_live">Live</span>
+                                <span class="thumbnail">
+                                    <img src="https://static.wehago.com/imgs/ionyou/dummy_live2.png" style="width:100%;height:100%;" alt="">
+                                </span>
+                                <span class="story_text">강원도립화목원</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="story_thumbnail">
+                                <span class="thumbnail_border"></span>
+                                <span class="badge_live">Live</span>
+                                <span class="thumbnail">
+                                    <img src="https://static.wehago.com/imgs/ionyou/img_dummy.png" style="width:100%;height:100%;" alt="">
+                                </span>
+                                <span class="story_text">강원도립화목원</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="feed_box">
+                <div class="my_feed">
+                    <div class="feed_header">
+                        <div class="my_feed_profile">
+                            <a href="#" role="button">
+                                <img src="https://static.wehago.com/imgs/ionyou/profile_dummy.png" style="width:100%;height:100%" alt="프로필 이미지">
+                            </a>
+                        </div>
+                        <div class="my_feed_info">
+                            <span class="my_name"><a href="#">신민아</a><button type="button" class="subscribe">구독</button>
+                            </span>
+                            <span class="my_location">
+                                <a href="#">안목해변</a>
+                            </span>
+                        </div>
+                        <div class="my_feed_setting">
+                            <button type="button"><span class="blind">옵션 더보기</span></button>
+                        </div>
+                    </div>
+                    <div class="feed_content">
+                        <div class="feed_image">
+                            <!-- [D] slickjs 사용하였습니다. 도트와 같이 텍스트 페이지수도 같이 연동이 되야하는데, 구현/확인 부탁드립니다. -->
+                            <span class="page_number_text">1/3</span>
+                            <ul class="feed_image_list">
+                                <li>
+                                    <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy.jpg" style="width: 100%;height: 100%;" alt="임시 이미지">
+                                </li>
+                                <li>
+                                    <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy.jpg" style="width: 100%;height: 100%;" alt="임시 이미지">
+                                </li>
+                                <li>
+                                    <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy.jpg" style="width: 100%;height: 100%;" alt="임시 이미지">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feed_footer">
+                        <div class="feed_option">
+                            <div class="heart">
+                                <!-- [D] 클릭시 class="active" 추가시켜주세요. -->
+                                <button type="button" class=""></button>
+                            </div>
+                            <div class="comment">
+                                <button type="button"></button>
+                            </div>
+                        </div>
+                        <div class="feed_total"><span>좋아요 <em>1,000</em>명</span><span>댓글 <em>12</em>개</span></div>
+                        <div class="feed_hashtag">
+                            <a href="#">#안목해변</a>
+                            <a href="#">#강릉핫스팟</a>
+                        </div>
+                        <div class="feed_write">
+                            <!-- [D] 최대 2줄 말줄임 입니다. 2줄 말줄임 처리시 우측끝에 더보기 노출되어야 합니다. -->
+                            <p>오늘 안목해변에 친구랑 놀러왔는데 너무 춥고 배고프다. ᄒᄒᄒᄒᄒᄒᄒ ★근데 너무 예뻐가지고 인생샷 엄청 <span>...<button type="button">더보기</button></span></p>
+                        </div>
+                        <div class="feed_time">
+                            <span>20시간 전</span>
+                        </div>
+                        <div class="feed_comment_write">
+                            <div class="comment_outpost_area">
+                                <!-- [D] 댓글을 남겨보세요 영역 클릭 시 display: none -->
+                                <div class="comment_outpost" style="display: block">
+                                    <span class="comment_profile">
+                                        <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy.jpg" style="width:100%;height:100%;" alt="임시 이미지">
+                                    </span>
+                                    <span class="comment_button">댓글을 남겨보세요.</span>
+                                </div>
+                                <!-- [D] 댓글을 남겨보세요 영역 클릭 시 display: block -->
+                                <div class="comment_text_box" style="display: none;">
+                                    <div class="comment_textarea">
+                                        <span class="comment_profile">
+                                            <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy.jpg" style="width:100%;height:100%;" alt="임시 이미지">
+                                        </span>
+                                        <form>
+                                            <textarea placeholder="아이디로 댓글 달기"></textarea>
+                                        </form>
+                                        <!-- [D] 글 입력시 class="active" 추가시켜주세요.  -->
+                                        <button type="button" class="comment_upload"><span class="blind">댓글 올리기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO: Dummy 배너의 경우 이미지 처리 필요. 일단 더미로 만들어놓음. -->
+                <div class="banner_area">
+                    <a href="#">
+                        <span>추천 강원도!!</span>
+                        <p>#춘천 #춘천 핫스팟 #춘천축제</p>
+                    </a>
+                </div>
+                <div class="subscribe_recommend_list">
+                    <div class="list_option">
+                        <strong>구독 추천</strong>
+                        <button type="button">모두보기</button>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="subscribe_user_img">
+                                <a href="#">
+                                    <img src="https://static.wehago.com/imgs/ionyou/sub_profile_dummy.png" style="width: 100%;height:100%;" alt="임시 이미지">
+                                </a>
+                            </div>
+                            <div class="subscribe_user_text">미미</div>
+                            <div class="button_subscribe">
+                                <button type="button">구독</button>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- [D] 프로필 이미지 없는 경우 class="no_img" 추가 부탁드립니다. -->
+                            <div class="subscribe_user_img">
+                                <!-- 프로필 없는 경우 img 태그 삭제 부탁드립니다. -->
+                                <a href="#">
+                                    <img src="https://static.wehago.com/imgs/ionyou/sub_profile_dummy2.png" style="width: 100%;height:100%;" alt="임시 이미지">
+                                </a>
+                            </div>
+                            <div class="subscribe_user_text">김승희</div>
+                            <div class="button_subscribe">
+                                <button type="button">맞구독</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="subscribe_user_img">
+                                <a href="#">
+                                    <img src="https://static.wehago.com/imgs/ionyou/sub_profile_dummy3.png" style="width: 100%;height:100%;" alt="임시 이미지">
+                                </a>
+                            </div>
+                            <div class="subscribe_user_text">행복가능한우리우리</div>
+                            <div class="button_subscribe">
+                                <button type="button">맞구독</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="subscribe_user_img no_img">
+                                <a href="#"></a>
+                            </div>
+                            <div class="subscribe_user_text">행복가능한우리우리</div>
+                            <div class="button_subscribe">
+                                <button type="button">맞구독</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="subscribe_user_img">
+                                <a href="#">
+                                    <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy.jpg" style="width: 100%;height:100%;" alt="임시 이미지">
+                                </a>
+                            </div>
+                            <div class="subscribe_user_text">행복가능한우리우리</div>
+                            <div class="button_subscribe">
+                                <button type="button">맞구독</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my_feed">
+                    <div class="feed_header">
+                        <div class="my_feed_profile">
+                            <a href="#" role="button">
+                                <img src="https://static.wehago.com/imgs/ionyou/profile_dummy2.png" style="width:100%;height:100%" alt="프로필 이미지">
+                            </a>
+                        </div>
+                        <div class="my_feed_info">
+                            <span class="my_name"><a href="#">gangwon_official</a><button type="button" class="subscribe">구독</button>
+                            </span>
+                        </div>
+                        <div class="my_feed_setting">
+                            <button type="button"><span class="blind">옵션 더보기</span></button>
+                        </div>
+                    </div>
+                    <div class="feed_content">
+                        <div class="feed_image">
+                            <ul class="feed_image_list">
+                                <li>
+                                    <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy2.jpg" style="width: 100%;height: 100%;" alt="임시 이미지">
+                                </li>
+                                <li>
+                                    <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy2.jpg" style="width: 100%;height: 100%;" alt="임시 이미지">
+                                </li>
+                                <li>
+                                    <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy2.jpg" style="width: 100%;height: 100%;" alt="임시 이미지">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feed_footer">
+                        <div class="feed_option">
+                            <div class="heart">
+                                <button type="button" class="active"></button>
+                            </div>
+                            <div class="comment">
+                                <button type="button"></button>
+                            </div>
+                        </div>
+                        <div class="feed_total"><span>좋아요 <em>1</em>명</span></div>
+                        <div class="feed_hashtag">
+                            <a href="#">#강원도</a>
+                            <a href="#">#청년구직활동</a>
+                            <a href="#">#지원사업</a>
+                        </div>
+                        <div class="feed_write">
+                            <!-- [D] 최대 2줄 말줄임 입니다. 2줄 말줄임 처리시 우측끝에 더보기 노출되어야 합니다. -->
+                            <p>취업 성공시엔 50만원 준다고!? 컨설팅까지 아이러브 강원</p>
+                        </div>
+                        <div class="feed_time">
+                            <span>20시간 전</span>
+                        </div>
+                        <div class="feed_comment_write">
+                            <div class="comment_outpost_area">
+                                <!-- [D] 댓글을 남겨보세요 영역 클릭 시 display: none -->
+                                <div class="comment_outpost" style="display: block">
+                                    <span class="comment_profile">
+                                        <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy.jpg" style="width:100%;height:100%;" alt="임시 이미지">
+                                    </span>
+                                    <span class="comment_button">댓글을 남겨보세요.</span>
+                                </div>
+                                <!-- [D] 댓글을 남겨보세요 영역 클릭 시 display: block -->
+                                <div class="comment_text_box" style="display: none;">
+                                    <div class="comment_textarea">
+                                        <span class="comment_profile">
+                                            <img src="https://static.wehago.com/imgs/ionyou/img_feed_dummy.jpg" style="width:100%;height:100%;" alt="임시 이미지">
+                                        </span>
+                                        <form>
+                                            <textarea placeholder="아이디로 댓글 달기"></textarea>
+                                        </form>
+                                        <!-- [D] 글 입력시 class="active" 추가시켜주세요.  -->
+                                        <button type="button" class="comment_upload"><span class="blind">댓글 올리기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 나의 서랍 -->
+            <!-- [D] 나의 서랍 필요없는 UI 의 경우 개별 display: none 시켜주세요. -->
+            <!-- [D] 항상 떠있어야 하는 페이지의 경우 class="fixed" 추가해주세요. -->
+            <div class="bottom_area fixed">
+                <div class="navigation">
+                    <ul>
+                        <li class="navigation_friend">
+                            <a href="#">
+                                친구
+                            </a>
+                        </li>
+                        <li class="navigation_chatting">
+                            <a href="#">채팅</a>
+                        </li>
+                        <li class="navigation_my">
+                            <a href="#"><span class="navigation_my_icon"></span>MY
+                            </a>
+                        </li>
+                        <li class="navigation_service">
+                            <a href="#">서비스</a>
+                        </li>
+                        <li class="navigation_story active">
+                            <a href="#">스토리</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="floating_button"><span class="blind">추가하기</span></button>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script>
+    $(function(){
+        $('.feed_image ul').slick({
+            arrows: false,
+            slidesToShow: 1,
+            dots: true,
+        });
+    });
+</script>
+<script>
+
+    // 탭 이벤트
+    var tabMenu = document.querySelectorAll('.service_list li');
+    var currentTab = document.querySelector('.service_list .active');
+
+    var tabClick = function(target){
+        currentTab.classList.remove('active')
+        target.classList.add('active')
+        currentTab = target;
+    }
+
+    for(var item of tabMenu) {
+        item.addEventListener('click', function(event){
+            event.preventDefault();
+            tabClick(this)
+        });
+    }
+
+    // 스크롤 이벤트
+    $(function(){
+        var lastScroll = 0;
+
+        $(window).scroll(function(event){
+            var scroll = $(this).scrollTop();
+            if (scroll > 0) {
+                $(".greeting").addClass("fixed");
+            }
+            else {
+                $(".greeting").removeClass("fixed");
+            }
+            lastScroll = scroll;
+        });
+    });
+
+    $(function() {
+        var bottomArea = $('.bottom_area').outerHeight();
+
+        if($('.bottom_area').hasClass('fixed')){
+            $('.content').css('padding-bottom', bottomArea);
+        } else {
+            $('.content').css('');
+        }
+    });
+
+</script>
+</body>
+</html>

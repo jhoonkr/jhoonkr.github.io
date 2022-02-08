@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<title>강원도청 플랫폼 : IOnYou</title>
+<link rel="stylesheet" type="text/css" href="/css/nanumsquare.css">
+<!-- <link rel="stylesheet" type="text/css" href="/css/common.css"> -->
+<link rel="stylesheet" type="text/css" href="./css/ionyou.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="container">
+        <div class="content">
+            <div class="main">
+                <div class="my_page">
+                    <div class="namecard">
+                        <!-- [D] 페이지 스크롤 시작시 class="fixed" 추가해주세요. -->
+                        <div class="greeting">
+                            <h1>
+                                <a href="#"><span class="blind">i.on.you</span></a>
+                            </h1>
+                            <div class="tool_box">
+                                <button type="button" class="button_qrcode"><span class="blind">QR 스캔</span></button>
+                                <button type="button" class="button_alarm">
+                                    <!-- [D] 새로운 알림이 와있을 경우 ico_new -->
+                                    <i class="new"></i>
+                                    <span class="blind">알림</span>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="profile">
+                            <span><img src="https://static.wehago.com/imgs/ionyou/profile_dummy.png" style="width:100;height:100%;" alt="임시 이미지"></span>안녕하세요. <strong>신민아</strong>님</p>
+                    </div>
+                    <div class="story_tab">
+                        <ul role="tablist">
+                            <li role="tab" class="story_writing">
+                                <a href="#">
+                                    <i class="icon"></i>
+                                    <span>스토리 작성</span>
+                                </a>
+                            </li>
+                            <li role="tab" class="stroy_my">
+                                <a href="#">
+                                    <i class="icon">
+                                        <em>36</em>
+                                    </i>
+                                    <span>나의 스토리</span>
+                                </a>
+                            </li>
+                            <li role="tab" class="story_subscriber">
+                                <a href="#">
+                                    <i class="icon"></i>
+                                    <span>구독자 관리</span>
+                                </a>
+                            </li>
+                            <li role="tab" class="story_home">
+                                <a href="#">
+                                    <i class="icon"></i>
+                                    <span>스토리 홈</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="progress">
+                        <h2 class="my_title"><a href="#">진행중인 나의 행정</a></h2>
+                        <div class="progress_list">
+                            <ul role="tablist">
+                                <!-- [D] 클릭시 class="active" 추가해주세요. -->
+                                <li role="tab" class="selected">
+                                    <a href="#">
+                                        <span class="list_title">나의 행정</span>
+                                        <span class="list_number"><i class="new"></i>10<em>건</em></span>
+                                    </a>
+                                </li>
+                                <li role="tab">
+                                    <a href="#">
+                                        <span class="list_title">진행중 행정</span>
+                                        <span class="list_number"><i class="new"></i>5<em>건</em></span>
+                                    </a>
+                                </li>
+                                <li role="tab">
+                                    <a href="#">
+                                        <span class="list_title">완료된 행정</span>
+                                        <span class="list_number"><i class="new"></i>5<em>건</em></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="progress_content_list">
+                            <ul>
+                                <!-- [D] 진행 : li class="ing"
+                                         완료 : li class="complete" -->
+                                <li class="ing">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">진행</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>긴급생활안정지원금(소상공인)</p>
+                                            <span>저소득 한부모가족</span>
+                                            <span>신청일자 2020-11-31</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="complete">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">완료</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>2022년 1분기 실업급여</p>
+                                            <span>신청일자 2020-11-30</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="ing">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">진행</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>생계 안정 분야 지원금</p>
+                                            <span>신청일자 2020-11-29</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="ing">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">진행</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>청년구직활동지원대상자 특별 지원금</p>
+                                            <span>신청일자 2020-11-28</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="complete">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">완료</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>2022년 여성 일자리 사업 지원</p>
+                                            <span>신청일자 2020-11-27</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="ing">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">진행</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>강원도 중소기업육성자금 지원</p>
+                                            <span>신청일자 2020-11-26</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="ing">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">완료</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>강원 엔젤투자매칭펀드 운용</p>
+                                            <span>신청일자 2020-11-25</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="complete">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">완료</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>2022년 수출보험료 지원 사업</p>
+                                            <span>신청일자 2020-11-24</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="complete">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">완료</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>해외전시 개별참가 지원</p>
+                                            <span>신청일자 2020-11-23</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="complete">
+                                    <div class="list_guide">
+                                        <span class="icon_guide">완료</span>
+                                    </div>
+                                    <div class="list_content">
+                                        <a href="#">
+                                            <p>산학연협력 기술개발사업 지원</p>
+                                            <span>신청일자 2020-11-22</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list_info_setting">
+                            <button type="button" class="button_setting">행정 정보 설정</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_story">
+                    <h2 class="my_title"><a href="#">스토리 알림</a></h2>
+                    <div class="story_notification">
+                        <ul>
+                            <li class="comment">
+                                <a href="#">
+                                    <div class="full">
+                                        <p class="status"><strong>yesully</strong>님이 댓글을 남겼습니다. “오늘 안목해변에 BTS 왔더라구용!!!”</p>
+                                        <p class="point">“안목해변 놀러 갔다가 지갑 잃어버렸어요.”</p>
+                                        <span class="date">2020-10-10</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="loveit">
+                                <a href="#">
+                                    <div class="full">
+                                        <p class="status"><strong>kimduzone</strong>, <strong>googley</strong> 외 3명이 게시글에 좋아요를 눌렀습니다.</p>
+                                        <p class="point">“에어팟 1세대 팝니다 (박스O, 케이블X)”</p>
+                                        <span class="date">2020-10-10</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="violation">
+                                <a href="#">
+                                    <div class="full">
+                                        <p class="status">회원님이 작성하신 게시글이 정책에 위반되었습니다.</p>
+                                        <p class="point">“맨날 서류떼러 주민센터 가면 불친절… 김XX”</p>
+                                        <span class="date">2020-10-10</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="button_more">더 불러오기</button>
+                    </div>
+                </div>
+                <div class="news">
+                    <h2 class="my_title"><a href="#">뉴스</a></h2>
+                    <ul class="news_list">
+                        <li>
+                            <span class="news_logo"><span class="blind">강원도민일보</span></span>
+                            <a href="#">
+                                <div class="img_area">
+                                    <!-- 아래 Div는 임시로 만들어놓은 공간입니다. 삭제 후 img 태그로 이미지 넣어주세요. -->
+                                    <img src="https://static.wehago.com/imgs/ionyou/dummy_news1.png" style="width:100%;height:100%" alt="임시 이미지">
+                                </div>
+                                <div class="news_info">
+                                    <p>“반갑다, 추위야!” 강원 스키장 개장 준비 인공눈 만들기 돌입</p>
+                                    <span>2020-11-10</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="news_logo"><span class="blind">강원도민일보</span></span>
+                            <a href="#">
+                                <div class="img_area">
+                                    <!-- 아래 Div는 임시로 만들어놓은 공간입니다. 삭제 후 img 태그로 이미지 넣어주세요. -->
+                                    <img src="https://static.wehago.com/imgs/ionyou/dummy_news2.png" style="width:100%;height:100%" alt="임시 이미지">
+                                </div>
+                                <div class="news_info">
+                                    <p>강원 때 이른 추위 절정… 설악산 영하 9.5도 올 가을 들어 가장 추워</p>
+                                    <span>2020-11-05</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="news_logo"><span class="blind">강원도민일보</span></span>
+                            <a href="#">
+                                <div class="img_area">
+                                    <!-- 아래 Div는 임시로 만들어놓은 공간입니다. 삭제 후 img 태그로 이미지 넣어주세요. -->
+                                    <img src="https://static.wehago.com/imgs/ionyou/dummy_news3.png" style="width:100%;height:100%" alt="임시 이미지">
+                                </div>
+                                <div class="news_info">
+                                    <p>“세계 청소년이 주인되는 2024 동계 올림픽 만들겠다”</p>
+                                    <span>2020-11-02</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="button_more">더 불러오기</button>
+                </div>
+                <div class="footer">
+                    <p>최근 30일 알림만 확인할 수 있습니다.<br>30일이 경과된 알림은 자동으로 삭제됩니다.</p>
+                </div>
+            </div>
+            <!-- 나의 서랍 -->
+            <!-- [D] 나의 서랍 필요없는 UI 의 경우 개별 display: none 시켜주세요. -->
+            <!-- [D] 항상 떠있어야 하는 페이지의 경우 class="fixed" 추가해주세요. -->
+            <div class="bottom_area fixed">
+                <div class="navigation">
+                    <ul>
+                        <li class="navigation_friend">
+                            <a href="#">
+                                친구
+                            </a>
+                        </li>
+                        <li class="navigation_chatting">
+                            <a href="#">채팅</a>
+                        </li>
+                        <li class="navigation_my">
+                            <a href="#"><span class="navigation_my_icon"></span>MY
+                            </a>
+                        </li>
+                        <li class="navigation_service">
+                            <a href="#">서비스</a>
+                        </li>
+                        <li class="navigation_story">
+                            <a href="#">스토리</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- [D] 나의 서랍 slideUp 동작할 시 class="drag" 추가해주세요. -->
+                <div class="my_drawer">
+                    <div class="drawer_box">
+                        <div class="drawer_area">
+                            <div class="drawer_name">
+                                <strong class="drawer_title">나의 서랍</strong>
+                                <button type="button" class="button_setting">인증서 설정</button>
+                            </div>
+                            <div class="did_card">
+                                <ul>
+                                    <li class="type_skyblue">
+                                        <div class="did_card_title">
+                                            <strong>I.ON.U</strong>
+                                            <span>만료일 2021.10.14</span>
+                                        </div>
+                                        <div class="did_card_name">
+                                            <strong>신민아</strong>
+                                        </div>
+                                        <div class="did_card_info">
+                                            <span>1989.08.01 / 여 / 내국인</span>
+                                            <span>010-9876-5432</span>
+                                        </div>
+                                    </li>
+                                    <li class="type_purple type_qrcode">
+                                        <div class="did_card_title">
+                                            춘천시립도서관<br>출입증
+                                        </div>
+                                        <div class="did_card_name">
+                                            <strong>신민아</strong>
+                                        </div>
+                                        <div class="did_card_qrcode">
+                                            <div class="qrcode_box">
+                                                <span class="qrcode_profile" style="background-color: red">
+                                                <!-- 프로필 이미지 들어가야 할 곳, 위 style 값은 지워주세요. -->
+                                                </span>
+                                                <!-- QR 코드 이미지 넣어주세요. 아래 Div 는 임시로 넣어둔 코드입니다. 이미지 추가시 삭제 부탁드립니다. -->
+                                                <div style="width:76px;height:76px;background-color:aqua"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="type_yellow">
+                                        <div class="did_card_title">
+                                            <strong>I.ON.U</strong>
+                                            <span>만료일 2021.10.14</span>
+                                        </div>
+                                        <div class="did_card_name">
+                                            <strong>신민아</strong>
+                                        </div>
+                                        <div class="did_card_info">
+                                            <span>1989.08.01 / 여 / 내국인</span>
+                                            <span>010-9876-5432</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script>
+    $(function(){
+        $('.did_card ul').slick({
+            arrows: false,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+        });
+    });
+</script>
+<script>
+
+    // 탭 이벤트
+    var tabMenu = document.querySelectorAll('.progress_list li');
+    var currentTab = document.querySelector('.progress_list .selected');
+
+    var tabClick = function(target){
+        currentTab.classList.remove('selected')
+        target.classList.add('selected')
+        currentTab = target;
+    }
+
+    for(var item of tabMenu) {
+        item.addEventListener('click', function(event){
+            event.preventDefault();
+            tabClick(this)
+        });
+    }
+
+    // 스크롤 이벤트
+    $(function(){
+        var lastScroll = 0;
+
+        $(window).scroll(function(event){
+            var scroll = $(this).scrollTop();
+            if (scroll > 0) {
+                $(".greeting").addClass("fixed");
+            }
+            else {
+                $(".greeting").removeClass("fixed");
+            }
+            lastScroll = scroll;
+        });
+    });
+
+    $(function() {
+        var bottomArea = $('.bottom_area').outerHeight() + $('.my_drawer').outerHeight();
+
+        if($('.bottom_area').hasClass('fixed')){
+            $('.content').css('padding-bottom', bottomArea);
+        } else {
+            $('.content').css('');
+        }
+    });
+
+</script>
+</body>
+</html>

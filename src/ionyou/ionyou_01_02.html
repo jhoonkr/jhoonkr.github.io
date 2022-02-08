@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<title>강원도청 플랫폼 : IOnYou</title>
+<link rel="stylesheet" type="text/css" href="/css/nanumsquare.css">
+<!-- <link rel="stylesheet" type="text/css" href="/css/common.css"> -->
+<link rel="stylesheet" type="text/css" href="./css/ionyou.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="container">
+        <div class="content">
+            <div class="various">
+                <div class="various_service">
+                    <div class="service_list">
+                        <ul role="tablist">
+                            <li role="tab"><a href="#">뉴스</a></li>
+                            <li role="tab" class="active"><a href="#">행정</a></li>
+                            <li role="tab"><a href="#">문화</a></li>
+                            <li role="tab"><a href="#">커머스</a></li>
+                        </ul>
+                    </div>
+                    <div class="tool_box">
+                        <button type="button" class="button_search"><span class="blind">검색</span></button>
+                        <button type="button" class="button_alarm">
+                            <!-- [D] 새로운 알림이 와있을 경우 ico_new -->
+                            <i class="new"></i>
+                            <span class="blind">알림</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="user_update">
+                    <a href="#">
+                        <p><strong>신민아</strong>님<br>설정하신 정보를 업데이트하세요<i></i></p>
+                    </a>
+                </div>
+                <div class="progress_number">
+                    <strong>진행중인 나의 행정</strong>
+                    <span>34건</span>
+                </div>
+                <div class="card_slide">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/temp_slice1.png" style="width:335px;height:154px" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/temp_slice2.png" style="width:335px;height:154px" alt="임시 이미지">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service_apply">
+                <p><strong>총 4건의 행정</strong><br>서비스를 신청하실 수 있어요.</p>
+                <ul class="list_hashtag">
+                    <!-- [D] 버튼 클릭시 class="active" 추가해주세요. -->
+                    <li class="active">
+                        <button type="button">#전체</button>
+                    </li>
+                    <li>
+                        <button type="button">#30대</button>
+                    </li>
+                    <li>
+                        <button type="button">#여성</button>
+                    </li>
+                    <li>
+                        <button type="button">#청년</button>
+                    </li>
+                    <li>
+                        <button type="button">#소상공인</button>
+                    </li>
+                </ul>
+                <ul class="hastag_card_list">
+                    <li>
+                        <a href="#">
+                            <img src="https://static.wehago.com/imgs/ionyou/temp_card1.png" style="width:100%;height:154px" alt="임시 이미지">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://static.wehago.com/imgs/ionyou/temp_card2.png" style="width:100%;height:154px" alt="임시 이미지">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://static.wehago.com/imgs/ionyou/temp_card3.png" style="width:100%;height:154px" alt="임시 이미지">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://static.wehago.com/imgs/ionyou/temp_card4.png" style="width:100%;height:154px" alt="임시 이미지">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 나의 서랍 -->
+            <!-- [D] 나의 서랍 필요없는 UI 의 경우 개별 display: none 시켜주세요. -->
+            <!-- [D] 항상 떠있어야 하는 페이지의 경우 class="fixed" 추가해주세요. -->
+            <div class="bottom_area fixed">
+                <!-- [D] 나의 서랍 slideUp 동작할 시 class="drag" 추가해주세요. -->
+                <div class="navigation">
+                    <ul>
+                        <li class="navigation_friend">
+                            <a href="#">
+                                친구
+                            </a>
+                        </li>
+                        <li class="navigation_chatting">
+                            <a href="#">채팅</a>
+                        </li>
+                        <li class="navigation_my">
+                            <a href="#"><span class="navigation_my_icon"></span>MY
+                            </a>
+                        </li>
+                        <li class="navigation_service active">
+                            <a href="#">서비스</a>
+                        </li>
+                        <li class="navigation_story">
+                            <a href="#">스토리</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script>
+    $(function(){
+        $('.card_slide ul').slick({
+            arrows: false,
+            slidesToShow: 1,
+            dots: true,
+        });
+    });
+</script>
+<script>
+
+    // 탭 이벤트
+    var tabMenu = document.querySelectorAll('.service_list li');
+    var currentTab = document.querySelector('.service_list .active');
+
+    var tabClick = function(target){
+        currentTab.classList.remove('active')
+        target.classList.add('active')
+        currentTab = target;
+    }
+
+    for(var item of tabMenu) {
+        item.addEventListener('click', function(event){
+            event.preventDefault();
+            tabClick(this)
+        });
+    }
+
+    // 스크롤 이벤트
+    $(function(){
+        var lastScroll = 0;
+
+        $(window).scroll(function(event){
+            var scroll = $(this).scrollTop();
+            if (scroll > 0) {
+                $(".greeting").addClass("fixed");
+            }
+            else {
+                $(".greeting").removeClass("fixed");
+            }
+            lastScroll = scroll;
+        });
+    });
+
+    $(function() {
+        var bottomArea = $('.bottom_area').outerHeight();
+
+        if($('.bottom_area').hasClass('fixed')){
+            $('.content').css('padding-bottom', bottomArea);
+        } else {
+            $('.content').css('');
+        }
+    });
+
+</script>
+</body>
+</html>

@@ -124,3 +124,21 @@ gulp.task("sona:watch", function (done) {
   gulp.watch("sona/scss/mixin/*.scss", gulp.series("sona"));
   done();
 });
+
+// iOnYou
+
+// ionyou
+gulp.task('ionyou', function (done) {
+  gulp.src('ionyou/scss/scss/*.scss')
+      .pipe(sourcemaps.init())
+      .pipe(gulpsass({sourcemap: true, outputStyle: 'expanded'}).on('error', gulpsass.logError))
+      // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
+      .pipe(cleancss({format: 'keep-breaks' }))
+      .pipe(sourcemaps.write('../maps'))
+      .pipe(gulp.dest('./ionyou/scss/css'));
+  done();
+});
+gulp.task('ionyou:watch', function (done) {
+  gulp.watch('ionyou/scss/*.scss', gulp.series('ionyou'));
+  done();
+});

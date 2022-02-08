@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<title>강원도청 플랫폼 : IOnYou</title>
+<link rel="stylesheet" type="text/css" href="/css/nanumsquare.css">
+<!-- <link rel="stylesheet" type="text/css" href="/css/common.css"> -->
+<link rel="stylesheet" type="text/css" href="./css/ionyou.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="container">
+        <div class="content">
+            <div class="endpage">
+                <div class="type_info">
+                    <div class="navigation_title">
+                        <button type="button" class="button_close"><span class="blind">닫기</span></button>
+                        <h2>긴급 생활 안정 지원금</h2>
+                    </div>
+                    <div class="support">
+                        <div class="hashtag">
+                            <span># 소상공인</span>
+                        </div>
+                        <p>긴급 생활 안정 지원금 소상공인</p>
+                        <div class="price_area">
+                            <span>400,000<em>원</em></span>
+                        </div>
+                        <ul class="price_provision_info">
+                            <li>도내 연매출 1억원 미만</li>
+                            <li>상시 근로자수 5인 미만 소상공인<br>단, 해당 업종은 10인 미만도 가능합니다<br>제조업&middot;건설업&middot;운수업&middot;광업</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="document_verification">
+                    <h3>[필요] 서류를 확인하세요!</h3>
+                    <div class="document_verification_list">
+                        <strong class="essential">필수서류</strong>
+                        <ul>
+                            <li>사업자등록증</li>
+                        </ul>
+                    </div>
+                    <div class="document_verification_list">
+                        <strong class="startup">창업일자 확인</strong>
+                        <p>아래 창업 기간에 창업하셨다면 추가 서류를 준비하세요.<br><mark>2019. 01. 01 ~ 2019. 12. 31</mark></p>
+                        <ul>
+                            <li>준비서류 (최근 1년 기준)</li>
+                        </ul>
+                        <ul class="sub_info type_color">
+                            <li>- 개인사업자: 부가가치세 과표준증명원</li>
+                            <li>- 면세사업자: 면세 사업자 수입 금액 증명원</li>
+                            <li>- 법인: 표준재무제표증명</li>
+                        </ul>
+                    </div>
+                    <div class="document_verification_list">
+                        <strong class="applicant">신청인 확인</strong>
+                        <ul class="type2">
+                            <li>대리인이 신청하신다면 위임장을 준비하세요.</li>
+                            <li>공동사업자가 신청하신다면 신청포기확인서를 준비하세요.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exclusion_target">
+                    <strong>제외대상을 확인하세요!</strong>
+                    <ul>
+                        <li>정부추경 대상자</li>
+                        <li>강원도 긴급 생활안정지원금 중복지원 대상자</li>
+                        <li>기초생활수급자, 차상위계층 수급자격자</li>
+                        <li class="exception">차상위계층 수급자격?<br><p>계층확인, 본인부담경감, 자활급여, 장애수당, 장애아동수당</p></li>
+                        <li>기초연금, 장애인연금, 한부모가족, 실업급여, 경력단절여성, 청년구직활동</li>
+                    </ul>
+                    <!-- TODO : 아코디언 형식으로 열린다고 함. 현재 디자인 없음 그냥 디자인대로만 구현 -->
+                    <div class="accordion_list">
+                        <button type="button" class="button_list">신청시 유의사항을 확인해주세요.</button>
+                    </div>
+                </div>
+            </div>
+            <!-- [D] 버튼 고정 시킬 시 class="fixed" 추가시켜주세요.
+                     추가로 button_share_box 에 class="fixed" 붙을 시 최상단 class="endpage" 엘리먼트에 style="padding-bottom: 111px" 추가시켜주세요.  -->
+            <div class="button_share_box fixed">
+                <button type="button" class="button_share"><span class="blind">공유하기</span></button>
+                <button type="button" class="button_apply">신청하기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script>
+    $(function(){
+        $('.did_card ul').slick({
+            arrows: false,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+        });
+    });
+
+    $(function(){
+        var lastScroll = 0;
+        var supportHeight = $('.support').outerHeight();
+
+        $(window).scroll(function(event){
+            var scroll = $(this).scrollTop();
+            if (scroll > 0) {
+                $(".navigation_title").addClass("fixed");
+                if (scroll > supportHeight) {
+                    $(".navigation_title").addClass("change");
+                }
+                else {
+                    $(".navigation_title").removeClass("change");
+                }
+            }
+            else {
+                $(".navigation_title").removeClass("fixed");
+            }
+            lastScroll = scroll;
+        });
+    });
+
+    $(function() {
+        var buttonShare = $('.button_share_box').outerHeight();
+
+        if($('.button_share_box').hasClass('fixed')){
+            $('.content').css('padding-bottom', buttonShare);
+        } else {
+            $('.content').css('');
+        }
+    });
+</script>
+</body>
+</html>

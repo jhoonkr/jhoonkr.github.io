@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<title>강원도청 플랫폼 : IOnYou</title>
+<link rel="stylesheet" type="text/css" href="/css/nanumsquare.css">
+<!-- <link rel="stylesheet" type="text/css" href="/css/common.css"> -->
+<link rel="stylesheet" type="text/css" href="./css/ionyou.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="container">
+        <div class="content feed">
+            <div class="endpage">
+                <div class="navigation_title">
+                    <button type="button" class="button_prev"><span class="blind">뒤로가기</span></button>
+                    <h2>#안목해변</h2>
+                </div>
+                <div class="align_box">
+                    <div class="text_align">
+                        <ul>
+                            <li class="active">
+                                <a href="#">인기 게시물</a>
+                            </li>
+                            <li>
+                                <a href="#">최근 게시물</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icon_align">
+                        <button type="button" class="align_collecting"><span class="blind">모아보기</span></button>
+                        <button type="button" class="align_list"><span class="blind">일렬로 보기</span></button>
+                    </div>
+                </div>
+                <div class="image_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list1.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list2.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list3.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list4.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list6.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list7.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list8.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list9.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list10.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list11.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list11.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list11.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="https://static.wehago.com/imgs/ionyou/list11.jpg" style="width:100%;height:100%" alt="임시 이미지">
+                            </a>
+                        </li>
+                        <!-- [D] 하나의 ul 에 li 3개씩 들어가야합니다. 이미지 모자르는 경우 빈 li 로 들어가야 합니다. -->
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script>
+    $(function(){
+        $('.did_card ul').slick({
+            arrows: false,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+        });
+    });
+</script>
+<script>
+
+    // 탭 이벤트
+    var tabMenu = document.querySelectorAll('.progress_list li');
+    var currentTab = document.querySelector('.progress_list .selected');
+
+    var tabClick = function(target){
+        currentTab.classList.remove('selected')
+        target.classList.add('selected')
+        currentTab = target;
+    }
+
+    for(var item of tabMenu) {
+        item.addEventListener('click', function(event){
+            event.preventDefault();
+            tabClick(this)
+        });
+    }
+
+    // 스크롤 이벤트
+    $(function(){
+        var lastScroll = 0;
+
+        $(window).scroll(function(event){
+            var scroll = $(this).scrollTop();
+            if (scroll > 0) {
+                $(".navigation_title").addClass("fixed");
+            }
+            else {
+                $(".navigation_title").removeClass("fixed");
+            }
+            lastScroll = scroll;
+        });
+    });
+
+</script>
+</body>
+</html>

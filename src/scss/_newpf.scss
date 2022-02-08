@@ -144,7 +144,7 @@
                 background-color: #0dc547;
             }
             &.item4 {
-                background-color: #fff;
+                background-color: #40c3fc;
             }
             &.item5 {
                 background-color: #6542ec;
@@ -152,9 +152,57 @@
             &.item6 {
                 background-color: #f8d357;
             }
+            &.item7 {
+                background-color: #f55c23;
+            }
+            &.item8 {
+                background-color: #f2f2f2;
+            }
+            &.item9 {
+                background-color: #37ccce;
+            }
+            &.item10 {
+                background-color: #7837ce;
+            }
+            &.item11 {
+                background-color: #ce3799;
+            }
             a {
                 display: block;
                 height: 100%;
+            }
+        }
+        &--text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 18px;
+            color: #fff;
+            opacity: 0.9;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 12px;
+                height: 32px;
+                margin-right: 10px;
+                background: url(/src/img/sp_newpf.png) no-repeat -78px 0 / 150px 150px;
+                transform: rotate(180deg);
+                vertical-align: top;
+            }
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 12px;
+                height: 32px;
+                margin-left: 10px;
+                background: url(/src/img/sp_newpf.png) no-repeat -78px 0 / 150px 150px;
+                vertical-align: top;
+            }
+            &.color {
+                &--black {
+                    color: #000;
+                }
             }
         }
     }
