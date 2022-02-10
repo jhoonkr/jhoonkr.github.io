@@ -199,11 +199,9 @@
                 background: url(/src/img/sp_newpf.png) no-repeat -78px 0 / 150px 150px;
                 vertical-align: top;
             }
-            &.color {
-                &--black {
-                    color: #000;
-                }
-            }
+        }
+        &--black {
+            color: #000;
         }
     }
     &__say {
