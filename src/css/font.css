@@ -1,0 +1,30 @@
+/*
+ * Nanum Square Web Fonts
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com)
+ */
+
+@font-face {
+  font-family: 'Nanum Square';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../webfont/NanumSquare/NanumSquareR.eot);
+  src: local('Nanum Square Regular'),
+       local('NanumSquareR'),
+       url(../webfont/NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(../webfont/NanumSquare/NanumSquareR.woff2) format('woff2'),
+       url(../webfont/NanumSquare/NanumSquareR.woff) format('woff'),
+       url(../webfont/NanumSquare/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Square';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../webfont/NanumSquare/NanumSquareB.eot);
+  src: local('Nanum Square Bold'),
+       local('NanumSquareB'),
+       url(../webfont/NanumSquare/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+       url(../webfont/NanumSquare/NanumSquareB.woff2) format('woff2'),
+       url(../webfont/NanumSquare/NanumSquareB.woff) format('woff'),
+       url(../webfont/NanumSquare/NanumSquareB.ttf) format('truetype');
+}

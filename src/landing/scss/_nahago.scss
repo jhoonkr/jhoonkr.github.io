@@ -237,7 +237,7 @@
         position: relative;
         height: 490px;
         padding-top: 40px;
-        background: url(/html/landing/img/nahago_mobile/bg_spot.png) no-repeat 50% 50%;
+        background: url(/src/landing/imgs/bg_spot.png) no-repeat 50% 50%;
         background-size: cover;
         text-align: center;
         box-sizing: border-box;
@@ -436,7 +436,7 @@
         position: relative;
         width: 100%;
         height: 276px;
-        background: url(/html/landing/img/nahago_mobile/img_free.png) no-repeat 50% 0 / 370px 276px;
+        background: url(/src/landing/imgs/img_free.png) no-repeat 50% 0 / 370px 276px;
         &--link {
             position: absolute;
             bottom: 40px;
@@ -468,7 +468,7 @@
             width: 507px;
             height: 507px;
             margin-left: -360px;
-            background: url(/html/landing/img/nahago_mobile/bg_introduce_pattern.png) no-repeat 0 0 / 507px 507px;
+            background: url(/src/landing/imgs/bg_introduce_pattern.png) no-repeat 0 0 / 507px 507px;
         }
         &::after {
             content: '';
@@ -477,7 +477,7 @@
             width: 333px;
             height: 371px;
             margin-left: -153px;
-            background: url(/html/landing/img/nahago_mobile/bg_introduce_phone.png) no-repeat 50% 0 / 333px 371px;
+            background: url(/src/landing/imgs/bg_introduce_phone.png) no-repeat 50% 0 / 333px 371px;
         }
     }
     &__information {
@@ -1115,7 +1115,7 @@
                                     left: 0;
                                     width: 12px;
                                     height: 11px;
-                                    background: url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png) no-repeat -171px -248px / 475px 475px;
+                                    background: url(/src/landing/imgs/sp_nahago_mobile.png) no-repeat -171px -248px / 475px 475px;
                                 }
                             }
                             &--time {
@@ -1371,7 +1371,7 @@
     &.type__wehago {
         .content {
             &__spot {
-                background: url(/html/landing/img/nahago_mobile/bg_spot_t.png) no-repeat 50% 50%;
+                background: url(/src/landing/imgs/bg_spot_t.png) no-repeat 50% 50%;
                 background-size: cover;
                 &--title {
                     em {
