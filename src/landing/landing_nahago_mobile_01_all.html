@@ -356,6 +356,7 @@
 <script>
 	docReady(function() {
 		clickButton();
+		ctSwiper();
 	});
 
 	function docReady(fn) {
@@ -387,14 +388,41 @@
 		}
 	}
 
-	var swiper = new Swiper('.swiper', {
-		slidesPerView: 'auto',
-		spaceBetween: 20,
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-	});
+	// 큰 사이즈의 경우 예시 디자인이 없어 550PX 사이즈 이상 가운데 정렬 후 Swiper 기능 중지
+	var ctSwiper = function() {
+		// 550PX 사이즈 이상일 경우 Swiper 작동 중지 후 가운데 정렬
+		const breakpoint = window.matchMedia( '(min-width: 768px)' );
+		let mySwiper;
+
+		const breakpointCheck = function () {
+			if (breakpoint.matches === true) {
+				if (mySwiper !== undefined) mySwiper.destroy(true, true);
+				return;
+			} else if (breakpoint.matches === false) {
+				return enableSwiper();
+			}
+		};
+
+		const enableSwiper = function() {
+			mySwiper = new Swiper('.swiper', {
+				centerInsufficientSlides: true,
+				slidesPerView: 'auto',
+				spaceBetween: 20,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				breakpoints: {
+					550: {
+						slidesPerView: 'auto',
+						centerInsufficientSlides: false,
+					}
+				},
+			});
+		};
+		breakpoint.addListener(breakpointCheck);
+		breakpointCheck();
+	}
 </script>
 <!-- [D] //마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
 </body>
