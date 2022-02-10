@@ -1,0 +1,738 @@
+// Compontent load
+
+.container {
+    // 헤더를 제외한 높이값
+    height: calc(100% - 46px);
+    .content {
+        height: 100%;
+        .product_box {
+            margin: 20px 0;
+        }
+        .sort_box { 
+            & ~ .product_box {
+                margin-top: 16px;
+            }
+        }
+        .refund_info{
+            display: block;
+            margin-bottom: 32px;
+            .in_box{
+                display: flex;
+                margin-bottom: 32px;
+                width: 100%;
+                align-items: center;
+                .thumb{
+                    width: 114px;
+                    min-width: 114px;
+                    margin-right: 16px;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    img{
+                        display: block;
+                        width: 114px;
+                        height: auto;
+                    }
+                }
+                .text{
+                    display: block;
+                    text-align: left;
+                    span{
+                        display: block;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: -0.21px;
+                        color: $color_black;
+                    }
+                }
+            }
+            .refund_amount{
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.21px;
+                color: $color_black;
+                span{
+                    color: #127eff;
+                    font-weight: 900;
+                }
+            }
+
+        }
+        .refund_account{
+            display: block;
+            margin-bottom: 33px;
+            padding-top: 16px;
+            .depositor_box{
+                display: flex;
+                justify-content: space-between;
+                dt,
+                dd{
+                    display: block;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: $color_black;
+                }
+                dt{
+                    color: rgba(0,0,0,0.38);
+                }
+            }
+            .account_box{
+                display: block;
+                margin-top: 29px;
+                .in_box{
+                    display: flex;
+                    padding: 5px 0;
+                    border-top: 1px solid #ccc;
+                    &.type_02{
+                        justify-content: space-between;
+                        padding-top: 10px;
+                    }
+                    &.type_03{
+                        display: block;
+                        border-top: 0;
+                        border-bottom: 1px solid #ccc;
+                    }
+                    &:first-child{
+                        border-top: 0;
+                    }
+                    .select_bank{
+                        position: relative;
+                        width: 30%;
+                        min-width: 30%;
+                        margin-right: 5px;
+                        &:before{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            right: 12px;
+                            margin: -4px 0 0 0;
+                            width: 14px;
+                            height: 8px;
+                            @include background (14px, 8px, -98px, 0);
+                            z-index: 10;
+                        }
+                        label{
+                            display: block;
+                            width: 100%;
+                            border: 0;
+                            select{
+                                position: relative;
+                                display: block;
+                                width: 100%;
+                                border: 0;
+                                padding: 5px 34px 5px 0;
+                                background-color: #fff;
+                                font-size: 15px;
+                                line-height: 20px;
+                                letter-spacing: -0.22px;
+                                color: $color_black;
+                                box-sizing: border-box;
+                                -webkit-appearance:none;
+                                -moz-appearance:none;
+                                appearance:none;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+
+                            }
+                        }
+
+                    }
+                    .account_num{
+                        display: block;
+                        width: 100%;
+                        input{
+                            width: 100%;
+                            border: 0;
+                            padding: 5px 8px;
+                            box-sizing: border-box;
+                            font-size: 15px;
+                            line-height: 20px;
+                            color: rgba(0,0,0,0.38);
+                        }
+                    }
+                    .notice_text{
+                        display: block;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: -0.18px;
+                        color: $color_black;
+                        max-width: 240px;
+                    }
+                    .refund_email{
+                        display: block;
+                        margin-bottom: 20px;
+                        font-size:13px;
+                        line-height: 16px;
+                        letter-spacing: -0.2px;
+                        color: rgba(0,0,0,0.38);
+                    }
+                    .input_email{
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        input{
+                            width: 100%;
+                            border: 0;
+                            padding: 3px 0;
+                            box-sizing: border-box;
+                            font-size: 15px;
+                            line-height: 20px;
+                            letter-spacing: -0.22px;
+                            color: rgba(0,0,0,0.38);
+                        }
+                        .warning_text {
+                            position: absolute;
+                            bottom: -29px;
+                            left: 0;
+                            font-size: 12px;
+                            font-weight: bold;
+                            color: #fc4c60;
+                            letter-spacing: -0.18px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .refund_agree{
+            display: block;
+            padding-bottom: 32px;
+            border-bottom: 1px solid $color_black;
+            & > strong{
+                display: block;
+                padding: 14px 0;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: -0.21px;
+                color: $color_black;
+            }
+            & > p{
+                display: block;
+                margin-bottom: 15px;
+                font-size: 13px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                color: rgba(0,0,0,0.38);
+            }
+            .btn_box{
+                text-align: right;
+            }
+        }
+        .refund_notice{
+            display: block;
+            padding: 16px 0 32px;
+            p{
+                display: block;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: -0.18px;
+                color: $color_black;
+            }
+        }
+        .recipient_detail_box {
+            margin-top: 20px;
+            & + .recipient_detail_box {
+                margin-top: 40px;
+            }
+            .button_detail {
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+                button {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: $color_black;
+                    letter-spacing: -.23px;
+                    text-align: left;
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        margin: -4px 0 0 0;
+                        width: 14px;
+                        height: 8px;
+                        @include background (14px, 8px, -98px, 0);
+                    }
+                }
+                &.active {
+                    border-color: $color_black;
+                    .title {
+                        &:after {
+                            transform: rotateX(180deg);
+                        }
+                    }
+                    ~ .recipient_detail {
+                        display: block;
+                    }
+                }
+            }
+            .recipient_detail {
+                display: none;
+                position: relative;
+                padding: 16px;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+                }
+                dl {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    dt {
+                        font-size: 13px;
+                        font-weight: bold;
+                        color: rgba(0, 0, 0, 0.38);
+                        letter-spacing: -.28px;
+                        line-height: 28px;
+                    }
+                    dd {
+                        font-size: 13px;
+                        font-weight: bold;
+                        letter-spacing: -.2px;
+                        line-height: 28px;
+                        em {
+                            color: rgba(252, 76, 96, 0.86);
+                        }
+                    }
+                }
+                .button_send {
+                    margin-top: 9px;
+                    text-align: center;
+                }
+            }
+        }
+        .help_desk_info {
+            margin: 32px 0 30px;
+            font-size: 12px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.6);
+            line-height: 20px;
+            letter-spacing: -.18px;
+            text-align: center;
+            strong {
+                font-weight: 900;
+            }
+        }
+        .section_box {
+            & + .section_box {
+                margin-top: 32px;
+            }
+        }
+        .time_box {
+            position: relative;
+            margin-top: 20px;
+            border-bottom: 1px solid #ccc;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                margin: -8px 0 0 0;
+                @include background (14px, 8px, -98px, 0);
+            }
+            & + .time_box {
+                margin-top: 40px;
+            }
+            .select_time {
+                width: 100%;
+                padding-bottom: 10px;
+                border: 0;
+                font-size: 15px;
+                color: $color_black;
+                background-color: transparent;
+                letter-spacing: -.23px;
+                appearance: none;
+            }
+        }
+        .detail_info{
+            display: block;
+            padding-top: 32px;
+            &.send {
+                padding-top: 24px;
+            }
+            .sand_info{
+                display: block;
+                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: -0.24px;
+                color: $color_black;
+                text-align: center;
+                & > span{
+                    font-weight: 900;
+                }
+            }
+            .menu_info{
+                display: block;
+                text-align: center;
+                .company{
+                    display: block;
+                    margin: 19px 0 3px;
+                    font-size: 13px;
+                    line-height: 20px;
+                    letter-spacing: -0.2px;
+                    color: rgba(0,0,0,0.6);
+                }
+                .menu_name{
+                    display: block;
+                    margin-bottom: 17px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $color_black;
+                    font-weight: 700;
+                }
+                .detail_list{
+                    display: block;
+                    position: relative;
+                    padding: 17px 0 14px;
+                    border-top: 1px solid;
+                    border-color: $color_black;
+                    border-bottom: 1px solid rgba(0,0,0,0.06);
+                    & > div{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 16px;
+                        box-sizing: border-box;
+                        margin-top: 10px;
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                        & > dt,
+                        & > dd{
+                            display: block;
+                            font-size: 13px;
+                            line-height: 16px;
+                        }
+                        & > dt{
+                            color: rgba(0,0,0,0.38);
+                        }
+                        .press {
+                            & + .press {
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .empty_box {
+            margin-top: 124px;
+            text-align: center;
+            p {
+                margin-top: 30px;
+                font-size: 14px;
+                font-weight: bold;
+                color: $color_black;
+                letter-spacing: -.21px;
+            }
+        }
+        &.gift_home {
+            .banner_box {
+                position: relative;
+                height: 80px;
+                background: url(/imgs/gft/mobile/img_banner.png) 50% 0 no-repeat;
+                background-size: 375px 80px;
+                -webkit-background-size: 375px 80px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50%;
+                    height: 80px;
+                    background: url(/imgs/gft/mobile/bg_banner_left.png) repeat-x;
+                    background-size: 375px 80px;
+                    -webkit-background-size: 375px 80px;
+                    z-index: -1;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 50%;
+                    height: 80px;
+                    background: url(/imgs/gft/mobile/bg_banner_right.png) repeat-x;
+                    background-size: 375px 80px;
+                    -webkit-background-size: 375px 80px;
+                    z-index: -1;
+                }
+                a {
+                    display: block;
+                    height: 100%;
+                }
+            }
+            .home_product_list {
+                ul {
+                    overflow: hidden;
+                    overflow-x: scroll;
+                    -webkit-overflow-scrolling: touch;
+                    margin-top: 14px;
+                    white-space: nowrap;
+                    font-size: 0;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                    li {
+                        display: inline-block;
+                        width: 114px;
+                        height: 100%;
+                        margin-left: 16px;
+                        vertical-align: top;
+                        &:first-child {
+                            margin-left: 20px;
+                        }
+                        a {
+                            display: block;
+                            position: relative;
+                        }
+                        .thumb {
+                            width: 114px;
+                            height: 93px;
+                            margin-bottom: 8px;
+                        }
+                        .product {
+                            strong,
+                            span {
+                                display: block;
+                            }
+                        }
+                        &.list_all_view {
+                            width: auto;
+                            height: 179px;
+                            margin-left: 0;
+                            a {
+                                padding: 58px 22px;
+                                font-size: 11px;
+                                color: $color_black;
+                                letter-spacing: -0.17px;
+                                text-align: center;
+                                .button_more {
+                                    position: relative;
+                                    width: 36px;
+                                    height: 36px;
+                                    margin: 0 auto 12px;
+                                    border: 1px solid rgba(0, 0, 0, 0.38);
+                                    border-radius: 100%;
+                                    vertical-align: top;
+                                    &:before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        margin-top: -6px;
+                                        margin-left: -3.5px;
+                                        @include background (7px, 12px, -174px, 0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .product_list_empty {
+                    text-align: center;
+                    p {
+                        margin-top: 4px;
+                        font-size: 13px;
+                        font-weight: bold;
+                        color: rgba(0, 0, 0, 0.38);
+                        line-height: 20px;
+                        letter-spacing: -0.2px;
+                    }
+                }
+            }
+        }
+        .gift_navigation {
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid #ddd;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 1px;
+                height: 100%;
+                background-color: #ddd;
+            }
+            li {
+                float: left;
+                width: 50%;
+                a {
+                    display: block;
+                    position: relative;
+                    padding: 17px 10px 19px 20px;
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: $color_black;
+                    letter-spacing: -0.2px;
+                    line-height: 16px;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        margin-top: -7px;
+                        @include background (7px, 12px, -174px, 0);
+                    }
+                }
+            }
+        }
+        .present_list {
+            padding: 20px 0 24px;
+            .present_list_text {
+                padding: 0 20px;
+                font-size: 13px;
+                font-weight: bold;
+                color: $color_black;
+                line-height: 20px;
+                letter-spacing: -0.2px;
+                span {
+                    font-weight: 900;
+                    color: #127eff;
+                }
+            }
+        }
+        .end_empty {
+            text-align: center;
+            .empty_thumb {
+                margin-top: 150px;
+                p {
+                    margin-top: 16px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 0.38);
+                    line-height: 28px;
+                    letter-spacing: -0.24px;
+                }
+            }
+        }
+        .address {
+            margin: 32px 0;
+            text-align: center;
+            p {
+                font-size: 12px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.6);
+                letter-spacing: -0.18px;
+                line-height: 18px;
+                strong {
+                    font-weight: 900;
+                }
+            }
+        }
+        .quick_help {
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            padding: 12px 20px 12px;
+            white-space: nowrap;
+            font-size: 0;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            li {
+                display: inline-block;
+                margin-left: 8px;
+                vertical-align: top;
+                &:first-child {
+                    margin-left: 0;
+                }
+                a {
+                    display: block;
+                    padding: 8px 16px;
+                    border: 1px solid rgba(0, 0, 0, 0.38);
+                    border-radius: 17px;
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: $color_black;
+                }
+                &.quick_all {
+                    a {
+                        background-color: #4b4f55;
+                        border-color: #4b4f55;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .anniversary_text {
+            margin: 20px 0 23px;
+            p {
+                font-size: 14px;
+                font-weight: normal;
+                color: $color_black;
+                line-height: 24px;
+                letter-spacing: -0.21px;
+                & + p {
+                    margin-top: 12px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 30px;
+                    letter-spacing: -0.27px;
+                    strong {
+                        display: inline-block;
+                        position: relative;
+                        font-weight: 900;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            bottom: 4px;
+                            left: 0;
+                            width: 100%;
+                            height: 11px;
+                            background-color: #0ec1b8;
+                            opacity: .3;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+        }
+        .add_anniversary_text {
+            font-size: 14px;
+            font-weight: 900;
+            color: $color_black;
+            letter-spacing: -0.21px;
+            @include ellipsis(1);
+        }
+        .button_add_anniversary {
+            display: block;
+            width: 100%;
+            height: 60px;
+            margin: 16px 0 20px;
+            border: 1px solid rgba(0 ,0 , 0, 0.12);
+            border-radius: 16px;
+            font-size: 13px;
+            font-weight: normal;
+            color: $color_black;
+            letter-spacing: -0.2px;
+            strong {
+                font-weight: 900;
+            }
+            &:before {
+                content: '';
+                display: inline-block;
+                margin-right: 6px;
+                vertical-align: top;
+                @include background(16px, 16px, -94px, -132px);
+            }
+        }
+    }
+}
+.img_coupon {
+    margin-top: 32px;
+}

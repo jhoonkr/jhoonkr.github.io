@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>WEHAGO</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+	<link rel="stylesheet" type="text/css" href="https://static.wehago.com/css/nanumsquare.css">
+	<link rel="stylesheet" type="text/css" href="https://static.wehago.com/html/landing/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/landing_nahago_mobile.css">
+</head>
+<body>
+	<div id="header" class="header">
+		<h1 class="header__logo">
+			<a href="#"><span class="blind">NAHAGO</span></a>
+		</h1>
+		<button type="button" class="header__hambuger"></button>
+		<!-- [D] 햄버거 버튼 클릭시 class="active" 추가해주세요. -->
+		<div class="nav">
+			<div class="nav__header">
+				<h1 class="header__logo"><a href="#"><span class="blind">NAHAGO</span></a></h1>
+				<button type="button" class="nav__close"><span class="blind">닫기</span></button>
+			</div>
+			<div class="nav__tab">
+				<ul role="tablist">
+					<li role="none" class="active">
+						<a href="#" role="tab" class="nav__tab--text">일반기업</a>
+					</li>
+					<li role="none">
+						<a href="#" role="tab" class="nav__tab--text">세무회계사무소</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav__tabButton">
+				<ul>
+					<li class="nav__tabButton--item1">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>홈</a>
+					</li>
+					<!-- [D] 선택시 class="active" 추가해주세요. -->
+					<li class="nav__tabButton--item2 active">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>기능소개</a>
+					</li>
+					<li class="nav__tabButton--item3">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>소개 영상</a>
+					</li>
+					<li class="nav__tabButton--item4">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>도입 문의</a>
+					</li>
+					<li class="nav__tabButton--item5">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>소개 자료 다운로드</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav__bottom">
+				<div class="nav__info">
+					<a href="#" class="nav__info--text">WEHAGO T 안내</a>
+					<span class="nav__info--dash"></span>
+					<a href="#" class="nav__info--text">이용가이드</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="content__question">
+				<h2 class="content__question--title">NAHAGO(나하고)<br>도입 문의</h2>
+				<p class="content__question--text">자세한 상담진행을 위해 아래 양식을 작성해주세요.</p>
+				<div class="content__define">
+					<dl>
+						<div class="content__defBox">
+							<dt>상담유형 <span class="content__define--start">*</span></dt>
+							<dd>
+								<div class="content__inputBox">
+									<input type="text" placeholder="상담유형을 입력해주세요.">
+								</div>
+							</dd>
+						</div>
+						<div class="content__defBox">
+							<dt>회사명 <span class="content__define--start">*</span></dt>
+							<dd>
+								<div class="content__inputBox">
+									<input type="text" placeholder="회사명을 입력해주세요.">
+									<button type="button" class="btn__close"></button>
+								</div>
+							</dd>
+						</div>
+						<div class="content__defBox">
+							<dt>사업자등록번호</dt>
+							<dd>
+								<!-- [D] 신청할 수 없는 사업자일경우 class="error" 추가해주세요. -->
+								<div class="content__inputBox error">
+									<input type="text" placeholder="사업자등록번호를 입력해주세요." value="123456-123456">
+									<span class="error__text">[제외대상] 신청할 수 없는 사업자입니다.</span>
+								</div>
+							</dd>
+						</div>
+						<div class="content__defBox">
+							<dt>회사주소 <span class="content__define--start">*</span></dt>
+							<dd>
+								<div class="content__inputBox content__inputBox--button">
+									<input type="text" placeholder="회사 주소를 입력해주세요.">
+									<button type="button" class="btn__location">주소검색</button>
+								</div>
+							</dd>
+						</div>
+						<div class="content__defBox">
+							<dt>이름 <span class="content__define--start">*</span></dt>
+							<dd>
+								<div class="content__inputBox">
+									<input type="text" placeholder="이름을 입력해주세요.">
+								</div>
+							</dd>
+						</div>
+						<div class="content__defBox">
+							<dt>휴대전화번호 <span class="content__define--start">*</span></dt>
+							<dd>
+								<div class="content__inputBox">
+									<input type="text" placeholder="휴대전화번호를 입력해주세요.(‘-‘제외)">
+								</div>
+							</dd>
+						</div>
+						<div class="content__defBox">
+							<dt>이메일주소 <span class="content__define--start">*</span></dt>
+							<dd>
+								<div class="content__inputBox">
+									<input type="text" placeholder="예) wehago123@douzone.com">
+								</div>
+							</dd>
+						</div>
+						<div class="content__defBox">
+							<dt>신청내용</dt>
+							<dd>
+								<div class="content__inputBox">
+									<textarea placeholder="신청내용을 입력하세요."></textarea>
+								</div>
+							</dd>
+						</div>
+					</dl>
+				</div>
+				<div class="content__agreement">
+					<h3 class="content__agreement--title">개인정보 수집 및 이용동의<em class="content__agreement--title content__agreement--red">(필수)</em></h3>
+					<ul class="agreement__list">
+						<li>정보통신망 이용촉진 및 정보보호 등에 관한 법률에 따라 상품신청에 관한 처리를 위하여 다음과 같이 개인정보를 수집 및 이용하고자 하니 동의하여 주시기 바랍니다.</li>
+						<li>수집항목: 회사명, 사업자번호, 회사주소, 이름, 휴대전화번호, 이메일주소</li>
+						<li>수집목적: 상품신청에 대한 처리</li>
+						<li>보관기간: 신청접수 후 12개월</li>
+					</ul>
+				</div>
+				<div class="content__agreeBtn">
+					<label>
+						<!-- [D] check시 attr checked 추가해주세요. -->
+						<input type="checkbox" checked>
+						<span class="content__agreeBtn--icon"></span>
+						<span class="content__agreeBtn--text">위 내용에 동의합니다.</span>
+					</label>
+				</div>
+				<!-- [D] 동의 여부 확인 후 Attr dislabed 제거해주세요. -->
+				<button type="button" class="content__submitBtn">신청하기</button>
+				<div class="content__agreeBtn">
+					<label>
+						<!-- [D] check시 attr checked 추가해주세요. -->
+						<input type="checkbox">
+						<span class="content__agreeBtn--icon"></span>
+						<span class="content__agreeBtn--text">위 내용에 동의합니다.</span>
+					</label>
+				</div>
+				<!-- [D] 동의 여부 확인 후 Attr dislabed 제거해주세요. -->
+				<button type="button" class="content__submitBtn" disabled>신청하기</button>
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="footer">
+		<ul class="footer__link">
+			<li>
+				<a href="#" class="footer__link--text">이용약관</a>
+			</li>
+			<li>
+				<a href="#" class="footer__link--text">개인정보처리방침</a>
+			</li>
+			<li>
+				<a href="#" class="footer__link--text">고객센터</a>
+			</li>
+		</ul>
+		<p class="footer__copyright">DOUZONE BIZON Co.,Ltd.<br>Copyright © DOUZONE BIZON. All rights reserved.</p>
+	</div>
+<!-- [D] 마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+<script src="../../js/jquery-latest.min.js"></script>
+<script>
+	docReady(function() {
+		clickButton();
+	});
+
+	function docReady(fn) {
+		if (document.readyState === "complete" || document.readyState === "interactive") {
+			setTimeout(fn, 1);
+		} else {
+			document.addEventListener("DOMContentLoaded", fn);
+		}
+	}
+
+	var clickButton = function(){
+		const hambuger = document.querySelector('.header__hambuger');
+		const nav = document.querySelector('.nav');
+		const closeBtn = document.querySelector('.nav__close');
+		const body = document.querySelector('body');
+
+		if(nav){
+			hambuger.addEventListener("click", e =>{
+				nav.classList.add('active');
+				body.classList.add('ovr_y');
+				e.preventDefault();
+			});
+
+			closeBtn.addEventListener("click", e =>{
+				nav.classList.remove('active');
+				body.classList.remove('ovr_y');
+				e.preventDefault();
+			});
+		}
+	}
+</script>
+<!-- [D] //마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+</body>
+</html>

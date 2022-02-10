@@ -1,0 +1,145 @@
+@import "mixin";
+@import "variables";
+
+@font-face {
+    font-family: 'douzone';
+    src: local('DOUZONEText10'), url('https://static.wehago.com/fonts/douzone/DOUZONEText10.woff2') format('woff2'), url('https://static.wehago.com/fonts/douzone/DOUZONEText10.woff') format('woff');
+    font-weight: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'douzone';
+    src: local('DOUZONEText30'), url('https://static.wehago.com/fonts/douzone/DOUZONEText30.woff2') format('woff2'), url('https://static.wehago.com/fonts/douzone/DOUZONEText30.woff') format('woff');
+    font-weight: bold;
+    font-display: fallback;
+}
+@font-face {
+	font-family: 'douzonetitle';
+	src: local('DOUZONETitle30'),
+	url('https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff2') format('woff2'),
+	url('https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff') format('woff');
+	font-weight: normal;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: 'douzonetitle';
+	src: local('DOUZONETitle50'),
+	url('https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff2') format('woff2'),
+	url('https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff') format('woff');
+	font-weight: bold;
+	font-display: fallback;
+}
+@font-face {
+    font-family: 'Nanum Square';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot);
+    src: local('Nanum Square Regular'),
+         local('NanumSquareR'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff2) format('woff2'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff) format('woff'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Nanum Square';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot);
+    src: local('Nanum Square Bold'),
+         local('NanumSquareB'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff2) format('woff2'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff) format('woff'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.ttf) format('truetype');
+}
+* {
+    font-family: douzone, "Microsoft YaHei", "PingFang SC", "MS PGothic", "Hiragino Kaku Gothic ProN", "굴림", gulim, "Apple SD Gothic Neo", sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+img,
+button,
+select {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fff;
+    -webkit-text-size-adjust: none;
+}
+img,
+fieldset {
+    border: 0;
+    vertical-align: top;
+}
+em,
+address {
+    font-style: normal;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+textarea {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: transparent;
+    border: 0;
+    word-break: keep-all;
+    word-wrap: break-word
+}
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0;
+}
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+button:focus,
+button:active {
+    outline: none;
+}

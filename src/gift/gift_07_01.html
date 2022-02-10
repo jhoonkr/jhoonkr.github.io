@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>선물하기</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<link rel="stylesheet" type="text/css" href="https://static.wehago.com/css/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="../../../css/svc/gift_mobile.css">
+<script src="../../js/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div class="header">
+		<div class="end_title">
+			<button type="button" class="button_close"><span class="blind">닫기</span></button>
+			<h2>기념일 등록</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="common_box">
+				<div class="anniversary_text">
+					<p>특별히 기념하고 싶은 날이 있으신가요?</p>
+					<p><strong>나만의 특별한 기념일</strong>을 커스텀해보고<br>친구에게 알려보세요.</p>
+				</div>
+				<div class="card_form">
+					<div class="birthday_input">
+						<!-- <h3 class="icon_birthday">등록된 생일 정보</h3> -->
+						<h3><span class="title_icon" style="background-image:url(https://static.wehago.com/imgs/gft/mobile/icon_anniversary_cake.svg)"></span>등록된 생일 정보</h3>
+						<button type="button" class="button_more"><span class="blind">기념일 관리하기 버튼</span></button>
+					</div>
+					<!-- [D] 등록이 완료된 경우 class="complete" 추가해주세요. -->
+					<div class="birthday_select complete">
+						<div class="select_box">
+							<select class="select_area" name="day">
+								<option value="">2021. 03. 22</option>
+								<option value="">2021. 03. 23</option>
+							</select>
+						</div>
+					</div>
+					<div class="birthday_luna">
+						<label class="button_radio">
+							<input type="radio" name="luna" checked>
+							<span class="ico"></span>
+							<span class="label_text">양력</span>
+						</label>
+						<label class="button_radio">
+							<input type="radio" name="luna">
+							<span class="ico"></span>
+							<span class="label_text">음력</span>
+						</label>
+					</div>
+					<button type="button" class="default thin mt_24" disabled="">확인</button>
+				</div>
+				<div class="card_form">
+					<div class="birthday_input">
+						<!-- <h3 class="icon_heart">등록된 결혼기념일 정보</h3> -->
+						<h3><span class="title_icon" style="background-image:url(https://static.wehago.com/imgs/gft/mobile/icon_anniversary_heart.svg)"></span>등록된 결혼기념일 정보</h3>
+						<button type="button" class="button_more"><span class="blind">기념일 관리하기 버튼</span></button>
+					</div>
+					<!-- [D] 등록이 완료된 경우 class="complete" 추가해주세요. -->
+					<div class="birthday_select complete">
+						<div class="select_box">
+							<select class="select_area" name="day">
+								<option value="">2021. 03. 22</option>
+								<option value="">2021. 03. 23</option>
+							</select>
+						</div>
+					</div>
+					<button type="button" class="default thin mt_24" disabled="">확인</button>
+				</div>
+				<button type="button" class="button_add_anniversary"><strong>추가 기념일</strong> 등록하기</button>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="toast">기념일 변경이 완료되었습니다.</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>선물하기</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<link rel="stylesheet" type="text/css" href="https://static.wehago.com/css/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="../../../css/svc/gift_mobile.css">
+<script src="../../js/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- 공통 사용 -->
+	<!-- 각 요소의 Empty Div는 제거하고 사용하세요. -->
+
+	<div class="component" style="padding: 10px">
+		<h2>Header</h2>
+		<div>
+			<div class="header">
+				<div class="title">
+					<h2>선물하기</h2>
+					<button type="button" class="button_close"><span class="blind">닫기</span></button>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="header">
+				<div class="end_title">
+					<h2>받은 선물 상세정보</h2>
+					<button type="button" class="button_prev"><span class="blind">뒤로가기</span></button>
+					<button type="button" class="button_download"><span class="blind">선물 이미지 다운받기</span></button>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="header">
+				<div class="end_title">
+					<h2>환불신청</h2>
+					<button type="button" class="button_prev"><span class="blind">뒤로가기</span></button>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="header">
+				<div class="end_title">
+					<button type="button" class="button_close"><span class="blind">닫기</span></button>
+					<h2>기념일 등록</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="component" style="padding: 10px">
+		<h2>Tab</h2>
+		<div>
+			<ul role="tablist" class="service_list">
+				<!-- [D] 선택시 class="active" 추가해주세요. -->
+				<li role="tab" class="active">
+					<a href="#">선물함</a>
+				</li>
+			</ul>
+			<ul role="tablist" class="present_tab">
+				<!-- [D] 선택시 class="active" 추가해주세요. -->
+				<li role="tab">
+					<a href="#">받은 선물</a>
+				</li>
+				<li role="tab" class="active">
+					<a href="#">보낸 선물</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="component" style="padding: 10px">
+		<h2>Sort</h2>
+		<div>
+			<div class="sort_box">
+				<!-- [D] 버튼 클릭시 class="active" 추가해주세요. -->
+				<button type="button" class="active">사용 가능</button>
+				<button type="button">만료일순</button>
+			</div>
+		</div>
+	</div>
+	<div class="component" style="padding: 10px">
+		<h2>Button</h2>
+		<div>
+			<button type="button" class="default">환불 요청하기</button>
+		</div>
+		<div>
+			<button type="button" class="default thin">교환권 이미지 확인하기</button>
+		</div>
+		<div>
+			<button type="button" class="default" disabled>환불 요청하기</button>
+		</div>
+		<div>
+			<button type="button" class="default" disabled>교환권 이미지 확인하기</button>
+		</div>
+		<div>
+			<div class="btn_half">
+				<button type="button" class="default">환불요청</button>
+				<button type="button" class="default">연장하기</button>
+			</div>
+		</div>
+		<div>
+			<button type="button" class="press">계좌인증</button>
+			<button type="button" class="press selected">계좌인증</button>
+			<button type="button" class="press" disabled>계좌인증</button>
+		</div>
+	</div>
+	<div class="component" style="padding: 10px">
+		<h2>목록 Label</h2>
+		<div>
+			<span class="list_label event">이벤트</span>
+			<span class="list_label biz">BIZ</span>
+			<span class="list_label dday">D-105</span>
+			<span class="list_label dday_imminent">D-30</span>
+			<span class="list_label reservation">예약</span>
+		</div>
+	</div>
+	<div class="component" style="padding: 10px">
+		<h2>상세 Label</h2>
+		<div>
+			<span class="detail_label event">이벤트</span>
+			<span class="detail_label biz">BIZ</span>
+		</div>
+	</div>
+	<div class="component" style="padding: 10px">
+		<h2>Toast</h2>
+		<div>
+			<button type="button" class="toast">이메일을 다시 입력해주세요.</button>
+		</div>
+	</div>
+	<div class="component" style="padding: 10px">
+		<h2>List</h2>
+		<div>
+			<ul class="product_list">
+				<li>
+					<a href="#">
+						<div class="thumb">
+							<!-- 제품 이미지 -->
+							<img src="/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+							<!-- //제품 이미지 -->
+						</div>
+						<div class="product">
+							<strong class="product_distributor">스타벅스</strong>
+							<span class="product_title">부드러운 생크림 카스텔라</span>
+							<span class="from_present">From. 김더존</span>
+							<span class="use_expire">2021.01.04 13:50까지</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="thumb">
+							<!-- 제품 이미지 -->
+							<img src="/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+							<!-- //제품 이미지 -->
+						</div>
+						<div class="product">
+							<strong class="product_distributor">스타벅스</strong>
+							<span class="product_title">부드러운 생크림 카스텔라 부드러운 생크림 카스텔라</span>
+							<span class="from_present">From. 김더존</span>
+							<span class="use_expire">2021.01.04 13:50까지</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="product_list">
+				<li>
+					<a href="#">
+						<div class="thumb">
+							<!-- 제품 이미지 -->
+							<img src="/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+							<!-- //제품 이미지 -->
+						</div>
+						<div class="product">
+							<strong class="product_distributor">스타벅스</strong>
+							<span class="product_title">부드러운 생크림 카스텔라</span>
+							<span class="from_present">From. 김더존</span>
+							<span class="use_expire">2021.01.04 13:50까지</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="thumb">
+							<!-- 제품 이미지 -->
+							<img src="/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+							<!-- //제품 이미지 -->
+						</div>
+						<div class="product">
+							<strong class="product_distributor">스타벅스</strong>
+							<span class="product_title">부드러운 생크림 카스텔라 부드러운 생크림 카스텔라</span>
+							<span class="from_present">From. 김더존</span>
+							<span class="use_expire">2021.01.04 13:50까지</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="component" style="padding: 10px">
+		<h2>Detail Thumb</h2>
+		<div>
+			<div class="detail_thumb">
+				<!-- 제품 이미지 -->
+				<img src="/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+				<!-- //제품 이미지 -->
+			</div>
+		</div>
+	</div>
+	<div class="component" style="padding: 10px">
+		<h2>Label</h2>
+		<div>
+			<ul class="product_list">
+				<li>
+					<a href="#">
+						<div class="thumb">
+							<!-- 제품 이미지 -->
+							<img src="/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+							<!-- //제품 이미지 -->
+							<div class="label_box">
+								<div class="state_label">
+									사용<br>완료
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="thumb">
+							<!-- 제품 이미지 -->
+							<img src="/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+							<!-- //제품 이미지 -->
+							<div class="label_box">
+								<!-- 
+									환불 처리중, 환불 완료, 기간 만료, 결제 취소 : class="refund" 추가해주세요.
+								-->
+								<div class="state_label refund">
+									환불<br>처리중
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="detail_thumb">
+				<!-- 제품 이미지 -->
+				<img src="/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+				<!-- //제품 이미지 -->
+				<div class="label_box">
+					<div class="state_label">
+						사용<br>완료
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+</div>
+<!-- [D] 마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+</body>
+</html>

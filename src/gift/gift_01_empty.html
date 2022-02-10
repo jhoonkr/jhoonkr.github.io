@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>선물하기</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<link rel="stylesheet" type="text/css" href="https://static.wehago.com/css/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="../../../css/svc/gift_mobile.css">
+<script src="../../js/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- [D] 스크롤시 class="fixed" 추가해주세요. -->
+	<div class="header">
+		<div class="end_title">
+			<h2>받은 선물</h2>
+			<button type="button" class="button_prev"><span class="blind">뒤로가기</span></button>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="common_box">
+				<ul role="tablist" class="service_list">
+					<!-- [D] 선택시 class="active" 추가해주세요. -->
+					<li role="tab" class="active">
+						<a href="#">미사용</a><em class="number_count">6</em>
+					</li>
+					<li role="tab">
+						<a href="#">사용완료</a>
+					</li>
+				</ul>
+				<div class="sort_box">
+					<div class="sort_box_list">
+						<button type="button">만료일순</button>
+						<ul class="sort_result" style="display: none">
+							<li>
+								<a href="#">만료일순</a>
+							</li>
+							<li>
+								<a href="#">최신순</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="product_box">
+					<div class="empty_box">
+						<img src="https://static.wehago.com/imgs/gft/mobile/icon_empty_present.svg" style="width: 48px;height: 48px;" alt="선물 이미지">
+						<p>사용가능한 선물이 없습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<!-- //footer -->
+</div>
+<!-- [D] 마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+<script>
+	// 스크롤 이벤트
+	// $(function(){
+    //     var lastScroll = 0;
+
+    //     $(window).scroll(function(event){
+    //         var scroll = $(this).scrollTop();
+    //         if (scroll > 0) {
+    //             $(".header").addClass("fixed");
+    //         }
+    //         else {
+    //             $(".header").removeClass("fixed");
+    //         }
+    //         lastScroll = scroll;
+    //     });
+    // });
+</script>
+</body>
+</html>

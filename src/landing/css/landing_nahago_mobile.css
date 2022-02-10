@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@font-face{font-family:douzone;src:local("DOUZONEText10"),url(https://static.wehago.com/fonts/douzone/DOUZONEText10.woff2) format("woff2"),url(https://static.wehago.com/fonts/douzone/DOUZONEText10.woff) format("woff");font-weight:400;font-display:fallback}
+@font-face{font-family:douzone;src:local("DOUZONEText30"),url(https://static.wehago.com/fonts/douzone/DOUZONEText30.woff2) format("woff2"),url(https://static.wehago.com/fonts/douzone/DOUZONEText30.woff) format("woff");font-weight:700;font-display:fallback}
+@font-face{font-family:douzonetitle;src:local("DOUZONETitle30"),url(https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff2) format("woff2"),url(https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff) format("woff");font-weight:400;font-display:fallback}
+@font-face{font-family:douzonetitle;src:local("DOUZONETitle50"),url(https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff2) format("woff2"),url(https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff) format("woff");font-weight:700;font-display:fallback}
+@font-face{font-family:'Nanum Square';font-style:normal;font-weight:400;src:url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot);src:local("Nanum Square Regular"),local("NanumSquareR"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot?#iefix) format("embedded-opentype"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff2) format("woff2"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff) format("woff"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.ttf) format("truetype")}
+@font-face{font-family:'Nanum Square';font-style:normal;font-weight:700;src:url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot);src:local("Nanum Square Bold"),local("NanumSquareB"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot?#iefix) format("embedded-opentype"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff2) format("woff2"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff) format("woff"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.ttf) format("truetype")}
+*{font-family:douzone,"Microsoft YaHei","PingFang SC","MS PGothic","Hiragino Kaku Gothic ProN","굴림",gulim,"Apple SD Gothic Neo",sans-serif;box-sizing:border-box;-webkit-box-sizing:border-box}
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,legend,li,ol,p,select,table,td,textarea,th,ul{margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background-color:#fff;-webkit-text-size-adjust:none}
+fieldset,img{border:0;vertical-align:top}
+address,em{font-style:normal}
+li,ol,ul{list-style:none}
+textarea{-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:transparent;border:0;word-break:keep-all;word-wrap:break-word}
+button{-moz-appearance:none;appearance:none;-webkit-appearance:none;background-color:transparent;border:0}
+.blind{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
+a{text-decoration:none}
+a:hover{text-decoration:none}
+button{cursor:pointer}
+button:active,button:focus{outline:0}
+.ovr_y{min-height:100%;height:100%;overflow:hidden;-ms-touch-action:none;touch-action:none}
+.header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;position:fixed;top:0;left:0;right:0;height:46px;padding:0 20px;background-color:#fff;-webkit-box-sizing:border-box;box-sizing:border-box;z-index:10}
+.header__logo{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:92px;height:19px;background-position:0 -247px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.header__logo a{display:block;height:100%}
+.header__hambuger{position:relative;width:24px;height:24px}
+.header__hambuger::before{content:'';position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:18px;height:14px;background-position:-97px -248px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.nav{display:none;position:fixed;top:0;bottom:0;left:0;right:0;width:100%;height:100%;background-color:#fff;z-index:20;-webkit-transform:translateZ(0);transform:translateZ(0)}
+.nav__header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:46px;padding:0 20px}
+.nav__close{position:relative;width:24px;height:24px}
+.nav__close::before{content:'';position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:16px;height:16px;background-position:-134px -248px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.nav__tab ul{border-bottom:1px solid #efefef}
+.nav__tab ul::after{content:'';display:block;clear:both}
+.nav__tab ul li{position:relative;float:left;width:50%;text-align:center}
+.nav__tab--text{display:block;width:100%;height:38px;padding:10px 36px;font-size:14px;color:#a5a5a5;letter-spacing:-.7px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.nav__tab .active .nav__tab--text{font-weight:700;color:#000}
+.nav__tab .active .nav__tab--text::after{content:'';position:absolute;bottom:-1px;left:50%;width:120px;height:2px;background-color:#000;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
+.nav__tabButton{overflow-y:auto;position:absolute;top:105px;left:0;right:0;bottom:68px}
+.nav__tabButton--text{display:block;position:relative;padding:16px 20px 16px 56px;font-size:15px;color:#000;line-height:18px;letter-spacing:-.23px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.nav__tabButton ul li.active{background-color:rgba(0,0,0,.06)}
+.nav__tabButton .nav--icon{position:absolute;top:50%;left:20px;width:24px;height:24px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+.nav__tabButton .nav--icon::before{content:'';position:absolute;top:50%;left:50%;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:18px;height:19px;background-position:0 -271px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.nav__tabButton--item1 .nav--icon::before{margin:-10px 0 0 -9px;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:18px;height:19px;background-position:0 -271px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.nav__tabButton--item2 .nav--icon::before{margin:-9px 0 0 -9px;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:18px;height:18px;background-position:-23px -271px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.nav__tabButton--item3 .nav--icon::before{margin:-8px 0 0 -10px;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:22px;height:15px;background-position:-46px -271px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.nav__tabButton--item4 .nav--icon::before{margin:-9px 0 0 -9px;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:18px;height:18px;background-position:-73px -271px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.nav__tabButton--item5 .nav--icon::before{margin:-11px 0 0 -10px;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:19px;height:19px;background-position:-96px -271px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.nav__bottom{position:absolute;bottom:20px;left:0;right:0}
+.nav__info{display:-webkit-box;display:-ms-flexbox;display:flex;height:48px;padding:0 20px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.nav__info--text{font-size:13px;color:#a5a5a5;letter-spacing:-.65px}
+.nav__info--dash{display:inline-block;width:1px;height:14px;margin:0 8px 0 9px;background-color:#f5f5f5;vertical-align:top}
+.nav.active{display:block}
+.top__button{position:fixed;bottom:60px;right:20px;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:40px;height:40px;background-position:-182px -188px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content{padding-top:46px}
+.content__spot{position:relative;height:490px;padding-top:40px;background:url(/html/landing/img/nahago_mobile/bg_spot.png) no-repeat 50% 50%;background-size:cover;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box}
+.content__spot--info{display:block;font-family:douzonetitle;font-size:16px;color:#1a1a1a;letter-spacing:-.96px}
+.content__spot--title{margin-top:6px;font-family:douzonetitle;font-size:34px;color:#000;letter-spacing:-1.7px;line-height:40px}
+.content__spot--title em{color:#0424b7}
+.content__spot--text{margin-top:10px;font-size:12px;color:#404040;letter-spacing:-.78px;line-height:19px}
+.content__button{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:absolute;bottom:13px;width:100%;padding:0 20px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.content__button button{width:100%;height:36px;background-color:transparent;border:0;border-radius:10px;font-size:13px;font-weight:700;color:#fff;letter-spacing:-.65px;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,.1);box-shadow:0 5px 10px 0 rgba(0,0,0,.1)}
+.content__button .button--item1{background-image:-o-linear-gradient(344deg,#bf42fd -5%,#5658ff 52%,#2791ff 102%);background-image:linear-gradient(106deg,#bf42fd -5%,#5658ff 52%,#2791ff 102%)}
+.content__button .button--item2{margin-left:4px;border:1px solid #7726ff;background-color:#fff;color:#7726ff}
+.content__info{padding:20px 0 19px;text-align:center;background-image:-o-linear-gradient(156deg,#2c95ff 0,#104be8 100%,#2336a0 -23%);background-image:linear-gradient(294deg,#2c95ff 0,#104be8 100%,#2336a0 -23%)}
+.content__info--text1{font-size:13px;font-weight:700;color:#fff;letter-spacing:-.65px}
+.content__info--text2{margin-top:8px;font-size:11px;color:#fff;letter-spacing:-.55px;line-height:16px}
+.content__info--text3{margin-top:12px;font-size:12px;font-weight:700;color:#bcffff;letter-spacing:-.6px}
+.content__function{padding:50px 0 40px;text-align:center}
+.content__function--title{font-size:18px;color:#000;letter-spacing:-.9px}
+.content__function--title em{color:#0424b7}
+.content__function--text{margin-top:10px;font-size:12px;color:#4a4a4a;line-height:17px;letter-spacing:-.6px}
+.content__list{max-width:375px;margin:30px auto 0}
+.content__list ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(25%,1fr));grid-row-gap:20px}
+.content__list ul li{font-size:9px;color:#4a4a4a;line-height:14px;letter-spacing:-.5px}
+.content__list ul li:first-child{margin-left:0}
+.content__list--icon{display:block;margin:0 auto 8px}
+.content__list--icon.icon1{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:0 -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__list--icon.icon2{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-47px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__list--icon.icon3{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-94px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__list--icon.icon4{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-141px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__list--icon.icon5{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-188px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__list--icon.icon6{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-235px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__list--icon.icon7{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-282px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__list--icon.icon8{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-329px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__list--icon.icon9{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-376px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__list--icon.icon10{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-423px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__detail{display:inline-block;margin-top:20px;padding:7px 20px 7px;border:1px solid #4a4a4a;border-radius:17px;font-size:12px;font-weight:700;color:#4a4a4a}
+.content__free{padding:50px 0 0;background-color:#f7f8fc;text-align:center}
+.content__free--title{font-size:18px;letter-spacing:-.9px}
+.content__free--title em{font-family:douzonetitle;font-size:22px;color:#1c90fb;letter-spacing:-.22px}
+.content__free--title.number{font-size:18px;letter-spacing:-.36px}
+.content__free--text{margin-top:12px;font-size:12px;color:#4a4a4a;line-height:17px;letter-spacing:-.12px}
+.content__thumb{position:relative;width:100%;height:276px;background:url(/html/landing/img/nahago_mobile/img_free.png) no-repeat 50% 0/370px 276px}
+.content__thumb--link{position:absolute;bottom:40px;left:50%;width:220px;height:50px;margin-left:-113px}
+.content__introduce{overflow:hidden;position:relative;height:430px;padding-top:50px;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(20%,#002798),color-stop(50%,#2a4dc5),to(#5c51d8));background-image:-o-linear-gradient(top,#002798 20%,#2a4dc5 50%,#5c51d8);background-image:linear-gradient(to bottom,#002798 20%,#2a4dc5 50%,#5c51d8);text-align:center}
+.content__introduce--title{position:relative;font-size:18px;color:#fff;line-height:24px;letter-spacing:-.54px;z-index:1}
+.content__introduce .pattern{position:absolute;top:-235px;left:50%;width:507px;height:507px;margin-left:-360px;background:url(/html/landing/img/nahago_mobile/bg_introduce_pattern.png) no-repeat 0 0/507px 507px}
+.content__introduce::after{content:'';position:absolute;bottom:-102px;width:333px;height:371px;margin-left:-153px;background:url(/html/landing/img/nahago_mobile/bg_introduce_phone.png) no-repeat 50% 0/333px 371px}
+.content__information{max-width:300px;margin:14px auto 0;text-align:left}
+.content__information li{position:relative;padding-left:6px;font-size:9px;color:#fff;line-height:16px;letter-spacing:-.45px}
+.content__information li::before{content:'';position:absolute;top:6px;left:0;width:2px;height:2px;background-color:#c4c4c4}
+.content__swipe{padding:50px 0;background-color:#f7f8fc}
+.content__box--title{font-size:18px;font-weight:400;color:#4a4a4a;letter-spacing:-.9px;text-align:center}
+.content__box--text{margin-top:3px;text-align:center;line-height:23px}
+.content__box--text em{font-family:douzonetitle;font-weight:700;font-size:26px;color:#0424b7;letter-spacing:-.52px}
+.content__box--subtext{display:inline-block;font-family:douzonetitle;font-weight:700;font-size:22px;color:#000;letter-spacing:-1.1px;vertical-align:top}
+.content__box--infoText{margin-top:10px;font-size:12px;color:#000;line-height:17px;letter-spacing:-.6px;text-align:center}
+.content__movie{height:56.25%;background-color:rgba(0,0,0,.1)}
+.content__swiperBox{overflow:hidden;position:relative;margin-top:30px;padding:0 29px 23px}
+.content__swiperBox .swiper .swiper-slide.item1{width:230px;height:220px}
+.content__swiperBox .swiper .swiper-slide.item2{width:243px;height:220px}
+.content__swiperBox .swiper .swiper-slide.item3{width:239px;height:220px}
+.content__swiperBox .swiper .swiper-pagination{bottom:0}
+.content__swiperBox .swiper .swiper-pagination .swiper-pagination-bullet{width:5px;height:5px;background-color:#d9d9d9}
+.content__swiperBox .swiper .swiper-pagination .swiper-pagination-bullet-active{width:12px;height:5px;border-radius:3px;background-color:#939393}
+@media (min-width:550px){
+.content__swiperBox .swiper .swiper-pagination{display:none}
+}
+.content__img{position:relative}
+.content__img img{width:100%;height:100%}
+.content__img [class*=item__link]{position:absolute;bottom:20px;left:20px;width:auto;height:29px;padding:0 8px;border-radius:4px;background-color:transparent;font-family:douzonetitle;font-size:12px;color:#fff;line-height:29px;text-align:center}
+.content__img .item__link1{background-color:#2297b9}
+.content__img .item__link2{border:1px solid #fff}
+.content__inner{position:absolute;top:0;left:0;right:0;bottom:0;padding:20px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.content__inner--title{display:block;font-size:22px;color:#fff;letter-spacing:-1.1px}
+.content__inner--text{margin-top:8px;font-size:12px;color:#fff;font-weight:700;letter-spacing:-.6px;line-height:20px}
+.content__inner--text em{font-weight:400;opacity:.9}
+.content__tab{margin:27px 0 -6px;padding:0 20px 6px;overflow-x:auto;font-size:0}
+.content__tab--text{height:36px;padding:0 16px;border-radius:38px;background-color:#e7e9ef;font-size:12px;color:#767676;letter-spacing:-.6px}
+.content__tab ul{white-space:nowrap}
+.content__tab ul li{display:inline-block;padding-right:6px;vertical-align:top}
+.content__tab ul li:last-of-type{padding-right:20px}
+.content__tab ul li.active .content__tab--text{background-color:#464646;font-weight:700;color:#fff}
+.content__flow{margin:20px 20px 0;padding:24px;border-radius:16px;background-color:#fff;-webkit-box-shadow:0 10px 14px 0 rgba(88,88,88,.05);box-shadow:0 10px 14px 0 rgba(88,88,88,.05);-webkit-box-sizing:border-box;box-sizing:border-box}
+.content__flow--title{font-size:20px;color:#222;letter-spacing:-1px}
+.content__flow--text{margin-top:10px;font-size:11px;color:#7c7c7c;line-height:18px;letter-spacing:-.55px;word-break:keep-all;word-wrap:break-word}
+.content__flow--link{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;color:#404040;letter-spacing:-.55px;vertical-align:top}
+.content__flow--link::after{content:'';display:inline-block;margin:3px 0 0 4px;vertical-align:top;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:9px;height:7px;background-position:-120px -248px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__flowList{margin-top:22px}
+.content__flowList li{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.content__flowList li .thumb__img{margin-right:10px}
+.content__flowList li .thumb__text{-webkit-box-flex:1;-ms-flex:1;flex:1}
+.content__flowList li .thumb__text strong{font-size:13px;letter-spacing:-.65px}
+.content__flowList li .thumb__text p{margin-top:1px;font-size:12px;color:#4a4a4a;line-height:16px;letter-spacing:-.6px;word-break:keep-all;word-wrap:break-word}
+.content__flowList li .thumb__text--blue{color:#3e72ff}
+.content__flowList li.flow__arrow{margin:10px 0 10px 20px;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:12px;height:8px;background-position:-155px -248px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__flowList li.flow__dotted{margin:10px 0 10px;border:1px dashed #cecece}
+.content__flowList li.item1 .thumb__img{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:54px;height:54px;background-position:0 -188px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__flowList li.item1 .thumb__text strong{color:#1394ba}
+.content__flowList li.item2 .thumb__img{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:54px;height:54px;background-position:-59px -188px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__flowList li.item2 .thumb__text strong{color:#7726ff}
+.content__flowList li.item3 .thumb__img{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:54px;height:54px;background-position:-118px -188px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__flowList li.item3 .thumb__text strong{color:#3e72ff}
+.content__flowList li.double .thumb__img{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:54px;height:54px;background-position:-227px -188px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__endTab ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 20px}
+.content__endTab ul li{width:100%;height:30px;line-height:30px;text-align:center}
+.content__endTab ul li a{display:block;position:relative;padding:0 10px;font-family:douzonetitle;font-size:12px;font-weight:700;color:#a5a5a5;letter-spacing:-.6px}
+.content__endTab ul li.active a{color:#486bff}
+.content__endTab ul li.active a::after{content:'';position:absolute;bottom:-1px;left:0;right:0;width:100%;height:2px;background-color:#486bff}
+.content__subTab{overflow-x:auto;padding:0 0 0 27px;background-color:#f0f6fc}
+.content__subTab--icon{display:block;margin:0 auto 6px}
+.content__subTab--icon.icon1{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:0 -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab--icon.icon2{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-47px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab--icon.icon3{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-94px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab--icon.icon4{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-141px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab--icon.icon5{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-188px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab--icon.icon6{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-235px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab--icon.icon7{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-282px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab--icon.icon8{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-329px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab--icon.icon9{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-376px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab ul{display:-webkit-box;display:-ms-flexbox;display:flex;gap:10px;height:auto;padding:10px 0 9px}
+.content__subTab ul li:last-of-type{padding-right:27px}
+.content__subTab ul li a{display:block;min-width:64px;font-size:9px;letter-spacing:-.45px;color:#4f6cad;text-align:center}
+.content__subTab ul li.active a{font-weight:700;color:#2b56b9}
+.content__subTab ul li.active .icon1{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:0 -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab ul li.active .icon2{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-47px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab ul li.active .icon3{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-94px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab ul li.active .icon4{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-141px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab ul li.active .icon5{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-188px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab ul li.active .icon6{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-235px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab ul li.active .icon7{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-282px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__subTab ul li.active .icon8{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-329px -141px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__endBox{padding:40px 0 0}
+.content__endBox:nth-child(even){background-color:#f5f8fb}
+.content__endContent{padding:0 30px}
+.content__endContent--title{font-family:douzonetitle;font-size:20px;color:#000;letter-spacing:-.8px}
+.content__endContent--text{margin-top:12px;font-size:12px;color:#666;line-height:20px;letter-spacing:-.6px;word-break:keep-all;word-wrap:break-word}
+.content__endContent--subtext{display:block;margin-top:10px;font-size:9px;color:#500dbf;letter-spacing:-.1px}
+.content__endList{margin-top:18px}
+.content__endList li{position:relative;padding-left:6px;font-size:9px;color:#666;line-height:16px;letter-spacing:-.5px;word-break:keep-all;word-wrap:break-word}
+.content__endList li::before{content:'';position:absolute;top:5px;left:0;width:2px;height:2px;border-radius:100%;background-color:#777}
+.content__imgBox{margin-top:20px;text-align:center}
+.content__imgBox img{width:320px;height:290px;margin:0 auto}
+.content__imgBottom{position:relative;height:240px;margin-top:12px;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(43%,rgba(172,172,172,0)),to(rgba(128,128,128,.14)));background-image:-o-linear-gradient(top,rgba(172,172,172,0) 43%,rgba(128,128,128,.14));background-image:linear-gradient(to bottom,rgba(172,172,172,0) 43%,rgba(128,128,128,.14));text-align:center}
+.content__imgBottom img{position:absolute;bottom:0;right:0}
+@media (min-width:391px){
+.content__imgBottom img{position:relative}
+}
+.content__guide{padding:30px 0 24px;text-align:center}
+.content__guide--title{font-family:douzonetitle;font-size:18px;color:#252525;line-height:24px;letter-spacing:-.54px}
+.content__guide--text{margin-top:8px;font-size:11px;color:#383838;letter-spacing:-.55px}
+.content__infoTab{margin-top:20px}
+.content__infoTab ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 20px;border-bottom:1px solid #efefef}
+.content__infoTab ul li{width:100%;height:38px;line-height:38px;text-align:center}
+.content__infoTab ul li a{display:block;position:relative;font-size:14px;color:#a5a5a5;letter-spacing:-.7px}
+.content__infoTab ul li.active a{font-weight:700;color:#000}
+.content__infoTab ul li.active a::after{content:'';position:absolute;bottom:-1px;left:0;right:0;width:100%;height:2px;background-color:#000}
+.content__infoContent{padding:20px 20px 30px;text-align:center}
+.content__infoContent ul li{margin-top:14px}
+.content__infoContent ul li:first-child{margin-top:0}
+.content__infoContent ul li a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.content__infoContent ul li a .guide__thumb{position:relative;overflow:hidden;min-width:110px;min-height:80px;margin-right:12px;border-radius:10px}
+.content__infoContent ul li a .guide__thumb::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.2)}
+.content__infoContent ul li a .guide__box p{font-size:13px;color:#000;letter-spacing:-.65px;line-height:18px;text-align:left;display:-webkit-box;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.content__infoContent ul li a .guide__date{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:3px;line-height:13px;text-align:left}
+.content__infoContent ul li a .guide__date--eye{position:relative;padding-left:14px;font-family:douzonetitle;font-size:11px;color:#999}
+.content__infoContent ul li a .guide__date--eye::before{content:'';position:absolute;top:1px;left:0;width:12px;height:11px;background:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png) no-repeat -171px -248px/475px 475px}
+.content__infoContent ul li a .guide__date--time{position:relative;padding-left:6px;margin-left:6px;font-family:douzonetitle;font-size:11px;color:#939393}
+.content__infoContent ul li a .guide__date--time::before{content:'';position:absolute;top:2px;left:0;width:1px;height:8px;background-color:#e1e1e1}
+.content__question{padding:30px 20px 24px}
+.content__question--title{font-family:douzonetitle;font-size:24px;color:#222;letter-spacing:-1.2px;line-height:32px}
+.content__question--text{margin-top:9px;font-size:12px;color:#7c7c7c;line-height:17px;letter-spacing:-.9px}
+.content__define{margin-top:30px}
+.content__define dl dt{font-size:12px;color:#a5a5a5;letter-spacing:-.18px}
+.content__define dl dd{margin-top:8px}
+.content__define--start{color:#fc5356}
+.content__defBox{margin-top:21px}
+.content__defBox:first-child{margin-top:0}
+.content__inputBox{position:relative}
+.content__inputBox .btn__close{display:none;position:absolute;top:3px;right:0;width:18px;height:18px}
+.content__inputBox .btn__close::before{content:'';position:absolute;top:50%;left:50%;margin:-7px 0 0 -7px;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:15px;height:15px;background-position:-188px -248px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__inputBox input{width:100%;padding-bottom:8px;border-width:0 0 1px 0;border-style:solid;border-color:#e6e6e6;border-radius:0;background-color:transparent;font-size:15px;color:#212121;letter-spacing:-.23px;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-box-sizing:border-box;box-sizing:border-box;outline:0;vertical-align:top}
+.content__inputBox input::-webkit-input-placeholder{color:#a5a5a5}
+.content__inputBox input::-moz-placeholder{color:#a5a5a5}
+.content__inputBox input:-ms-input-placeholder{color:#a5a5a5}
+.content__inputBox input::-ms-input-placeholder{color:#a5a5a5}
+.content__inputBox input::placeholder{color:#a5a5a5}
+.content__inputBox input:focus{border-color:#212121}
+.content__inputBox input:focus~.btn__close{display:block}
+.content__inputBox textarea{width:100%;height:120px;padding:8px;border:1px solid rgba(112,112,112,.12);border-radius:4px;font-size:15px;letter-spacing:-.23px;line-height:18px;-webkit-box-sizing:border-box;box-sizing:border-box;resize:none;outline:0;vertical-align:top}
+.content__inputBox textarea::-webkit-input-placeholder{color:#a5a5a5}
+.content__inputBox textarea::-moz-placeholder{color:#a5a5a5}
+.content__inputBox textarea:-ms-input-placeholder{color:#a5a5a5}
+.content__inputBox textarea::-ms-input-placeholder{color:#a5a5a5}
+.content__inputBox textarea::placeholder{color:#a5a5a5}
+.content__inputBox .error__text{display:none;margin-top:6px;font-size:12px;color:#fc5356;letter-spacing:-.6px}
+.content__inputBox .error__text::before{content:'';display:inline-block;vertical-align:top;margin-right:4px;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:15px;height:15px;background-position:-208px -248px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__inputBox.error input{border-color:#fc5356}
+.content__inputBox.error .error__text{display:block}
+.content__inputBox--button input{padding-right:80px}
+.content__inputBox--button .btn__location{position:absolute;top:-5px;right:0;height:30px;border:1px solid #e0e0e0;border-radius:6px;padding:0 12px;font-size:14px;color:#222;letter-spacing:-.7px}
+.content__agreement{margin-top:18px;padding:18px 16px;border:1px solid #e5e5e5;border-radius:10px;background-color:#fcfcfc;-webkit-box-sizing:border-box;box-sizing:border-box}
+.content__agreement--title{font-size:14px;color:#222;letter-spacing:-.7px}
+.content__agreement--red{color:#fc5356}
+.content__agreement .agreement__list{margin-top:8px;font-size:12px;color:#938f8f;line-height:20px;letter-spacing:-.6px}
+.content__agreement .agreement__list li{position:relative;padding-left:10px;word-break:keep-all;word-wrap:break-word}
+.content__agreement .agreement__list li::before{content:'-';position:absolute;top:0;left:0}
+.content__agreeBtn{position:relative;display:inline-block;margin-top:8px;vertical-align:top;-webkit-box-sizing:border-box;box-sizing:border-box}
+.content__agreeBtn--icon{overflow:hidden;position:absolute;top:50%;left:0;margin-top:-10px;line-height:100em;background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:20px;height:20px;background-position:-228px -248px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__agreeBtn--text{padding-left:24px;font-size:12px;color:#c9c9c9;letter-spacing:-.6px}
+.content__agreeBtn input{position:absolute;width:1px;height:1px;opacity:0}
+.content__agreeBtn input:checked+.content__agreeBtn--icon{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:20px;height:20px;background-position:-253px -248px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content__agreeBtn input:checked~.content__agreeBtn--text{color:#2c7bf3}
+.content__submitBtn{width:100%;height:48px;margin-top:24px;border-radius:24px;background-color:#2f7ff5;font-size:14px;color:#fff;letter-spacing:-.7px;-webkit-box-shadow:4px 4px 10px 0 rgba(9,21,48,.14);box-shadow:4px 4px 10px 0 rgba(9,21,48,.14)}
+.content__submitBtn:disabled{background-color:#c9c9c9;pointer-events:none}
+.content.type__wehago .content__spot{background:url(/html/landing/img/nahago_mobile/bg_spot_t.png) no-repeat 50% 50%;background-size:cover}
+.content.type__wehago .content__spot--title em{color:#7726ff}
+.content.type__wehago .content__info{background-image:-webkit-gradient(linear,left top,right top,from(#5a52fa),to(#8038f8));background-image:-o-linear-gradient(left,#5a52fa,#8038f8);background-image:linear-gradient(to right,#5a52fa,#8038f8)}
+.content.type__wehago .content__info--text2{opacity:.8}
+.content.type__wehago .content__info--text3{color:#ffbcf5}
+.content.type__wehago .content__box--text em{color:#7726ff}
+.content.type__wehago .content__function--title em{color:#7726ff}
+.content.type__wehago .content__list--icon.icon1{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:0 -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__list--icon.icon2{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-47px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__list--icon.icon3{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-94px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__list--icon.icon4{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-141px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__list--icon.icon5{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-188px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__list--icon.icon6{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-235px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__list--icon.icon7{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-282px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__list--icon.icon8{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-329px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__list--icon.icon9{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-376px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__list--icon.icon10{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-423px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__endTab ul li.active a{color:#6a58fa}
+.content.type__wehago .content__endTab ul li.active a::after{background-color:#6a58fa}
+.content.type__wehago .content__subTab{background-color:#e2e5f8}
+.content.type__wehago .content__subTab--icon.icon1{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:0 0;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab--icon.icon2{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-47px 0;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab--icon.icon3{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-94px 0;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab--icon.icon4{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-141px 0;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab--icon.icon5{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-188px 0;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab--icon.icon6{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-235px 0;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab--icon.icon7{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-282px 0;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab--icon.icon8{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-329px 0;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab--icon.icon9{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-376px 0;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab ul li a{color:#646ea8}
+.content.type__wehago .content__subTab ul li.active a{color:#7726ff}
+.content.type__wehago .content__subTab ul li.active .icon1{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:0 -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab ul li.active .icon2{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-47px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab ul li.active .icon3{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-94px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab ul li.active .icon4{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-141px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab ul li.active .icon5{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-188px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab ul li.active .icon6{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-235px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab ul li.active .icon7{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-282px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab ul li.active .icon8{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-329px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content.type__wehago .content__subTab ul li.active .icon9{background-image:url(/html/landing/img/nahago_mobile/sp_nahago_mobile.png);width:42px;height:42px;background-position:-376px -47px;background-size:475px 475px;-webkit-background-size:475px 475px}
+.content .fixed__tab{position:sticky;top:46px;left:0;right:0;background-color:#fff;z-index:9}
+.footer{padding:24px 0;background-color:#fff;border-top:1px solid #e6e6e6}
+.footer__link{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.footer__link li{position:relative;margin-left:7px}
+.footer__link li::before{content:'';display:inline-block;width:1px;height:11px;margin-top:6px;background:#5f5f5f;vertical-align:top}
+.footer__link li:first-child::before{content:none}
+.footer__link--text{font-size:12px;color:#444;letter-spacing:-.6px}
+.footer__copyright{margin-top:14px;font-size:11px;color:#7b7b7b;line-height:18px;text-align:center}
+/*# sourceMappingURL=../nahago_mobile/maps/landing_nahago_mobile.css.map */

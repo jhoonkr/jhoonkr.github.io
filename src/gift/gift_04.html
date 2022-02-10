@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>선물하기</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<link rel="stylesheet" type="text/css" href="https://static.wehago.com/css/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="../../../css/svc/gift_mobile.css">
+<script src="../../js/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div class="header">
+		<div class="end_title">
+			<h2>보낸 선물 상세정보</h2>
+			<button type="button" class="button_prev"><span class="blind">뒤로가기</span></button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="common_box">
+				<div class="detail_info send">
+					<div class="refund_info">
+						<div class="in_box">
+							<div class="thumb">
+								<!-- 제품 이미지 -->
+								<img src="https://static.wehago.com/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+								<!-- //제품 이미지 -->
+							</div>
+							<div class="product">
+								<strong class="product_distributor">스타벅스</strong>
+								<span class="product_title">부드러운 생크림 카스텔라 부드러운 생크림 카스텔라</span>
+								<span class="from_present">3개 15,000원</span>
+								<span class="use_expire">주문번호 0123456789</span>
+								<span class="use_expire">발송일 2021.01.30</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section_title">
+					<p>수신자 상세내역 <em>3명</em></p>
+				</div>
+				<div class="recipient_detail_box">
+					<!-- [D] 클릭시 class="button_detail active" 추가해주세요. -->
+					<div class="button_detail">
+						<button type="button" class="title">To. 김더존</button>
+					</div>
+					<div class="recipient_detail">
+						<dl>
+							<dt>수량 / 사용여부</dt>
+							<!-- [D] 사용가능일 경우 <em>사용가능</em> 으로 사용해주세요. -->
+							<dd>1개 / <em>사용가능</em></dd>
+						</dl>
+						<dl>
+							<dt>휴대전화번호</dt>
+							<dd>010-1234-5678</dd>
+						</dl>
+						<div class="button_send">
+							<button type="button" class="press">재전송</button>
+						</div>
+					</div>
+				</div>
+				<div class="recipient_detail_box">
+					<div class="button_detail">
+						<button type="button" class="title">To. 최더존</button>
+					</div>
+					<div class="recipient_detail">
+						<dl>
+							<dt>수량 / 사용여부</dt>
+							<dd>1개 / 환불완료</dd>
+						</dl>
+						<dl>
+							<dt>휴대전화번호</dt>
+							<dd>010-1234-5678</dd>
+						</dl>
+						<div class="button_send">
+							<button type="button" class="press" disabled="">재전송</button>
+						</div>
+					</div>
+				</div>
+				<div class="recipient_detail_box">
+					<div class="button_detail">
+						<button type="button" class="title">To. 김더존</button>
+					</div>
+					<div class="recipient_detail">
+						<dl>
+							<dt>수량 / 사용여부</dt>
+							<dd>1개 / 환불완료</dd>
+						</dl>
+						<dl>
+							<dt>휴대전화번호</dt>
+							<dd>010-1234-5678</dd>
+						</dl>
+						<div class="button_send">
+							<button type="button" class="press" disabled="">재전송</button>
+						</div>
+					</div>
+				</div>
+				<div class="event_notice mt_32">
+					<strong>재전송 안내</strong>
+					<p>선물을 수신하지 못한 경우 선물이 포함된 문자를 재전송할 수 있습니다.</p>
+				</div>
+				<div class="help_desk_info">
+					<p>고객센터 <strong>1688-1234</strong> (09:00~18:00 주말/공휴일 휴무)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<!-- //footer -->
+</div>
+<!-- [D] 마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+<script>
+	var buttonIcon = document.querySelectorAll('.button_detail .title');
+	var buttonBox = document.querySelectorAll('.button_detail');
+	var listBox = document.querySelectorAll('.recipient_detail');
+	var clickClass = 'active';
+
+	for(var i = 0; i< buttonIcon.length ; i++ ) {
+           (function(i){
+                buttonIcon[i].addEventListener('click', function(event) {
+                    if(listBox[i].style.display === "none" || listBox[i].style.display === "" ) {
+                        listBox[i].style.display = 'block';
+                        buttonBox[i].classList.add(clickClass);
+                    } else {
+                        listBox[i].style.display = 'none';
+                        buttonBox[i].classList.remove(clickClass);
+                    }
+                }, false)
+           })(i)
+       }
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>선물하기</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<link rel="stylesheet" type="text/css" href="https://static.wehago.com/css/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="../../../css/svc/gift_mobile.css">
+<script src="../../js/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div class="header">
+		<div class="end_title">
+			<h2>환불요청</h2>
+			<button type="button" class="button_prev"><span class="blind">뒤로가기</span></button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="common_box">
+				<div class="section_title">
+					<p>환불하실 상품</p>
+				</div>
+				<div class="refund_info">
+					<div class="in_box">
+						<div class="thumb">
+							<!-- 제품 이미지 -->
+							<img src="https://static.wehago.com/imgs/gft/mobile/@temp_product_list.jpg" style="width:100%;height:100%" alt="임시 이미지">
+							<!-- //제품 이미지 -->
+						</div>
+						<div class="text">
+							<span>부드러운 생크림 카스텔라 케이크 + 아메리카노 Tall Size 2잔 / 수량 :1</span>
+						</div>
+					</div>
+					<div class="refund_amount">
+						<p>
+							환불 예정 금액은 <span>5,040</span>원 입니다.
+						</p>
+					</div>
+
+				</div>
+				<div class="section_title">
+					<p>환불 계좌 정보</p>
+				</div>
+				<div class="refund_account">
+					<dl class="depositor_box">
+						<dt>예금주명</dt>
+						<dd>김더존</dd>
+					</dl>
+					<div class="account_box">
+						<div class="in_box">
+							<div class="select_bank">
+								<label>
+									<select class="btn_bank" name="bank">
+										<option value="">길어지는 경우 은행명은 어떻게?</option>
+										<option value="">기업은행</option>
+										<option value="">하나은행</option>
+										<option value="">농협 중앙회</option>
+									</select>
+								</label>
+							</div>
+							<div class="account_num">
+								<input type="text" name="" value="" placeholder="계좌번호 (-) 제외">
+							</div>
+						</div>
+						<div class="in_box type_02">
+							<span class="notice_text">환불은 선물을 수신받은 본인만 가능합니다</span>
+							<button type="button" class="press">계좌인증</button>
+						</div>
+						<div class="in_box type_03 mt_27">
+							<span class="refund_email">환불 처리 결과를 받을 이메일 입력</span>
+							<div class="input_email">
+								<input type="text" name="" value="" placeholder="example@wehago.com">
+								<!-- [D] 양식 잘못입력된 경우 display: none/block 시켜주세요. -->
+								<span class="warning_text">이메일을 올바르게 입력해주세요.</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="refund_agree">
+					<strong>환불을 위한 개인정보 수집 및 이용 동의</strong>
+					<p>
+						[개인정보 수집 및 이용에 대한 동의]<br>
+						수집하는 개인정보의 항목 : 예금주명, 은행명, 계좌번호, 이메일주소<br>
+						개인정보의 수집 및 이용목적 : 환불절차 진행을 위한 본인확인, 환불처리 및 처리결과 안내<br>
+						개인정보의 보유 및 이용기간 : WEHAGO 계정 탈퇴시 즉시 파기
+					</p>
+					<div class="btn_box">
+						<label class="btn_checkbox">
+							<input type="checkbox" name="agree">
+							<span class="ico"></span>
+							<span class="label_text">예, 동의합니다.</span>
+						</label>
+					</div>
+
+				</div>
+				<div class="refund_notice">
+					<p>
+						아래의 환불요청하기 버튼을 누르시면 환불 계좌 정보로 환불이 진행되며, 환불 처리까지 영업일 기준 7~10일 가량 소요됩니다.
+					</p>
+
+				</div>
+				<button type="button" class="default" disabled>환불 요청하기</button>
+				<button type="button" class="default mb_30">환불 요청하기</button>
+			</div>
+		</div>
+	</div>
+	<!-- [D] 노출시 toast를 추가해주세요 -->
+	<!-- <button type="button" class="toast">이메일을 다시 입력해주세요.</button> -->
+	<button type="button" class="toast">계좌번호가 확인되지 않습니다.</button>
+</div>
+</body>
+</html>

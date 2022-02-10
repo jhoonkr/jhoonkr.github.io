@@ -1,0 +1,658 @@
+@import "mixin";
+
+@font-face {
+    font-family: 'douzone';
+    src: local('DOUZONEText10'), url('https://static.wehago.com/fonts/douzone/DOUZONEText10.woff2') format('woff2'), url('https://static.wehago.com/fonts/douzone/DOUZONEText10.woff') format('woff');
+    font-weight: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'douzone';
+    src: local('DOUZONEText30'), url('https://static.wehago.com/fonts/douzone/DOUZONEText30.woff2') format('woff2'), url('https://static.wehago.com/fonts/douzone/DOUZONEText30.woff') format('woff');
+    font-weight: bold;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'douzone';
+    src: local('DOUZONEText50'),
+    url('https://static.wehago.com/fonts/douzone/DOUZONEText50.woff2') format('woff2'),
+    url('https://static.wehago.com/fonts/douzone/DOUZONEText50.woff') format('woff');
+    font-weight: 900;
+    font-display: fallback;
+}
+@font-face {
+	font-family: 'douzonetitle';
+	src: local('DOUZONETitle30'),
+	url('https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff2') format('woff2'),
+	url('https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff') format('woff');
+	font-weight: normal;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: 'douzonetitle';
+	src: local('DOUZONETitle50'),
+	url('https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff2') format('woff2'),
+	url('https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff') format('woff');
+	font-weight: bold;
+	font-display: fallback;
+}
+@font-face {
+    font-family: 'Nanum Square';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot);
+    src: local('Nanum Square Regular'),
+         local('NanumSquareR'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff2) format('woff2'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff) format('woff'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Nanum Square';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot);
+    src: local('Nanum Square Bold'),
+         local('NanumSquareB'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff2) format('woff2'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff) format('woff'),
+         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.ttf) format('truetype');
+}
+* {
+    font-family: douzone, "Microsoft YaHei", "PingFang SC", "MS PGothic", "Hiragino Kaku Gothic ProN", "굴림", gulim, "Apple SD Gothic Neo", sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+img,
+button,
+select {
+    margin: 0;
+    padding: 0;
+}
+select {
+    outline: none;
+}
+body {
+    background-color: #fff;
+    -webkit-text-size-adjust: none;
+}
+img,
+fieldset {
+    border: 0;
+    vertical-align: top;
+}
+em,
+address {
+    font-style: normal;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+textarea {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: transparent;
+    border: 0;
+    word-break: keep-all;
+    word-wrap: break-word
+}
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0;
+}
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:visited,
+a:active {
+    color: #191919;
+}
+button {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+}
+button:focus,
+button:active {
+    outline: none;
+}
+
+.dimmed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.coach_mark {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    .coach_mark_box {
+        display: table;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        .coach_mark_thumb {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #fff;
+            letter-spacing: -0.21px;
+            line-height: 20px;
+            strong {
+                font-weight: 900;
+            }
+        }
+    }
+    .coach_mark_close {
+        position: absolute;
+        top: 3px;
+        left: 15px;
+        padding: 12px;
+        background-color: transparent;
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            @include background(14px, 14px, 0, -126px);
+        }
+    }
+}
+
+@for $i from 1 to 50{
+    .mt_#{$i} {
+        margin-top: 1px * $i !important;
+    }
+    .mb_#{$i} {
+        margin-bottom: 1px * $i !important;
+    }
+}
+
+/* Component */
+
+.component {
+	div {
+		margin-top: 10px;
+	}
+}
+.default {
+    width: 100%;
+    height: 48px;
+	background-color: #127eff;
+	border-radius: 24px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+	letter-spacing: -.21px;
+	&.thin {
+		height: 40px;
+		font-weight: bold;
+	}
+	&:disabled,
+	[disabled] {
+		font-weight: bold;
+		background-color: #ebecef;
+		color: rgba(0, 0, 0, 0.15);
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+}
+.btn_half{
+    display: flex;
+    margin: 0 -4px ;
+    .default{
+        width: 50%;
+        margin: 0 4px;
+        background-color: #fff;
+        color: #127eff;
+        border: 1px solid #127eff;
+    }
+}
+.press {
+	width: auto;
+	height: 32px;
+	padding: 0 18px;
+	background-color: #fff;
+	border: 1px solid #127eff;
+	border-radius: 50px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #127eff;
+    white-space: nowrap;
+	&.selected {
+		background-color: rgba(18, 126, 255, 0.08);
+	}
+	&:disabled,
+	[disabled] {
+		border-color: #cbe3ff;
+		color: rgba(18, 126, 255, 0.3);
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+}
+.list_label {
+	display: inline-block;
+	padding: 3px 6px 1px;
+	border-radius: 30px;
+	font-size: 9px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: -.14px;
+	vertical-align: top;
+	&.event {
+		background-color: #4d93ff;
+	}
+	&.biz {
+		background-color: #666cf2;
+	}
+	&.dday {
+		background-color: #000;
+		opacity: .4;
+	}
+	&.dday_imminent {
+		background-color: rgba(252, 76, 96, 0.87);
+	}
+	&.reservation {
+		background-color: #0ec1b8;
+		&:before {
+			content: '';
+			display: inline-block;
+			margin: 0 2px 0 0;
+			vertical-align: top;
+            @include background (10px, 10px, 0, 0);
+		}
+	}
+}
+.detail_label {
+	display: inline-block;
+	padding: 5px 8px 4px;
+	border-radius: 30px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: -.17px;
+	vertical-align: top;
+	&.event {
+		background-color: #4d93ff;
+	}
+	&.biz {
+		background-color: #666cf2;
+	}
+}
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+	width: calc(100% - 40px);
+	height: 48px;
+	border-radius: 8px;
+	background-color: #000;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: -.2px;
+	opacity: .75;
+    z-index: 20;
+}
+.product_list {
+	display: flex;
+	flex-direction: row;
+    width: 100%;
+    & + .product_list {
+        margin-top: 40px;
+    }
+	li {
+		flex: 1;
+		margin-left: 15px;
+		&:first-child {
+			margin-left: 0;
+        }
+        a {
+            display: block;
+        }
+		.thumb {
+			overflow: hidden;
+			position: relative;
+            margin-bottom: 8px;
+			border-radius: 12px;
+			background-color: transparent;
+            .label_box{
+                display: block;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(255,255,255,0.7);
+                z-index: 10;
+                .state_label{
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    display: block;
+                    width: 44px;
+                    height: 44px;
+                    border: 2px solid;
+                    border-color: rgba(0,0,0,0.38);
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    padding: 7px 0;
+                    font-size: 11px;
+                    line-height: 13px;
+                    letter-spacing: -0.16px;
+                    color: rgba(0,0,0,0.87);
+                    text-align: center;
+                    &.refund {
+                        border-color: rgba(252, 76, 96, 0.87);
+                    }
+                }
+            }
+            .list_label {
+				&.event {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+				&.biz {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+				&.dday,
+				&.dday_imminent,
+				&.reservation {
+					position: absolute;
+					bottom: 10px;
+					right: 10px;
+				}
+			}
+		}
+	}
+}
+.product {
+    strong,
+    span {
+        display: block;
+    }
+    .product_distributor {
+        overflow: hidden;
+        font-size: 11px;
+        color: rgba(0, 0, 0, 0.38);
+        letter-spacing: -.17px;
+        @include ellipsis(1);
+    }
+    .product_title {
+        overflow: hidden;
+        margin-top: 4px;
+        font-size: 13px;
+        font-weight: 900;
+        color: rgba(0, 0, 0, 0.87);
+        letter-spacing: -.2px;
+        @include ellipsis(1);
+    }
+    .from_present {
+        overflow: hidden;
+        margin-top: 8px;
+        font-size: 11px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.87);
+        letter-spacing: -.17px;
+        @include ellipsis(1);
+    }
+    .use_expire {
+        overflow: hidden;
+        margin-top: 4px;
+        font-size: 11px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.38);
+        letter-spacing: -.17px;
+        @include ellipsis(1);
+        .division {
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 2px 4px 0 6px;
+            background-color: rgba(0,0,0,.38);
+            vertical-align: top;
+        }
+    }
+}
+.detail_thumb{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 295px;
+    height: 208px;
+    margin: 0 auto;
+    border-radius: 12px;
+    text-align: center;
+    & > img{
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        min-width: 240px;
+        min-height: 170px;
+        max-width: 295px;
+        max-height: 208px;
+    }
+    .label_box{
+        display: block;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(255,255,255,0.7);
+        z-index: 10;
+        .state_label{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            border: 2px solid;
+            border-color: rgba(0,0,0,0.38);
+            border-radius: 50%;
+            box-sizing: border-box;
+            padding: 11px 0;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -0.21px;
+            color: rgba(0,0,0,0.87);
+            text-align: center;
+        }
+    }
+    .detail_label {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+    }
+}
+.message_box{
+    display: block;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    strong{
+        display: block;
+        
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.22px;
+        color: $color_black;
+    }
+    span{
+        display: block;
+        margin-top: 12px;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.2px;
+        color: rgba(0,0,0,0.6);
+        &:only-child {
+            margin-top: 0;
+        }
+    }
+}
+.event_notice{
+    display: block;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-sizing: border-box;
+    background-color: #fcfcfc;
+    & > strong{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.21px;
+        color: $color_black;
+    }
+    & > p{
+        display: block;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: -0.18px;
+        color: rgba(0,0,0,0.5);
+    }
+}
+.section_title{
+    display: flex;
+    width: 100%;
+    height: 54px;
+    align-items: center;
+    p {
+        display: block;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.24px;
+        color: $color_black;
+        font-weight: 700;
+        em {
+            color: $color_blue;
+        }
+    }
+    .button_appointment {
+        margin-left: auto;
+        height: 30px;
+        padding: 0 12px;
+        border: 1px solid #0ec1b8;
+        border-radius: 30px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #0ec1b8;
+        letter-spacing: -.18px;
+        &:before {
+            content: '';
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: top;
+            @include background (13px, 14px, -48px, -38px);
+        }
+    }
+}
+
+// 공통 여백 박스
+.common_box {
+    padding: 0 20px;
+}
+
+// 320PX 분기
+
+@media all and (min-width: 320px) {
+    .container {
+        .content {
+            .refund_account {
+                .account_box {
+                    .in_box {
+                        .notice {
+                            letter-spacing: -.7px !important;
+                        }
+                    }
+                }
+            }
+            .help_desk_info {
+                p {
+                    letter-spacing: -.5px;
+                }
+            }
+            .section_title {
+                .button_appointment {
+                    letter-spacing: -.7px;
+                }
+            }
+        }
+    }
+}
+
+/* 팝업 (arert) */
+.mob_alert_wrap .sp_lux{display:inline-block;overflow:hidden;background:url(https://static.wehagov.com/imgs/common/sp_lux.png) 0 0 no-repeat;line-height:100em;vertical-align:top;}
+.mob_alert_wrap .alert_bx{position:relative;padding:40px 16px 30px;max-width:268px;background:#fff;border-radius:14px;box-sizing:border-box;}
+.mob_alert_wrap .alert_bx .btn_close{position:absolute;top:16px;left:16px;width:24px;height:24px;border:none;background:none;}
+.mob_alert_wrap .alert_bx .btn_close .sp_lux{width:14px;height:14px;background-position:-279px -54px;}
+.mob_alert_wrap .alert_bx .title_area{text-align:center;}
+.mob_alert_wrap .alert_bx .title_area > img{display:inline-block;margin-bottom:30px;}
+.mob_alert_wrap .alert_bx .title_area > strong{display:block;font-size:16px;font-weight:bold;line-height:19px;color:rgba(0,0,0,.87);}
+.mob_alert_wrap .alert_bx .cont_area{margin-top:18px;text-align:center;font-size:13px;line-height:20px;color:rgba(0,0,0,.6);}
+.mob_alert_wrap .alert_bx .btn_area{margin-top:30px;}
+.mob_alert_wrap .alert_bx .btn_area .btn_alert + .btn_alert{margin-top:8px;}
+.mob_alert_wrap .alert_bx .btn_area .btn_alert{display:block;width:100%;height:48px;border:none;background:rgb(18,126,255);border-radius:24px;font-size:14px;font-weight:bold;line-height:21px;color:#fff;}
+.mob_alert_wrap .alert_bx .btn_area .btn_alert.v2{background:rgb(235,236,239);color:rgba(0,0,0,.87);}

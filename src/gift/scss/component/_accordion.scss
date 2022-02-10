@@ -1,0 +1,119 @@
+.notice{
+    padding: 24px 26px;
+    background-color: #fafafa;
+    .in_box{
+        display: block;
+        position: relative;
+        div{
+            display: block;
+            margin-top: 23px;
+            &:first-child{
+                margin-top: 0;
+            }
+            dt{
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: -0.21px;
+                color: $color_black;
+            }
+            dd,
+            p {
+                font-size: 13px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                color: rgba(0,0,0,0.6);
+            }
+        }
+    }
+    &.type_table .in_box{
+        div{
+            margin: 0;
+            padding: 16px 0;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            &:first-child{
+                border-color: $color_black;
+            }
+            dt,
+            dd{
+                display: table-cell;
+            }
+            dt{
+                font-size: 13px;
+                line-height: 20px;
+                width: 30%;
+                min-width: 30%;
+                color: rgba(0,0,0,0.38);
+            }
+            dd{
+                font-size: 14px;
+                color: $color_black;
+            }
+
+        }
+    }
+}
+
+.accordion{
+    display: block;
+    padding-bottom: 30px;
+    li{
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        &.active {
+            .title{
+                &:after {
+                    transform: rotateX(180deg);
+                }
+            }
+        }
+        .title{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 54px;
+            text-align: left;
+            span{
+                display: block;
+                font-size: 15px;
+                line-height: 19px;
+                letter-spacing: -0.22px;
+                color: $color_black;
+            }
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                margin: -4px 0 0 0;
+                width: 14px;
+                height: 8px;
+                @include background (14px, 8px, -98px, 0);
+            }
+        }
+        .notice{
+            display: none;
+            margin: 0 -20px;
+        }
+        &.active {
+            .notice {
+                display: block;
+            }
+        }
+    }
+    &.question {
+        .title {
+            height: auto;
+            padding: 18px 40px 17px 26px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 19px;
+                left: 6px;
+                @include background(12px, 15.5px, -38px, -126px);
+            }
+        }
+    }
+}

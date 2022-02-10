@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>선물하기</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<link rel="stylesheet" type="text/css" href="https://static.wehago.com/css/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="../../../css/svc/gift_mobile.css">
+<script src="../../js/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div class="header">
+		<div class="end_title">
+			<button type="button" class="button_close"><span class="blind">닫기</span></button>
+			<h2>기념일 등록</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="common_box">
+				<div class="anniversary_text">
+					<p>특별히 기념하고 싶은 날이 있으신가요?</p>
+					<p><strong>나만의 특별한 기념일</strong>을 커스텀해보고<br>친구에게 알려보세요.</p>
+				</div>
+				<div class="card_form">
+					<div class="birthday_input">
+						<h3 class="icon_birthday">생일을 등록해주세요.</h3>
+					</div>
+					<div class="birthday_select">
+						<div class="select_box">
+							<select class="select_area" name="day">
+								<option value="">2021. 03. 22</option>
+								<option value="">2021. 03. 23</option>
+							</select>
+						</div>
+					</div>
+					<div class="birthday_luna">
+						<label class="button_radio">
+							<input type="radio" name="luna" checked>
+							<span class="ico"></span>
+							<span class="label_text">양력</span>
+						</label>
+						<label class="button_radio">
+							<input type="radio" name="luna">
+							<span class="ico"></span>
+							<span class="label_text">음력</span>
+						</label>
+					</div>
+					<button type="button" class="default thin mt_24" disabled="">확인</button>
+				</div>
+				<button type="button" class="button_add_anniversary"><strong>추가 기념일</strong> 등록하기</button>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<!-- //footer -->
+</div>
+<div class="dimmed"></div>
+<div class="reg_management">
+	<h2>기념일 등록 관리</h2>
+	<ul>
+		<li>
+			<button type="button" class="button_refresh">날짜 초기화</button>
+		</li>
+		<li>
+			<button type="button" class="button_delete">기념일 항목 삭제</button>
+		</li>
+	</ul>
+</div>
+<!-- [D] 마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+<div class="markup" style="position: absolute;top: 20px;right: 20px;z-index: 30;">
+	<button type="button" id="markup_dim_test" style="padding: 10px;background-color: #000;color: #fff;">기념일 등록 관리 Toast</button>
+</div>
+<script>
+	var dimButton = document.querySelector('#markup_dim_test');
+	var regBox = document.querySelector('.reg_management');
+	var dimmBox = document.querySelector('.dimmed');
+	var bodyBox = document.querySelector('body');
+
+	var clickClass = 'active';
+
+	dimButton.addEventListener('click', function(){
+		if(dimmBox.style.display === "none" || dimmBox.style.display === "" ) {
+			dimmBox.style.display = 'block';
+			regBox.classList.add('active');
+			bodyBox.style.overflow = 'hidden';
+		} else {
+			dimmBox.style.display = 'none';
+			regBox.classList.remove('active');
+			bodyBox.style.overflow = '';
+		}
+	})
+</script>
+</body>
+</html>

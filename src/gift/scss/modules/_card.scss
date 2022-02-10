@@ -1,0 +1,329 @@
+.card_form {
+    padding: 20px 20px 24px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    & + .card_form {
+        margin-top: 16px;
+    }
+    .birthday_input {
+        position: relative;
+        h3 {
+            font-size: 14px;
+            font-weight: 900;
+            color: $color_black;
+            letter-spacing: -0.21px;
+            @include ellipsis(1);
+            &.icon_birthday {
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    margin-right: 10px;
+                    width: 32px;
+                    height: 32px;
+                    background: url(https://static.wehago.com/imgs/gft/mobile/icon_anniversary_cake.svg) 0 0 no-repeat;
+                    background-size: 32px 32px;
+                    -webkit-background-size: 32px 32px;
+                    vertical-align: middle;
+                }
+            }
+            &.icon_heart {
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    margin-right: 10px;
+                    width: 32px;
+                    height: 32px;
+                    background: url(https://static.wehago.com/imgs/gft/mobile/icon_anniversary_heart.svg) 0 0 no-repeat;
+                    background-size: 32px 32px;
+                    -webkit-background-size: 32px 32px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .button_more {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -12px;
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                vertical-align: top;
+                background: url(https://static.wehago.com/imgs/gft/mobile/icon_more_sec.svg) 0 0 no-repeat;
+                background-size: 24px 24px;
+                -webkit-background-size: 24px 24px;
+            }
+        }
+    }
+    .birthday_select {
+        .select_box {
+            position: relative;
+            margin-top: 26px;
+            border-bottom: 1px solid #ccc;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 3px;
+                margin: -5px 0 0 0;
+                @include background (11px, 6px, -68px, -126px);
+            }
+            & + .time_box {
+                margin-top: 40px;
+            }
+            .select_area {
+                width: 100%;
+                padding-bottom: 8px;
+                border: 0;
+                font-size: 15px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.16);
+                background-color: transparent;
+                letter-spacing: -.23px;
+                appearance: none;
+                box-sizing: border-box;
+                &::-webkit-calendar-picker-indicator {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: auto;
+                    height: auto;
+                    color: transparent;
+                    background: none;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        &.complete {
+            .select_area {
+                color: $color_black;
+            }
+        }
+    }
+    .birthday_luna {
+        margin-top: 17px;
+        .button_radio {
+            display: inline-block;
+            position: relative;
+            height: 24px;
+            padding-left: 26px;
+            vertical-align: top;
+            & + .button_radio {
+                margin-left: 42px;
+            }
+            .ico {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                margin-top: -10px;
+                border: 1px solid rgba(60, 60, 67, 0.18);
+                border-radius: 12px;
+            }
+            .label_text {
+                display: block;
+                font-size: 13px;
+                font-weight: bold;
+                color: $color_black;
+                letter-spacing: -0.2px;
+                line-height: 24px;
+            }
+            input[type=radio] {
+                opacity: 0;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                &:disabled {
+                    & + .ico {
+                        background-color: #eaebed;
+                        border-color: #eaebed;
+                    }
+                }
+                &:checked {
+                    & + .ico {
+                        border-color: #127eff;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 12px;
+                            height: 12px;
+                            margin: -6px 0 0 -6px;
+                            background-color: #177aff;
+                            border-radius: 100%;
+                        }
+                    }
+                    &:disabled {
+                        & + .ico {
+                            background-color: #fff;
+                            border-color: rgba(60, 60, 67, 0.18);
+                            &:before {
+                                content: '';
+                                background-color: #eaebed;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .form_box {
+        margin-top: 32px;
+        &:first-child {
+            margin-top: 0;
+        }
+        .card_common_title {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.38);
+        }
+        ul {
+            display: flex;
+            overflow: hidden;
+            margin-top: 12px;
+            justify-content: space-between;
+            li {
+                button {
+                    padding: 8px;
+                    &.icon_balloon {
+                        &:after {
+                            content: '';
+                            display: inline-block;
+                            width: 32px;
+                            height: 32px;
+                            background: url(https://static.wehago.com/imgs/gft/mobile/icon_anniversary_balloon.svg) 0 0 no-repeat;
+                            background-size: 32px 32px;
+                            -webkit-background-size: 32px 32px;
+                            vertical-align: middle;
+                        }
+                    }
+                    &.icon_clapping {
+                        &:after {
+                            content: '';
+                            display: inline-block;
+                            width: 32px;
+                            height: 32px;
+                            background: url(https://static.wehago.com/imgs/gft/mobile/icon_anniversary_clapping.svg) 0 0 no-repeat;
+                            background-size: 32px 32px;
+                            -webkit-background-size: 32px 32px;
+                            vertical-align: middle;
+                        }
+                    }
+                    &.icon_heart {
+                        &:after {
+                            content: '';
+                            display: inline-block;
+                            width: 32px;
+                            height: 32px;
+                            background: url(https://static.wehago.com/imgs/gft/mobile/icon_anniversary_heart.svg) 0 0 no-repeat;
+                            background-size: 32px 32px;
+                            -webkit-background-size: 32px 32px;
+                            vertical-align: middle;
+                        }
+                    }
+                    &.icon_champagne {
+                        &:after {
+                            content: '';
+                            display: inline-block;
+                            width: 32px;
+                            height: 32px;
+                            background: url(https://static.wehago.com/imgs/gft/mobile/icon_anniversary_champagne.svg) 0 0 no-repeat;
+                            background-size: 32px 32px;
+                            -webkit-background-size: 32px 32px;
+                            vertical-align: middle;
+                        }
+                    }
+                    &.icon_couple {
+                        &:after {
+                            content: '';
+                            display: inline-block;
+                            width: 32px;
+                            height: 32px;
+                            background: url(https://static.wehago.com/imgs/gft/mobile/icon_anniversary_couple.svg) 0 0 no-repeat;
+                            background-size: 32px 32px;
+                            -webkit-background-size: 32px 32px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                &.active {
+                    button {
+                        background-color: #f9f9fc;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+        .anniversary_title {
+            position: relative;
+            width: 100%;
+            .input_box {
+                position: relative;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                input {
+                    width: 100%;
+                    padding-right: 24px;
+                    border: 0;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: $color_black;
+                    box-sizing: border-box;
+                    outline: none;
+                    &::placeholder {
+                        font-weight: bold;
+                        color: rgba(0, 0, 0, 0.38);
+                    }
+                }
+                .input_text_delete {
+                    position: absolute;
+                    top: -1px;
+                    right: 0;
+                    padding: 3px 4px;
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        vertical-align: middle;
+                        @include background(16px, 16px, -132px, -132px);
+                    }
+                }
+                &.error {
+                    & + .alert_box {
+                        display: flex;
+                    }
+                }
+            }
+            .alert_box {
+                display: none;
+                margin-top: 6px;
+                .warning_text {
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #fc4c60;
+                    letter-spacing: -0.18px;
+                }
+                .text_number_count {
+                    margin-left: auto;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: rgba(13, 14, 16, 0.87);
+                    em {
+                        color: #127eff;
+                    }
+                }
+            }
+        }
+    }
+}

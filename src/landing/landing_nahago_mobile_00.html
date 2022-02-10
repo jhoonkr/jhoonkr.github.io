@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>WEHAGO</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+	<link rel="stylesheet" type="text/css" href="https://static.wehago.com/css/nanumsquare.css">
+	<link rel="stylesheet" type="text/css" href="https://static.wehago.com/html/landing/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/landing_nahago_mobile.css">
+</head>
+<!-- [D] Drawer(Hambuger) 열릴시 class="over_y" 추가해주세요. -->
+<body>
+	<div id="header" class="header">
+		<h1 class="header__logo">
+			<a href="#"><span class="blind">NAHAGO</span></a>
+		</h1>
+		<button type="button" class="header__hambuger"></button>
+		<!-- [D] 햄버거 버튼 클릭시 class="active" 추가해주세요. -->
+		<div class="nav active">
+			<div class="nav__header">
+				<h1 class="header__logo"><a href="#"><span class="blind">NAHAGO</span></a></h1>
+				<button type="button" class="nav__close"><span class="blind">닫기</span></button>
+			</div>
+			<div class="nav__tab">
+				<ul role="tablist">
+					<li role="none" class="active">
+						<a href="#" role="tab" class="nav__tab--text">일반기업</a>
+					</li>
+					<li role="none">
+						<a href="#" role="tab" class="nav__tab--text">세무회계사무소</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav__tabButton">
+				<ul>
+					<li class="nav__tabButton--item1">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>홈</a>
+					</li>
+					<!-- [D] 선택시 class="active" 추가해주세요. -->
+					<li class="nav__tabButton--item2 active">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>기능소개</a>
+					</li>
+					<li class="nav__tabButton--item3">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>소개 영상</a>
+					</li>
+					<li class="nav__tabButton--item4">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>도입 문의</a>
+					</li>
+					<li class="nav__tabButton--item5">
+						<a href="#" class="nav__tabButton--text"><i class="nav--icon"></i>소개 자료 다운로드</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav__bottom">
+				<div class="nav__info">
+					<a href="#" class="nav__info--text">WEHAGO T 안내</a>
+					<span class="nav__info--dash"></span>
+					<a href="#" class="nav__info--text">이용가이드</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="footer" class="footer">
+		<ul class="footer__link">
+			<li>
+				<a href="#" class="footer__link--text">이용약관</a>
+			</li>
+			<li>
+				<a href="#" class="footer__link--text">개인정보처리방침</a>
+			</li>
+			<li>
+				<a href="#" class="footer__link--text">고객센터</a>
+			</li>
+		</ul>
+		<p class="footer__copyright">DOUZONE BIZON Co.,Ltd.<br>Copyright © DOUZONE BIZON. All rights reserved.</p>
+	</div>
+<!-- [D] 마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+<script src="../../js/jquery-latest.min.js"></script>
+<script>
+	docReady(function() {
+		clickButton();
+	});
+
+	function docReady(fn) {
+		if (document.readyState === "complete" || document.readyState === "interactive") {
+			setTimeout(fn, 1);
+		} else {
+			document.addEventListener("DOMContentLoaded", fn);
+		}
+	}
+
+	var clickButton = function(){
+		const hambuger = document.querySelector('.header__hambuger');
+		const nav = document.querySelector('.nav');
+		const closeBtn = document.querySelector('.nav__close');
+		const body = document.querySelector('body');
+
+		if(nav){
+			hambuger.addEventListener("click", e =>{
+				nav.classList.add('active');
+				body.classList.add('ovr_y');
+				e.preventDefault();
+			});
+
+			closeBtn.addEventListener("click", e =>{
+				nav.classList.remove('active');
+				body.classList.remove('ovr_y');
+				e.preventDefault();
+			});
+		}
+	}
+</script>
+<!-- [D] //마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+</body>
+</html>
