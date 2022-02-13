@@ -35,7 +35,7 @@
                     width: 13px;
                     height: 13px;
                     margin: 5px 0 0 5px;
-                    background: url(/src/img/sp_newpf.png) no-repeat 0 0 / 150px 150px;
+                    background: url(../img/sp_newpf.png) no-repeat 0 0 / 150px 150px;
                     vertical-align: top;
                 }
             }
@@ -59,7 +59,7 @@
         height: 23px;
         margin-left: -21px;
         padding: 0;
-        background: url(/src/img/sp_newpf.png) no-repeat -18px 0  / 150px 150px;
+        background: url(../img/sp_newpf.png) no-repeat -18px 0  / 150px 150px;
         animation: bounce 2s ease infinite;
         z-index: 1;
     }
@@ -105,7 +105,7 @@
                     width: 9px;
                     height: 14px;
                     margin: 5px 20px 0;
-                    background: url(/src/img/sp_newpf.png) no-repeat -65px 0 / 150px 150px;
+                    background: url(../img/sp_newpf.png) no-repeat -65px 0 / 150px 150px;
                     vertical-align: top;
                 }
                 &:first-child {
@@ -186,7 +186,7 @@
                 width: 12px;
                 height: 32px;
                 margin-right: 10px;
-                background: url(/src/img/sp_newpf.png) no-repeat -78px 0 / 150px 150px;
+                background: url(../img/sp_newpf.png) no-repeat -78px 0 / 150px 150px;
                 transform: rotate(180deg);
                 vertical-align: top;
             }
@@ -196,7 +196,7 @@
                 width: 12px;
                 height: 32px;
                 margin-left: 10px;
-                background: url(/src/img/sp_newpf.png) no-repeat -78px 0 / 150px 150px;
+                background: url(../img/sp_newpf.png) no-repeat -78px 0 / 150px 150px;
                 vertical-align: top;
             }
         }
@@ -226,7 +226,7 @@
             width: 302px;
             height: 50px;
             margin: 36px auto 0;
-            background: url(/src/img/img_footer_button.png) no-repeat 0 0 / 302px 50px;
+            background: url(../img/img_footer_button.png) no-repeat 0 0 / 302px 50px;
             &--text {
                 position: absolute;
                 top: 50%;
