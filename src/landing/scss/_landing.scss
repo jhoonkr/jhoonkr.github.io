@@ -436,7 +436,7 @@
         position: relative;
         width: 100%;
         height: 276px;
-        background: url(https://static.wehago.com/html/landing/img/nahago_mobile/img_free.png) no-repeat 50% 0 / 370px 276px;
+        background: url(../../landing/img/nahago_mobile/img_free_t.png) no-repeat 50% 0 / 370px 276px;
         &--link {
             position: absolute;
             bottom: 40px;
@@ -1316,6 +1316,32 @@
             }
         }
     }
+    &__selBox {
+        position: relative;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e6e6e6;
+        &--text {
+            font-size: 15px;
+            color: #212121;
+            letter-spacing: -0.23px;
+        }
+        &--button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 4px;
+                margin: -3px 0 0 0;
+                @include background(18px, 10px, -240px, -542px);
+            }
+        }
+    }
     &__agreement {
         margin-top: 18px;
         padding: 18px 16px;
@@ -1414,6 +1440,9 @@
                         color: #7726ff;
                     }
                 }
+            }
+            &__thumb {
+                background: url(../../landing/img/nahago_mobile/img_free.png) no-repeat 50% 0 / 370px 276px;
             }
             &__info {
                 background-image: linear-gradient(to right, #5a52fa, #8038f8);
@@ -1606,5 +1635,83 @@
         color: #7b7b7b;
         line-height: 18px;
         text-align: center;
+    }
+}
+
+/* ToastPopup */
+.select__toast {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 16px 0 30px 0;
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    z-index: 20;
+    &--title {
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 900;
+        color: #000;
+        letter-spacing: -0.24px;
+        line-height: 48px;
+    }
+    &--submit {
+        margin: 0 20px;
+    }
+}
+.select__list {
+    li {
+        padding: 0 54px;
+        button {
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #efefef;
+            text-align: center;
+        }
+        &.active {
+            button {
+                font-weight: bold;
+                color: #212121;
+            }
+        }
+    }
+    &--text {
+        font-size: 16px;
+        color: #a5a5a5;
+        letter-spacing: -0.24px;
+    }
+}
+.dimmed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: 10;
+}
+// 개발요청 : 다음 주소 팝업 위치값 지정
+.LUX_basic_dialog{
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    .dialog_wrap_tbl {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
