@@ -8,7 +8,7 @@
         .product_box {
             margin: 20px 0;
         }
-        .sort_box { 
+        .sort_box {
             & ~ .product_box {
                 margin-top: 16px;
             }
@@ -444,7 +444,7 @@
             .banner_box {
                 position: relative;
                 height: 80px;
-                background: url(/imgs/gft/mobile/img_banner.png) 50% 0 no-repeat;
+                background: url(../imgs/img_banner.png) 50% 0 no-repeat;
                 background-size: 375px 80px;
                 -webkit-background-size: 375px 80px;
                 &:before {
@@ -454,7 +454,7 @@
                     left: 0;
                     width: 50%;
                     height: 80px;
-                    background: url(/imgs/gft/mobile/bg_banner_left.png) repeat-x;
+                    background: url(../imgs/bg_banner_left.png) repeat-x;
                     background-size: 375px 80px;
                     -webkit-background-size: 375px 80px;
                     z-index: -1;
@@ -466,7 +466,7 @@
                     right: 0;
                     width: 50%;
                     height: 80px;
-                    background: url(/imgs/gft/mobile/bg_banner_right.png) repeat-x;
+                    background: url(../imgs/bg_banner_right.png) repeat-x;
                     background-size: 375px 80px;
                     -webkit-background-size: 375px 80px;
                     z-index: -1;

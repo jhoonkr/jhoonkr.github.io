@@ -138,3 +138,32 @@ gulp.task("landing:watch", function (done) {
   gulp.watch("landing/scss/*.scss", gulp.series("landing"));
   done();
 });
+
+// gift
+
+gulp.task("gift", function (done) {
+  gulp
+    .src("gift/scss/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(
+      sass({ sourcemap: true, outputStyle: "expanded" }).on(
+        "error",
+        sass.logError
+      )
+    )
+    // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
+    .pipe(cleancss({ format: "keep-breaks" }))
+    .pipe(sourcemaps.write("./maps"))
+    .pipe(gulp.dest("./gift/css"));
+  done();
+});
+
+gulp.task("gift:watch", function (done) {
+  gulp.watch("gift/scss/*.scss", gulp.series("gift"));
+  done();
+});

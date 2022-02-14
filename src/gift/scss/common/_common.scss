@@ -1,68 +1,7 @@
 @import "mixin";
 
-@font-face {
-    font-family: 'douzone';
-    src: local('DOUZONEText10'), url('https://static.wehago.com/fonts/douzone/DOUZONEText10.woff2') format('woff2'), url('https://static.wehago.com/fonts/douzone/DOUZONEText10.woff') format('woff');
-    font-weight: normal;
-    font-display: fallback;
-}
-@font-face {
-    font-family: 'douzone';
-    src: local('DOUZONEText30'), url('https://static.wehago.com/fonts/douzone/DOUZONEText30.woff2') format('woff2'), url('https://static.wehago.com/fonts/douzone/DOUZONEText30.woff') format('woff');
-    font-weight: bold;
-    font-display: fallback;
-}
-@font-face {
-    font-family: 'douzone';
-    src: local('DOUZONEText50'),
-    url('https://static.wehago.com/fonts/douzone/DOUZONEText50.woff2') format('woff2'),
-    url('https://static.wehago.com/fonts/douzone/DOUZONEText50.woff') format('woff');
-    font-weight: 900;
-    font-display: fallback;
-}
-@font-face {
-	font-family: 'douzonetitle';
-	src: local('DOUZONETitle30'),
-	url('https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff2') format('woff2'),
-	url('https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff') format('woff');
-	font-weight: normal;
-	font-display: fallback;
-}
-
-@font-face {
-	font-family: 'douzonetitle';
-	src: local('DOUZONETitle50'),
-	url('https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff2') format('woff2'),
-	url('https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff') format('woff');
-	font-weight: bold;
-	font-display: fallback;
-}
-@font-face {
-    font-family: 'Nanum Square';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot);
-    src: local('Nanum Square Regular'),
-         local('NanumSquareR'),
-         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
-         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff2) format('woff2'),
-         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff) format('woff'),
-         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Nanum Square';
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot);
-    src: local('Nanum Square Bold'),
-         local('NanumSquareB'),
-         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot?#iefix) format('embedded-opentype'),
-         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff2) format('woff2'),
-         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff) format('woff'),
-         url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.ttf) format('truetype');
-}
 * {
-    font-family: douzone, "Microsoft YaHei", "PingFang SC", "MS PGothic", "Hiragino Kaku Gothic ProN", "굴림", gulim, "Apple SD Gothic Neo", sans-serif;
+    font-family: "Microsoft YaHei", "PingFang SC", "MS PGothic", "Hiragino Kaku Gothic ProN", "굴림", gulim, "Apple SD Gothic Neo", sans-serif;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
@@ -533,7 +472,7 @@ button:active {
     border-bottom: 1px solid rgba(0,0,0,0.06);
     strong{
         display: block;
-        
+
         font-size: 15px;
         line-height: 22px;
         letter-spacing: -0.22px;

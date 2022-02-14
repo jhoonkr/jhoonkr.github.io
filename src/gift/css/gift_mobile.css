@@ -1,12 +1,5 @@
 @charset "UTF-8";
-@font-face{font-family:douzone;src:local("DOUZONEText10"),url(https://static.wehago.com/fonts/douzone/DOUZONEText10.woff2) format("woff2"),url(https://static.wehago.com/fonts/douzone/DOUZONEText10.woff) format("woff");font-weight:400;font-display:fallback}
-@font-face{font-family:douzone;src:local("DOUZONEText30"),url(https://static.wehago.com/fonts/douzone/DOUZONEText30.woff2) format("woff2"),url(https://static.wehago.com/fonts/douzone/DOUZONEText30.woff) format("woff");font-weight:700;font-display:fallback}
-@font-face{font-family:douzone;src:local("DOUZONEText50"),url(https://static.wehago.com/fonts/douzone/DOUZONEText50.woff2) format("woff2"),url(https://static.wehago.com/fonts/douzone/DOUZONEText50.woff) format("woff");font-weight:900;font-display:fallback}
-@font-face{font-family:douzonetitle;src:local("DOUZONETitle30"),url(https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff2) format("woff2"),url(https://static.wehago.com/fonts/douzone/DOUZONETitle30.woff) format("woff");font-weight:400;font-display:fallback}
-@font-face{font-family:douzonetitle;src:local("DOUZONETitle50"),url(https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff2) format("woff2"),url(https://static.wehago.com/fonts/douzone/DOUZONETitle50.woff) format("woff");font-weight:700;font-display:fallback}
-@font-face{font-family:'Nanum Square';font-style:normal;font-weight:400;src:url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot);src:local("Nanum Square Regular"),local("NanumSquareR"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.eot?#iefix) format("embedded-opentype"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff2) format("woff2"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.woff) format("woff"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareR.ttf) format("truetype")}
-@font-face{font-family:'Nanum Square';font-style:normal;font-weight:700;src:url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot);src:local("Nanum Square Bold"),local("NanumSquareB"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.eot?#iefix) format("embedded-opentype"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff2) format("woff2"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.woff) format("woff"),url(https://static.wehago.com/fonts/NanumSquare/NanumSquareB.ttf) format("truetype")}
-*{font-family:douzone,"Microsoft YaHei","PingFang SC","MS PGothic","Hiragino Kaku Gothic ProN","굴림",gulim,"Apple SD Gothic Neo",sans-serif;box-sizing:border-box;-webkit-box-sizing:border-box}
+*{font-family:"Microsoft YaHei","PingFang SC","MS PGothic","Hiragino Kaku Gothic ProN","굴림",gulim,"Apple SD Gothic Neo",sans-serif;box-sizing:border-box;-webkit-box-sizing:border-box}
 body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,legend,li,ol,p,select,table,td,textarea,th,ul{margin:0;padding:0}
 select{outline:0}
 body{background-color:#fff;-webkit-text-size-adjust:none}
@@ -28,7 +21,7 @@ button:active,button:focus{outline:0}
 .coach_mark .coach_mark_box p{margin-top:20px;font-size:14px;color:#fff;letter-spacing:-.21px;line-height:20px}
 .coach_mark .coach_mark_box p strong{font-weight:900}
 .coach_mark .coach_mark_close{position:absolute;top:3px;left:15px;padding:12px;background-color:transparent}
-.coach_mark .coach_mark_close:before{content:'';display:inline-block;vertical-align:middle;background-image:url(/imgs/gft/mobile/sp_gift.png);width:14px;height:14px;background-position:0 -63px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.coach_mark .coach_mark_close:before{content:'';display:inline-block;vertical-align:middle;background-image:url(../imgs/sp_gift.png);width:14px;height:14px;background-position:0 -63px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .mt_1{margin-top:1px!important}
 .mb_1{margin-bottom:1px!important}
 .mt_2{margin-top:2px!important}
@@ -142,7 +135,7 @@ button:active,button:focus{outline:0}
 .list_label.dday{background-color:#000;opacity:.4}
 .list_label.dday_imminent{background-color:rgba(252,76,96,.87)}
 .list_label.reservation{background-color:#0ec1b8}
-.list_label.reservation:before{content:'';display:inline-block;margin:0 2px 0 0;vertical-align:top;background-image:url(/imgs/gft/mobile/sp_gift.png);width:10px;height:10px;background-position:0 0;background-size:100px 100px;-webkit-background-size:100px 100px}
+.list_label.reservation:before{content:'';display:inline-block;margin:0 2px 0 0;vertical-align:top;background-image:url(../imgs/sp_gift.png);width:10px;height:10px;background-position:0 0;background-size:100px 100px;-webkit-background-size:100px 100px}
 .detail_label{display:inline-block;padding:5px 8px 4px;border-radius:30px;font-size:11px;font-weight:700;color:#fff;letter-spacing:-.17px;vertical-align:top}
 .detail_label.event{background-color:#4d93ff}
 .detail_label.biz{background-color:#666cf2}
@@ -181,13 +174,25 @@ button:active,button:focus{outline:0}
 .section_title p{display:block;font-size:16px;line-height:18px;letter-spacing:-.24px;color:rgba(0,0,0,.87);font-weight:700}
 .section_title p em{color:#127eff}
 .section_title .button_appointment{margin-left:auto;height:30px;padding:0 12px;border:1px solid #0ec1b8;border-radius:30px;font-size:12px;font-weight:700;color:#0ec1b8;letter-spacing:-.18px}
-.section_title .button_appointment:before{content:'';display:inline-block;margin-right:5px;vertical-align:top;background-image:url(/imgs/gft/mobile/sp_gift.png);width:13px;height:14px;background-position:-24px -19px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.section_title .button_appointment:before{content:'';display:inline-block;margin-right:5px;vertical-align:top;background-image:url(../imgs/sp_gift.png);width:13px;height:14px;background-position:-24px -19px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .common_box{padding:0 20px}
 @media all and (min-width:320px){
 .container .content .refund_account .account_box .in_box .notice{letter-spacing:-.7px!important}
 .container .content .help_desk_info p{letter-spacing:-.5px}
 .container .content .section_title .button_appointment{letter-spacing:-.7px}
 }
+.mob_alert_wrap .sp_lux{display:inline-block;overflow:hidden;background:url(https://static.wehagov.com/imgs/common/sp_lux.png) 0 0 no-repeat;line-height:100em;vertical-align:top}
+.mob_alert_wrap .alert_bx{position:relative;padding:40px 16px 30px;max-width:268px;background:#fff;border-radius:14px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.mob_alert_wrap .alert_bx .btn_close{position:absolute;top:16px;left:16px;width:24px;height:24px;border:none;background:0 0}
+.mob_alert_wrap .alert_bx .btn_close .sp_lux{width:14px;height:14px;background-position:-279px -54px}
+.mob_alert_wrap .alert_bx .title_area{text-align:center}
+.mob_alert_wrap .alert_bx .title_area>img{display:inline-block;margin-bottom:30px}
+.mob_alert_wrap .alert_bx .title_area>strong{display:block;font-size:16px;font-weight:700;line-height:19px;color:rgba(0,0,0,.87)}
+.mob_alert_wrap .alert_bx .cont_area{margin-top:18px;text-align:center;font-size:13px;line-height:20px;color:rgba(0,0,0,.6)}
+.mob_alert_wrap .alert_bx .btn_area{margin-top:30px}
+.mob_alert_wrap .alert_bx .btn_area .btn_alert+.btn_alert{margin-top:8px}
+.mob_alert_wrap .alert_bx .btn_area .btn_alert{display:block;width:100%;height:48px;border:none;background:#127eff;border-radius:24px;font-size:14px;font-weight:700;line-height:21px;color:#fff}
+.mob_alert_wrap .alert_bx .btn_area .btn_alert.v2{background:#ebecef;color:rgba(0,0,0,.87)}
 .service_list{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;height:46px;padding:16px 0 0;background-color:#fff}
 .service_list:before{content:'';position:absolute;bottom:0;left:-20px;right:-20px;height:1px;background-color:rgba(0,0,0,.06)}
 .service_list li{position:relative}
@@ -213,20 +218,20 @@ button:active,button:focus{outline:0}
 .header .title{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;height:46px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .header .title h2{font-size:22px;font-weight:900;color:rgba(0,0,0,.87);letter-spacing:-.33px}
 .header .title .button_close{position:absolute;top:0;right:-9px;padding:14px}
-.header .title .button_close:before{content:'';display:inline-block;vertical-align:middle;background-image:url(/imgs/gft/mobile/sp_gift.png);width:14px;height:14px;background-position:-15px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
+.header .title .button_close:before{content:'';display:inline-block;vertical-align:middle;background-image:url(../imgs/sp_gift.png);width:14px;height:14px;background-position:-15px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
 .header .end_title{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;height:46px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}
 .header .end_title h2{font-size:18px;color:rgba(0,0,0,.87);letter-spacing:-.27px}
 .header .end_title .button_close{position:absolute;top:0;left:-9px;padding:14px}
-.header .end_title .button_close:before{content:'';display:inline-block;vertical-align:middle;background-image:url(/imgs/gft/mobile/sp_gift.png);width:14px;height:14px;background-position:-15px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
+.header .end_title .button_close:before{content:'';display:inline-block;vertical-align:middle;background-image:url(../imgs/sp_gift.png);width:14px;height:14px;background-position:-15px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
 .header .end_title .button_prev{position:absolute;top:0;left:-10px;padding:14px}
-.header .end_title .button_prev:before{content:'';display:inline-block;vertical-align:middle;background-image:url(/imgs/gft/mobile/sp_gift.png);width:18px;height:14px;background-position:0 -44px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.header .end_title .button_prev:before{content:'';display:inline-block;vertical-align:middle;background-image:url(../imgs/sp_gift.png);width:18px;height:14px;background-position:0 -44px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .header .end_title .button_download{position:absolute;top:0;right:-10px;padding:14px}
-.header .end_title .button_download:before{content:'';display:inline-block;vertical-align:middle;background-image:url(/imgs/gft/mobile/sp_gift.png);width:19px;height:17px;background-position:0 -19px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.header .end_title .button_download:before{content:'';display:inline-block;vertical-align:middle;background-image:url(../imgs/sp_gift.png);width:19px;height:17px;background-position:0 -19px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .sort_box{margin-top:20px;text-align:right}
 .sort_box .sort_box_list{display:inline-block;position:relative;vertical-align:top}
 .sort_box .sort_box_list button{font-size:13px;font-weight:700;color:rgba(0,0,0,.87);letter-spacing:-.2px}
 .sort_box .sort_box_list button+button{margin-left:20px}
-.sort_box .sort_box_list button:after{content:'';display:inline-block;width:10px;height:5.5px;margin:5px 0 0 4px;background:url(/imgs/gft/mobile/sp_gift.png) 0 0 no-repeat;background-size:100px 100px;-webkit-background-size:100px 100px;background-position:-34px 0;vertical-align:top}
+.sort_box .sort_box_list button:after{content:'';display:inline-block;width:10px;height:5.5px;margin:5px 0 0 4px;background:url(/imgs/sp_gift.png) 0 0 no-repeat;background-size:100px 100px;-webkit-background-size:100px 100px;background-position:-34px 0;vertical-align:top}
 .sort_box .sort_box_list .sort_result{position:absolute;top:4px;right:0;min-width:112px;padding:8px 0;background-color:#fff;border-radius:8px;box-shadow:0 4px 8px 0 rgba(0,0,0,.1);-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,.1);z-index:10}
 .sort_box .sort_box_list .sort_result a{display:block;padding:12px 16px 11px;font-size:13px;font-weight:700;color:rgba(0,0,0,.87);letter-spacing:-.2px;text-align:left}
 .notice{padding:24px 26px;background-color:#fafafa}
@@ -245,15 +250,15 @@ button:active,button:focus{outline:0}
 .accordion li.active .title:after{-webkit-transform:rotateX(180deg);transform:rotateX(180deg)}
 .accordion li .title{position:relative;display:block;width:100%;height:54px;text-align:left}
 .accordion li .title span{display:block;font-size:15px;line-height:19px;letter-spacing:-.22px;color:rgba(0,0,0,.87)}
-.accordion li .title:after{content:'';display:block;position:absolute;top:50%;right:0;margin:-4px 0 0 0;width:14px;height:8px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:14px;height:8px;background-position:-49px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
+.accordion li .title:after{content:'';display:block;position:absolute;top:50%;right:0;margin:-4px 0 0 0;width:14px;height:8px;background-image:url(../imgs/sp_gift.png);width:14px;height:8px;background-position:-49px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
 .accordion li .notice{display:none;margin:0 -20px}
 .accordion li.active .notice{display:block}
 .accordion.question .title{height:auto;padding:18px 40px 17px 26px}
-.accordion.question .title:before{content:'';position:absolute;top:19px;left:6px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:12px;height:15.5px;background-position:-19px -63px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.accordion.question .title:before{content:'';position:absolute;top:19px;left:6px;background-image:url(../imgs/sp_gift.png);width:12px;height:15.5px;background-position:-19px -63px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .btn_checkbox{display:inline-block;vertical-align:top;position:relative;padding-left:25px;height:24px}
 .btn_checkbox input[type=checkbox]{opacity:0;display:block;position:absolute;top:0;left:0;width:100%;height:100%}
-.btn_checkbox input[type=checkbox]:checked+.ico{background-image:url(/imgs/gft/mobile/sp_gift.png);width:20px;height:20px;background-position:-67px -19px;background-size:100px 100px;-webkit-background-size:100px 100px}
-.btn_checkbox .ico{display:block;position:absolute;top:50%;left:0;margin:-10px 0 0 0;background-image:url(/imgs/gft/mobile/sp_gift.png);width:20px;height:20px;background-position:-42px -19px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.btn_checkbox input[type=checkbox]:checked+.ico{background-image:url(../imgs/sp_gift.png);width:20px;height:20px;background-position:-67px -19px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.btn_checkbox .ico{display:block;position:absolute;top:50%;left:0;margin:-10px 0 0 0;background-image:url(../imgs/sp_gift.png);width:20px;height:20px;background-position:-42px -19px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .btn_checkbox .label_text{display:block;font-size:13px;line-height:24px;letter-spacing:-.2px;color:rgba(0,0,0,.87)}
 .button_box{position:relative;margin:9px 0}
 .button_box::after{content:'';display:block;clear:both}
@@ -262,19 +267,19 @@ button:active,button:focus{outline:0}
 .button_box ul::after{content:'';display:block;clear:both}
 .button_box ul li{float:left;width:50%}
 .button_box ul li button{display:block;position:relative;width:100%;height:52px;font-size:13px;font-weight:900;color:rgba(0,0,0,.87)}
-.button_box ul li button:before{display:inline-block;margin-right:10px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:19px;height:16.5px;background-position:-23px -44px;background-size:100px 100px;-webkit-background-size:100px 100px;vertical-align:top;content:''}
+.button_box ul li button:before{display:inline-block;margin-right:10px;background-image:url(../imgs/sp_gift.png);width:19px;height:16.5px;background-position:-23px -44px;background-size:100px 100px;-webkit-background-size:100px 100px;vertical-align:top;content:''}
 .button_box ul li+li{position:relative}
 .button_box ul li+li:before{position:absolute;top:50%;left:-1px;width:1px;height:16px;margin-top:-8px;background-color:#ddd;content:''}
 .button_box ul li+li button{background-color:#fff}
-.button_box ul li+li button:before{display:inline-block;margin-right:10px;margin-top:-2px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:19px;height:19px;background-position:-47px -44px;background-size:100px 100px;-webkit-background-size:100px 100px;vertical-align:top;content:''}
+.button_box ul li+li button:before{display:inline-block;margin-right:10px;margin-top:-2px;background-image:url(../imgs/sp_gift.png);width:19px;height:19px;background-position:-47px -44px;background-size:100px 100px;-webkit-background-size:100px 100px;vertical-align:top;content:''}
 .button_list{margin:0 20px}
 .button_list a{display:block;position:relative;padding:19px 0 18px;border-bottom:1px solid rgba(0,0,0,.06);font-size:15px;font-weight:700;color:rgba(0,0,0,.87);display:-webkit-box;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:1}
-.button_list a:after{content:'';position:absolute;top:50%;right:0;margin-top:-6px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:7px;height:12px;background-position:-87px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
+.button_list a:after{content:'';position:absolute;top:50%;right:0;margin-top:-6px;background-image:url(../imgs/sp_gift.png);width:7px;height:12px;background-position:-87px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
 .button_list a .badge{display:inline-block;padding:3px 6px 2px;margin:1px 0 0 4px;background-color:#127eff;border-radius:100%;font-size:10px;font-weight:900;color:#fff;vertical-align:top}
 .notice_list ul li{padding:20px 0 28px;border-bottom:1px solid rgba(0,0,0,.06)}
 .notice_list ul li:last-child{border-bottom:0}
 .notice_list ul li .notice_box{position:relative;padding-left:29px;padding-right:29px}
-.notice_list ul li .notice_box:before{content:'';position:absolute;top:1px;left:3px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:18px;height:18px;background-position:-71px -44px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.notice_list ul li .notice_box:before{content:'';position:absolute;top:1px;left:3px;background-image:url(../imgs/sp_gift.png);width:18px;height:18px;background-position:-71px -44px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .notice_list ul li .notice_box h3{font-size:15px;font-weight:900;line-height:22px;letter-spacing:-.23px;word-break:keep-all;word-wrap:break-word;display:-webkit-box;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:3}
 .notice_list ul li .notice_box .notice_write_date{display:block;margin-top:10px;font-size:11px;font-weight:700;letter-spacing:-.17px;color:rgba(0,0,0,.38);line-height:16px}
 .notice_list ul li .notice_box .notice_content{margin-top:20px;font-size:13px;font-weight:700;color:rgba(0,0,0,.6);line-height:24px;letter-spacing:-.2px;word-break:keep-all;word-wrap:break-word}
@@ -282,8 +287,8 @@ button:active,button:focus{outline:0}
 .reg_management h2{padding:0 20px;font-size:15px;font-weight:900;color:rgba(0,0,0,.87);line-height:21px;letter-spacing:-.23px;display:-webkit-box;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:1}
 .reg_management ul{margin-top:15px}
 .reg_management ul li button{width:100%;height:48px;padding:0 20px;font-size:14px;font-weight:700;color:rgba(0,0,0,.87);line-height:21px;letter-spacing:-.21px;text-align:left}
-.reg_management ul li button.button_refresh:before{display:inline-block;margin-right:12px;vertical-align:top;content:'';background-image:url(/imgs/gft/mobile/sp_gift.png);width:21px;height:19px;background-position:0 -81px;background-size:100px 100px;-webkit-background-size:100px 100px}
-.reg_management ul li button.button_delete:before{display:inline-block;margin-right:15px;vertical-align:top;content:'';background-image:url(/imgs/gft/mobile/sp_gift.png);width:18px;height:19px;background-position:-26px -81px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.reg_management ul li button.button_refresh:before{display:inline-block;margin-right:12px;vertical-align:top;content:'';background-image:url(../imgs/sp_gift.png);width:21px;height:19px;background-position:0 -81px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.reg_management ul li button.button_delete:before{display:inline-block;margin-right:15px;vertical-align:top;content:'';background-image:url(../imgs/sp_gift.png);width:18px;height:19px;background-position:-26px -81px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .reg_management.active{display:block;bottom:0;-webkit-animation:slideUp .3s ease-in;animation:slideUp .3s ease-in}
 @-webkit-keyframes slideUp{
 0%{opacity:0;bottom:-184px}
@@ -297,12 +302,12 @@ button:active,button:focus{outline:0}
 .card_form+.card_form{margin-top:16px}
 .card_form .birthday_input{position:relative}
 .card_form .birthday_input h3{font-size:14px;font-weight:900;color:rgba(0,0,0,.87);letter-spacing:-.21px;display:-webkit-box;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:1}
-.card_form .birthday_input h3.icon_birthday:before{content:'';display:inline-block;margin-right:10px;width:32px;height:32px;background:url(/imgs/gft/mobile/icon_anniversary_cake.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
-.card_form .birthday_input h3.icon_heart:before{content:'';display:inline-block;margin-right:10px;width:32px;height:32px;background:url(/imgs/gft/mobile/icon_anniversary_heart.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
+.card_form .birthday_input h3.icon_birthday:before{content:'';display:inline-block;margin-right:10px;width:32px;height:32px;background:url(../imgs/icon_anniversary_cake.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
+.card_form .birthday_input h3.icon_heart:before{content:'';display:inline-block;margin-right:10px;width:32px;height:32px;background:url(../imgs/icon_anniversary_heart.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
 .card_form .birthday_input .button_more{position:absolute;top:50%;right:0;margin-top:-12px}
-.card_form .birthday_input .button_more:before{content:'';display:inline-block;width:24px;height:24px;vertical-align:top;background:url(/imgs/gft/mobile/icon_more_sec.svg) 0 0 no-repeat;background-size:24px 24px;-webkit-background-size:24px 24px}
+.card_form .birthday_input .button_more:before{content:'';display:inline-block;width:24px;height:24px;vertical-align:top;background:url(../imgs/icon_more_sec.svg) 0 0 no-repeat;background-size:24px 24px;-webkit-background-size:24px 24px}
 .card_form .birthday_select .select_box{position:relative;margin-top:26px;border-bottom:1px solid #ccc}
-.card_form .birthday_select .select_box:before{content:'';display:block;position:absolute;top:50%;right:3px;margin:-5px 0 0 0;background-image:url(/imgs/gft/mobile/sp_gift.png);width:11px;height:6px;background-position:-34px -63px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.card_form .birthday_select .select_box:before{content:'';display:block;position:absolute;top:50%;right:3px;margin:-5px 0 0 0;background-image:url(../imgs/sp_gift.png);width:11px;height:6px;background-position:-34px -63px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .card_form .birthday_select .select_box+.time_box{margin-top:40px}
 .card_form .birthday_select .select_box .select_area{width:100%;padding-bottom:8px;border:0;font-size:15px;font-weight:700;color:rgba(0,0,0,.16);background-color:transparent;letter-spacing:-.23px;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-box-sizing:border-box;box-sizing:border-box}
 .card_form .birthday_select .select_box .select_area::-webkit-calendar-picker-indicator{display:block;position:absolute;top:0;left:0;right:0;bottom:0;width:auto;height:auto;color:transparent;background:0 0;-webkit-box-sizing:border-box;box-sizing:border-box}
@@ -322,13 +327,13 @@ button:active,button:focus{outline:0}
 .card_form .form_box:first-child{margin-top:0}
 .card_form .form_box .card_common_title{font-size:12px;color:rgba(0,0,0,.38)}
 .card_form .form_box ul{display:-webkit-box;display:-ms-flexbox;display:flex;overflow:hidden;margin-top:12px;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-.card_form .form_box ul li button{padding:8px;border:1px solid transparent;box-sizing:border-box}
-.card_form .form_box ul li button.icon_balloon:after{content:'';display:inline-block;width:32px;height:32px;background:url(/imgs/gft/mobile/icon_anniversary_balloon.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
-.card_form .form_box ul li button.icon_clapping:after{content:'';display:inline-block;width:32px;height:32px;background:url(/imgs/gft/mobile/icon_anniversary_clapping.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
-.card_form .form_box ul li button.icon_heart:after{content:'';display:inline-block;width:32px;height:32px;background:url(/imgs/gft/mobile/icon_anniversary_heart.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
-.card_form .form_box ul li button.icon_champagne:after{content:'';display:inline-block;width:32px;height:32px;background:url(/imgs/gft/mobile/icon_anniversary_champagne.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
-.card_form .form_box ul li button.icon_couple:after{content:'';display:inline-block;width:32px;height:32px;background:url(/imgs/gft/mobile/icon_anniversary_couple.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
-.card_form .form_box ul li.active button{background-color:rgba(18,126,255,.08);border-radius:12px;border:1px solid #1c90fb}
+.card_form .form_box ul li button{padding:8px}
+.card_form .form_box ul li button.icon_balloon:after{content:'';display:inline-block;width:32px;height:32px;background:url(../imgs/icon_anniversary_balloon.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
+.card_form .form_box ul li button.icon_clapping:after{content:'';display:inline-block;width:32px;height:32px;background:url(../imgs/icon_anniversary_clapping.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
+.card_form .form_box ul li button.icon_heart:after{content:'';display:inline-block;width:32px;height:32px;background:url(../imgs/icon_anniversary_heart.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
+.card_form .form_box ul li button.icon_champagne:after{content:'';display:inline-block;width:32px;height:32px;background:url(../imgs/icon_anniversary_champagne.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
+.card_form .form_box ul li button.icon_couple:after{content:'';display:inline-block;width:32px;height:32px;background:url(../imgs/icon_anniversary_couple.svg) 0 0 no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
+.card_form .form_box ul li.active button{background-color:#f9f9fc;border-radius:12px}
 .card_form .form_box .anniversary_title{position:relative;width:100%}
 .card_form .form_box .anniversary_title .input_box{position:relative;padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,.12)}
 .card_form .form_box .anniversary_title .input_box input{width:100%;padding-right:24px;border:0;font-size:15px;font-weight:700;color:rgba(0,0,0,.87);-webkit-box-sizing:border-box;box-sizing:border-box;outline:0}
@@ -338,7 +343,7 @@ button:active,button:focus{outline:0}
 .card_form .form_box .anniversary_title .input_box input::-ms-input-placeholder{font-weight:700;color:rgba(0,0,0,.38)}
 .card_form .form_box .anniversary_title .input_box input::placeholder{font-weight:700;color:rgba(0,0,0,.38)}
 .card_form .form_box .anniversary_title .input_box .input_text_delete{position:absolute;top:-1px;right:0;padding:3px 4px}
-.card_form .form_box .anniversary_title .input_box .input_text_delete:before{content:'';display:inline-block;vertical-align:middle;background-image:url(/imgs/gft/mobile/sp_gift.png);width:16px;height:16px;background-position:-66px -66px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.card_form .form_box .anniversary_title .input_box .input_text_delete:before{content:'';display:inline-block;vertical-align:middle;background-image:url(../imgs/sp_gift.png);width:16px;height:16px;background-position:-66px -66px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .card_form .form_box .anniversary_title .input_box.error+.alert_box{display:-webkit-box;display:-ms-flexbox;display:flex}
 .card_form .form_box .anniversary_title .alert_box{display:none;margin-top:6px}
 .card_form .form_box .anniversary_title .alert_box .warning_text{font-size:12px;font-weight:700;color:#fc4c60;letter-spacing:-.18px}
@@ -366,7 +371,7 @@ button:active,button:focus{outline:0}
 .container .content .refund_account .account_box .in_box.type_03{display:block;border-top:0;border-bottom:1px solid #ccc}
 .container .content .refund_account .account_box .in_box:first-child{border-top:0}
 .container .content .refund_account .account_box .in_box .select_bank{position:relative;width:30%;min-width:30%;margin-right:5px}
-.container .content .refund_account .account_box .in_box .select_bank:before{content:'';display:block;position:absolute;top:50%;right:12px;margin:-4px 0 0 0;width:14px;height:8px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:14px;height:8px;background-position:-49px 0;background-size:100px 100px;-webkit-background-size:100px 100px;z-index:10}
+.container .content .refund_account .account_box .in_box .select_bank:before{content:'';display:block;position:absolute;top:50%;right:12px;margin:-4px 0 0 0;width:14px;height:8px;background-image:url(../imgs/sp_gift.png);width:14px;height:8px;background-position:-49px 0;background-size:100px 100px;-webkit-background-size:100px 100px;z-index:10}
 .container .content .refund_account .account_box .in_box .select_bank label{display:block;width:100%;border:0}
 .container .content .refund_account .account_box .in_box .select_bank label select{position:relative;display:block;width:100%;border:0;padding:5px 34px 5px 0;background-color:#fff;font-size:15px;line-height:20px;letter-spacing:-.22px;color:rgba(0,0,0,.87);-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap}
 .container .content .refund_account .account_box .in_box .account_num{display:block;width:100%}
@@ -386,7 +391,7 @@ button:active,button:focus{outline:0}
 .container .content .recipient_detail_box+.recipient_detail_box{margin-top:40px}
 .container .content .recipient_detail_box .button_detail{padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,.06)}
 .container .content .recipient_detail_box .button_detail button{display:block;position:relative;width:100%;font-size:15px;font-weight:700;color:rgba(0,0,0,.87);letter-spacing:-.23px;text-align:left}
-.container .content .recipient_detail_box .button_detail button:after{content:'';display:block;position:absolute;top:50%;right:0;margin:-4px 0 0 0;width:14px;height:8px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:14px;height:8px;background-position:-49px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
+.container .content .recipient_detail_box .button_detail button:after{content:'';display:block;position:absolute;top:50%;right:0;margin:-4px 0 0 0;width:14px;height:8px;background-image:url(../imgs/sp_gift.png);width:14px;height:8px;background-position:-49px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
 .container .content .recipient_detail_box .button_detail.active{border-color:rgba(0,0,0,.87)}
 .container .content .recipient_detail_box .button_detail.active .title:after{-webkit-transform:rotateX(180deg);transform:rotateX(180deg)}
 .container .content .recipient_detail_box .button_detail.active~.recipient_detail{display:block}
@@ -401,7 +406,7 @@ button:active,button:focus{outline:0}
 .container .content .help_desk_info strong{font-weight:900}
 .container .content .section_box+.section_box{margin-top:32px}
 .container .content .time_box{position:relative;margin-top:20px;border-bottom:1px solid #ccc}
-.container .content .time_box:after{content:'';display:block;position:absolute;top:50%;right:0;margin:-8px 0 0 0;background-image:url(/imgs/gft/mobile/sp_gift.png);width:14px;height:8px;background-position:-49px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
+.container .content .time_box:after{content:'';display:block;position:absolute;top:50%;right:0;margin:-8px 0 0 0;background-image:url(../imgs/sp_gift.png);width:14px;height:8px;background-position:-49px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
 .container .content .time_box+.time_box{margin-top:40px}
 .container .content .time_box .select_time{width:100%;padding-bottom:10px;border:0;font-size:15px;color:rgba(0,0,0,.87);background-color:transparent;letter-spacing:-.23px;-webkit-appearance:none;-moz-appearance:none;appearance:none}
 .container .content .detail_info{display:block;padding-top:32px}
@@ -419,9 +424,9 @@ button:active,button:focus{outline:0}
 .container .content .detail_info .menu_info .detail_list>div .press+.press{margin-left:8px}
 .container .content .empty_box{margin-top:124px;text-align:center}
 .container .content .empty_box p{margin-top:30px;font-size:14px;font-weight:700;color:rgba(0,0,0,.87);letter-spacing:-.21px}
-.container .content.gift_home .banner_box{position:relative;height:80px;background:url(/imgs/gft/mobile/img_banner.png) 50% 0 no-repeat;background-size:375px 80px;-webkit-background-size:375px 80px}
-.container .content.gift_home .banner_box:before{content:'';position:absolute;top:0;left:0;width:50%;height:80px;background:url(/imgs/gft/mobile/bg_banner_left.png) repeat-x;background-size:375px 80px;-webkit-background-size:375px 80px;z-index:-1}
-.container .content.gift_home .banner_box:after{content:'';position:absolute;top:0;right:0;width:50%;height:80px;background:url(/imgs/gft/mobile/bg_banner_right.png) repeat-x;background-size:375px 80px;-webkit-background-size:375px 80px;z-index:-1}
+.container .content.gift_home .banner_box{position:relative;height:80px;background:url(../imgs/img_banner.png) 50% 0 no-repeat;background-size:375px 80px;-webkit-background-size:375px 80px}
+.container .content.gift_home .banner_box:before{content:'';position:absolute;top:0;left:0;width:50%;height:80px;background:url(../imgs/bg_banner_left.png) repeat-x;background-size:375px 80px;-webkit-background-size:375px 80px;z-index:-1}
+.container .content.gift_home .banner_box:after{content:'';position:absolute;top:0;right:0;width:50%;height:80px;background:url(../imgs/bg_banner_right.png) repeat-x;background-size:375px 80px;-webkit-background-size:375px 80px;z-index:-1}
 .container .content.gift_home .banner_box a{display:block;height:100%}
 .container .content.gift_home .home_product_list ul{overflow:hidden;overflow-x:scroll;-webkit-overflow-scrolling:touch;margin-top:14px;white-space:nowrap;font-size:0}
 .container .content.gift_home .home_product_list ul::-webkit-scrollbar{display:none}
@@ -433,14 +438,14 @@ button:active,button:focus{outline:0}
 .container .content.gift_home .home_product_list ul li.list_all_view{width:auto;height:179px;margin-left:0}
 .container .content.gift_home .home_product_list ul li.list_all_view a{padding:58px 22px;font-size:11px;color:rgba(0,0,0,.87);letter-spacing:-.17px;text-align:center}
 .container .content.gift_home .home_product_list ul li.list_all_view a .button_more{position:relative;width:36px;height:36px;margin:0 auto 12px;border:1px solid rgba(0,0,0,.38);border-radius:100%;vertical-align:top}
-.container .content.gift_home .home_product_list ul li.list_all_view a .button_more:before{content:'';position:absolute;top:50%;left:50%;margin-top:-6px;margin-left:-3.5px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:7px;height:12px;background-position:-87px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
+.container .content.gift_home .home_product_list ul li.list_all_view a .button_more:before{content:'';position:absolute;top:50%;left:50%;margin-top:-6px;margin-left:-3.5px;background-image:url(../imgs/sp_gift.png);width:7px;height:12px;background-position:-87px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
 .container .content.gift_home .home_product_list .product_list_empty{text-align:center}
 .container .content.gift_home .home_product_list .product_list_empty p{margin-top:4px;font-size:13px;font-weight:700;color:rgba(0,0,0,.38);line-height:20px;letter-spacing:-.2px}
 .container .content .gift_navigation{position:relative;overflow:hidden;border-bottom:1px solid #ddd}
 .container .content .gift_navigation:before{content:'';position:absolute;top:0;left:50%;width:1px;height:100%;background-color:#ddd}
 .container .content .gift_navigation li{float:left;width:50%}
 .container .content .gift_navigation li a{display:block;position:relative;padding:17px 10px 19px 20px;font-size:13px;font-weight:700;color:rgba(0,0,0,.87);letter-spacing:-.2px;line-height:16px}
-.container .content .gift_navigation li a:after{content:'';position:absolute;top:50%;right:10px;margin-top:-7px;background-image:url(/imgs/gft/mobile/sp_gift.png);width:7px;height:12px;background-position:-87px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
+.container .content .gift_navigation li a:after{content:'';position:absolute;top:50%;right:10px;margin-top:-7px;background-image:url(../imgs/sp_gift.png);width:7px;height:12px;background-position:-87px 0;background-size:100px 100px;-webkit-background-size:100px 100px}
 .container .content .present_list{padding:20px 0 24px}
 .container .content .present_list .present_list_text{padding:0 20px;font-size:13px;font-weight:700;color:rgba(0,0,0,.87);line-height:20px;letter-spacing:-.2px}
 .container .content .present_list .present_list_text span{font-weight:900;color:#127eff}
@@ -464,20 +469,6 @@ button:active,button:focus{outline:0}
 .container .content .add_anniversary_text{font-size:14px;font-weight:900;color:rgba(0,0,0,.87);letter-spacing:-.21px;display:-webkit-box;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:1}
 .container .content .button_add_anniversary{display:block;width:100%;height:60px;margin:16px 0 20px;border:1px solid rgba(0,0,0,.12);border-radius:16px;font-size:13px;font-weight:400;color:rgba(0,0,0,.87);letter-spacing:-.2px}
 .container .content .button_add_anniversary strong{font-weight:900}
-.container .content .button_add_anniversary:before{content:'';display:inline-block;margin-right:6px;vertical-align:top;background-image:url(/imgs/gft/mobile/sp_gift.png);width:16px;height:16px;background-position:-47px -66px;background-size:100px 100px;-webkit-background-size:100px 100px}
+.container .content .button_add_anniversary:before{content:'';display:inline-block;margin-right:6px;vertical-align:top;background-image:url(../imgs/sp_gift.png);width:16px;height:16px;background-position:-47px -66px;background-size:100px 100px;-webkit-background-size:100px 100px}
 .img_coupon{margin-top:32px}
-.card_form .birthday_input h3 .title_icon{display:inline-block;margin-right:10px;width:32px;height:32px;background-position:0 0;background-repeat:no-repeat;background-size:32px 32px;-webkit-background-size:32px 32px;vertical-align:middle}
-
-/* 팝업 (arert) */
-.mob_alert_wrap .sp_lux{display:inline-block;overflow:hidden;background:url(https://static.wehago.com/imgs/common/sp_lux.png) 0 0 no-repeat;line-height:100em;vertical-align:top;}
-.mob_alert_wrap .alert_bx{position:relative;padding:40px 16px 30px;max-width:268px;background:#fff;border-radius:14px;box-sizing:border-box;}
-.mob_alert_wrap .alert_bx .btn_close{position:absolute;top:16px;left:16px;width:24px;height:24px;border:none;background:none;}
-.mob_alert_wrap .alert_bx .btn_close .sp_lux{width:14px;height:14px;background-position:-279px -54px;}
-.mob_alert_wrap .alert_bx .title_area{text-align:center;}
-.mob_alert_wrap .alert_bx .title_area > img{display:inline-block;margin-bottom:30px;}
-.mob_alert_wrap .alert_bx .title_area > strong{display:block;font-size:16px;font-weight:bold;line-height:19px;color:rgba(0,0,0,.87);}
-.mob_alert_wrap .alert_bx .cont_area{margin-top:18px;text-align:center;font-size:13px;line-height:20px;color:rgba(0,0,0,.6);}
-.mob_alert_wrap .alert_bx .btn_area{margin-top:30px;}
-.mob_alert_wrap .alert_bx .btn_area .btn_alert + .btn_alert{margin-top:8px;}
-.mob_alert_wrap .alert_bx .btn_area .btn_alert{display:block;width:100%;height:48px;border:none;background:rgb(18,126,255);border-radius:24px;font-size:14px;font-weight:bold;line-height:21px;color:#fff;}
-.mob_alert_wrap .alert_bx .btn_area .btn_alert.v2{background:rgb(235,236,239);color:rgba(0,0,0,.87);}
+/*# sourceMappingURL=maps/gift_mobile.css.map */
