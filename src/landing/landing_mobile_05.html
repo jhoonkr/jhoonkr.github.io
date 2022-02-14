@@ -70,8 +70,9 @@
 						<div class="content__defBox">
 							<dt>상담유형 <span class="content__define--start">*</span></dt>
 							<dd>
-								<div class="content__inputBox">
-									<input type="text" placeholder="상담유형을 입력해주세요.">
+								<div class="content__selBox">
+									<span class="content__selBox--text">신규가입</span>
+									<button type="button" class="content__selBox--button"><span class="blind">선택 열림</span></button>
 								</div>
 							</dd>
 						</div>
@@ -183,11 +184,31 @@
 		</ul>
 		<p class="footer__copyright">DOUZONE BIZON Co.,Ltd.<br>Copyright © DOUZONE BIZON. All rights reserved.</p>
 	</div>
+<!-- SelectPop -->
+<!-- [D] Toast팝업 오픈시 display: block 처리해주세요. -->
+<div class="dimmed" style="display: none"></div>
+<!-- [D] Toast팝업 오픈시 display: block 처리해주세요. -->
+<div class="select__toast" style="display: none;">
+	<h2 class="select__toast--title">휴가구분</h2>
+	<ul class="select__list">
+		<!-- [D] 선택시 class="active" 추가해주세요. -->
+		<li class="active">
+			<button type="button" class="select__list--text">신규가입</button>
+		</li>
+		<li>
+			<button type="button" class="select__list--text">기존 가입자</button>
+		</li>
+	</ul>
+	<div class="select__toast--submit">
+		<button type="button" class="content__submitBtn">적용</button>
+	</div>
+</div>
 <!-- [D] 마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
-<script src="../js/jquery-latest.min.js"></script>
+<script src="../../js/jquery-latest.min.js"></script>
 <script>
 	docReady(function() {
 		clickButton();
+		toast();
 	});
 
 	function docReady(fn) {
@@ -198,11 +219,12 @@
 		}
 	}
 
+	const body = document.querySelector('body');
+
 	var clickButton = function(){
 		const hambuger = document.querySelector('.header__hambuger');
 		const nav = document.querySelector('.nav');
 		const closeBtn = document.querySelector('.nav__close');
-		const body = document.querySelector('body');
 
 		if(nav){
 			hambuger.addEventListener("click", e =>{
@@ -217,6 +239,39 @@
 				e.preventDefault();
 			});
 		}
+	}
+
+	var toast = function(){
+		const toastElement = document.querySelector('.content__selBox--button');
+		const dim = document.querySelector('.dimmed');
+		const selectToast = document.querySelector('.select__toast');
+
+		let toast = false;
+
+		toastElement.addEventListener('click', function(){
+			dim.style.display = 'block';
+			selectToast.style.display = 'block';
+			body.classList.add('ovr_y');
+			return toast = true;
+		});
+
+		document.addEventListener('click', function(e){
+			if(toast == true){ // 팝업이 열려있는 경우
+				if(e.target == dim){ // 팝업이 열려있고 Dim 영역을 클릭했을 경우
+					dim.style.display = 'none';
+					selectToast.style.display = 'none';
+					body.classList.remove('ovr_y');
+					return toast = false;
+				}
+			}
+		});
+
+		document.querySelector('.select__toast--submit button').addEventListener('click', function(e){
+			dim.style.display = 'none';
+			selectToast.style.display = 'none';
+			body.classList.remove('ovr_y');
+			return toast = false;
+		})
 	}
 </script>
 <!-- [D] //마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
