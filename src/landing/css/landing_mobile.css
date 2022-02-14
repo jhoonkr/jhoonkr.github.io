@@ -52,7 +52,7 @@ button:active,button:focus{outline:0}
 .nav.active{display:block}
 .top__button{position:fixed;bottom:60px;right:20px;background-image:url(/src/landing/imgs/sp_nahago_mobile.png);width:40px;height:40px;background-position:-182px -188px;background-size:475px 475px;-webkit-background-size:475px 475px}
 .content{padding-top:46px}
-.content__spot{position:relative;height:490px;padding-top:40px;background:url(/src/landing/imgs/bg_spot.png) no-repeat 50% 50%;background-size:cover;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box}
+.content__spot{position:relative;height:490px;padding-top:40px;background:url(https://static.wehago.com/html/landing/img/nahago_mobile/bg_spot.png) no-repeat 50% 50%;background-size:cover;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box}
 .content__spot--info{display:block;font-family:douzonetitle;font-size:16px;color:#1a1a1a;letter-spacing:-.96px}
 .content__spot--title{margin-top:6px;font-family:douzonetitle;font-size:34px;color:#000;letter-spacing:-1.7px;line-height:40px}
 .content__spot--title em{color:#0424b7}
@@ -90,12 +90,12 @@ button:active,button:focus{outline:0}
 .content__free--title em{font-family:douzonetitle;font-size:22px;color:#1c90fb;letter-spacing:-.22px}
 .content__free--title.number{font-size:18px;letter-spacing:-.36px}
 .content__free--text{margin-top:12px;font-size:12px;color:#4a4a4a;line-height:17px;letter-spacing:-.12px}
-.content__thumb{position:relative;width:100%;height:276px;background:url(/src/landing/imgs/img_free.png) no-repeat 50% 0/370px 276px}
+.content__thumb{position:relative;width:100%;height:276px;background:url(https://static.wehago.com/html/landing/img/nahago_mobile/img_free.png) no-repeat 50% 0/370px 276px}
 .content__thumb--link{position:absolute;bottom:40px;left:50%;width:220px;height:50px;margin-left:-113px}
 .content__introduce{overflow:hidden;position:relative;height:430px;padding-top:50px;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(20%,#002798),color-stop(50%,#2a4dc5),to(#5c51d8));background-image:-o-linear-gradient(top,#002798 20%,#2a4dc5 50%,#5c51d8);background-image:linear-gradient(to bottom,#002798 20%,#2a4dc5 50%,#5c51d8);text-align:center}
 .content__introduce--title{position:relative;font-size:18px;color:#fff;line-height:24px;letter-spacing:-.54px;z-index:1}
-.content__introduce .pattern{position:absolute;top:-235px;left:50%;width:507px;height:507px;margin-left:-360px;background:url(/src/landing/imgs/bg_introduce_pattern.png) no-repeat 0 0/507px 507px}
-.content__introduce::after{content:'';position:absolute;bottom:-102px;width:333px;height:371px;margin-left:-153px;background:url(/src/landing/imgs/bg_introduce_phone.png) no-repeat 50% 0/333px 371px}
+.content__introduce .pattern{position:absolute;top:-235px;left:50%;width:507px;height:507px;margin-left:-360px;background:url(https://static.wehago.com/html/landing/img/nahago_mobile/bg_introduce_pattern.png) no-repeat 0 0/507px 507px}
+.content__introduce::after{content:'';position:absolute;bottom:-102px;width:333px;height:371px;margin-left:-153px;background:url(https://static.wehago.com/html/landing/img/nahago_mobile/bg_introduce_phone.png) no-repeat 50% 0/333px 371px}
 .content__information{max-width:300px;margin:14px auto 0;text-align:left}
 .content__information li{position:relative;padding-left:6px;font-size:9px;color:#fff;line-height:16px;letter-spacing:-.45px}
 .content__information li::before{content:'';position:absolute;top:6px;left:0;width:2px;height:2px;background-color:#c4c4c4}
@@ -113,8 +113,10 @@ button:active,button:focus{outline:0}
 .content__swiperBox .swiper .swiper-pagination{bottom:0}
 .content__swiperBox .swiper .swiper-pagination .swiper-pagination-bullet{width:5px;height:5px;background-color:#d9d9d9}
 .content__swiperBox .swiper .swiper-pagination .swiper-pagination-bullet-active{width:12px;height:5px;border-radius:3px;background-color:#939393}
-@media (min-width:550px){
+@media (min-width:768px){
 .content__swiperBox .swiper .swiper-pagination{display:none}
+.content__swiperBox .swiper .swiper-wrapper{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.content__swiperBox .swiper .swiper-wrapper .swiper-slide+.swiper-slide{margin-left:18px}
 }
 .content__img{position:relative}
 .content__img img{width:100%;height:100%}
@@ -158,6 +160,9 @@ button:active,button:focus{outline:0}
 .content__endTab ul li.active a{color:#486bff}
 .content__endTab ul li.active a::after{content:'';position:absolute;bottom:-1px;left:0;right:0;width:100%;height:2px;background-color:#486bff}
 .content__subTab{overflow-x:auto;padding:0 0 0 27px;background-color:#f0f6fc}
+@media (min-width:768px){
+.content__subTab{overflow-x:hidden}
+}
 .content__subTab--icon{display:block;margin:0 auto 6px}
 .content__subTab--icon.icon1{background-image:url(/src/landing/imgs/sp_nahago_mobile.png);width:42px;height:42px;background-position:0 -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
 .content__subTab--icon.icon2{background-image:url(/src/landing/imgs/sp_nahago_mobile.png);width:42px;height:42px;background-position:-47px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
@@ -169,6 +174,9 @@ button:active,button:focus{outline:0}
 .content__subTab--icon.icon8{background-image:url(/src/landing/imgs/sp_nahago_mobile.png);width:42px;height:42px;background-position:-329px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
 .content__subTab--icon.icon9{background-image:url(/src/landing/imgs/sp_nahago_mobile.png);width:42px;height:42px;background-position:-376px -94px;background-size:475px 475px;-webkit-background-size:475px 475px}
 .content__subTab ul{display:-webkit-box;display:-ms-flexbox;display:flex;gap:10px;height:auto;padding:10px 0 9px}
+@media (min-width:768px){
+.content__subTab ul{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+}
 .content__subTab ul li:last-of-type{padding-right:27px}
 .content__subTab ul li a{display:block;min-width:64px;font-size:9px;letter-spacing:-.45px;color:#4f6cad;text-align:center}
 .content__subTab ul li.active a{font-weight:700;color:#2b56b9}
@@ -190,11 +198,16 @@ button:active,button:focus{outline:0}
 .content__endList li{position:relative;padding-left:6px;font-size:9px;color:#666;line-height:16px;letter-spacing:-.5px;word-break:keep-all;word-wrap:break-word}
 .content__endList li::before{content:'';position:absolute;top:5px;left:0;width:2px;height:2px;border-radius:100%;background-color:#777}
 .content__imgBox{margin-top:20px;text-align:center}
-.content__imgBox img{width:320px;height:290px;margin:0 auto}
+.content__imgBox picture{display:block}
+.content__imgBox img{width:100%;height:auto;margin:0 auto;vertical-align:top}
 .content__imgBottom{position:relative;height:240px;margin-top:12px;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(43%,rgba(172,172,172,0)),to(rgba(128,128,128,.14)));background-image:-o-linear-gradient(top,rgba(172,172,172,0) 43%,rgba(128,128,128,.14));background-image:linear-gradient(to bottom,rgba(172,172,172,0) 43%,rgba(128,128,128,.14));text-align:center}
-.content__imgBottom img{position:absolute;bottom:0;right:0}
-@media (min-width:391px){
-.content__imgBottom img{position:relative}
+.content__imgBottom picture{display:block}
+@media (min-width:376px){
+.content__imgBottom{height:auto}
+}
+.content__imgBottom img{position:absolute;bottom:0;right:0;width:292px;height:209px}
+@media (min-width:376px){
+.content__imgBottom img{position:inherit;bottom:auto;right:auto;width:100%;height:auto;vertical-align:top}
 }
 .content__guide{padding:30px 0 24px;text-align:center}
 .content__guide--title{font-family:douzonetitle;font-size:18px;color:#252525;line-height:24px;letter-spacing:-.54px}
@@ -214,7 +227,7 @@ button:active,button:focus{outline:0}
 .content__infoContent ul li a .guide__box p{font-size:13px;color:#000;letter-spacing:-.65px;line-height:18px;text-align:left;display:-webkit-box;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2}
 .content__infoContent ul li a .guide__date{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:3px;line-height:13px;text-align:left}
 .content__infoContent ul li a .guide__date--eye{position:relative;padding-left:14px;font-family:douzonetitle;font-size:11px;color:#999}
-.content__infoContent ul li a .guide__date--eye::before{content:'';position:absolute;top:1px;left:0;width:12px;height:11px;background:url(/src/landing/imgs/sp_nahago_mobile.png) no-repeat -171px -248px/475px 475px}
+.content__infoContent ul li a .guide__date--eye::before{content:'';position:absolute;top:1px;left:0;width:12px;height:11px;background:url(https://static.wehago.com/html/landing/img/nahago_mobile/sp_nahago_mobile.png) no-repeat -171px -248px/475px 475px}
 .content__infoContent ul li a .guide__date--time{position:relative;padding-left:6px;margin-left:6px;font-family:douzonetitle;font-size:11px;color:#939393}
 .content__infoContent ul li a .guide__date--time::before{content:'';position:absolute;top:2px;left:0;width:1px;height:8px;background-color:#e1e1e1}
 .content__question{padding:30px 20px 24px}
@@ -237,7 +250,7 @@ button:active,button:focus{outline:0}
 .content__inputBox input::placeholder{color:#a5a5a5}
 .content__inputBox input:focus{border-color:#212121}
 .content__inputBox input:focus~.btn__close{display:block}
-.content__inputBox textarea{width:100%;height:120px;padding:8px;border:1px solid rgba(112,112,112,.12);border-radius:4px;font-size:15px;letter-spacing:-.23px;line-height:18px;-webkit-box-sizing:border-box;box-sizing:border-box;resize:none;outline:0;vertical-align:top}
+.content__inputBox textarea{width:100%;height:120px;padding:8px;border:1px solid rgba(112,112,112,.12);border-radius:4px;font-size:15px;letter-spacing:-.23px;line-height:18px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-shadow:none;box-shadow:none;resize:none;outline:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;vertical-align:top}
 .content__inputBox textarea::-webkit-input-placeholder{color:#a5a5a5}
 .content__inputBox textarea::-moz-placeholder{color:#a5a5a5}
 .content__inputBox textarea:-ms-input-placeholder{color:#a5a5a5}
@@ -263,7 +276,7 @@ button:active,button:focus{outline:0}
 .content__agreeBtn input:checked~.content__agreeBtn--text{color:#2c7bf3}
 .content__submitBtn{width:100%;height:48px;margin-top:24px;border-radius:24px;background-color:#2f7ff5;font-size:14px;color:#fff;letter-spacing:-.7px;-webkit-box-shadow:4px 4px 10px 0 rgba(9,21,48,.14);box-shadow:4px 4px 10px 0 rgba(9,21,48,.14)}
 .content__submitBtn:disabled{background-color:#c9c9c9;pointer-events:none}
-.content.type__wehago .content__spot{background:url(/src/landing/imgs/bg_spot_t.png) no-repeat 50% 50%;background-size:cover}
+.content.type__wehago .content__spot{background:url(https://static.wehago.com/html/landing/img/nahago_mobile/bg_spot_t.png) no-repeat 50% 50%;background-size:cover}
 .content.type__wehago .content__spot--title em{color:#7726ff}
 .content.type__wehago .content__info{background-image:-webkit-gradient(linear,left top,right top,from(#5a52fa),to(#8038f8));background-image:-o-linear-gradient(left,#5a52fa,#8038f8);background-image:linear-gradient(to right,#5a52fa,#8038f8)}
 .content.type__wehago .content__info--text2{opacity:.8}
@@ -311,4 +324,4 @@ button:active,button:focus{outline:0}
 .footer__link li:first-child::before{content:none}
 .footer__link--text{font-size:12px;color:#444;letter-spacing:-.6px}
 .footer__copyright{margin-top:14px;font-size:11px;color:#7b7b7b;line-height:18px;text-align:center}
-/*# sourceMappingURL=../nahago_mobile/maps/landing_nahago_mobile.css.map */
+/*# sourceMappingURL=maps/landing_mobile.css.map */

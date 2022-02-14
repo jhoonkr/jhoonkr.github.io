@@ -94,11 +94,27 @@ gulp.task("newpf:watch", function (done) {
   done();
 });
 
-// SN
+// ionyou
+gulp.task('ionyou', function (done) {
+  gulp.src('ionyou/scss/*.scss')
+      .pipe(sourcemaps.init())
+      .pipe(gulpsass({sourcemap: true, outputStyle: 'expanded'}).on('error', gulpsass.logError))
+      // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
+      .pipe(cleancss({format: 'keep-breaks' }))
+      .pipe(sourcemaps.write('./maps'))
+      .pipe(gulp.dest('./ionyou/css'));
+  done();
+});
+gulp.task('ionyou:watch', function (done) {
+  gulp.watch('ionyou/scss/*.scss', gulp.series('ionyou'));
+  done();
+});
 
-gulp.task("sona", function (done) {
+// landing
+
+gulp.task("landing", function (done) {
   gulp
-    .src("sona/scss/*.scss")
+    .src("landing/scss/*.scss")
     .pipe(sourcemaps.init())
     .pipe(
       sass({ sourcemap: true, outputStyle: "expanded" }).on(
@@ -114,31 +130,11 @@ gulp.task("sona", function (done) {
     )
     .pipe(cleancss({ format: "keep-breaks" }))
     .pipe(sourcemaps.write("./maps"))
-    .pipe(gulp.dest("./sona/css"));
+    .pipe(gulp.dest("./landing/css"));
   done();
 });
 
-gulp.task("sona:watch", function (done) {
-  gulp.watch("sona/scss/*.scss", gulp.series("sona"));
-  gulp.watch("sona/scss/common/*.scss", gulp.series("sona"));
-  gulp.watch("sona/scss/mixin/*.scss", gulp.series("sona"));
-  done();
-});
-
-// iOnYou
-
-// ionyou
-gulp.task('ionyou', function (done) {
-  gulp.src('ionyou/scss/scss/*.scss')
-      .pipe(sourcemaps.init())
-      .pipe(gulpsass({sourcemap: true, outputStyle: 'expanded'}).on('error', gulpsass.logError))
-      // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
-      .pipe(cleancss({format: 'keep-breaks' }))
-      .pipe(sourcemaps.write('../maps'))
-      .pipe(gulp.dest('./ionyou/scss/css'));
-  done();
-});
-gulp.task('ionyou:watch', function (done) {
-  gulp.watch('ionyou/scss/*.scss', gulp.series('ionyou'));
+gulp.task("landing:watch", function (done) {
+  gulp.watch("landing/scss/*.scss", gulp.series("landing"));
   done();
 });

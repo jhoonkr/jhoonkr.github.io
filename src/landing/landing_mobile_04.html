@@ -7,9 +7,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
 	<link rel="stylesheet" type="text/css" href="../css/font.css">
 	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/landing_nahago_mobile.css">
+	<link rel="stylesheet" type="text/css" href="./css/landing_mobile.css">
 </head>
-<!-- [D] Drawer(Hambuger) 열릴시 class="over_y" 추가해주세요. -->
 <body>
 	<div id="header" class="header">
 		<h1 class="header__logo">
@@ -17,7 +16,7 @@
 		</h1>
 		<button type="button" class="header__hambuger"></button>
 		<!-- [D] 햄버거 버튼 클릭시 class="active" 추가해주세요. -->
-		<div class="nav active">
+		<div class="nav">
 			<div class="nav__header">
 				<h1 class="header__logo"><a href="#"><span class="blind">NAHAGO</span></a></h1>
 				<button type="button" class="nav__close"><span class="blind">닫기</span></button>
@@ -63,7 +62,79 @@
 	</div>
 	<div class="container">
 		<div class="content">
-
+			<div class="content__guide">
+				<h2 class="content__guide--title">위하고와 나하고가 함께하는<br>슬기로운 회사생활</h2>
+				<p class="content__guide--text">급여(임금)명세서 교부 이제 나하고로 해결하세요.</p>
+			</div>
+			<div class="content__movie">
+				<video id="nahago_video1" width="100%" height="100%" poster="https://static.wehago.com/html/landing/img/nahago/thumb_nahago_landing.png" controls="" none="" controlslist="nodownload">
+					<source src="https://d1ww4u6qt97z7g.cloudfront.net/nahago/landing/landing.mp4">
+				</video>
+			</div>
+			<div class="content__infoTab">
+				<ul role="tablist">
+					<!-- [D] 클릭시 class="active" 추가해주세요. -->
+					<li role="none" class="active">
+						<a href="#" role="tab">소개영상</a>
+					</li>
+					<li role="none">
+						<a href="#" role="tab">이용가이드</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content__infoContent">
+				<ul>
+					<li>
+						<a href="#">
+							<div class="guide__thumb">
+								<img src="/imgs/dummy/@gft_banner02.png" style="width: 110px;height: 80px;" alt="임시이미지">
+							</div>
+							<div class="guide__info">
+								<div class="guide__box">
+									<p>홈피스 올인원팩 X 비대면 서비스 홈피스 올인원팩 비대면</p>
+								</div>
+								<div class="guide__date">
+									<span class="guide__date--eye">315</span>
+									<span class="guide__date--time">2021.06.05</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="guide__thumb">
+								<img src="/imgs/dummy/@gft_banner02.png" style="width: 110px;height: 80px;" alt="임시이미지">
+							</div>
+							<div class="guide__info">
+								<div class="guide__box">
+									<p>홈피스 올인원팩 X 비대면 서비스 홈피스 올인원팩 비대면</p>
+								</div>
+								<div class="guide__date">
+									<span class="guide__date--eye">315</span>
+									<span class="guide__date--time">2021.06.05</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="guide__thumb">
+								<img src="/imgs/dummy/@gft_banner02.png" style="width: 110px;height: 80px;" alt="임시이미지">
+							</div>
+							<div class="guide__info">
+								<div class="guide__box">
+									<p>홈피스 올인원팩 X 비대면 서비스 홈피스 올인원팩 비대면</p>
+								</div>
+								<div class="guide__date">
+									<span class="guide__date--eye">315</span>
+									<span class="guide__date--time">2021.06.05</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="content__detail">더보기</a>
+			</div>
 		</div>
 	</div>
 	<div id="footer" class="footer">
