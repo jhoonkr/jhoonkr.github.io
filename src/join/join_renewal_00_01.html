@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>WEHAGO 회원가입</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+	<link rel="stylesheet" type="text/css" href="../css/font.css">
+	<link rel="stylesheet" type="text/css" href="./css/join.css">
+	<script src="includeHTML.js"></script>
+</head>
+<!-- [D] 상단 햄버거 버튼 메뉴 노출시 style="overflow: hidden" 적용시켜주세요. -->
+<body class="dz_font type_join" style="overflow: hidden;">
+	<div class="wrap join">
+		<!-- header -->
+		<div id="header" class="join_header">
+			<div class="gnb">
+				<button type="button" class="button__prev"><span class="blind">이전으로</span></button>
+				<a href="#" class="gnb__logo" target="_blank">
+					<h1 class="blind">WEHAGO</h1>
+				</a>
+				<div class="supports">
+					<a href="#" class="gnb__link" target="_blank">서비스 소개</a>
+					<a href="#" class="gnb__link" target="_blank">고객센터</a>
+				</div>
+				<button type="button" class="button__hambuger"><span class="blind">메뉴 열기</span></button>
+				<!-- button__hambuger 클릭시 display: none/block 처리해주세요. -->
+				<div class="menu" style="display: block;">
+					<ul>
+						<!--
+							[D] 선택시 class="selected" 추가해주세요.
+						-->
+						<li class="selected">
+							<button type="button" class="menu__item">서비스 소개</button>
+						</li>
+						<li>
+							<button type="button" class="menu__item menu__item--text">로그인</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //header -->
+		<div class="container">
+			<div class="content">
+				<div class="sign">
+					<div class="numbering"><span>{1}</span>/6</div>
+					<ul class="step">
+						<!-- [D] 단계별 진행시 class="step__list--active" 추가해주세요. -->
+						<li class="step__list step__list--active"></li>
+						<li class="step__list"></li>
+						<li class="step__list"></li>
+						<li class="step__list"></li>
+						<li class="step__list"></li>
+						<li class="step__list"></li>
+					</ul>
+					<div class="sign__box">
+						<h2 class="sign__title">WEHAGO에<br class="mobile"> 오신 것을 환영합니다!</h2>
+						<p class="sign__subTitle">서비스 이용을 위해 이용약관 및<br class="mobile"> 정보 이용에 동의해주세요.</p>
+						<div class="terms">
+							<div class="terms__all">
+								<input type="checkbox" id="termServiceAll" name="check_all">
+								<label for="termServiceAll">
+									<strong class="terms__title">전체동의</strong>
+								</label>
+							</div>
+							<ul class="terms__check">
+								<li>
+									<input type="checkbox" id="termService" name="check_all">
+									<label for="termService">
+										<span class="terms__title">WEHAGO 이용약관<em class="terms__text">(필수)</em></span>
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" id="termPrivacy" name="check_all">
+									<label for="termPrivacy">
+										<span class="terms__title">개인(신용)정보 수집 및 이용동의<em class="terms__text">(필수)</em></span>
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" id="termCompany" name="check_all">
+									<label for="termCompany">
+										<span class="terms__title">기업회원(신용)정보 수집 및 이용동의<em class="terms__text">(필수)</em></span>
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" id="termMarketing" name="check_all">
+									<label for="termMarketing">
+										<span class="terms__title">마케팅 정보 수신동의<em class="terms__text terms__text--gray">(선택)</em></span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<!-- [D] 버튼 비활성화 disabled 추가해주세요. -->
+						<div class="terms__button">
+							<button class="button__default">이전</button>
+							<button class="button__default button__default--confirm" disabled>다음</button>
+						</div>
+					</div>
+				</div>
+				<p class="copyright">Copyright © DOUZONE BIZON. All rights reserved.</p>
+			</div>
+		</div>
+		<!-- [D] 햄버거 버튼 클릭시 display: none/block 처리해주세요. -->
+		<div class="dimmed" style="display: block;"></div>
+	</div>
+<!-- [D] 마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+<script src="../js/jquery-latest.min.js"></script>
+<script>
+	docReady(function() {
+		includeHTML();
+	});
+
+	function docReady(fn) {
+		if (document.readyState === "complete" || document.readyState === "interactive") {
+			setTimeout(fn, 1);
+		} else {
+			document.addEventListener("DOMContentLoaded", fn);
+		}
+	}
+</script>
+<!-- [D] //마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+</body>
+</html>

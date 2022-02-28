@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>WEHAGO 회원가입</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+	<link rel="stylesheet" type="text/css" href="../css/font.css">
+	<link rel="stylesheet" type="text/css" href="./css/join.css">
+	<script src="includeHTML.js"></script>
+</head>
+<body class="dz_font type_join">
+	<div class="wrap join">
+		<!-- header -->
+		<div id="header" class="join_header" include-html="join_renewal_header.html"></div>
+		<!-- //header -->
+		<div class="container">
+			<div class="content">
+				<div class="sign">
+					<div class="sign__box">
+						<div class="loading__box">
+							<img src="/imgs/join/img_loading.gif" style="width: 100%;height: 100%" alt="로딩중 이미지">
+							<p class="loading--text">WEHAGO를 사용하기 위한 초기설정 중입니다.<br>잠시만 기다려주세요.</p>
+						</div>
+					</div>
+				</div>
+				<p class="copyright">Copyright © DOUZONE BIZON. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+<!-- [D] 마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+<script src="../js/jquery-latest.min.js"></script>
+<script>
+	docReady(function() {
+		includeHTML();
+	});
+
+	function docReady(fn) {
+		if (document.readyState === "complete" || document.readyState === "interactive") {
+			setTimeout(fn, 1);
+		} else {
+			document.addEventListener("DOMContentLoaded", fn);
+		}
+	}
+</script>
+<!-- [D] //마크업 테스트용 입니다. 개발 시 삭제해주세요. -->
+</body>
+</html>

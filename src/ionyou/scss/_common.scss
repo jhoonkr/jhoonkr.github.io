@@ -1,25 +1,8 @@
 @import "variables";
 @import "mixin";
 
-@font-face {
-    font-family: 'douzone';
-    src: local('DOUZONEText10'),
-        url('https://static.wehago.com/fonts/douzone/DOUZONEText10.woff2') format('woff2'),
-        url('https://static.wehago.com/fonts/douzone/DOUZONEText10.woff') format('woff');
-    font-weight: normal;
-    font-display: fallback;
-}
-@font-face {
-    font-family: 'douzone';
-    src: local('DOUZONEText30'),
-        url('https://static.wehago.com/fonts/douzone/DOUZONEText30.woff2') format('woff2'),
-        url('https://static.wehago.com/fonts/douzone/DOUZONEText30.woff') format('woff');
-    font-weight: bold;
-    font-display: fallback;
-}
-
 * {
-    font-family: douzone, "Microsoft YaHei", "PingFang SC", "MS PGothic", "Hiragino Kaku Gothic ProN", "굴림", gulim, "Apple SD Gothic Neo", sans-serif;
+    font-family: 'Nanum Square', "Microsoft YaHei", "PingFang SC", "MS PGothic", "Hiragino Kaku Gothic ProN", "굴림", gulim, "Apple SD Gothic Neo", sans-serif;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
@@ -143,7 +126,7 @@ button:active {
                         }
                     }
                     &:before {
-                        content: none;   
+                        content: none;
                     }
                 }
             }
@@ -194,7 +177,7 @@ button:active {
         line-height: 24px;
         letter-spacing: -0.32px;
         &:visited {
-            color: $font-black; 
+            color: $font-black;
         }
         &:after {
             content: '';
@@ -357,7 +340,7 @@ button:active {
         }
         .card_slide {
             width: 280px !important;
-        }   
+        }
     }
     .service_apply {
         .hastag_card_list {
@@ -373,4 +356,4 @@ button:active {
             margin: 0 auto;
         }
     }
-} 
+}

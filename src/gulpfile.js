@@ -95,18 +95,30 @@ gulp.task("newpf:watch", function (done) {
 });
 
 // ionyou
-gulp.task('ionyou', function (done) {
-  gulp.src('ionyou/scss/*.scss')
-      .pipe(sourcemaps.init())
-      .pipe(gulpsass({sourcemap: true, outputStyle: 'expanded'}).on('error', gulpsass.logError))
-      // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
-      .pipe(cleancss({format: 'keep-breaks' }))
-      .pipe(sourcemaps.write('./maps'))
-      .pipe(gulp.dest('./ionyou/css'));
+gulp.task("ionyou", function (done) {
+  gulp
+    .src("ionyou/scss/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(
+      sass({ sourcemap: true, outputStyle: "expanded" }).on(
+        "error",
+        sass.logError
+      )
+    )
+    // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
+    .pipe(cleancss({ format: "keep-breaks" }))
+    .pipe(sourcemaps.write("./maps"))
+    .pipe(gulp.dest("./ionyou/css"));
   done();
 });
-gulp.task('ionyou:watch', function (done) {
-  gulp.watch('ionyou/scss/*.scss', gulp.series('ionyou'));
+
+gulp.task("ionyou:watch", function (done) {
+  gulp.watch("ionyou/scss/*.scss", gulp.series("ionyou"));
   done();
 });
 
@@ -165,5 +177,33 @@ gulp.task("gift", function (done) {
 
 gulp.task("gift:watch", function (done) {
   gulp.watch("gift/scss/*.scss", gulp.series("gift"));
+  done();
+});
+
+// 회원가입
+gulp.task("join", function (done) {
+  gulp
+    .src("join/scss/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(
+      sass({ sourcemap: true, outputStyle: "expanded" }).on(
+        "error",
+        sass.logError
+      )
+    )
+    // .pipe(prefix({browser:["last 2 version", "> 1%", "ie 8", "ie 7"],cascade:false,flexbox:false}))
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
+    .pipe(cleancss({ format: "keep-breaks" }))
+    .pipe(sourcemaps.write("./maps"))
+    .pipe(gulp.dest("./join/css"));
+  done();
+});
+
+gulp.task("join:watch", function (done) {
+  gulp.watch("join/scss/*.scss", gulp.series("join"));
   done();
 });

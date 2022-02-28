@@ -1,0 +1,51 @@
+@import "./variables";
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+@mixin ellipsis($line: 1) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+}
+
+@mixin background($width, $height, $xpos, $ypos) {
+    background-image: url($imgurl);
+    width: $width/2;
+    height: $height/2;
+    background-position: $xpos/2 $ypos/2;
+    background-size: 250px 250px;
+    -webkit-background-size: 250px 250px;
+}
+
+// 모바일 PC Size 전 까지
+@mixin mobile {
+    @media (max-width: #{$breakpoint-desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin mobileOne {
+    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+        @content;
+    }
+}
+
+// 테블릿
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin landscape {
+    @media (min-width: 667px) and (orientation: landscape) {
+        @content;
+    }
+}
