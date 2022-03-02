@@ -22,6 +22,9 @@ a{color:inherit;text-decoration:none}
 .section__title{min-width:375px;font-size:50px;text-align:center}
 }
 .section__myinfo{height:auto;padding:136px 20px 50px;background-color:#fff;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box}
+@media (max-width:1023px) and (max-width:767px){
+.section__myinfo{padding:50px 20px}
+}
 .section__myinfo--text{font-size:24px;color:#1e232d}
 @media (max-width:1023px) and (max-width:767px){
 .section__myinfo--text{font-size:18px}
@@ -66,6 +69,9 @@ a{color:inherit;text-decoration:none}
 .section__list--text::after{content:'';display:inline-block;width:12px;height:32px;margin-left:10px;background:url(../img/sp_newpf.png) no-repeat -78px 0/150px 150px;vertical-align:top}
 .section__list--black{color:#000}
 .section__say{padding:100px 50px;background-color:#1e232d;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box}
+@media (max-width:1023px) and (max-width:767px){
+.section__say{padding:50px}
+}
 .section__say--title{font-size:24px;color:#fff}
 .section__say--subtitle{margin-top:10px;font-size:20px;color:#fff;opacity:.6}
 @media (max-width:1023px) and (max-width:767px){
@@ -86,6 +92,9 @@ a{color:inherit;text-decoration:none}
 .modal__content img{max-width:100%;border:1px solid #b3b3b3}
 .modal__content figcaption{margin-top:5px;font-size:20px;font-weight:700;color:#4a4a4a;text-align:center}
 .footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:132px;background-color:#1e232d;border-top:1px solid rgba(255,255,255,.08);text-align:center}
+@media (max-width:1023px) and (max-width:767px){
+.footer{height:66px}
+}
 .footer__text{font-size:16px;color:#fff;opacity:.7}
 @-webkit-keyframes opacity{
 0%{opacity:.25}

@@ -87,6 +87,9 @@
         background-color: #fff;
         text-align: center;
         box-sizing: border-box;
+        @include mobile {
+            padding: 50px 20px;
+        }
         &--text {
             font-size: 24px;
             color: #1e232d;
@@ -241,6 +244,9 @@
         background-color: #1e232d;
         text-align: center;
         box-sizing: border-box;
+        @include mobile {
+            padding: 50px;
+        }
         &--title {
             font-size: 24px;
             color: #fff;
@@ -370,6 +376,9 @@
     background-color: #1e232d;
     border-top: 1px solid rgba(255,255,255,0.08);
     text-align: center;
+    @include mobile {
+        height: 66px;
+    }
     &__text {
         font-size: 16px;
         color: #fff;
