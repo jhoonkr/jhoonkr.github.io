@@ -13,6 +13,7 @@
             height: 50px;
             margin: 0;
             padding: 0;
+            border-radius: 100%;
             img {
                 width: 50px;
                 height: 50px;
@@ -67,27 +68,40 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        min-width: 600px;
         margin: 0;
         padding: 0;
         font-size: 80px;
         transform: translate(-50%, -50%);
         animation: opacity 7s;
+        text-align: center;
+        @include mobile {
+            min-width: 375px;
+            font-size: 50px;
+            text-align: center;
+        }
     }
     &__myinfo {
         height: auto;
-        padding: 136px 100px 50px;
+        padding: 136px 20px 50px;
         background-color: #fff;
         text-align: center;
         box-sizing: border-box;
         &--text {
             font-size: 24px;
             color: #1e232d;
+            @include mobile {
+                font-size: 18px;
+            }
         }
         &--subtext {
             display: block;
             margin-top: 10px;
             font-size: 20px;
             color: #888;
+            @include mobile {
+                font-size: 15px;
+            }
         }
     }
     &__category {
@@ -107,6 +121,9 @@
                     margin: 5px 20px 0;
                     background: url(../img/sp_newpf.png) no-repeat -65px 0 / 150px 150px;
                     vertical-align: top;
+                    @include mobile {
+                        margin: 5px 10px 0;
+                    }
                 }
                 &:first-child {
                     &::before {
@@ -120,6 +137,9 @@
                     &[aria-selected="true"] {
                         color: #1e232d;
                     }
+                    @include mobile {
+                        font-size: 17px;
+                    }
                 }
             }
         }
@@ -130,6 +150,9 @@
     &__list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        @include mobile {
+            grid-template-columns: auto;
+        }
         li {
             width: 100%;
             height: 300px;
@@ -179,6 +202,7 @@
             height: 100%;
             font-size: 18px;
             color: #fff;
+            text-align: center;
             opacity: 0.9;
             &::before {
                 content: '';
@@ -205,8 +229,8 @@
         }
     }
     &__say {
-        padding: 100px 100px;
-        height: 370px;
+        padding: 100px 50px;
+        // height: 370px;
         background-color: #1e232d;
         text-align: center;
         box-sizing: border-box;
@@ -219,6 +243,9 @@
             font-size: 20px;
             color: #fff;
             opacity: 0.6;
+            @include mobile {
+                font-size: 14px;
+            }
         }
         .button__link {
             display: block;
@@ -227,6 +254,11 @@
             height: 50px;
             margin: 36px auto 0;
             background: url(../img/img_footer_button.png) no-repeat 0 0 / 302px 50px;
+            @include mobile {
+                width: 233px;
+                height: 38px;
+                background: url(../img/img_footer_button_m.png) no-repeat 0 0 / 233px 38px;
+            }
             &--text {
                 position: absolute;
                 top: 50%;
