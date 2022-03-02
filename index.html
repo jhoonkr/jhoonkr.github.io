@@ -208,6 +208,42 @@
                         <a href="#">
                             <div class="section__list--text">네이버 고객센터</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>네이버 고객센터</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/incomms/img_help_1.png" alt>
+                                        <figcaption>홈</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_help_5.png" alt>
+                                        <figcaption>메인</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_help_2.png" alt>
+                                        <figcaption>드롭다운</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_help_3.png" alt>
+                                        <figcaption>검색</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_help_4.png" alt>
+                                        <figcaption>검색 내용</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_help_6.png" alt>
+                                        <figcaption>팝업</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item3">
                         <a href="#">
@@ -301,12 +337,14 @@
             })
         });
 
-        const closeButton = document.querySelector('.modal__button');
-        closeButton.addEventListener('click', function(){
-            popList.forEach(element => {
-                element.classList.remove('active');
+        const closeButton = document.querySelectorAll('.modal__button');
+        closeButton.forEach(element => {
+            element.addEventListener('click',function(){
+                popList.forEach(element => {
+                    element.classList.remove('active');
+                })
             })
-        });
+        })
     };
 </script>
 </body>
