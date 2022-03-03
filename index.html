@@ -28,7 +28,7 @@
 <body class="ko-KR">
     <header class="header">
         <nav class="nav">
-            <button type="button" class="nav__logo">
+            <button type="button" class="nav__logo" aria-expanded="false">
                 <img src="./src/img/thumb_profile_small.jpg" alt>
             </button>
             <h2 class="blind">메뉴</h2>
@@ -753,14 +753,18 @@
         const closeButton = document.querySelector('.nav__closeBtn');
         const navBox = document.querySelector('.nav__profile');
 
+
         toggleButton.addEventListener('click', function () {
-            navBox.classList.toggle('nav__profile--active');
             let attr = document.querySelector('.nav__logo').getAttribute('aria-expanded');
+
+            navBox.classList.toggle('nav__profile--active');
+
             if (attr == "true") {
                 attr = "false"
             } else {
                 attr = "true"
             }
+
             document.querySelector('.nav__logo').setAttribute('aria-expanded', attr);
         })
 
