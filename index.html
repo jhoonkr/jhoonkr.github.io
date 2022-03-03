@@ -28,11 +28,37 @@
 <body class="ko-KR">
     <header class="header">
         <nav class="nav">
-            <img src="./src/img/thumb_profile_small.jpg" class="nav__logo" alt>
+            <button type="button" class="nav__logo">
+                <img src="./src/img/thumb_profile_small.jpg" alt>
+            </button>
             <h2 class="blind">메뉴</h2>
             <div class="nav__link">
                 <a href="#about" class="nav__link--item">about</a>
                 <a href="#velog" class="nav__link--item">velog</a>
+            </div>
+        </nav>
+        <nav id="log-nav" class="nav__profile" aria-live="polite" aria-labelledby="log-nav-heading">
+            <h2 id="log-nav-heading" class="blind">연락하기</h2>
+            <button type="button" class="nav__closeBtn" aria-controls="log-nav">연락하기 닫기</button>
+            <div class="nav__log" role="dialog">
+                <section>
+                    <h2 class="blind">프로필</h2>
+                    <div class="profile__card">
+                        <img class="profile__pic" style="width: 128px;height: 128px;" src="./src/img/thumb_profile_small.jpg" alt="JaeHoon Yu">
+                        <h3 class="profile__name">JaeHoon Yu</h3>
+                        <span class="profile__city">Republic of Korea</span>
+                        <p class="profile__description">Markup Developer</p>
+                    </div>
+                    <div class="profile__skills">
+                        <h4 class="profile__title">Skills</h4>
+                        <ul class="profile__item">
+                            <li class="profile__text">HTML5</li>
+                            <li class="profile__text">CSS</li>
+                            <li class="profile__text">CSS3</li>
+                            <li class="profile__text">Sass / SCSS</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </nav>
     </header>
@@ -115,21 +141,125 @@
                         <a href="#">
                             <div class="section__list--text">네이버 광고주센터</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>네이버 광고주센터</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_pc_1.png" alt>
+                                        <figcaption>광고관리</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_pc_2.png" alt>
+                                        <figcaption>도구</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_pc_3.png" alt>
+                                        <figcaption>도구</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_mobile_1.png" alt>
+                                        <figcaption>모바일 홈</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_mobile_2.png" alt>
+                                        <figcaption>새 광고그룹</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_mobile_3.png" alt>
+                                        <figcaption>즐겨찾기</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item4">
                         <a href="#">
-                            <div class="section__list--text">네이버 스마트앱</div>
+                            <div class="section__list--text">네이버 스마트플레이스</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>네이버 스마트플레이스</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/incomms/img_smartplace_1.png" alt>
+                                        <figcaption>홈</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_smartplace_2.png" alt>
+                                        <figcaption>메인</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_smartplace_3.png" alt>
+                                        <figcaption>예약</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item5">
                         <a href="#">
                             <div class="section__list--text">네이버 GFA</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>네이버 GFA</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/incomms/img_gfa_1.png" alt>
+                                        <figcaption>광고검색</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_gfa_2.png" alt>
+                                        <figcaption>광고만들기</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item6">
                         <a href="#">
-                            <div class="section__list--text">네이버 학술정보 모바일</div>
+                            <div class="section__list--text">네이버 학술정보</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>네이버 학술정보</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/incomms/img_academic_1.png" alt>
+                                        <figcaption>학문분야</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_academic_2.png" alt>
+                                        <figcaption>연구트렌드</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_academic_3.png" alt>
+                                        <figcaption>검색범위</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item7">
                         <a href="https://jhoonkr.github.io/src/gift/index.html" target="_blank">
@@ -145,11 +275,59 @@
                         <a href="#">
                             <div class="section__list--text">WEHAGO 전자연구노트</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>WEHAGO 전자연구노트</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/douzone/img_eln_1.png" alt>
+                                        <figcaption>대시보드</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_eln_2.png" alt>
+                                        <figcaption>과제만들기</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_eln_3.png" alt>
+                                        <figcaption>과제 테이블</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_eln_4.png" alt>
+                                        <figcaption>에디터</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item10">
                         <a href="#">
                             <div class="section__list--text">WEHAGO WIDE Admin</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>WEHAGO WIDE Admin</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/douzone/img_wide_1.png" alt>
+                                        <figcaption>배너 공지 만들기</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_wide_2.png" alt>
+                                        <figcaption>배너 공지 상세보기</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item11">
                         <a href="https://jhoonkr.github.io/src/landing/index.html" target="_blank">
@@ -160,6 +338,39 @@
                         <a href="https://jhoonkr.github.io/src/join/index.html" target="_blank">
                             <div class="section__list--text">WEHAGO 회원가입</div>
                         </a>
+                    </li>
+                    <li class="item13">
+                        <a href="#" target="_blank">
+                            <div class="section__list--text">WEHAGO DOCC</div>
+                        </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>WEHAGO DOCC</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/douzone/img_docc_1.png" alt>
+                                        <figcaption>외래 진료현황</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_docc_2.png" alt>
+                                        <figcaption>메인</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_docc_3.png" alt>
+                                        <figcaption>메인</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_docc_4.png" alt>
+                                        <figcaption>메인</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -184,11 +395,59 @@
                         <a href="#">
                             <div class="section__list--text">WEHAGO 전자연구노트</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>WEHAGO 전자연구노트</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/douzone/img_eln_1.png" alt>
+                                        <figcaption>대시보드</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_eln_2.png" alt>
+                                        <figcaption>과제만들기</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_eln_3.png" alt>
+                                        <figcaption>과제 테이블</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_eln_4.png" alt>
+                                        <figcaption>에디터</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item5">
                         <a href="#">
                             <div class="section__list--text">WEHAGO WIDE Admin</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>WEHAGO WIDE Admin</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/douzone/img_wide_1.png" alt>
+                                        <figcaption>배너 공지 만들기</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_wide_2.png" alt>
+                                        <figcaption>배너 공지 상세보기</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item6">
                         <a href="https://jhoonkr.github.io/src/landing/index.html" target="_blank">
@@ -199,6 +458,39 @@
                         <a href="https://jhoonkr.github.io/src/join/index.html" target="_blank">
                             <div class="section__list--text">WEHAGO 회원가입</div>
                         </a>
+                    </li>
+                    <li class="item13">
+                        <a href="#" target="_blank">
+                            <div class="section__list--text">WEHAGO DOCC</div>
+                        </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>WEHAGO DOCC</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/douzone/img_docc_1.png" alt>
+                                        <figcaption>외래 진료현황</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_docc_2.png" alt>
+                                        <figcaption>메인</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_docc_3.png" alt>
+                                        <figcaption>메인</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/douzone/img_docc_4.png" alt>
+                                        <figcaption>메인</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -249,21 +541,125 @@
                         <a href="#">
                             <div class="section__list--text">네이버 광고주센터</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>네이버 광고주센터</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_pc_1.png" alt>
+                                        <figcaption>광고관리</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_pc_2.png" alt>
+                                        <figcaption>도구</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_pc_3.png" alt>
+                                        <figcaption>도구</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_mobile_1.png" alt>
+                                        <figcaption>모바일 홈</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_mobile_2.png" alt>
+                                        <figcaption>새 광고그룹</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_ncc_mobile_3.png" alt>
+                                        <figcaption>즐겨찾기</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item4">
                         <a href="#">
-                            <div class="section__list--text">네이버 스마트앱</div>
+                            <div class="section__list--text">네이버 스마트플레이스</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>네이버 스마트플레이스</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/incomms/img_smartplace_1.png" alt>
+                                        <figcaption>홈</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_smartplace_2.png" alt>
+                                        <figcaption>메인</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_smartplace_3.png" alt>
+                                        <figcaption>예약</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item5">
                         <a href="#">
                             <div class="section__list--text">네이버 GFA</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>네이버 GFA</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/incomms/img_gfa_1.png" alt>
+                                        <figcaption>광고검색</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_gfa_2.png" alt>
+                                        <figcaption>광고만들기</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="item6">
                         <a href="#">
-                            <div class="section__list--text">네이버 학술정보 모바일</div>
+                            <div class="section__list--text">네이버 학술정보</div>
                         </a>
+                        <div class="section__modal">
+                            <div class="modal__box">
+                                <h3>네이버 학술정보</h3>
+                                <div class="modal__content">
+                                    <figure>
+                                        <img src="/src/img/incomms/img_academic_1.png" alt>
+                                        <figcaption>학문분야</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_academic_2.png" alt>
+                                        <figcaption>연구트렌드</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/src/img/incomms/img_academic_3.png" alt>
+                                        <figcaption>검색범위</figcaption>
+                                    </figure>
+                                </div>
+                                <button type="button" class="modal__button">
+                                    <span class="blind">닫기</span>
+                                    <span class="bar_lft"></span>
+                                    <span class="bar_rgt"></span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -286,6 +682,7 @@
     docReady(function (){
         toggleTab();
         setClick();
+        profile();
     });
 
     function docReady(fn){
@@ -346,6 +743,28 @@
             })
         })
     };
+
+    var profile = function(){
+        const toggleButton = document.querySelector('.nav__logo');
+        const closeButton = document.querySelector('.nav__closeBtn');
+        const navBox = document.querySelector('.nav__profile');
+
+        toggleButton.addEventListener('click', function () {
+            navBox.classList.toggle('nav__profile--active');
+            let attr = document.querySelector('.nav__button').getAttribute('aria-expanded');
+            if (attr == "true") {
+                attr = "false"
+            } else {
+                attr = "true"
+            }
+            document.querySelector('.nav__button').setAttribute('aria-expanded', attr);
+        })
+
+        closeButton.addEventListener('click', function () {
+            navBox.classList.remove('nav__profile--active');
+            toggleButton.setAttribute('aria-expanded', 'false');
+        })
+    }
 </script>
 </body>
 </html>

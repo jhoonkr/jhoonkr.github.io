@@ -14,6 +14,8 @@
             margin: 0;
             padding: 0;
             border-radius: 100%;
+            border: 0;
+            appearance: none;
             img {
                 width: 50px;
                 height: 50px;
@@ -41,6 +43,123 @@
                 }
             }
         }
+        &__button {
+            margin-left: auto;
+            overflow: hidden;
+            position: relative;
+            width: 48px;
+            height: 48px;
+            padding: 0 16px;
+            border: 0;
+            background: transparent;
+            color: transparent;
+            white-space: nowrap;
+            text-align: left;
+            line-height: 48px;
+            -webkit-tap-highlight-color: initial;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                top: 18px;
+                left: 16px;
+                right: 16px;
+                vertical-align: top;
+                background: #000;
+                box-shadow: 0 5px #000, 0 10px #000;
+            }
+        }
+        &__profile {
+            display: none;
+            position: absolute;
+            top: 64px;
+            left: 0;
+            width: 300px;
+            transform-origin: 100% 0;
+            background-color: #fff;
+            box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+            z-index: 10;
+            &.nav__profile--active {
+                display: block;
+            }
+        }
+        &__closeBtn {
+            overflow: hidden;
+            position: relative;
+            float: right;
+            width: 48px;
+            height: 48px;
+            padding-top: 48px;
+            color: transparent;
+            border: 0;
+            background-color: transparent;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                width: 18px;
+                height: 2px;
+                background: #000;
+            }
+            &:before {
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
+        &__log {
+            padding-top: 50px;
+        }
+    }
+}
+.profile {
+    &__card {
+        text-align: center;
+    }
+    &__name {
+        margin: 10px 0;
+    }
+    &__city {
+        margin: 5px 0;
+        font-size: 11px;
+    }
+    &__description {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #313131;
+    }
+    &__pic {
+        padding: 7px;
+        border: 1px solid #d3d3d3;
+        border-radius: 50%;
+        vertical-align: top;
+    }
+    &__skills {
+        padding: 12px 6px;
+        margin-top: 30px;
+        background: #1c1c1c;
+        color: #a0a0a0;
+        text-align: left;
+    }
+    &__title {
+        padding: 0 7px;
+        margin: 0 0 10px;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    &__text {
+        display: inline-block;
+        margin: 0 5px 5px;
+        padding: 7px;
+        border: 1px solid #343434;
+        border-radius: 3px;
+        font-size: 12px;
     }
 }
 .section {
@@ -192,6 +311,9 @@
             }
             &.item11 {
                 background-color: #ce3799;
+            }
+            &.item12 {
+                background-color: #fda7df;
             }
             a {
                 display: block;
@@ -355,6 +477,7 @@
     &__content {
         overflow-y: auto;
         height: 100%;
+        text-align: center;
         img {
             max-width: 100%;
             border: 1px solid #b3b3b3;
