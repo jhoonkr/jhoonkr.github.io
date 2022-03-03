@@ -328,8 +328,8 @@
 
         popClick.forEach(element => {
             element.addEventListener('click', function(e){
-                // e.preventDefault();
                 if(element.getAttribute('href') === "#") {
+                    e.preventDefault();
                     element.parentNode.classList.add('active');
                 } else {
                     return;
