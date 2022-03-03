@@ -39,7 +39,7 @@
         </nav>
         <nav id="log-nav" class="nav__profile" aria-live="polite" aria-labelledby="log-nav-heading">
             <h2 id="log-nav-heading" class="blind">연락하기</h2>
-            <button type="button" class="nav__closeBtn" aria-controls="log-nav">연락하기 닫기</button>
+            <button type="button" class="nav__closeBtn" aria-haspopup="true" aria-controls="log-nav">연락하기 닫기</button>
             <div class="nav__log" role="dialog">
                 <section>
                     <h2 class="blind">프로필</h2>
@@ -722,12 +722,14 @@
     var setClick = function(){
         const popList = document.querySelectorAll('.section__list li');
         const popClick = document.querySelectorAll('.section__list li a');
+        const checkBody = document.querySelector('body');
 
         popClick.forEach(element => {
             element.addEventListener('click', function(e){
                 if(element.getAttribute('href') === "#") {
                     e.preventDefault();
                     element.parentNode.classList.add('active');
+                    checkBody.style.overflow = 'hidden';
                 } else {
                     return;
                 }
@@ -739,6 +741,7 @@
             element.addEventListener('click',function(){
                 popList.forEach(element => {
                     element.classList.remove('active');
+                    checkBody.style.overflow = '';
                 })
             })
         })
@@ -764,7 +767,7 @@
             navBox.classList.remove('nav__profile--active');
             toggleButton.setAttribute('aria-expanded', 'false');
         })
-    }
+    };
 </script>
 </body>
 </html>
