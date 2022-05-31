@@ -693,7 +693,7 @@
         }
     }
 
-    var toggleTab = function(){
+    let toggleTab = function(){
         const tabs = document.querySelectorAll('[role="tab"]');
         const tabLists = document.querySelectorAll('[role="tablist"]');
 
@@ -719,7 +719,7 @@
         });
     };
 
-    var setClick = function(){
+    let setClick = function(){
         const popList = document.querySelectorAll('.section__list li');
         const popClick = document.querySelectorAll('.section__list li a');
         const checkBody = document.querySelector('body');
@@ -748,7 +748,7 @@
         })
     };
 
-    var profile = function(){
+    let profile = function(){
         const toggleButton = document.querySelector('.nav__logo');
         const closeButton = document.querySelector('.nav__closeBtn');
         const navBox = document.querySelector('.nav__profile');
