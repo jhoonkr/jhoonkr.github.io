@@ -28,9 +28,10 @@ a{color:inherit;text-decoration:none}
 .profile__city{margin:5px 0;font-size:11px}
 .profile__description{margin:10px 0;font-size:14px;color:#313131}
 .profile__pic{padding:7px;border:1px solid #d3d3d3;border-radius:50%;vertical-align:top}
-.profile__skills{padding:12px 6px;margin-top:30px;background:#1c1c1c;color:#a0a0a0;text-align:left}
-.profile__title{padding:0 7px;margin:0 0 10px;font-size:13px;text-transform:uppercase}
-.profile__text{display:inline-block;margin:0 5px 5px;padding:7px;border:1px solid #343434;border-radius:3px;font-size:12px}
+.profile__skills{padding:12px;margin-top:30px;background:#1c1c1c;color:#a0a0a0;text-align:left}
+.profile__item{font-size:0}
+.profile__title{margin:0 0 10px;font-size:13px;text-transform:uppercase}
+.profile__text{display:inline-block;margin-right:5px;margin-bottom:4px;padding:7px;border:1px solid #343434;border-radius:3px;font-size:12px}
 .section{position:relative;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}
 .section--fz{height:100vh;padding:30px 30px 35px 30px;background-color:#f6f6f6}
 .section__down{position:absolute;bottom:35px;left:50%;width:42px;height:23px;margin-left:-21px;padding:0;background:url(../img/sp_newpf.png) no-repeat -18px 0/150px 150px;-webkit-animation:bounce 2s ease infinite;animation:bounce 2s ease infinite;z-index:1}
